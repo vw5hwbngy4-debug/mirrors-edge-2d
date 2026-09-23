@@ -1,0 +1,7 @@
+SpawnMap provenance rule
+
+Iteration = edit to the current map/project.
+Version = saved milestone/checkpoint of that project.
+Remix = new child project branched from a specific saved version.
+
+Spectator COPY PROMPT now explicitly requests an iteration/update, not a remix.

@@ -1,0 +1,24 @@
+SpawnMap Swipe v8.7
+
+Primary navigation
+- WALK / OVERVIEW / TELEMETRY are now selected only with the top tabs.
+- Overview stays a protected 3D interaction container.
+
+Contextual horizontal gestures
+- LANDING: vertical swipe enters feed; swipe LEFT opens MAPS.
+- WALK: swipe LEFT opens MAPS. Swipe right does nothing.
+- TELEMETRY: swipe RIGHT opens ITERATIONS for the current GPT-built map. Swipe left does nothing.
+- MAPS and ITERATIONS do not horizontally navigate elsewhere.
+
+Iterations
+- Added /data/map-iterations.json.
+- Current Suzhou version is sourced from the real provenance file:
+  GraffitiFruit v3, SHA dd9530c3beff...
+- No fake older versions are invented.
+- FUTURE ITERATION placeholder shows where later TO-GPT builds will appear after build + test.
+
+Desktop
+- WALK + Arrow Left opens MAPS.
+- TELEMETRY + Arrow Right opens ITERATIONS.
+- Landing + Arrow Left opens MAPS.
+- Trackpad horizontal gestures use the same contextual rules.

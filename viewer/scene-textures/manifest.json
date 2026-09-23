@@ -1,0 +1,3813 @@
+{
+  "schema": "SpawnMapTextureManifest-v1",
+  "generatedAt": "2026-08-16T16:24:29.498Z",
+  "textures": {
+    "city.gratemsk": {
+      "ref": "city.grateMsk",
+      "path": "/image-to-unreal-map/viewer/scene-textures/city/grateMsk-8b44681aa7.png",
+      "width": 256,
+      "height": 256,
+      "sourcePackage": "city",
+      "sourceFile": "city.utx"
+    },
+    "city.blackdoor": {
+      "ref": "city.Blackdoor",
+      "path": "/image-to-unreal-map/viewer/scene-textures/city/Blackdoor-bc4c21a432.png",
+      "width": 128,
+      "height": 128,
+      "sourcePackage": "city",
+      "sourceFile": "city.utx"
+    },
+    "decayeds.mask.t-grate2": {
+      "ref": "DecayedS.Mask.T-Grate2",
+      "path": "/image-to-unreal-map/viewer/scene-textures/DecayedS/T-Grate2-8a0e209c86.png",
+      "width": 128,
+      "height": 128,
+      "sourcePackage": "DecayedS",
+      "sourceFile": "DecayedS.utx"
+    },
+    "despurban-materials.solw1-4": {
+      "ref": "DespUrban-Materials.Solw1-4",
+      "path": "/image-to-unreal-map/viewer/scene-textures/DespUrban-Materials/Solw1-4-67e9b22580.png",
+      "width": 512,
+      "height": 512,
+      "sourcePackage": "DespUrban-Materials",
+      "sourceFile": "DespUrban-Materials.utx"
+    },
+    "despurban-materials.despstucok1-1": {
+      "ref": "DespUrban-Materials.despstucok1-1",
+      "path": "/image-to-unreal-map/viewer/scene-textures/DespUrban-Materials/despstucok1-1-73162c6c0f.png",
+      "width": 256,
+      "height": 256,
+      "sourcePackage": "DespUrban-Materials",
+      "sourceFile": "DespUrban-Materials.utx"
+    },
+    "despurban-materials.lh-farw1-7": {
+      "ref": "DespUrban-Materials.LH-farW1-7",
+      "path": "/image-to-unreal-map/viewer/scene-textures/DespUrban-Materials/LH-farW1-7-0cb6132b9b.png",
+      "width": 512,
+      "height": 512,
+      "sourcePackage": "DespUrban-Materials",
+      "sourceFile": "DespUrban-Materials.utx"
+    },
+    "despurban-materials.skyd1-1": {
+      "ref": "DespUrban-Materials.skyD1-1",
+      "path": "/image-to-unreal-map/viewer/scene-textures/DespUrban-Materials/skyD1-1-075aa72a20.png",
+      "width": 256,
+      "height": 256,
+      "sourcePackage": "DespUrban-Materials",
+      "sourceFile": "DespUrban-Materials.utx"
+    },
+    "despurban-materials.tiled1-1": {
+      "ref": "DespUrban-Materials.tiled1-1",
+      "path": "/image-to-unreal-map/viewer/scene-textures/DespUrban-Materials/tiled1-1-17c41d0906.png",
+      "width": 128,
+      "height": 128,
+      "sourcePackage": "DespUrban-Materials",
+      "sourceFile": "DespUrban-Materials.utx"
+    },
+    "despurban-materials.walld1-1": {
+      "ref": "DespUrban-Materials.WallD1-1",
+      "path": "/image-to-unreal-map/viewer/scene-textures/DespUrban-Materials/WallD1-1-a61218e472.png",
+      "width": 512,
+      "height": 512,
+      "sourcePackage": "DespUrban-Materials",
+      "sourceFile": "DespUrban-Materials.utx"
+    },
+    "despurban-materials.despdoork1-1": {
+      "ref": "DespUrban-Materials.despdoork1-1",
+      "path": "/image-to-unreal-map/viewer/scene-textures/DespUrban-Materials/despdoork1-1-bdf6e821ad.png",
+      "width": 128,
+      "height": 256,
+      "sourcePackage": "DespUrban-Materials",
+      "sourceFile": "DespUrban-Materials.utx"
+    },
+    "despurban-materials.lightokld": {
+      "ref": "DespUrban-Materials.lightokld",
+      "path": "/image-to-unreal-map/viewer/scene-textures/DespUrban-Materials/lightokld-20165149dd.png",
+      "width": 128,
+      "height": 128,
+      "sourcePackage": "DespUrban-Materials",
+      "sourceFile": "DespUrban-Materials.utx"
+    },
+    "despurban-materials.floord1-3": {
+      "ref": "DespUrban-Materials.FloorD1-3",
+      "path": "/image-to-unreal-map/viewer/scene-textures/DespUrban-Materials/FloorD1-3-40c882f01c.png",
+      "width": 512,
+      "height": 512,
+      "sourcePackage": "DespUrban-Materials",
+      "sourceFile": "DespUrban-Materials.utx"
+    },
+    "despurban-materials.floord1-5": {
+      "ref": "DespUrban-Materials.FloorD1-5",
+      "path": "/image-to-unreal-map/viewer/scene-textures/DespUrban-Materials/FloorD1-5-76267989ff.png",
+      "width": 512,
+      "height": 512,
+      "sourcePackage": "DespUrban-Materials",
+      "sourceFile": "DespUrban-Materials.utx"
+    },
+    "despurban-materials.floord1-2": {
+      "ref": "DespUrban-Materials.FloorD1-2",
+      "path": "/image-to-unreal-map/viewer/scene-textures/DespUrban-Materials/FloorD1-2-181c7d3a43.png",
+      "width": 512,
+      "height": 512,
+      "sourcePackage": "DespUrban-Materials",
+      "sourceFile": "DespUrban-Materials.utx"
+    },
+    "despurban-materials.despc1-1tile": {
+      "ref": "DespUrban-Materials.despC1-1tile",
+      "path": "/image-to-unreal-map/viewer/scene-textures/DespUrban-Materials/despC1-1tile-c074ee157e.png",
+      "width": 256,
+      "height": 256,
+      "sourcePackage": "DespUrban-Materials",
+      "sourceFile": "DespUrban-Materials.utx"
+    },
+    "despurban-materials.walld1-6": {
+      "ref": "DespUrban-Materials.WallD1-6",
+      "path": "/image-to-unreal-map/viewer/scene-textures/DespUrban-Materials/WallD1-6-f8c908f458.png",
+      "width": 512,
+      "height": 512,
+      "sourcePackage": "DespUrban-Materials",
+      "sourceFile": "DespUrban-Materials.utx"
+    },
+    "despurban-materials.worksdespdd1-3": {
+      "ref": "DespUrban-Materials.worksdespdd1-3",
+      "path": "/image-to-unreal-map/viewer/scene-textures/DespUrban-Materials/worksdespdd1-3-1f3ee86d5e.png",
+      "width": 512,
+      "height": 512,
+      "sourcePackage": "DespUrban-Materials",
+      "sourceFile": "DespUrban-Materials.utx"
+    },
+    "despurban-materials.doord1-1": {
+      "ref": "DespUrban-Materials.DoorD1-1",
+      "path": "/image-to-unreal-map/viewer/scene-textures/DespUrban-Materials/DoorD1-1-0ed9e4e306.png",
+      "width": 256,
+      "height": 512,
+      "sourcePackage": "DespUrban-Materials",
+      "sourceFile": "DespUrban-Materials.utx"
+    },
+    "despurban-materials.lh-farw1-5": {
+      "ref": "DespUrban-Materials.LH-farW1-5",
+      "path": "/image-to-unreal-map/viewer/scene-textures/DespUrban-Materials/LH-farW1-5-91b6887971.png",
+      "width": 128,
+      "height": 256,
+      "sourcePackage": "DespUrban-Materials",
+      "sourceFile": "DespUrban-Materials.utx"
+    },
+    "despurban-materials.ventd1-2": {
+      "ref": "DespUrban-Materials.ventD1-2",
+      "path": "/image-to-unreal-map/viewer/scene-textures/DespUrban-Materials/ventD1-2-a002b8d82c.png",
+      "width": 256,
+      "height": 128,
+      "sourcePackage": "DespUrban-Materials",
+      "sourceFile": "DespUrban-Materials.utx"
+    },
+    "despurban-materials.lightd1-1": {
+      "ref": "DespUrban-Materials.lightD1-1",
+      "path": "/image-to-unreal-map/viewer/scene-textures/DespUrban-Materials/lightD1-1-126f692448.png",
+      "width": 256,
+      "height": 128,
+      "sourcePackage": "DespUrban-Materials",
+      "sourceFile": "DespUrban-Materials.utx"
+    },
+    "despurban-materials.floord1-6": {
+      "ref": "DespUrban-Materials.FloorD1-6",
+      "path": "/image-to-unreal-map/viewer/scene-textures/DespUrban-Materials/FloorD1-6-25bcdebcb2.png",
+      "width": 512,
+      "height": 512,
+      "sourcePackage": "DespUrban-Materials",
+      "sourceFile": "DespUrban-Materials.utx"
+    },
+    "despurban-materials.glassd1-1": {
+      "ref": "DespUrban-Materials.glassD1-1",
+      "path": "/image-to-unreal-map/viewer/scene-textures/DespUrban-Materials/glassD1-1-c491b6ac5f.png",
+      "width": 512,
+      "height": 512,
+      "sourcePackage": "DespUrban-Materials",
+      "sourceFile": "DespUrban-Materials.utx"
+    },
+    "despurban-materials.walld1-5": {
+      "ref": "DespUrban-Materials.WallD1-5",
+      "path": "/image-to-unreal-map/viewer/scene-textures/DespUrban-Materials/WallD1-5-b687c7b72a.png",
+      "width": 256,
+      "height": 256,
+      "sourcePackage": "DespUrban-Materials",
+      "sourceFile": "DespUrban-Materials.utx"
+    },
+    "despurban-materials.worksdespd1-1": {
+      "ref": "DespUrban-Materials.worksdespd1-1",
+      "path": "/image-to-unreal-map/viewer/scene-textures/DespUrban-Materials/worksdespd1-1-b829040bc1.png",
+      "width": 512,
+      "height": 512,
+      "sourcePackage": "DespUrban-Materials",
+      "sourceFile": "DespUrban-Materials.utx"
+    },
+    "despurban-materials.doord1-3": {
+      "ref": "DespUrban-Materials.DoorD1-3",
+      "path": "/image-to-unreal-map/viewer/scene-textures/DespUrban-Materials/DoorD1-3-aea50ac794.png",
+      "width": 512,
+      "height": 512,
+      "sourcePackage": "DespUrban-Materials",
+      "sourceFile": "DespUrban-Materials.utx"
+    },
+    "despurban-materials.walld1-7": {
+      "ref": "DespUrban-Materials.WallD1-7",
+      "path": "/image-to-unreal-map/viewer/scene-textures/DespUrban-Materials/WallD1-7-3e941f66ab.png",
+      "width": 512,
+      "height": 512,
+      "sourcePackage": "DespUrban-Materials",
+      "sourceFile": "DespUrban-Materials.utx"
+    },
+    "despurban-materials.doord1-2": {
+      "ref": "DespUrban-Materials.DoorD1-2",
+      "path": "/image-to-unreal-map/viewer/scene-textures/DespUrban-Materials/DoorD1-2-3ec84e7771.png",
+      "width": 512,
+      "height": 512,
+      "sourcePackage": "DespUrban-Materials",
+      "sourceFile": "DespUrban-Materials.utx"
+    },
+    "despurban-materials.walld1-9": {
+      "ref": "DespUrban-Materials.WallD1-9",
+      "path": "/image-to-unreal-map/viewer/scene-textures/DespUrban-Materials/WallD1-9-d0d1eeb36c.png",
+      "width": 512,
+      "height": 512,
+      "sourcePackage": "DespUrban-Materials",
+      "sourceFile": "DespUrban-Materials.utx"
+    },
+    "despurban-materials.doord1-4": {
+      "ref": "DespUrban-Materials.DoorD1-4",
+      "path": "/image-to-unreal-map/viewer/scene-textures/DespUrban-Materials/DoorD1-4-b66799e458.png",
+      "width": 128,
+      "height": 256,
+      "sourcePackage": "DespUrban-Materials",
+      "sourceFile": "DespUrban-Materials.utx"
+    },
+    "despurban-materials.labworksdespcc1-1": {
+      "ref": "DespUrban-Materials.labworksdespcc1-1",
+      "path": "/image-to-unreal-map/viewer/scene-textures/DespUrban-Materials/labworksdespcc1-1-c3c6a3f89f.png",
+      "width": 256,
+      "height": 256,
+      "sourcePackage": "DespUrban-Materials",
+      "sourceFile": "DespUrban-Materials.utx"
+    },
+    "despurban-materials.floord1-1": {
+      "ref": "DespUrban-Materials.FloorD1-1",
+      "path": "/image-to-unreal-map/viewer/scene-textures/DespUrban-Materials/FloorD1-1-3228b4884f.png",
+      "width": 512,
+      "height": 512,
+      "sourcePackage": "DespUrban-Materials",
+      "sourceFile": "DespUrban-Materials.utx"
+    },
+    "despurban-materials.floord1-4": {
+      "ref": "DespUrban-Materials.FloorD1-4",
+      "path": "/image-to-unreal-map/viewer/scene-textures/DespUrban-Materials/FloorD1-4-3f02e92245.png",
+      "width": 512,
+      "height": 512,
+      "sourcePackage": "DespUrban-Materials",
+      "sourceFile": "DespUrban-Materials.utx"
+    },
+    "despurban-materials.worksdespl1-2": {
+      "ref": "DespUrban-Materials.worksdespl1-2",
+      "path": "/image-to-unreal-map/viewer/scene-textures/DespUrban-Materials/worksdespl1-2-07cbdf12f5.png",
+      "width": 512,
+      "height": 256,
+      "sourcePackage": "DespUrban-Materials",
+      "sourceFile": "DespUrban-Materials.utx"
+    },
+    "despurban-materials.ventd1-1": {
+      "ref": "DespUrban-Materials.ventD1-1",
+      "path": "/image-to-unreal-map/viewer/scene-textures/DespUrban-Materials/ventD1-1-0f8b18c415.png",
+      "width": 256,
+      "height": 128,
+      "sourcePackage": "DespUrban-Materials",
+      "sourceFile": "DespUrban-Materials.utx"
+    },
+    "despurban-materials.lh-farw1-1": {
+      "ref": "DespUrban-Materials.LH-farW1-1",
+      "path": "/image-to-unreal-map/viewer/scene-textures/DespUrban-Materials/LH-farW1-1-7a7f62c986.png",
+      "width": 256,
+      "height": 256,
+      "sourcePackage": "DespUrban-Materials",
+      "sourceFile": "DespUrban-Materials.utx"
+    },
+    "despurban-materials.lh-farw1-4": {
+      "ref": "DespUrban-Materials.LH-farW1-4",
+      "path": "/image-to-unreal-map/viewer/scene-textures/DespUrban-Materials/LH-farW1-4-7f8ba7b6d0.png",
+      "width": 512,
+      "height": 512,
+      "sourcePackage": "DespUrban-Materials",
+      "sourceFile": "DespUrban-Materials.utx"
+    },
+    "despurban-materials.walld1-4": {
+      "ref": "DespUrban-Materials.WallD1-4",
+      "path": "/image-to-unreal-map/viewer/scene-textures/DespUrban-Materials/WallD1-4-46021ab700.png",
+      "width": 256,
+      "height": 256,
+      "sourcePackage": "DespUrban-Materials",
+      "sourceFile": "DespUrban-Materials.utx"
+    },
+    "despurban-materials.keycomp1-1": {
+      "ref": "DespUrban-Materials.keycomp1-1",
+      "path": "/image-to-unreal-map/viewer/scene-textures/DespUrban-Materials/keycomp1-1-ae00f471d6.png",
+      "width": 256,
+      "height": 128,
+      "sourcePackage": "DespUrban-Materials",
+      "sourceFile": "DespUrban-Materials.utx"
+    },
+    "despurban-materials.tiled1-2": {
+      "ref": "DespUrban-Materials.tiled1-2",
+      "path": "/image-to-unreal-map/viewer/scene-textures/DespUrban-Materials/tiled1-2-313e436b34.png",
+      "width": 512,
+      "height": 512,
+      "sourcePackage": "DespUrban-Materials",
+      "sourceFile": "DespUrban-Materials.utx"
+    },
+    "despurban-materials.worksdespl1-1": {
+      "ref": "DespUrban-Materials.worksdespl1-1",
+      "path": "/image-to-unreal-map/viewer/scene-textures/DespUrban-Materials/worksdespl1-1-1846f721ca.png",
+      "width": 512,
+      "height": 512,
+      "sourcePackage": "DespUrban-Materials",
+      "sourceFile": "DespUrban-Materials.utx"
+    },
+    "engine.s_pickup": {
+      "ref": "Engine.S_Pickup",
+      "path": "/image-to-unreal-map/viewer/scene-textures/Engine/S_Pickup-e58aa2bd74.png",
+      "width": 32,
+      "height": 32,
+      "sourcePackage": "Engine",
+      "sourceFile": "Engine.u"
+    },
+    "genfluid.sky.skytsta": {
+      "ref": "genfluid.sky.SkytstA",
+      "path": "/image-to-unreal-map/viewer/scene-textures/genfluid/SkytstA-5dfc3fdfda.png",
+      "width": 256,
+      "height": 256,
+      "sourcePackage": "genfluid",
+      "sourceFile": "GenFluid.utx"
+    },
+    "genfluid.sky.psky1c": {
+      "ref": "genfluid.sky.pSky1c",
+      "path": "/image-to-unreal-map/viewer/scene-textures/genfluid/pSky1c-b12c4b9e96.png",
+      "width": 256,
+      "height": 256,
+      "sourcePackage": "genfluid",
+      "sourceFile": "GenFluid.utx"
+    },
+    "genfluid.sky.skytst10": {
+      "ref": "genfluid.sky.Skytst10",
+      "path": "/image-to-unreal-map/viewer/scene-textures/genfluid/Skytst10-e11d306681.png",
+      "width": 256,
+      "height": 256,
+      "sourcePackage": "genfluid",
+      "sourceFile": "GenFluid.utx"
+    },
+    "genfluid_ut.sky.skytsta2": {
+      "ref": "GenFluid_UT.sky.SkytstA2",
+      "path": "/image-to-unreal-map/viewer/scene-textures/GenFluid_UT/SkytstA2-66f570be8b.png",
+      "width": 256,
+      "height": 256,
+      "sourcePackage": "GenFluid_UT",
+      "sourceFile": "GenFluid_UT.utx"
+    },
+    "genin.glass.glass2": {
+      "ref": "GenIn.Glass.Glass2",
+      "path": "/image-to-unreal-map/viewer/scene-textures/GenIn/Glass2-4482e11d69.png",
+      "width": 128,
+      "height": 128,
+      "sourcePackage": "GenIn",
+      "sourceFile": "GenIn.utx"
+    },
+    "genin.glass.glassf": {
+      "ref": "GenIn.Glass.Glassf",
+      "path": "/image-to-unreal-map/viewer/scene-textures/GenIn/Glassf-a09b033012.png",
+      "width": 128,
+      "height": 128,
+      "sourcePackage": "GenIn",
+      "sourceFile": "GenIn.utx"
+    },
+    "labdesp.cntrl_pnl_d2": {
+      "ref": "labdesp.CNTRL_PNL_D2",
+      "path": "/image-to-unreal-map/viewer/scene-textures/labdesp/CNTRL_PNL_D2-ceae639308.png",
+      "width": 256,
+      "height": 128,
+      "sourcePackage": "labdesp",
+      "sourceFile": "labdesp.utx"
+    },
+    "labdesp.worksdespf1-4": {
+      "ref": "labdesp.worksdespf1-4",
+      "path": "/image-to-unreal-map/viewer/scene-textures/labdesp/worksdespf1-4-d878ceb54b.png",
+      "width": 256,
+      "height": 256,
+      "sourcePackage": "labdesp",
+      "sourceFile": "labdesp.utx"
+    },
+    "labdesp.worksdespf1-5": {
+      "ref": "labdesp.worksdespf1-5",
+      "path": "/image-to-unreal-map/viewer/scene-textures/labdesp/worksdespf1-5-44791a9456.png",
+      "width": 256,
+      "height": 256,
+      "sourcePackage": "labdesp",
+      "sourceFile": "labdesp.utx"
+    },
+    "labdesp.javamachd-2": {
+      "ref": "labdesp.javamachd-2",
+      "path": "/image-to-unreal-map/viewer/scene-textures/labdesp/javamachd-2-736eb95833.png",
+      "width": 128,
+      "height": 256,
+      "sourcePackage": "labdesp",
+      "sourceFile": "labdesp.utx"
+    },
+    "labdesp.buttons-sp": {
+      "ref": "labdesp.buttons-sp",
+      "path": "/image-to-unreal-map/viewer/scene-textures/labdesp/buttons-sp-9ce78c9568.png",
+      "width": 256,
+      "height": 128,
+      "sourcePackage": "labdesp",
+      "sourceFile": "labdesp.utx"
+    },
+    "labdesp.worksdespv1-2": {
+      "ref": "labdesp.worksdespv1-2",
+      "path": "/image-to-unreal-map/viewer/scene-textures/labdesp/worksdespv1-2-f19003ef4c.png",
+      "width": 256,
+      "height": 256,
+      "sourcePackage": "labdesp",
+      "sourceFile": "labdesp.utx"
+    },
+    "labdesp.worksdespw1-8": {
+      "ref": "labdesp.worksdespw1-8",
+      "path": "/image-to-unreal-map/viewer/scene-textures/labdesp/worksdespw1-8-7fceca5a50.png",
+      "width": 512,
+      "height": 512,
+      "sourcePackage": "labdesp",
+      "sourceFile": "labdesp.utx"
+    },
+    "labdesp.buttons": {
+      "ref": "labdesp.Buttons",
+      "path": "/image-to-unreal-map/viewer/scene-textures/labdesp/Buttons-9e66582f4d.png",
+      "width": 256,
+      "height": 128,
+      "sourcePackage": "labdesp",
+      "sourceFile": "labdesp.utx"
+    },
+    "labdesp.worksdespw1-3": {
+      "ref": "labdesp.worksdespw1-3",
+      "path": "/image-to-unreal-map/viewer/scene-textures/labdesp/worksdespw1-3-b5d918a28e.png",
+      "width": 256,
+      "height": 256,
+      "sourcePackage": "labdesp",
+      "sourceFile": "labdesp.utx"
+    },
+    "labdesp.javamachd-1": {
+      "ref": "labdesp.javamachd-1",
+      "path": "/image-to-unreal-map/viewer/scene-textures/labdesp/javamachd-1-a498001885.png",
+      "width": 256,
+      "height": 256,
+      "sourcePackage": "labdesp",
+      "sourceFile": "labdesp.utx"
+    },
+    "labdesp.treatmachd-1": {
+      "ref": "labdesp.treatmachd-1",
+      "path": "/image-to-unreal-map/viewer/scene-textures/labdesp/treatmachd-1-1c273c8639.png",
+      "width": 128,
+      "height": 256,
+      "sourcePackage": "labdesp",
+      "sourceFile": "labdesp.utx"
+    },
+    "labdesp.cntrl_pnl_d1": {
+      "ref": "labdesp.CNTRL_PNL_D1",
+      "path": "/image-to-unreal-map/viewer/scene-textures/labdesp/CNTRL_PNL_D1-594c380af6.png",
+      "width": 128,
+      "height": 128,
+      "sourcePackage": "labdesp",
+      "sourceFile": "labdesp.utx"
+    },
+    "labdesp.worksdespw1-6": {
+      "ref": "labdesp.worksdespw1-6",
+      "path": "/image-to-unreal-map/viewer/scene-textures/labdesp/worksdespw1-6-7cf307a4b6.png",
+      "width": 512,
+      "height": 512,
+      "sourcePackage": "labdesp",
+      "sourceFile": "labdesp.utx"
+    },
+    "mine.base.mcmetl": {
+      "ref": "Mine.Base.MCMETL",
+      "path": "/image-to-unreal-map/viewer/scene-textures/Mine/MCMETL-2783559fa6.png",
+      "width": 256,
+      "height": 256,
+      "sourcePackage": "Mine",
+      "sourceFile": "Mine.utx"
+    },
+    "mine.light.mlight3": {
+      "ref": "Mine.Light.mLight3",
+      "path": "/image-to-unreal-map/viewer/scene-textures/Mine/mLight3-663eef1cf2.png",
+      "width": 64,
+      "height": 64,
+      "sourcePackage": "Mine",
+      "sourceFile": "Mine.utx"
+    },
+    "mine.floor.mfloorz": {
+      "ref": "Mine.Floor.Mfloorz",
+      "path": "/image-to-unreal-map/viewer/scene-textures/Mine/Mfloorz-e6c942ce9f.png",
+      "width": 128,
+      "height": 128,
+      "sourcePackage": "Mine",
+      "sourceFile": "Mine.utx"
+    },
+    "mine.light.mlight2": {
+      "ref": "Mine.Light.mLight2",
+      "path": "/image-to-unreal-map/viewer/scene-textures/Mine/mLight2-2dd2f3244d.png",
+      "width": 128,
+      "height": 32,
+      "sourcePackage": "Mine",
+      "sourceFile": "Mine.utx"
+    },
+    "mine.light.mmlight3": {
+      "ref": "Mine.Light.mmlight3",
+      "path": "/image-to-unreal-map/viewer/scene-textures/Mine/mmlight3-9466755020.png",
+      "width": 64,
+      "height": 64,
+      "sourcePackage": "Mine",
+      "sourceFile": "Mine.utx"
+    },
+    "mine.pillar.girderm3": {
+      "ref": "Mine.Pillar.Girderm3",
+      "path": "/image-to-unreal-map/viewer/scene-textures/Mine/Girderm3-6cf0a0aef5.png",
+      "width": 32,
+      "height": 128,
+      "sourcePackage": "Mine",
+      "sourceFile": "Mine.utx"
+    },
+    "neuro4.var.n1ciel9": {
+      "ref": "Neuro4.Var.n1ciel9",
+      "path": "/image-to-unreal-map/viewer/scene-textures/Neuro4/n1ciel9-629de84a05.png",
+      "width": 64,
+      "height": 64,
+      "sourcePackage": "Neuro4",
+      "sourceFile": "Neuro4.utx"
+    },
+    "neuro4.floor.n1bois1": {
+      "ref": "Neuro4.Floor.n1bois1",
+      "path": "/image-to-unreal-map/viewer/scene-textures/Neuro4/n1bois1-aa36ec07b5.png",
+      "width": 128,
+      "height": 128,
+      "sourcePackage": "Neuro4",
+      "sourceFile": "Neuro4.utx"
+    },
+    "neuro4.tech.n1displ1": {
+      "ref": "Neuro4.Tech.n1displ1",
+      "path": "/image-to-unreal-map/viewer/scene-textures/Neuro4/n1displ1-aac3c079d1.png",
+      "width": 128,
+      "height": 128,
+      "sourcePackage": "Neuro4",
+      "sourceFile": "Neuro4.utx"
+    },
+    "neuro4.var.n1tabl3": {
+      "ref": "Neuro4.Var.n1tabl3",
+      "path": "/image-to-unreal-map/viewer/scene-textures/Neuro4/n1tabl3-0362691fce.png",
+      "width": 256,
+      "height": 256,
+      "sourcePackage": "Neuro4",
+      "sourceFile": "Neuro4.utx"
+    },
+    "pl4yrshp.panel.vscr2": {
+      "ref": "Pl4yrShp.Panel.vScr2",
+      "path": "/image-to-unreal-map/viewer/scene-textures/Pl4yrShp/vScr2-b69f011fe3.png",
+      "width": 256,
+      "height": 256,
+      "sourcePackage": "Pl4yrShp",
+      "sourceFile": "Pl4yrShp.utx"
+    },
+    "pl4yrshp.panel.vwarn1": {
+      "ref": "Pl4yrShp.Panel.Vwarn1",
+      "path": "/image-to-unreal-map/viewer/scene-textures/Pl4yrShp/Vwarn1-cadaf23762.png",
+      "width": 128,
+      "height": 64,
+      "sourcePackage": "Pl4yrShp",
+      "sourceFile": "Pl4yrShp.utx"
+    },
+    "pl4yrshp.light.lights9a": {
+      "ref": "Pl4yrShp.Light.lights9a",
+      "path": "/image-to-unreal-map/viewer/scene-textures/Pl4yrShp/lights9a-90a276eb27.png",
+      "width": 32,
+      "height": 32,
+      "sourcePackage": "Pl4yrShp",
+      "sourceFile": "Pl4yrShp.utx"
+    },
+    "richchurch.trim.churchtrimnew1": {
+      "ref": "richchurch.Trim.churchtrimnew1",
+      "path": "/image-to-unreal-map/viewer/scene-textures/richchurch/churchtrimnew1-e0ae297d23.png",
+      "width": 256,
+      "height": 32,
+      "sourcePackage": "richchurch",
+      "sourceFile": "richchurch.utx"
+    },
+    "richchurch.base.woodenplanks": {
+      "ref": "richchurch.Base.woodenplanks",
+      "path": "/image-to-unreal-map/viewer/scene-textures/richchurch/woodenplanks-cc48a64bf0.png",
+      "width": 256,
+      "height": 256,
+      "sourcePackage": "richchurch",
+      "sourceFile": "richchurch.utx"
+    },
+    "richrig.mask.mask2old": {
+      "ref": "richrig.Mask.mask2old",
+      "path": "/image-to-unreal-map/viewer/scene-textures/richrig/mask2old-b54c86f5f8.png",
+      "width": 256,
+      "height": 256,
+      "sourcePackage": "richrig",
+      "sourceFile": "richrig.utx"
+    },
+    "richrig.floor.rustyhash2": {
+      "ref": "richrig.Floor.rustyhash2",
+      "path": "/image-to-unreal-map/viewer/scene-textures/richrig/rustyhash2-9710f031cb.png",
+      "width": 256,
+      "height": 256,
+      "sourcePackage": "richrig",
+      "sourceFile": "richrig.utx"
+    },
+    "richrig.floor.rigtechfloor1": {
+      "ref": "richrig.Floor.rigtechfloor1",
+      "path": "/image-to-unreal-map/viewer/scene-textures/richrig/rigtechfloor1-1d4709a73d.png",
+      "width": 128,
+      "height": 128,
+      "sourcePackage": "richrig",
+      "sourceFile": "richrig.utx"
+    },
+    "richrig.mask.laddermask": {
+      "ref": "richrig.Mask.laddermask",
+      "path": "/image-to-unreal-map/viewer/scene-textures/richrig/laddermask-9fd82d2720.png",
+      "width": 64,
+      "height": 64,
+      "sourcePackage": "richrig",
+      "sourceFile": "richrig.utx"
+    },
+    "richrig.mask.fence1": {
+      "ref": "richrig.Mask.fence1",
+      "path": "/image-to-unreal-map/viewer/scene-textures/richrig/fence1-a90e8d46e8.png",
+      "width": 128,
+      "height": 64,
+      "sourcePackage": "richrig",
+      "sourceFile": "richrig.utx"
+    },
+    "richrig.trim.i-beamrust": {
+      "ref": "richrig.Trim.i-beamrust",
+      "path": "/image-to-unreal-map/viewer/scene-textures/richrig/i-beamrust-a76b8aa1dd.png",
+      "width": 256,
+      "height": 64,
+      "sourcePackage": "richrig",
+      "sourceFile": "richrig.utx"
+    },
+    "richrig.base.rigwood": {
+      "ref": "richrig.Base.rigwood",
+      "path": "/image-to-unreal-map/viewer/scene-textures/richrig/rigwood-5f1b7adcff.png",
+      "width": 128,
+      "height": 128,
+      "sourcePackage": "richrig",
+      "sourceFile": "richrig.utx"
+    },
+    "richrig.base.basenarl": {
+      "ref": "richrig.Base.basenarl",
+      "path": "/image-to-unreal-map/viewer/scene-textures/richrig/basenarl-278f7229b8.png",
+      "width": 64,
+      "height": 64,
+      "sourcePackage": "richrig",
+      "sourceFile": "richrig.utx"
+    },
+    "richrig.trim.breaker1": {
+      "ref": "richrig.Trim.breaker1",
+      "path": "/image-to-unreal-map/viewer/scene-textures/richrig/breaker1-8f4cb1db5a.png",
+      "width": 128,
+      "height": 64,
+      "sourcePackage": "richrig",
+      "sourceFile": "richrig.utx"
+    },
+    "richrig.floor.floor3_fix2": {
+      "ref": "richrig.Floor.floor3_fix2",
+      "path": "/image-to-unreal-map/viewer/scene-textures/richrig/floor3_fix2-cb27e8bd65.png",
+      "width": 128,
+      "height": 128,
+      "sourcePackage": "richrig",
+      "sourceFile": "richrig.utx"
+    },
+    "richrig.trim.pipetrim1": {
+      "ref": "richrig.Trim.pipetrim1",
+      "path": "/image-to-unreal-map/viewer/scene-textures/richrig/pipetrim1-737ad31ccc.png",
+      "width": 256,
+      "height": 32,
+      "sourcePackage": "richrig",
+      "sourceFile": "richrig.utx"
+    },
+    "richrig.trim.i-beam": {
+      "ref": "richrig.Trim.i-beam",
+      "path": "/image-to-unreal-map/viewer/scene-textures/richrig/i-beam-265cf9f309.png",
+      "width": 256,
+      "height": 32,
+      "sourcePackage": "richrig",
+      "sourceFile": "richrig.utx"
+    },
+    "richrig.crane.inoxxcrane3": {
+      "ref": "richrig.crane.Inoxxcrane3",
+      "path": "/image-to-unreal-map/viewer/scene-textures/richrig/Inoxxcrane3-38d3dd3573.png",
+      "width": 128,
+      "height": 128,
+      "sourcePackage": "richrig",
+      "sourceFile": "richrig.utx"
+    },
+    "richrig.crane.inoxxcrane2": {
+      "ref": "richrig.crane.Inoxxcrane2",
+      "path": "/image-to-unreal-map/viewer/scene-textures/richrig/Inoxxcrane2-47cda0c480.png",
+      "width": 128,
+      "height": 64,
+      "sourcePackage": "richrig",
+      "sourceFile": "richrig.utx"
+    },
+    "richrig.trim.rigduct": {
+      "ref": "richrig.Trim.rigduct",
+      "path": "/image-to-unreal-map/viewer/scene-textures/richrig/rigduct-dd484da547.png",
+      "width": 64,
+      "height": 64,
+      "sourcePackage": "richrig",
+      "sourceFile": "richrig.utx"
+    },
+    "richtrain.carpet18": {
+      "ref": "RichTrain.carpet18",
+      "path": "/image-to-unreal-map/viewer/scene-textures/RichTrain/carpet18-087f92b0c2.png",
+      "width": 256,
+      "height": 128,
+      "sourcePackage": "RichTrain",
+      "sourceFile": "RichTrain.utx"
+    },
+    "richtrain.trainwheelbit": {
+      "ref": "RichTrain.trainwheelbit",
+      "path": "/image-to-unreal-map/viewer/scene-textures/RichTrain/trainwheelbit-53443e333c.png",
+      "width": 64,
+      "height": 32,
+      "sourcePackage": "RichTrain",
+      "sourceFile": "RichTrain.utx"
+    },
+    "rklphoto1.walls.rpbrick02": {
+      "ref": "RKLphoto1.Walls.rpBrick02",
+      "path": "/image-to-unreal-map/viewer/scene-textures/RKLphoto1/rpBrick02-c102428044.png",
+      "width": 256,
+      "height": 256,
+      "sourcePackage": "RKLphoto1",
+      "sourceFile": "RKLphoto1.utx"
+    },
+    "rklphoto1.nonwall.rpfencemtl1": {
+      "ref": "RKLphoto1.NonWall.rpFenceMtl1",
+      "path": "/image-to-unreal-map/viewer/scene-textures/RKLphoto1/rpFenceMtl1-ac2e2db81b.png",
+      "width": 256,
+      "height": 256,
+      "sourcePackage": "RKLphoto1",
+      "sourceFile": "RKLphoto1.utx"
+    },
+    "rklphoto1.objects.rpcratec2": {
+      "ref": "RKLphoto1.Objects.rpCrateC2",
+      "path": "/image-to-unreal-map/viewer/scene-textures/RKLphoto1/rpCrateC2-5e7a78d2a0.png",
+      "width": 256,
+      "height": 256,
+      "sourcePackage": "RKLphoto1",
+      "sourceFile": "RKLphoto1.utx"
+    },
+    "rklphoto1.objects.rpcrated3": {
+      "ref": "RKLphoto1.Objects.rpCrateD3",
+      "path": "/image-to-unreal-map/viewer/scene-textures/RKLphoto1/rpCrateD3-beb5b6e1d1.png",
+      "width": 256,
+      "height": 256,
+      "sourcePackage": "RKLphoto1",
+      "sourceFile": "RKLphoto1.utx"
+    },
+    "rklphoto1.objects.rpcrated2": {
+      "ref": "RKLphoto1.Objects.rpCrateD2",
+      "path": "/image-to-unreal-map/viewer/scene-textures/RKLphoto1/rpCrateD2-2f87164863.png",
+      "width": 256,
+      "height": 256,
+      "sourcePackage": "RKLphoto1",
+      "sourceFile": "RKLphoto1.utx"
+    },
+    "rklphoto1.objects.rpcrated1": {
+      "ref": "RKLphoto1.Objects.rpCrateD1",
+      "path": "/image-to-unreal-map/viewer/scene-textures/RKLphoto1/rpCrateD1-ba33133dcb.png",
+      "width": 256,
+      "height": 256,
+      "sourcePackage": "RKLphoto1",
+      "sourceFile": "RKLphoto1.utx"
+    },
+    "shaneday.dayskyb": {
+      "ref": "ShaneDay.DayskyB",
+      "path": "/image-to-unreal-map/viewer/scene-textures/ShaneDay/DayskyB-f83a4fba13.png",
+      "width": 64,
+      "height": 64,
+      "sourcePackage": "ShaneDay",
+      "sourceFile": "ShaneDay.utx"
+    },
+    "shaneday.dpan3": {
+      "ref": "ShaneDay.DPAN3",
+      "path": "/image-to-unreal-map/viewer/scene-textures/ShaneDay/DPAN3-77c0a650ed.png",
+      "width": 256,
+      "height": 128,
+      "sourcePackage": "ShaneDay",
+      "sourceFile": "ShaneDay.utx"
+    },
+    "shaneday.dpan1": {
+      "ref": "ShaneDay.DPAN1",
+      "path": "/image-to-unreal-map/viewer/scene-textures/ShaneDay/DPAN1-66f4f51840.png",
+      "width": 256,
+      "height": 128,
+      "sourcePackage": "ShaneDay",
+      "sourceFile": "ShaneDay.utx"
+    },
+    "shaneday.dpan4": {
+      "ref": "ShaneDay.DPAN4",
+      "path": "/image-to-unreal-map/viewer/scene-textures/ShaneDay/DPAN4-429a92029f.png",
+      "width": 256,
+      "height": 128,
+      "sourcePackage": "ShaneDay",
+      "sourceFile": "ShaneDay.utx"
+    },
+    "shaneday.dpan2": {
+      "ref": "ShaneDay.DPAN2",
+      "path": "/image-to-unreal-map/viewer/scene-textures/ShaneDay/DPAN2-e6aac4108e.png",
+      "width": 256,
+      "height": 128,
+      "sourcePackage": "ShaneDay",
+      "sourceFile": "ShaneDay.utx"
+    },
+    "skybox.grd": {
+      "ref": "Skybox.grd",
+      "path": "/image-to-unreal-map/viewer/scene-textures/Skybox/grd-3d2fa6e8f4.png",
+      "width": 256,
+      "height": 256,
+      "sourcePackage": "Skybox",
+      "sourceFile": "Skybox.utx"
+    },
+    "skybox.skytstax": {
+      "ref": "Skybox.SkytstAX",
+      "path": "/image-to-unreal-map/viewer/scene-textures/Skybox/SkytstAX-5c4950ada7.png",
+      "width": 256,
+      "height": 256,
+      "sourcePackage": "Skybox",
+      "sourceFile": "Skybox.utx"
+    },
+    "spynet-pack.ammocount.ground": {
+      "ref": "Spynet-pack.Ammocount.ground",
+      "path": "/image-to-unreal-map/viewer/scene-textures/Spynet-pack/ground-a108c6585e.png",
+      "width": 256,
+      "height": 256,
+      "sourcePackage": "Spynet-pack",
+      "sourceFile": "Spynet-pack.utx"
+    },
+    "spynet-pack.ammocount.bluewall3": {
+      "ref": "Spynet-pack.Ammocount.bluewall3",
+      "path": "/image-to-unreal-map/viewer/scene-textures/Spynet-pack/bluewall3-c1c2f8b633.png",
+      "width": 256,
+      "height": 256,
+      "sourcePackage": "Spynet-pack",
+      "sourceFile": "Spynet-pack.utx"
+    },
+    "spynet-pack.ammocount.rtbricb_dk_contrast": {
+      "ref": "Spynet-pack.Ammocount.rtbricb_dk_contrast",
+      "path": "/image-to-unreal-map/viewer/scene-textures/Spynet-pack/rtbricb_dk_contrast-e147dc344e.png",
+      "width": 256,
+      "height": 256,
+      "sourcePackage": "Spynet-pack",
+      "sourceFile": "Spynet-pack.utx"
+    },
+    "spynet-pack.ammocount.xxx": {
+      "ref": "Spynet-pack.Ammocount.xxx",
+      "path": "/image-to-unreal-map/viewer/scene-textures/Spynet-pack/xxx-7dd450164e.png",
+      "width": 256,
+      "height": 256,
+      "sourcePackage": "Spynet-pack",
+      "sourceFile": "Spynet-pack.utx"
+    },
+    "spynet-pack.ammocount.wood3": {
+      "ref": "Spynet-pack.Ammocount.wood3",
+      "path": "/image-to-unreal-map/viewer/scene-textures/Spynet-pack/wood3-45aa7840a0.png",
+      "width": 256,
+      "height": 256,
+      "sourcePackage": "Spynet-pack",
+      "sourceFile": "Spynet-pack.utx"
+    },
+    "spynet-pack.ammocount.wood2": {
+      "ref": "Spynet-pack.Ammocount.wood2",
+      "path": "/image-to-unreal-map/viewer/scene-textures/Spynet-pack/wood2-26e33afd7e.png",
+      "width": 256,
+      "height": 256,
+      "sourcePackage": "Spynet-pack",
+      "sourceFile": "Spynet-pack.utx"
+    },
+    "spynet-pack.ammocount.whitlight": {
+      "ref": "Spynet-pack.Ammocount.whitlight",
+      "path": "/image-to-unreal-map/viewer/scene-textures/Spynet-pack/whitlight-4993b462cd.png",
+      "width": 64,
+      "height": 128,
+      "sourcePackage": "Spynet-pack",
+      "sourceFile": "Spynet-pack.utx"
+    },
+    "spynet-pack.ammocount.rolluik": {
+      "ref": "Spynet-pack.Ammocount.rolluik",
+      "path": "/image-to-unreal-map/viewer/scene-textures/Spynet-pack/rolluik-622b702182.png",
+      "width": 256,
+      "height": 256,
+      "sourcePackage": "Spynet-pack",
+      "sourceFile": "Spynet-pack.utx"
+    },
+    "starship.mask.sh_grd3": {
+      "ref": "Starship.Mask.sh_grd3",
+      "path": "/image-to-unreal-map/viewer/scene-textures/Starship/sh_grd3-67f37a7df3.png",
+      "width": 128,
+      "height": 128,
+      "sourcePackage": "Starship",
+      "sourceFile": "Starship.utx"
+    },
+    "taconeysigns.coneysign14": {
+      "ref": "TAconeysigns.coneysign14",
+      "path": "/image-to-unreal-map/viewer/scene-textures/TAconeysigns/coneysign14-58d9121c56.png",
+      "width": 128,
+      "height": 64,
+      "sourcePackage": "TAconeysigns",
+      "sourceFile": "TAconeysigns.utx"
+    },
+    "taconeytex.coneymsk12": {
+      "ref": "TAconeytex.coneymsk12",
+      "path": "/image-to-unreal-map/viewer/scene-textures/TAconeytex/coneymsk12-897dc0599e.png",
+      "width": 256,
+      "height": 256,
+      "sourcePackage": "TAconeytex",
+      "sourceFile": "TAconeytex.utx"
+    },
+    "taconeytex.coneywall17": {
+      "ref": "TAconeytex.coneywall17",
+      "path": "/image-to-unreal-map/viewer/scene-textures/TAconeytex/coneywall17-1c2178dc04.png",
+      "width": 256,
+      "height": 256,
+      "sourcePackage": "TAconeytex",
+      "sourceFile": "TAconeytex.utx"
+    },
+    "taconeytex.coneymsk14": {
+      "ref": "TAconeytex.coneymsk14",
+      "path": "/image-to-unreal-map/viewer/scene-textures/TAconeytex/coneymsk14-b4ed61d4cf.png",
+      "width": 128,
+      "height": 128,
+      "sourcePackage": "TAconeytex",
+      "sourceFile": "TAconeytex.utx"
+    },
+    "terrorist3tex.acidbrick": {
+      "ref": "terrorist3tex.acidbrick",
+      "path": "/image-to-unreal-map/viewer/scene-textures/terrorist3tex/acidbrick-8e5ba958e6.png",
+      "width": 128,
+      "height": 128,
+      "sourcePackage": "terrorist3tex",
+      "sourceFile": "Terrorist3tex.utx"
+    },
+    "terrorist3tex.floor.floorterr44": {
+      "ref": "terrorist3tex.Floor.floorterr44",
+      "path": "/image-to-unreal-map/viewer/scene-textures/terrorist3tex/floorterr44-8d2047975c.png",
+      "width": 128,
+      "height": 256,
+      "sourcePackage": "terrorist3tex",
+      "sourceFile": "Terrorist3tex.utx"
+    },
+    "terrorist3tex.wire": {
+      "ref": "terrorist3tex.Wire",
+      "path": "/image-to-unreal-map/viewer/scene-textures/terrorist3tex/Wire-47a04cdbe6.png",
+      "width": 128,
+      "height": 64,
+      "sourcePackage": "terrorist3tex",
+      "sourceFile": "Terrorist3tex.utx"
+    },
+    "to-anditrooper.walls.andirezwall4": {
+      "ref": "TO-AndiTrooper.Walls.andirezwall4",
+      "path": "/image-to-unreal-map/viewer/scene-textures/TO-AndiTrooper/andirezwall4-70ea541db2.png",
+      "width": 256,
+      "height": 256,
+      "sourcePackage": "TO-AndiTrooper",
+      "sourceFile": "TO-AndiTrooper.utx"
+    },
+    "to-anditrooper.walls.andirezwall1": {
+      "ref": "TO-AndiTrooper.Walls.andirezwall1",
+      "path": "/image-to-unreal-map/viewer/scene-textures/TO-AndiTrooper/andirezwall1-cad89df9e4.png",
+      "width": 256,
+      "height": 256,
+      "sourcePackage": "TO-AndiTrooper",
+      "sourceFile": "TO-AndiTrooper.utx"
+    },
+    "to-anditrooper.walls.andirezsand-1": {
+      "ref": "TO-AndiTrooper.Walls.andirezsand-1",
+      "path": "/image-to-unreal-map/viewer/scene-textures/TO-AndiTrooper/andirezsand-1-648739c33e.png",
+      "width": 256,
+      "height": 256,
+      "sourcePackage": "TO-AndiTrooper",
+      "sourceFile": "TO-AndiTrooper.utx"
+    },
+    "to-anditrooper.walls.andirezfloordirt": {
+      "ref": "TO-AndiTrooper.Walls.andirezfloordirt",
+      "path": "/image-to-unreal-map/viewer/scene-textures/TO-AndiTrooper/andirezfloordirt-48beb0a6a4.png",
+      "width": 256,
+      "height": 256,
+      "sourcePackage": "TO-AndiTrooper",
+      "sourceFile": "TO-AndiTrooper.utx"
+    },
+    "to-anditrooper.walls.andirezsandstone1": {
+      "ref": "TO-AndiTrooper.Walls.andirezsandstone1",
+      "path": "/image-to-unreal-map/viewer/scene-textures/TO-AndiTrooper/andirezsandstone1-09e2862f59.png",
+      "width": 256,
+      "height": 256,
+      "sourcePackage": "TO-AndiTrooper",
+      "sourceFile": "TO-AndiTrooper.utx"
+    },
+    "to-anditrooper.walls.andirezwall2": {
+      "ref": "TO-AndiTrooper.Walls.andirezwall2",
+      "path": "/image-to-unreal-map/viewer/scene-textures/TO-AndiTrooper/andirezwall2-2ce049d0a8.png",
+      "width": 256,
+      "height": 256,
+      "sourcePackage": "TO-AndiTrooper",
+      "sourceFile": "TO-AndiTrooper.utx"
+    },
+    "to-anditrooper.walls.andirezfloor1": {
+      "ref": "TO-AndiTrooper.Walls.andirezfloor1",
+      "path": "/image-to-unreal-map/viewer/scene-textures/TO-AndiTrooper/andirezfloor1-6d93c5e10d.png",
+      "width": 256,
+      "height": 256,
+      "sourcePackage": "TO-AndiTrooper",
+      "sourceFile": "TO-AndiTrooper.utx"
+    },
+    "to-anditrooper.walls.andirezwall8": {
+      "ref": "TO-AndiTrooper.Walls.andirezwall8",
+      "path": "/image-to-unreal-map/viewer/scene-textures/TO-AndiTrooper/andirezwall8-74ddd07893.png",
+      "width": 256,
+      "height": 256,
+      "sourcePackage": "TO-AndiTrooper",
+      "sourceFile": "TO-AndiTrooper.utx"
+    },
+    "to-anditrooper.andirezwall1trim": {
+      "ref": "TO-AndiTrooper.andirezwall1trim",
+      "path": "/image-to-unreal-map/viewer/scene-textures/TO-AndiTrooper/andirezwall1trim-b8697cb8db.png",
+      "width": 256,
+      "height": 256,
+      "sourcePackage": "TO-AndiTrooper",
+      "sourceFile": "TO-AndiTrooper.utx"
+    },
+    "to-anditrooper.walls.andisandbags2": {
+      "ref": "TO-AndiTrooper.Walls.andisandbags2",
+      "path": "/image-to-unreal-map/viewer/scene-textures/TO-AndiTrooper/andisandbags2-5c41ec8df8.png",
+      "width": 256,
+      "height": 128,
+      "sourcePackage": "TO-AndiTrooper",
+      "sourceFile": "TO-AndiTrooper.utx"
+    },
+    "to-anditrooper.walls.andirezfloorsandbreak": {
+      "ref": "TO-AndiTrooper.Walls.andirezfloorsandbreak",
+      "path": "/image-to-unreal-map/viewer/scene-textures/TO-AndiTrooper/andirezfloorsandbreak-0355054282.png",
+      "width": 256,
+      "height": 256,
+      "sourcePackage": "TO-AndiTrooper",
+      "sourceFile": "TO-AndiTrooper.utx"
+    },
+    "to-anditrooper.walls.andirezwall9": {
+      "ref": "TO-AndiTrooper.Walls.andirezwall9",
+      "path": "/image-to-unreal-map/viewer/scene-textures/TO-AndiTrooper/andirezwall9-28b2da2538.png",
+      "width": 256,
+      "height": 256,
+      "sourcePackage": "TO-AndiTrooper",
+      "sourceFile": "TO-AndiTrooper.utx"
+    },
+    "to-anditrooper.walls.andirezwall3": {
+      "ref": "TO-AndiTrooper.Walls.andirezwall3",
+      "path": "/image-to-unreal-map/viewer/scene-textures/TO-AndiTrooper/andirezwall3-daa3669418.png",
+      "width": 256,
+      "height": 256,
+      "sourcePackage": "TO-AndiTrooper",
+      "sourceFile": "TO-AndiTrooper.utx"
+    },
+    "to-anditrooper.walls.andiskynew": {
+      "ref": "TO-AndiTrooper.Walls.andiskynew",
+      "path": "/image-to-unreal-map/viewer/scene-textures/TO-AndiTrooper/andiskynew-70695a0ed4.png",
+      "width": 256,
+      "height": 256,
+      "sourcePackage": "TO-AndiTrooper",
+      "sourceFile": "TO-AndiTrooper.utx"
+    },
+    "to-anditrooper.walls.andirezwall6": {
+      "ref": "TO-AndiTrooper.Walls.andirezwall6",
+      "path": "/image-to-unreal-map/viewer/scene-textures/TO-AndiTrooper/andirezwall6-31f18d53e3.png",
+      "width": 256,
+      "height": 256,
+      "sourcePackage": "TO-AndiTrooper",
+      "sourceFile": "TO-AndiTrooper.utx"
+    },
+    "to-anditrooper.walls.anditrainvent": {
+      "ref": "TO-AndiTrooper.Walls.anditrainvent",
+      "path": "/image-to-unreal-map/viewer/scene-textures/TO-AndiTrooper/anditrainvent-37c1963ec8.png",
+      "width": 64,
+      "height": 64,
+      "sourcePackage": "TO-AndiTrooper",
+      "sourceFile": "TO-AndiTrooper.utx"
+    },
+    "to-anditrooper.walls.andireznet1": {
+      "ref": "TO-AndiTrooper.Walls.andirezNet1",
+      "path": "/image-to-unreal-map/viewer/scene-textures/TO-AndiTrooper/andirezNet1-61b4674cc3.png",
+      "width": 256,
+      "height": 256,
+      "sourcePackage": "TO-AndiTrooper",
+      "sourceFile": "TO-AndiTrooper.utx"
+    },
+    "to-anditrooper.andirezwall7": {
+      "ref": "TO-AndiTrooper.andirezwall7",
+      "path": "/image-to-unreal-map/viewer/scene-textures/TO-AndiTrooper/andirezwall7-d0d97db133.png",
+      "width": 256,
+      "height": 256,
+      "sourcePackage": "TO-AndiTrooper",
+      "sourceFile": "TO-AndiTrooper.utx"
+    },
+    "to-anditrooper.walls.andirezwall5": {
+      "ref": "TO-AndiTrooper.Walls.andirezwall5",
+      "path": "/image-to-unreal-map/viewer/scene-textures/TO-AndiTrooper/andirezwall5-76f3521e18.png",
+      "width": 256,
+      "height": 256,
+      "sourcePackage": "TO-AndiTrooper",
+      "sourceFile": "TO-AndiTrooper.utx"
+    },
+    "to-andiverdon.concrete.concrete_andi_4": {
+      "ref": "TO-AndiVerdon.Concrete.concrete_andi_4",
+      "path": "/image-to-unreal-map/viewer/scene-textures/TO-AndiVerdon/concrete_andi_4-177cc18c07.png",
+      "width": 256,
+      "height": 256,
+      "sourcePackage": "TO-AndiVerdon",
+      "sourceFile": "TO-AndiVerdon.utx"
+    },
+    "to-andiverdon.concrete.concrete_andi_1": {
+      "ref": "TO-AndiVerdon.Concrete.concrete_andi_1",
+      "path": "/image-to-unreal-map/viewer/scene-textures/TO-AndiVerdon/concrete_andi_1-fa704d231d.png",
+      "width": 256,
+      "height": 256,
+      "sourcePackage": "TO-AndiVerdon",
+      "sourceFile": "TO-AndiVerdon.utx"
+    },
+    "to-andiverdon.misc.sky_blue_andi_1": {
+      "ref": "TO-AndiVerdon.Misc.Sky_blue_andi_1",
+      "path": "/image-to-unreal-map/viewer/scene-textures/TO-AndiVerdon/Sky_blue_andi_1-7af23b079e.png",
+      "width": 64,
+      "height": 128,
+      "sourcePackage": "TO-AndiVerdon",
+      "sourceFile": "TO-AndiVerdon.utx"
+    },
+    "to-andiverdon.misc.ladder_andi_2": {
+      "ref": "TO-AndiVerdon.Misc.Ladder_andi_2",
+      "path": "/image-to-unreal-map/viewer/scene-textures/TO-AndiVerdon/Ladder_andi_2-75aa673280.png",
+      "width": 256,
+      "height": 256,
+      "sourcePackage": "TO-AndiVerdon",
+      "sourceFile": "TO-AndiVerdon.utx"
+    },
+    "to-andiverdon.metal.metal_andi_2": {
+      "ref": "TO-AndiVerdon.metal.metal_andi_2",
+      "path": "/image-to-unreal-map/viewer/scene-textures/TO-AndiVerdon/metal_andi_2-ea470f0aee.png",
+      "width": 256,
+      "height": 256,
+      "sourcePackage": "TO-AndiVerdon",
+      "sourceFile": "TO-AndiVerdon.utx"
+    },
+    "to-andiverdon.misc.c4_andi_red": {
+      "ref": "TO-AndiVerdon.Misc.C4_andi_red",
+      "path": "/image-to-unreal-map/viewer/scene-textures/TO-AndiVerdon/C4_andi_red-3713651f94.png",
+      "width": 256,
+      "height": 256,
+      "sourcePackage": "TO-AndiVerdon",
+      "sourceFile": "TO-AndiVerdon.utx"
+    },
+    "to-andiverdon.concrete.concrete_andi_dam": {
+      "ref": "TO-AndiVerdon.Concrete.Concrete_andi_dam",
+      "path": "/image-to-unreal-map/viewer/scene-textures/TO-AndiVerdon/Concrete_andi_dam-e7c9a43763.png",
+      "width": 512,
+      "height": 512,
+      "sourcePackage": "TO-AndiVerdon",
+      "sourceFile": "TO-AndiVerdon.utx"
+    },
+    "to-asia.japbeam2": {
+      "ref": "TO-Asia.japbeam2",
+      "path": "/image-to-unreal-map/viewer/scene-textures/TO-Asia/japbeam2-e070f5611b.png",
+      "width": 256,
+      "height": 32,
+      "sourcePackage": "TO-Asia",
+      "sourceFile": "TO-Asia.utx"
+    },
+    "to-asia.japwall1": {
+      "ref": "TO-Asia.japwall1",
+      "path": "/image-to-unreal-map/viewer/scene-textures/TO-Asia/japwall1-65e0796b49.png",
+      "width": 256,
+      "height": 256,
+      "sourcePackage": "TO-Asia",
+      "sourceFile": "TO-Asia.utx"
+    },
+    "to-asia.japfloor1": {
+      "ref": "TO-Asia.japfloor1",
+      "path": "/image-to-unreal-map/viewer/scene-textures/TO-Asia/japfloor1-bc38634581.png",
+      "width": 512,
+      "height": 512,
+      "sourcePackage": "TO-Asia",
+      "sourceFile": "TO-Asia.utx"
+    },
+    "to-asia.japwood2": {
+      "ref": "TO-Asia.japwood2",
+      "path": "/image-to-unreal-map/viewer/scene-textures/TO-Asia/japwood2-0d09210fda.png",
+      "width": 128,
+      "height": 64,
+      "sourcePackage": "TO-Asia",
+      "sourceFile": "TO-Asia.utx"
+    },
+    "to-asia.japfloor2": {
+      "ref": "TO-Asia.japfloor2",
+      "path": "/image-to-unreal-map/viewer/scene-textures/TO-Asia/japfloor2-52d0190a5b.png",
+      "width": 512,
+      "height": 512,
+      "sourcePackage": "TO-Asia",
+      "sourceFile": "TO-Asia.utx"
+    },
+    "to-asia.japstone1": {
+      "ref": "TO-Asia.japstone1",
+      "path": "/image-to-unreal-map/viewer/scene-textures/TO-Asia/japstone1-af4b9e0df4.png",
+      "width": 256,
+      "height": 128,
+      "sourcePackage": "TO-Asia",
+      "sourceFile": "TO-Asia.utx"
+    },
+    "to-asia.japceiling2": {
+      "ref": "TO-Asia.japceiling2",
+      "path": "/image-to-unreal-map/viewer/scene-textures/TO-Asia/japceiling2-3eda3d9fd0.png",
+      "width": 256,
+      "height": 256,
+      "sourcePackage": "TO-Asia",
+      "sourceFile": "TO-Asia.utx"
+    },
+    "to-asia.japdoor2": {
+      "ref": "TO-Asia.japdoor2",
+      "path": "/image-to-unreal-map/viewer/scene-textures/TO-Asia/japdoor2-d769491ba4.png",
+      "width": 256,
+      "height": 256,
+      "sourcePackage": "TO-Asia",
+      "sourceFile": "TO-Asia.utx"
+    },
+    "to-asia.japwall4": {
+      "ref": "TO-Asia.japwall4",
+      "path": "/image-to-unreal-map/viewer/scene-textures/TO-Asia/japwall4-961c543d72.png",
+      "width": 256,
+      "height": 256,
+      "sourcePackage": "TO-Asia",
+      "sourceFile": "TO-Asia.utx"
+    },
+    "to-asia.japdoor1": {
+      "ref": "TO-Asia.japdoor1",
+      "path": "/image-to-unreal-map/viewer/scene-textures/TO-Asia/japdoor1-06aac8dff0.png",
+      "width": 256,
+      "height": 256,
+      "sourcePackage": "TO-Asia",
+      "sourceFile": "TO-Asia.utx"
+    },
+    "to-asia.japwall2b": {
+      "ref": "TO-Asia.japwall2b",
+      "path": "/image-to-unreal-map/viewer/scene-textures/TO-Asia/japwall2b-343f5d464f.png",
+      "width": 256,
+      "height": 256,
+      "sourcePackage": "TO-Asia",
+      "sourceFile": "TO-Asia.utx"
+    },
+    "to-asia.japwall2": {
+      "ref": "TO-Asia.japwall2",
+      "path": "/image-to-unreal-map/viewer/scene-textures/TO-Asia/japwall2-8e7328e339.png",
+      "width": 256,
+      "height": 256,
+      "sourcePackage": "TO-Asia",
+      "sourceFile": "TO-Asia.utx"
+    },
+    "to-browntown.brick.woodbox2d": {
+      "ref": "TO-Browntown.Brick.woodbox2d",
+      "path": "/image-to-unreal-map/viewer/scene-textures/TO-Browntown/woodbox2d-071b408e4f.png",
+      "width": 256,
+      "height": 256,
+      "sourcePackage": "TO-Browntown",
+      "sourceFile": "TO-Browntown.utx"
+    },
+    "to-browntown.brick.woodbox1d": {
+      "ref": "TO-Browntown.Brick.woodbox1d",
+      "path": "/image-to-unreal-map/viewer/scene-textures/TO-Browntown/woodbox1d-94d36fe60d.png",
+      "width": 256,
+      "height": 256,
+      "sourcePackage": "TO-Browntown",
+      "sourceFile": "TO-Browntown.utx"
+    },
+    "to-browntown.walls.walldespr1-15": {
+      "ref": "TO-Browntown.Walls.WalldespR1-15",
+      "path": "/image-to-unreal-map/viewer/scene-textures/TO-Browntown/WalldespR1-15-9129afa727.png",
+      "width": 512,
+      "height": 512,
+      "sourcePackage": "TO-Browntown",
+      "sourceFile": "TO-Browntown.utx"
+    },
+    "to-desp-free1.ro-c-1-1": {
+      "ref": "TO-Desp-free1.RO-c-1-1",
+      "path": "/image-to-unreal-map/viewer/scene-textures/TO-Desp-free1/RO-c-1-1-f28d2ee220.png",
+      "width": 256,
+      "height": 256,
+      "sourcePackage": "TO-Desp-free1",
+      "sourceFile": "TO-Desp-free1.utx"
+    },
+    "to-desp-free1.ro-c-1-3": {
+      "ref": "TO-Desp-free1.RO-c-1-3",
+      "path": "/image-to-unreal-map/viewer/scene-textures/TO-Desp-free1/RO-c-1-3-9bedca9644.png",
+      "width": 256,
+      "height": 256,
+      "sourcePackage": "TO-Desp-free1",
+      "sourceFile": "TO-Desp-free1.utx"
+    },
+    "to-desp-free1.ro-mp-1-1": {
+      "ref": "TO-Desp-free1.RO-mp-1-1",
+      "path": "/image-to-unreal-map/viewer/scene-textures/TO-Desp-free1/RO-mp-1-1-047c307970.png",
+      "width": 256,
+      "height": 256,
+      "sourcePackage": "TO-Desp-free1",
+      "sourceFile": "TO-Desp-free1.utx"
+    },
+    "to-desp-free1.ro-mp-1-2": {
+      "ref": "TO-Desp-free1.RO-mp-1-2",
+      "path": "/image-to-unreal-map/viewer/scene-textures/TO-Desp-free1/RO-mp-1-2-4880855e6e.png",
+      "width": 256,
+      "height": 256,
+      "sourcePackage": "TO-Desp-free1",
+      "sourceFile": "TO-Desp-free1.utx"
+    },
+    "to-despfact-1.ro-con1-6d": {
+      "ref": "TO-DespFact-1.RO-con1-6d",
+      "path": "/image-to-unreal-map/viewer/scene-textures/TO-DespFact-1/RO-con1-6d-b9a07debb7.png",
+      "width": 256,
+      "height": 256,
+      "sourcePackage": "TO-DespFact-1",
+      "sourceFile": "TO-DespFact-1.utx"
+    },
+    "to-epic.floor.wall_floor": {
+      "ref": "TO-Epic.Floor.wall_floor",
+      "path": "/image-to-unreal-map/viewer/scene-textures/TO-Epic/wall_floor-b2a5b3ad4e.png",
+      "width": 128,
+      "height": 128,
+      "sourcePackage": "TO-Epic",
+      "sourceFile": "TO-Epic.utx"
+    },
+    "to-fluxicy.deco.grateice": {
+      "ref": "TO-FluxIcy.Deco.grateIce",
+      "path": "/image-to-unreal-map/viewer/scene-textures/TO-FluxIcy/grateIce-51f0e5a618.png",
+      "width": 128,
+      "height": 128,
+      "sourcePackage": "TO-FluxIcy",
+      "sourceFile": "TO-FluxIcy.utx"
+    },
+    "to-fluxicy.trim.breaker1fix": {
+      "ref": "TO-FluxIcy.Trim.breaker1fix",
+      "path": "/image-to-unreal-map/viewer/scene-textures/TO-FluxIcy/breaker1fix-062d25dc06.png",
+      "width": 128,
+      "height": 64,
+      "sourcePackage": "TO-FluxIcy",
+      "sourceFile": "TO-FluxIcy.utx"
+    },
+    "to-ganja-free-1.ammocount.brock_2a": {
+      "ref": "TO-ganja-free-1.Ammocount.brock_2a",
+      "path": "/image-to-unreal-map/viewer/scene-textures/TO-ganja-free-1/brock_2a-972f888faf.png",
+      "width": 256,
+      "height": 256,
+      "sourcePackage": "TO-ganja-free-1",
+      "sourceFile": "TO-ganja-free-1.utx"
+    },
+    "to-ganja-free-1.ammocount.brock_6": {
+      "ref": "TO-ganja-free-1.Ammocount.brock_6",
+      "path": "/image-to-unreal-map/viewer/scene-textures/TO-ganja-free-1/brock_6-69009ed887.png",
+      "width": 256,
+      "height": 256,
+      "sourcePackage": "TO-ganja-free-1",
+      "sourceFile": "TO-ganja-free-1.utx"
+    },
+    "to-ganja-free-1.ammocount.rtbricb_1": {
+      "ref": "TO-ganja-free-1.Ammocount.rtbricb_1",
+      "path": "/image-to-unreal-map/viewer/scene-textures/TO-ganja-free-1/rtbricb_1-1a61f8995f.png",
+      "width": 256,
+      "height": 256,
+      "sourcePackage": "TO-ganja-free-1",
+      "sourceFile": "TO-ganja-free-1.utx"
+    },
+    "to-nassausub.metal.panel2_nassau": {
+      "ref": "TO-Nassausub.metal.panel2_nassau",
+      "path": "/image-to-unreal-map/viewer/scene-textures/TO-Nassausub/panel2_nassau-80b0b4ddc1.png",
+      "width": 64,
+      "height": 64,
+      "sourcePackage": "TO-Nassausub",
+      "sourceFile": "TO-Nassausub.utx"
+    },
+    "to-nassausub.metal.metal13_nassau": {
+      "ref": "TO-Nassausub.metal.metal13_nassau",
+      "path": "/image-to-unreal-map/viewer/scene-textures/TO-Nassausub/metal13_nassau-f6f73ac884.png",
+      "width": 256,
+      "height": 128,
+      "sourcePackage": "TO-Nassausub",
+      "sourceFile": "TO-Nassausub.utx"
+    },
+    "to-nassausub.console.console2_nassau": {
+      "ref": "TO-Nassausub.Console.console2_nassau",
+      "path": "/image-to-unreal-map/viewer/scene-textures/TO-Nassausub/console2_nassau-26f0e3c700.png",
+      "width": 256,
+      "height": 256,
+      "sourcePackage": "TO-Nassausub",
+      "sourceFile": "TO-Nassausub.utx"
+    },
+    "to-nassausub.console.console12_nassau": {
+      "ref": "TO-Nassausub.Console.console12_nassau",
+      "path": "/image-to-unreal-map/viewer/scene-textures/TO-Nassausub/console12_nassau-d66b8c13e9.png",
+      "width": 256,
+      "height": 256,
+      "sourcePackage": "TO-Nassausub",
+      "sourceFile": "TO-Nassausub.utx"
+    },
+    "to-nassausub.misc.misc18_nassau": {
+      "ref": "TO-Nassausub.Misc.misc18_nassau",
+      "path": "/image-to-unreal-map/viewer/scene-textures/TO-Nassausub/misc18_nassau-ca3d44307e.png",
+      "width": 256,
+      "height": 128,
+      "sourcePackage": "TO-Nassausub",
+      "sourceFile": "TO-Nassausub.utx"
+    },
+    "to-nassausub.misc.drawers11_nassau": {
+      "ref": "TO-Nassausub.Misc.drawers11_nassau",
+      "path": "/image-to-unreal-map/viewer/scene-textures/TO-Nassausub/drawers11_nassau-3bc27e315a.png",
+      "width": 256,
+      "height": 128,
+      "sourcePackage": "TO-Nassausub",
+      "sourceFile": "TO-Nassausub.utx"
+    },
+    "to-nassauvehicles.mini.mini01_side_c_nassau": {
+      "ref": "TO-Nassauvehicles.mini.mini01_side_c_nassau",
+      "path": "/image-to-unreal-map/viewer/scene-textures/TO-Nassauvehicles/mini01_side_c_nassau-318a577544.png",
+      "width": 256,
+      "height": 256,
+      "sourcePackage": "TO-Nassauvehicles",
+      "sourceFile": "TO-Nassauvehicles.utx"
+    },
+    "to-nassauvehicles.misc.misc_under_nassau": {
+      "ref": "TO-Nassauvehicles.Misc.misc_under_nassau",
+      "path": "/image-to-unreal-map/viewer/scene-textures/TO-Nassauvehicles/misc_under_nassau-2f08181eaf.png",
+      "width": 256,
+      "height": 128,
+      "sourcePackage": "TO-Nassauvehicles",
+      "sourceFile": "TO-Nassauvehicles.utx"
+    },
+    "to-nassauvehicles.misc.misc_tyre_nassau": {
+      "ref": "TO-Nassauvehicles.Misc.misc_tyre_nassau",
+      "path": "/image-to-unreal-map/viewer/scene-textures/TO-Nassauvehicles/misc_tyre_nassau-1cb127c4be.png",
+      "width": 32,
+      "height": 32,
+      "sourcePackage": "TO-Nassauvehicles",
+      "sourceFile": "TO-Nassauvehicles.utx"
+    },
+    "to-nassauvehicles.mini.mini01_back_b_nassau": {
+      "ref": "TO-Nassauvehicles.mini.mini01_back_b_nassau",
+      "path": "/image-to-unreal-map/viewer/scene-textures/TO-Nassauvehicles/mini01_back_b_nassau-2cb70a163e.png",
+      "width": 256,
+      "height": 256,
+      "sourcePackage": "TO-Nassauvehicles",
+      "sourceFile": "TO-Nassauvehicles.utx"
+    },
+    "to-nassauvehicles.mini.mini01_roof_nassau": {
+      "ref": "TO-Nassauvehicles.mini.mini01_roof_nassau",
+      "path": "/image-to-unreal-map/viewer/scene-textures/TO-Nassauvehicles/mini01_roof_nassau-61259fb494.png",
+      "width": 128,
+      "height": 128,
+      "sourcePackage": "TO-Nassauvehicles",
+      "sourceFile": "TO-Nassauvehicles.utx"
+    },
+    "to-nassauvehicles.mini.mini01_front_nassau": {
+      "ref": "TO-Nassauvehicles.mini.mini01_front_nassau",
+      "path": "/image-to-unreal-map/viewer/scene-textures/TO-Nassauvehicles/mini01_front_nassau-c2a55aa1c8.png",
+      "width": 256,
+      "height": 128,
+      "sourcePackage": "TO-Nassauvehicles",
+      "sourceFile": "TO-Nassauvehicles.utx"
+    },
+    "to-nassauvehicles.sedan.sedan04_side_c_nassau": {
+      "ref": "TO-Nassauvehicles.sedan.sedan04_side_c_nassau",
+      "path": "/image-to-unreal-map/viewer/scene-textures/TO-Nassauvehicles/sedan04_side_c_nassau-208820da4e.png",
+      "width": 256,
+      "height": 256,
+      "sourcePackage": "TO-Nassauvehicles",
+      "sourceFile": "TO-Nassauvehicles.utx"
+    },
+    "to-nassauvehicles.sedan.sedan04_back_b_nassau": {
+      "ref": "TO-Nassauvehicles.sedan.sedan04_back_b_nassau",
+      "path": "/image-to-unreal-map/viewer/scene-textures/TO-Nassauvehicles/sedan04_back_b_nassau-64650294de.png",
+      "width": 256,
+      "height": 128,
+      "sourcePackage": "TO-Nassauvehicles",
+      "sourceFile": "TO-Nassauvehicles.utx"
+    },
+    "to-nassauvehicles.sedan.sedan04_roof_nassau": {
+      "ref": "TO-Nassauvehicles.sedan.sedan04_roof_nassau",
+      "path": "/image-to-unreal-map/viewer/scene-textures/TO-Nassauvehicles/sedan04_roof_nassau-45155c3d5b.png",
+      "width": 128,
+      "height": 128,
+      "sourcePackage": "TO-Nassauvehicles",
+      "sourceFile": "TO-Nassauvehicles.utx"
+    },
+    "to-nassauvehicles.sedan.sedan04_window_c_nassau": {
+      "ref": "TO-Nassauvehicles.sedan.sedan04_window_c_nassau",
+      "path": "/image-to-unreal-map/viewer/scene-textures/TO-Nassauvehicles/sedan04_window_c_nassau-5939b055d2.png",
+      "width": 256,
+      "height": 128,
+      "sourcePackage": "TO-Nassauvehicles",
+      "sourceFile": "TO-Nassauvehicles.utx"
+    },
+    "to-nassauvehicles.sedan.sedan04_front_nassau": {
+      "ref": "TO-Nassauvehicles.sedan.sedan04_front_nassau",
+      "path": "/image-to-unreal-map/viewer/scene-textures/TO-Nassauvehicles/sedan04_front_nassau-21dc249ac2.png",
+      "width": 256,
+      "height": 128,
+      "sourcePackage": "TO-Nassauvehicles",
+      "sourceFile": "TO-Nassauvehicles.utx"
+    },
+    "to-nassauvehicles.sedan.sedan04_hood_nassau": {
+      "ref": "TO-Nassauvehicles.sedan.sedan04_hood_nassau",
+      "path": "/image-to-unreal-map/viewer/scene-textures/TO-Nassauvehicles/sedan04_hood_nassau-7e20fc3411.png",
+      "width": 128,
+      "height": 128,
+      "sourcePackage": "TO-Nassauvehicles",
+      "sourceFile": "TO-Nassauvehicles.utx"
+    },
+    "to-nassauvehicles.bus.bus01_side_b_nassau": {
+      "ref": "TO-Nassauvehicles.bus.bus01_side_b_nassau",
+      "path": "/image-to-unreal-map/viewer/scene-textures/TO-Nassauvehicles/bus01_side_b_nassau-9e4f5bd84a.png",
+      "width": 256,
+      "height": 256,
+      "sourcePackage": "TO-Nassauvehicles",
+      "sourceFile": "TO-Nassauvehicles.utx"
+    },
+    "to-nassauvehicles.bus.bus01_front_b_nassau": {
+      "ref": "TO-Nassauvehicles.bus.bus01_front_b_nassau",
+      "path": "/image-to-unreal-map/viewer/scene-textures/TO-Nassauvehicles/bus01_front_b_nassau-30c60eb97b.png",
+      "width": 256,
+      "height": 256,
+      "sourcePackage": "TO-Nassauvehicles",
+      "sourceFile": "TO-Nassauvehicles.utx"
+    },
+    "to-nassauvehicles.bus.bus01_back_b_nassau": {
+      "ref": "TO-Nassauvehicles.bus.bus01_back_b_nassau",
+      "path": "/image-to-unreal-map/viewer/scene-textures/TO-Nassauvehicles/bus01_back_b_nassau-e66f0f0aa1.png",
+      "width": 256,
+      "height": 256,
+      "sourcePackage": "TO-Nassauvehicles",
+      "sourceFile": "TO-Nassauvehicles.utx"
+    },
+    "to-nassauvehicles.bus.bus01_roof_nassau": {
+      "ref": "TO-Nassauvehicles.bus.bus01_roof_nassau",
+      "path": "/image-to-unreal-map/viewer/scene-textures/TO-Nassauvehicles/bus01_roof_nassau-5ca8a6f239.png",
+      "width": 64,
+      "height": 64,
+      "sourcePackage": "TO-Nassauvehicles",
+      "sourceFile": "TO-Nassauvehicles.utx"
+    },
+    "to-nassauvehicles.sedan.sedan01_side_nassau": {
+      "ref": "TO-Nassauvehicles.sedan.sedan01_side_nassau",
+      "path": "/image-to-unreal-map/viewer/scene-textures/TO-Nassauvehicles/sedan01_side_nassau-aa6e79a76e.png",
+      "width": 256,
+      "height": 256,
+      "sourcePackage": "TO-Nassauvehicles",
+      "sourceFile": "TO-Nassauvehicles.utx"
+    },
+    "to-nassauvehicles.sedan.sedan01_back_nassau": {
+      "ref": "TO-Nassauvehicles.sedan.sedan01_back_nassau",
+      "path": "/image-to-unreal-map/viewer/scene-textures/TO-Nassauvehicles/sedan01_back_nassau-4249ab2025.png",
+      "width": 256,
+      "height": 128,
+      "sourcePackage": "TO-Nassauvehicles",
+      "sourceFile": "TO-Nassauvehicles.utx"
+    },
+    "to-nassauvehicles.sedan.sedan01_roof_b_nassau": {
+      "ref": "TO-Nassauvehicles.sedan.sedan01_roof_b_nassau",
+      "path": "/image-to-unreal-map/viewer/scene-textures/TO-Nassauvehicles/sedan01_roof_b_nassau-6586e499c9.png",
+      "width": 128,
+      "height": 128,
+      "sourcePackage": "TO-Nassauvehicles",
+      "sourceFile": "TO-Nassauvehicles.utx"
+    },
+    "to-nassauvehicles.sedan.sedan01_window_f_nassau": {
+      "ref": "TO-Nassauvehicles.sedan.sedan01_window_f_nassau",
+      "path": "/image-to-unreal-map/viewer/scene-textures/TO-Nassauvehicles/sedan01_window_f_nassau-d18100fcfb.png",
+      "width": 256,
+      "height": 128,
+      "sourcePackage": "TO-Nassauvehicles",
+      "sourceFile": "TO-Nassauvehicles.utx"
+    },
+    "to-nassauvehicles.sedan.sedan01_front_nassau": {
+      "ref": "TO-Nassauvehicles.sedan.sedan01_front_nassau",
+      "path": "/image-to-unreal-map/viewer/scene-textures/TO-Nassauvehicles/sedan01_front_nassau-4de23934fa.png",
+      "width": 256,
+      "height": 128,
+      "sourcePackage": "TO-Nassauvehicles",
+      "sourceFile": "TO-Nassauvehicles.utx"
+    },
+    "to-nassauvehicles.sedan.sedan03_side_nassau": {
+      "ref": "TO-Nassauvehicles.sedan.sedan03_side_nassau",
+      "path": "/image-to-unreal-map/viewer/scene-textures/TO-Nassauvehicles/sedan03_side_nassau-68340757a0.png",
+      "width": 256,
+      "height": 256,
+      "sourcePackage": "TO-Nassauvehicles",
+      "sourceFile": "TO-Nassauvehicles.utx"
+    },
+    "to-nassauvehicles.sedan.sedan03_back_nassau": {
+      "ref": "TO-Nassauvehicles.sedan.sedan03_back_nassau",
+      "path": "/image-to-unreal-map/viewer/scene-textures/TO-Nassauvehicles/sedan03_back_nassau-e53d90f213.png",
+      "width": 256,
+      "height": 128,
+      "sourcePackage": "TO-Nassauvehicles",
+      "sourceFile": "TO-Nassauvehicles.utx"
+    },
+    "to-nassauvehicles.sedan.sedan03_roof_b_nassau": {
+      "ref": "TO-Nassauvehicles.sedan.sedan03_roof_b_nassau",
+      "path": "/image-to-unreal-map/viewer/scene-textures/TO-Nassauvehicles/sedan03_roof_b_nassau-ab0fc7cf91.png",
+      "width": 128,
+      "height": 128,
+      "sourcePackage": "TO-Nassauvehicles",
+      "sourceFile": "TO-Nassauvehicles.utx"
+    },
+    "to-nassauvehicles.sedan.sedan03_window_f_nassau": {
+      "ref": "TO-Nassauvehicles.sedan.sedan03_window_f_nassau",
+      "path": "/image-to-unreal-map/viewer/scene-textures/TO-Nassauvehicles/sedan03_window_f_nassau-f06a110ec3.png",
+      "width": 256,
+      "height": 128,
+      "sourcePackage": "TO-Nassauvehicles",
+      "sourceFile": "TO-Nassauvehicles.utx"
+    },
+    "to-nassauvehicles.sedan.sedan03_front_nassau": {
+      "ref": "TO-Nassauvehicles.sedan.sedan03_front_nassau",
+      "path": "/image-to-unreal-map/viewer/scene-textures/TO-Nassauvehicles/sedan03_front_nassau-e7f5e6aa22.png",
+      "width": 256,
+      "height": 128,
+      "sourcePackage": "TO-Nassauvehicles",
+      "sourceFile": "TO-Nassauvehicles.utx"
+    },
+    "to-nassauvehicles.sedan.sedan02_side_nassau": {
+      "ref": "TO-Nassauvehicles.sedan.sedan02_side_nassau",
+      "path": "/image-to-unreal-map/viewer/scene-textures/TO-Nassauvehicles/sedan02_side_nassau-b945136a3a.png",
+      "width": 256,
+      "height": 256,
+      "sourcePackage": "TO-Nassauvehicles",
+      "sourceFile": "TO-Nassauvehicles.utx"
+    },
+    "to-nassauvehicles.sedan.sedan02_back_nassau": {
+      "ref": "TO-Nassauvehicles.sedan.sedan02_back_nassau",
+      "path": "/image-to-unreal-map/viewer/scene-textures/TO-Nassauvehicles/sedan02_back_nassau-70d25ea251.png",
+      "width": 256,
+      "height": 128,
+      "sourcePackage": "TO-Nassauvehicles",
+      "sourceFile": "TO-Nassauvehicles.utx"
+    },
+    "to-nassauvehicles.sedan.sedan02_roof_b_nassau": {
+      "ref": "TO-Nassauvehicles.sedan.sedan02_roof_b_nassau",
+      "path": "/image-to-unreal-map/viewer/scene-textures/TO-Nassauvehicles/sedan02_roof_b_nassau-0c7e587ac8.png",
+      "width": 128,
+      "height": 128,
+      "sourcePackage": "TO-Nassauvehicles",
+      "sourceFile": "TO-Nassauvehicles.utx"
+    },
+    "to-nassauvehicles.sedan.sedan02_window_b_nassau": {
+      "ref": "TO-Nassauvehicles.sedan.sedan02_window_b_nassau",
+      "path": "/image-to-unreal-map/viewer/scene-textures/TO-Nassauvehicles/sedan02_window_b_nassau-4d2fdcaf4a.png",
+      "width": 256,
+      "height": 128,
+      "sourcePackage": "TO-Nassauvehicles",
+      "sourceFile": "TO-Nassauvehicles.utx"
+    },
+    "to-nassauvehicles.sedan.sedan02_front_nassau": {
+      "ref": "TO-Nassauvehicles.sedan.sedan02_front_nassau",
+      "path": "/image-to-unreal-map/viewer/scene-textures/TO-Nassauvehicles/sedan02_front_nassau-d6c457dd7f.png",
+      "width": 256,
+      "height": 128,
+      "sourcePackage": "TO-Nassauvehicles",
+      "sourceFile": "TO-Nassauvehicles.utx"
+    },
+    "to-old-city.ocf1-1": {
+      "ref": "TO-Old-City.OCf1-1",
+      "path": "/image-to-unreal-map/viewer/scene-textures/TO-Old-City/OCf1-1-0e41e7686e.png",
+      "width": 256,
+      "height": 256,
+      "sourcePackage": "TO-Old-City",
+      "sourceFile": "TO-Old-City.utx"
+    },
+    "to-old-city.ocd1-4": {
+      "ref": "TO-Old-City.OCd1-4",
+      "path": "/image-to-unreal-map/viewer/scene-textures/TO-Old-City/OCd1-4-26462b8e88.png",
+      "width": 256,
+      "height": 512,
+      "sourcePackage": "TO-Old-City",
+      "sourceFile": "TO-Old-City.utx"
+    },
+    "to-old-city.ocw1-4": {
+      "ref": "TO-Old-City.OCw1-4",
+      "path": "/image-to-unreal-map/viewer/scene-textures/TO-Old-City/OCw1-4-a1afee2ead.png",
+      "width": 512,
+      "height": 512,
+      "sourcePackage": "TO-Old-City",
+      "sourceFile": "TO-Old-City.utx"
+    },
+    "to-orient.orientwall11b": {
+      "ref": "TO-Orient.orientwall11b",
+      "path": "/image-to-unreal-map/viewer/scene-textures/TO-Orient/orientwall11b-d320134dab.png",
+      "width": 256,
+      "height": 256,
+      "sourcePackage": "TO-Orient",
+      "sourceFile": "TO-Orient.utx"
+    },
+    "to-orient.chinwood2": {
+      "ref": "TO-Orient.chinwood2",
+      "path": "/image-to-unreal-map/viewer/scene-textures/TO-Orient/chinwood2-0c22abeb49.png",
+      "width": 256,
+      "height": 256,
+      "sourcePackage": "TO-Orient",
+      "sourceFile": "TO-Orient.utx"
+    },
+    "to-orient.orientwall14a": {
+      "ref": "TO-Orient.orientwall14a",
+      "path": "/image-to-unreal-map/viewer/scene-textures/TO-Orient/orientwall14a-f452ef2538.png",
+      "width": 256,
+      "height": 256,
+      "sourcePackage": "TO-Orient",
+      "sourceFile": "TO-Orient.utx"
+    },
+    "to-orient.orientwall10": {
+      "ref": "TO-Orient.orientwall10",
+      "path": "/image-to-unreal-map/viewer/scene-textures/TO-Orient/orientwall10-191f60c102.png",
+      "width": 256,
+      "height": 256,
+      "sourcePackage": "TO-Orient",
+      "sourceFile": "TO-Orient.utx"
+    },
+    "to-orient.redtileroof": {
+      "ref": "TO-Orient.redtileroof",
+      "path": "/image-to-unreal-map/viewer/scene-textures/TO-Orient/redtileroof-fa3b572b2d.png",
+      "width": 256,
+      "height": 256,
+      "sourcePackage": "TO-Orient",
+      "sourceFile": "TO-Orient.utx"
+    },
+    "to-orient.orientwall6": {
+      "ref": "TO-Orient.orientwall6",
+      "path": "/image-to-unreal-map/viewer/scene-textures/TO-Orient/orientwall6-689a19de6f.png",
+      "width": 256,
+      "height": 256,
+      "sourcePackage": "TO-Orient",
+      "sourceFile": "TO-Orient.utx"
+    },
+    "to-orient.greentileroof": {
+      "ref": "TO-Orient.greentileroof",
+      "path": "/image-to-unreal-map/viewer/scene-textures/TO-Orient/greentileroof-117f920e00.png",
+      "width": 256,
+      "height": 256,
+      "sourcePackage": "TO-Orient",
+      "sourceFile": "TO-Orient.utx"
+    },
+    "to-orient.blueshingle": {
+      "ref": "TO-Orient.blueshingle",
+      "path": "/image-to-unreal-map/viewer/scene-textures/TO-Orient/blueshingle-4f358380f4.png",
+      "width": 256,
+      "height": 128,
+      "sourcePackage": "TO-Orient",
+      "sourceFile": "TO-Orient.utx"
+    },
+    "to-orient.chintrimb": {
+      "ref": "TO-Orient.chintrimB",
+      "path": "/image-to-unreal-map/viewer/scene-textures/TO-Orient/chintrimB-b82cc59581.png",
+      "width": 256,
+      "height": 32,
+      "sourcePackage": "TO-Orient",
+      "sourceFile": "TO-Orient.utx"
+    },
+    "to-orient.chintrimc": {
+      "ref": "TO-Orient.chintrimC",
+      "path": "/image-to-unreal-map/viewer/scene-textures/TO-Orient/chintrimC-33a906997c.png",
+      "width": 256,
+      "height": 32,
+      "sourcePackage": "TO-Orient",
+      "sourceFile": "TO-Orient.utx"
+    },
+    "to-orient.orientwall11a": {
+      "ref": "TO-Orient.orientwall11a",
+      "path": "/image-to-unreal-map/viewer/scene-textures/TO-Orient/orientwall11a-81bb518851.png",
+      "width": 256,
+      "height": 256,
+      "sourcePackage": "TO-Orient",
+      "sourceFile": "TO-Orient.utx"
+    },
+    "to-orient.chinrail": {
+      "ref": "TO-Orient.chinrail",
+      "path": "/image-to-unreal-map/viewer/scene-textures/TO-Orient/chinrail-dd6ae525a5.png",
+      "width": 256,
+      "height": 256,
+      "sourcePackage": "TO-Orient",
+      "sourceFile": "TO-Orient.utx"
+    },
+    "to-orient.chinsign6": {
+      "ref": "TO-Orient.chinsign6",
+      "path": "/image-to-unreal-map/viewer/scene-textures/TO-Orient/chinsign6-4b4716a2e2.png",
+      "width": 256,
+      "height": 64,
+      "sourcePackage": "TO-Orient",
+      "sourceFile": "TO-Orient.utx"
+    },
+    "to-orient.chinsign7": {
+      "ref": "TO-Orient.chinsign7",
+      "path": "/image-to-unreal-map/viewer/scene-textures/TO-Orient/chinsign7-789c65fde8.png",
+      "width": 256,
+      "height": 64,
+      "sourcePackage": "TO-Orient",
+      "sourceFile": "TO-Orient.utx"
+    },
+    "to-orient.andiwall1": {
+      "ref": "TO-Orient.andiwall1",
+      "path": "/image-to-unreal-map/viewer/scene-textures/TO-Orient/andiwall1-9a0943cf0f.png",
+      "width": 256,
+      "height": 256,
+      "sourcePackage": "TO-Orient",
+      "sourceFile": "TO-Orient.utx"
+    },
+    "to-orient.orientwall7": {
+      "ref": "TO-Orient.orientwall7",
+      "path": "/image-to-unreal-map/viewer/scene-textures/TO-Orient/orientwall7-a6774f3872.png",
+      "width": 256,
+      "height": 256,
+      "sourcePackage": "TO-Orient",
+      "sourceFile": "TO-Orient.utx"
+    },
+    "to-orient.redxlamp": {
+      "ref": "TO-Orient.redxlamp",
+      "path": "/image-to-unreal-map/viewer/scene-textures/TO-Orient/redxlamp-3f9a4febf4.png",
+      "width": 32,
+      "height": 64,
+      "sourcePackage": "TO-Orient",
+      "sourceFile": "TO-Orient.utx"
+    },
+    "to-orient.orientwall9": {
+      "ref": "TO-Orient.orientwall9",
+      "path": "/image-to-unreal-map/viewer/scene-textures/TO-Orient/orientwall9-ae259e856e.png",
+      "width": 256,
+      "height": 256,
+      "sourcePackage": "TO-Orient",
+      "sourceFile": "TO-Orient.utx"
+    },
+    "to-orient.dragsky3": {
+      "ref": "TO-Orient.dragsky3",
+      "path": "/image-to-unreal-map/viewer/scene-textures/TO-Orient/dragsky3-83f838471e.png",
+      "width": 256,
+      "height": 256,
+      "sourcePackage": "TO-Orient",
+      "sourceFile": "TO-Orient.utx"
+    },
+    "to-orient.orientwall1": {
+      "ref": "TO-Orient.orientwall1",
+      "path": "/image-to-unreal-map/viewer/scene-textures/TO-Orient/orientwall1-cf6643b98e.png",
+      "width": 256,
+      "height": 256,
+      "sourcePackage": "TO-Orient",
+      "sourceFile": "TO-Orient.utx"
+    },
+    "to-orient.orientwall8": {
+      "ref": "TO-Orient.orientwall8",
+      "path": "/image-to-unreal-map/viewer/scene-textures/TO-Orient/orientwall8-2ac83e762d.png",
+      "width": 256,
+      "height": 256,
+      "sourcePackage": "TO-Orient",
+      "sourceFile": "TO-Orient.utx"
+    },
+    "to-orient.chinrail2": {
+      "ref": "TO-Orient.chinrail2",
+      "path": "/image-to-unreal-map/viewer/scene-textures/TO-Orient/chinrail2-1bae569dec.png",
+      "width": 256,
+      "height": 128,
+      "sourcePackage": "TO-Orient",
+      "sourceFile": "TO-Orient.utx"
+    },
+    "to-orient.chindoor3": {
+      "ref": "TO-Orient.chindoor3",
+      "path": "/image-to-unreal-map/viewer/scene-textures/TO-Orient/chindoor3-4a2094fa2e.png",
+      "width": 256,
+      "height": 256,
+      "sourcePackage": "TO-Orient",
+      "sourceFile": "TO-Orient.utx"
+    },
+    "to-orient.chinwalld": {
+      "ref": "TO-Orient.chinwallD",
+      "path": "/image-to-unreal-map/viewer/scene-textures/TO-Orient/chinwallD-aa90a72d93.png",
+      "width": 256,
+      "height": 256,
+      "sourcePackage": "TO-Orient",
+      "sourceFile": "TO-Orient.utx"
+    },
+    "to-orient.orientwall12": {
+      "ref": "TO-Orient.orientwall12",
+      "path": "/image-to-unreal-map/viewer/scene-textures/TO-Orient/orientwall12-e4cd7f531e.png",
+      "width": 256,
+      "height": 256,
+      "sourcePackage": "TO-Orient",
+      "sourceFile": "TO-Orient.utx"
+    },
+    "to-orient.orientwall4": {
+      "ref": "TO-Orient.orientwall4",
+      "path": "/image-to-unreal-map/viewer/scene-textures/TO-Orient/orientwall4-2a67aa210a.png",
+      "width": 256,
+      "height": 256,
+      "sourcePackage": "TO-Orient",
+      "sourceFile": "TO-Orient.utx"
+    },
+    "to-orient.chinart4": {
+      "ref": "TO-Orient.chinart4",
+      "path": "/image-to-unreal-map/viewer/scene-textures/TO-Orient/chinart4-95b12a90de.png",
+      "width": 256,
+      "height": 256,
+      "sourcePackage": "TO-Orient",
+      "sourceFile": "TO-Orient.utx"
+    },
+    "to-orient.orientwall3": {
+      "ref": "TO-Orient.orientwall3",
+      "path": "/image-to-unreal-map/viewer/scene-textures/TO-Orient/orientwall3-de3ce35867.png",
+      "width": 256,
+      "height": 256,
+      "sourcePackage": "TO-Orient",
+      "sourceFile": "TO-Orient.utx"
+    },
+    "to-orient.dragsky4": {
+      "ref": "TO-Orient.dragsky4",
+      "path": "/image-to-unreal-map/viewer/scene-textures/TO-Orient/dragsky4-eab9936936.png",
+      "width": 256,
+      "height": 256,
+      "sourcePackage": "TO-Orient",
+      "sourceFile": "TO-Orient.utx"
+    },
+    "to-orient.orientwall14": {
+      "ref": "TO-Orient.orientwall14",
+      "path": "/image-to-unreal-map/viewer/scene-textures/TO-Orient/orientwall14-4e73bb45b1.png",
+      "width": 256,
+      "height": 256,
+      "sourcePackage": "TO-Orient",
+      "sourceFile": "TO-Orient.utx"
+    },
+    "to-orient.orientwall11": {
+      "ref": "TO-Orient.orientwall11",
+      "path": "/image-to-unreal-map/viewer/scene-textures/TO-Orient/orientwall11-39316421ee.png",
+      "width": 256,
+      "height": 256,
+      "sourcePackage": "TO-Orient",
+      "sourceFile": "TO-Orient.utx"
+    },
+    "to-orient.woodsign": {
+      "ref": "TO-Orient.woodsign",
+      "path": "/image-to-unreal-map/viewer/scene-textures/TO-Orient/woodsign-10bf4fb593.png",
+      "width": 128,
+      "height": 256,
+      "sourcePackage": "TO-Orient",
+      "sourceFile": "TO-Orient.utx"
+    },
+    "to-orient.orientwall5": {
+      "ref": "TO-Orient.orientwall5",
+      "path": "/image-to-unreal-map/viewer/scene-textures/TO-Orient/orientwall5-fe874836ae.png",
+      "width": 256,
+      "height": 256,
+      "sourcePackage": "TO-Orient",
+      "sourceFile": "TO-Orient.utx"
+    },
+    "to-orient.chinflag1": {
+      "ref": "TO-Orient.chinflag1",
+      "path": "/image-to-unreal-map/viewer/scene-textures/TO-Orient/chinflag1-8b00b86bd8.png",
+      "width": 64,
+      "height": 128,
+      "sourcePackage": "TO-Orient",
+      "sourceFile": "TO-Orient.utx"
+    },
+    "to-orient.chinsign3": {
+      "ref": "TO-Orient.chinsign3",
+      "path": "/image-to-unreal-map/viewer/scene-textures/TO-Orient/chinsign3-bcd9b7a972.png",
+      "width": 64,
+      "height": 256,
+      "sourcePackage": "TO-Orient",
+      "sourceFile": "TO-Orient.utx"
+    },
+    "to-orient.chinsign5": {
+      "ref": "TO-Orient.chinsign5",
+      "path": "/image-to-unreal-map/viewer/scene-textures/TO-Orient/chinsign5-b3afc42836.png",
+      "width": 128,
+      "height": 128,
+      "sourcePackage": "TO-Orient",
+      "sourceFile": "TO-Orient.utx"
+    },
+    "to-orient.orientwall13": {
+      "ref": "TO-Orient.orientwall13",
+      "path": "/image-to-unreal-map/viewer/scene-textures/TO-Orient/orientwall13-ad8ad5adcf.png",
+      "width": 256,
+      "height": 256,
+      "sourcePackage": "TO-Orient",
+      "sourceFile": "TO-Orient.utx"
+    },
+    "to-orient.orientwall12b": {
+      "ref": "TO-Orient.orientwall12b",
+      "path": "/image-to-unreal-map/viewer/scene-textures/TO-Orient/orientwall12b-3dbd742d23.png",
+      "width": 256,
+      "height": 256,
+      "sourcePackage": "TO-Orient",
+      "sourceFile": "TO-Orient.utx"
+    },
+    "to-rapid.fluxdeco": {
+      "ref": "TO-Rapid.fluxdeco",
+      "path": "/image-to-unreal-map/viewer/scene-textures/TO-Rapid/fluxdeco-8abd93750c.png",
+      "width": 256,
+      "height": 256,
+      "sourcePackage": "TO-Rapid",
+      "sourceFile": "TO-Rapid.utx"
+    },
+    "to-richsnow.natrichrockbare2": {
+      "ref": "to-richsnow.natrichrockbare2",
+      "path": "/image-to-unreal-map/viewer/scene-textures/to-richsnow/natrichrockbare2-b0becc5a8f.png",
+      "width": 512,
+      "height": 512,
+      "sourcePackage": "to-richsnow",
+      "sourceFile": "to-richsnow.utx"
+    },
+    "to-richsnow.256oldcrack": {
+      "ref": "to-richsnow.256oldcrack",
+      "path": "/image-to-unreal-map/viewer/scene-textures/to-richsnow/256oldcrack-5758092944.png",
+      "width": 256,
+      "height": 256,
+      "sourcePackage": "to-richsnow",
+      "sourceFile": "to-richsnow.utx"
+    },
+    "to-richsnow.natrichgrass5transdark": {
+      "ref": "to-richsnow.natrichgrass5transdark",
+      "path": "/image-to-unreal-map/viewer/scene-textures/to-richsnow/natrichgrass5transdark-58246f1485.png",
+      "width": 512,
+      "height": 512,
+      "sourcePackage": "to-richsnow",
+      "sourceFile": "to-richsnow.utx"
+    },
+    "to-richsnow.richsnowsky1": {
+      "ref": "to-richsnow.richsnowsky1",
+      "path": "/image-to-unreal-map/viewer/scene-textures/to-richsnow/richsnowsky1-6ed636d112.png",
+      "width": 256,
+      "height": 256,
+      "sourcePackage": "to-richsnow",
+      "sourceFile": "to-richsnow.utx"
+    },
+    "to-richsnow.richsnowstone5": {
+      "ref": "to-richsnow.richsnowstone5",
+      "path": "/image-to-unreal-map/viewer/scene-textures/to-richsnow/richsnowstone5-5a9460e822.png",
+      "width": 256,
+      "height": 64,
+      "sourcePackage": "to-richsnow",
+      "sourceFile": "to-richsnow.utx"
+    },
+    "to-richsnow.a2b": {
+      "ref": "to-richsnow.a2b",
+      "path": "/image-to-unreal-map/viewer/scene-textures/to-richsnow/a2b-cb3ea1c750.png",
+      "width": 256,
+      "height": 256,
+      "sourcePackage": "to-richsnow",
+      "sourceFile": "to-richsnow.utx"
+    },
+    "to-richsnow.rockmoss": {
+      "ref": "to-richsnow.rockmoss",
+      "path": "/image-to-unreal-map/viewer/scene-textures/to-richsnow/rockmoss-0ebce095ba.png",
+      "width": 512,
+      "height": 512,
+      "sourcePackage": "to-richsnow",
+      "sourceFile": "to-richsnow.utx"
+    },
+    "to-richsnow.a2c": {
+      "ref": "to-richsnow.a2c",
+      "path": "/image-to-unreal-map/viewer/scene-textures/to-richsnow/a2c-a965e3f09d.png",
+      "width": 256,
+      "height": 256,
+      "sourcePackage": "to-richsnow",
+      "sourceFile": "to-richsnow.utx"
+    },
+    "to-richsnow.richsnowsky2": {
+      "ref": "to-richsnow.richsnowsky2",
+      "path": "/image-to-unreal-map/viewer/scene-textures/to-richsnow/richsnowsky2-4ce208880e.png",
+      "width": 256,
+      "height": 256,
+      "sourcePackage": "to-richsnow",
+      "sourceFile": "to-richsnow.utx"
+    },
+    "to-richsnow.barnroof": {
+      "ref": "to-richsnow.barnroof",
+      "path": "/image-to-unreal-map/viewer/scene-textures/to-richsnow/barnroof-b4c78fe2f1.png",
+      "width": 256,
+      "height": 256,
+      "sourcePackage": "to-richsnow",
+      "sourceFile": "to-richsnow.utx"
+    },
+    "to-richsnow.natrichgrass4tile": {
+      "ref": "to-richsnow.natrichgrass4tile",
+      "path": "/image-to-unreal-map/viewer/scene-textures/to-richsnow/natrichgrass4tile-98c2730468.png",
+      "width": 512,
+      "height": 512,
+      "sourcePackage": "to-richsnow",
+      "sourceFile": "to-richsnow.utx"
+    },
+    "to-richsnow.natrichgrass4dark": {
+      "ref": "to-richsnow.natrichgrass4dark",
+      "path": "/image-to-unreal-map/viewer/scene-textures/to-richsnow/natrichgrass4dark-6dd2177949.png",
+      "width": 512,
+      "height": 512,
+      "sourcePackage": "to-richsnow",
+      "sourceFile": "to-richsnow.utx"
+    },
+    "to-richurban1.floor.richtilesfloor3": {
+      "ref": "TO-richurban1.Floor.richtilesfloor3",
+      "path": "/image-to-unreal-map/viewer/scene-textures/TO-richurban1/richtilesfloor3-b8238fe835.png",
+      "width": 256,
+      "height": 256,
+      "sourcePackage": "TO-richurban1",
+      "sourceFile": "TO-richurban1.utx"
+    },
+    "to-richurban1.walls.richwall11": {
+      "ref": "TO-richurban1.Walls.richwall11",
+      "path": "/image-to-unreal-map/viewer/scene-textures/TO-richurban1/richwall11-91f15cca45.png",
+      "width": 256,
+      "height": 256,
+      "sourcePackage": "TO-richurban1",
+      "sourceFile": "TO-richurban1.utx"
+    },
+    "to-richurban1.floor.richground3": {
+      "ref": "TO-richurban1.Floor.richground3",
+      "path": "/image-to-unreal-map/viewer/scene-textures/TO-richurban1/richground3-87dfcabe0c.png",
+      "width": 256,
+      "height": 256,
+      "sourcePackage": "TO-richurban1",
+      "sourceFile": "TO-richurban1.utx"
+    },
+    "to-richurban1.floor.richground4": {
+      "ref": "TO-richurban1.Floor.richground4",
+      "path": "/image-to-unreal-map/viewer/scene-textures/TO-richurban1/richground4-1090f926aa.png",
+      "width": 256,
+      "height": 256,
+      "sourcePackage": "TO-richurban1",
+      "sourceFile": "TO-richurban1.utx"
+    },
+    "to-richurban1.walls.richwall17": {
+      "ref": "TO-richurban1.Walls.richwall17",
+      "path": "/image-to-unreal-map/viewer/scene-textures/TO-richurban1/richwall17-36a78378e0.png",
+      "width": 256,
+      "height": 256,
+      "sourcePackage": "TO-richurban1",
+      "sourceFile": "TO-richurban1.utx"
+    },
+    "to-richurban1.misc.richpaster4": {
+      "ref": "TO-richurban1.Misc.richpaster4",
+      "path": "/image-to-unreal-map/viewer/scene-textures/TO-richurban1/richpaster4-17d20a3c89.png",
+      "width": 256,
+      "height": 256,
+      "sourcePackage": "TO-richurban1",
+      "sourceFile": "TO-richurban1.utx"
+    },
+    "to-richurban1.floor.richsidewalk": {
+      "ref": "TO-richurban1.Floor.richsidewalk",
+      "path": "/image-to-unreal-map/viewer/scene-textures/TO-richurban1/richsidewalk-ab8cdac4bf.png",
+      "width": 256,
+      "height": 256,
+      "sourcePackage": "TO-richurban1",
+      "sourceFile": "TO-richurban1.utx"
+    },
+    "to-richurban1.misc.richpaster2": {
+      "ref": "TO-richurban1.Misc.richpaster2",
+      "path": "/image-to-unreal-map/viewer/scene-textures/TO-richurban1/richpaster2-06b9027cd1.png",
+      "width": 256,
+      "height": 256,
+      "sourcePackage": "TO-richurban1",
+      "sourceFile": "TO-richurban1.utx"
+    },
+    "to-richurban1.misc.richmachine2": {
+      "ref": "TO-richurban1.Misc.richmachine2",
+      "path": "/image-to-unreal-map/viewer/scene-textures/TO-richurban1/richmachine2-1ad365e9db.png",
+      "width": 128,
+      "height": 256,
+      "sourcePackage": "TO-richurban1",
+      "sourceFile": "TO-richurban1.utx"
+    },
+    "to-richurban1.walls.richwall3": {
+      "ref": "TO-richurban1.Walls.richwall3",
+      "path": "/image-to-unreal-map/viewer/scene-textures/TO-richurban1/richwall3-5cb334c133.png",
+      "width": 256,
+      "height": 256,
+      "sourcePackage": "TO-richurban1",
+      "sourceFile": "TO-richurban1.utx"
+    },
+    "to-richurban1.misc.richsteps1": {
+      "ref": "TO-richurban1.Misc.richsteps1",
+      "path": "/image-to-unreal-map/viewer/scene-textures/TO-richurban1/richsteps1-755a546cb4.png",
+      "width": 256,
+      "height": 128,
+      "sourcePackage": "TO-richurban1",
+      "sourceFile": "TO-richurban1.utx"
+    },
+    "to-richurban1.trim.richtrim1": {
+      "ref": "TO-richurban1.Trim.richtrim1",
+      "path": "/image-to-unreal-map/viewer/scene-textures/TO-richurban1/richtrim1-bb81015fbe.png",
+      "width": 64,
+      "height": 128,
+      "sourcePackage": "TO-richurban1",
+      "sourceFile": "TO-richurban1.utx"
+    },
+    "to-richurban1.exterior.richbuildingside3": {
+      "ref": "TO-richurban1.Exterior.richbuildingside3",
+      "path": "/image-to-unreal-map/viewer/scene-textures/TO-richurban1/richbuildingside3-fcccf17cc7.png",
+      "width": 256,
+      "height": 256,
+      "sourcePackage": "TO-richurban1",
+      "sourceFile": "TO-richurban1.utx"
+    },
+    "to-richurban1.concrete.richcrete2": {
+      "ref": "TO-richurban1.Concrete.richcrete2",
+      "path": "/image-to-unreal-map/viewer/scene-textures/TO-richurban1/richcrete2-307b282320.png",
+      "width": 256,
+      "height": 256,
+      "sourcePackage": "TO-richurban1",
+      "sourceFile": "TO-richurban1.utx"
+    },
+    "to-richurban1.exterior.richbuildingside2": {
+      "ref": "TO-richurban1.Exterior.richbuildingside2",
+      "path": "/image-to-unreal-map/viewer/scene-textures/TO-richurban1/richbuildingside2-26f25018ba.png",
+      "width": 256,
+      "height": 256,
+      "sourcePackage": "TO-richurban1",
+      "sourceFile": "TO-richurban1.utx"
+    },
+    "to-richurban1.exterior.richbuildingside5": {
+      "ref": "TO-richurban1.Exterior.richbuildingside5",
+      "path": "/image-to-unreal-map/viewer/scene-textures/TO-richurban1/richbuildingside5-05c1d73939.png",
+      "width": 256,
+      "height": 256,
+      "sourcePackage": "TO-richurban1",
+      "sourceFile": "TO-richurban1.utx"
+    },
+    "to-richurban1.aainfo.btometal": {
+      "ref": "TO-richurban1.aainfo.bTOmetal",
+      "path": "/image-to-unreal-map/viewer/scene-textures/TO-richurban1/bTOmetal-0009f009bc.png",
+      "width": 128,
+      "height": 128,
+      "sourcePackage": "TO-richurban1",
+      "sourceFile": "TO-richurban1.utx"
+    },
+    "to-richurban1.aainfo.btrim23": {
+      "ref": "TO-richurban1.aainfo.btrim23",
+      "path": "/image-to-unreal-map/viewer/scene-textures/TO-richurban1/btrim23-5bce10f0e2.png",
+      "width": 128,
+      "height": 16,
+      "sourcePackage": "TO-richurban1",
+      "sourceFile": "TO-richurban1.utx"
+    },
+    "to-richurban1.concrete.richcrete3": {
+      "ref": "TO-richurban1.Concrete.richcrete3",
+      "path": "/image-to-unreal-map/viewer/scene-textures/TO-richurban1/richcrete3-c206bbcfc2.png",
+      "width": 256,
+      "height": 256,
+      "sourcePackage": "TO-richurban1",
+      "sourceFile": "TO-richurban1.utx"
+    },
+    "to-richurban1.walls.richwall1": {
+      "ref": "TO-richurban1.Walls.richwall1",
+      "path": "/image-to-unreal-map/viewer/scene-textures/TO-richurban1/richwall1-4a6ddbd76e.png",
+      "width": 256,
+      "height": 256,
+      "sourcePackage": "TO-richurban1",
+      "sourceFile": "TO-richurban1.utx"
+    },
+    "to-richurban1.misc.bchairtops1": {
+      "ref": "TO-richurban1.Misc.bchairtops1",
+      "path": "/image-to-unreal-map/viewer/scene-textures/TO-richurban1/bchairtops1-197377156a.png",
+      "width": 64,
+      "height": 64,
+      "sourcePackage": "TO-richurban1",
+      "sourceFile": "TO-richurban1.utx"
+    },
+    "to-richurban1.misc.richpaster3": {
+      "ref": "TO-richurban1.Misc.richpaster3",
+      "path": "/image-to-unreal-map/viewer/scene-textures/TO-richurban1/richpaster3-aa1c9fa193.png",
+      "width": 256,
+      "height": 256,
+      "sourcePackage": "TO-richurban1",
+      "sourceFile": "TO-richurban1.utx"
+    },
+    "to-richurban1.floor.richground6": {
+      "ref": "TO-richurban1.Floor.richground6",
+      "path": "/image-to-unreal-map/viewer/scene-textures/TO-richurban1/richground6-0a5bcfd50b.png",
+      "width": 256,
+      "height": 256,
+      "sourcePackage": "TO-richurban1",
+      "sourceFile": "TO-richurban1.utx"
+    },
+    "to-richurban1.misc.richtruckside": {
+      "ref": "TO-richurban1.Misc.richtruckside",
+      "path": "/image-to-unreal-map/viewer/scene-textures/TO-richurban1/richtruckside-76d99ca00e.png",
+      "width": 256,
+      "height": 256,
+      "sourcePackage": "TO-richurban1",
+      "sourceFile": "TO-richurban1.utx"
+    },
+    "to-richurban1.floor.richtilesfloorbig": {
+      "ref": "TO-richurban1.Floor.richtilesfloorbig",
+      "path": "/image-to-unreal-map/viewer/scene-textures/TO-richurban1/richtilesfloorbig-408ecad646.png",
+      "width": 256,
+      "height": 256,
+      "sourcePackage": "TO-richurban1",
+      "sourceFile": "TO-richurban1.utx"
+    },
+    "to-richurban2.trim.rich2trim7": {
+      "ref": "TO-Richurban2.Trim.rich2trim7",
+      "path": "/image-to-unreal-map/viewer/scene-textures/TO-Richurban2/rich2trim7-2a3a2100ed.png",
+      "width": 256,
+      "height": 64,
+      "sourcePackage": "TO-Richurban2",
+      "sourceFile": "TO-Richurban2.utx"
+    },
+    "to-richurban2.trim.rich2trim21": {
+      "ref": "TO-Richurban2.Trim.rich2trim21",
+      "path": "/image-to-unreal-map/viewer/scene-textures/TO-Richurban2/rich2trim21-0fed66aba5.png",
+      "width": 256,
+      "height": 64,
+      "sourcePackage": "TO-Richurban2",
+      "sourceFile": "TO-Richurban2.utx"
+    },
+    "to-richurban2.floor.rich2floor9": {
+      "ref": "TO-Richurban2.Floor.rich2floor9",
+      "path": "/image-to-unreal-map/viewer/scene-textures/TO-Richurban2/rich2floor9-dc8b70c665.png",
+      "width": 256,
+      "height": 128,
+      "sourcePackage": "TO-Richurban2",
+      "sourceFile": "TO-Richurban2.utx"
+    },
+    "to-richurban2.walls.rich2wall1": {
+      "ref": "TO-Richurban2.Walls.rich2wall1",
+      "path": "/image-to-unreal-map/viewer/scene-textures/TO-Richurban2/rich2wall1-587bc4984f.png",
+      "width": 256,
+      "height": 256,
+      "sourcePackage": "TO-Richurban2",
+      "sourceFile": "TO-Richurban2.utx"
+    },
+    "to-richurban2.trim.rich2trim11": {
+      "ref": "TO-Richurban2.trim.rich2trim11",
+      "path": "/image-to-unreal-map/viewer/scene-textures/TO-Richurban2/rich2trim11-d0c85ebf93.png",
+      "width": 256,
+      "height": 64,
+      "sourcePackage": "TO-Richurban2",
+      "sourceFile": "TO-Richurban2.utx"
+    },
+    "to-richurban2.walls.rich2wall19": {
+      "ref": "TO-Richurban2.Walls.rich2wall19",
+      "path": "/image-to-unreal-map/viewer/scene-textures/TO-Richurban2/rich2wall19-a61d9bf9df.png",
+      "width": 256,
+      "height": 256,
+      "sourcePackage": "TO-Richurban2",
+      "sourceFile": "TO-Richurban2.utx"
+    },
+    "to-richurban2.walls.rich2wall6": {
+      "ref": "TO-Richurban2.Walls.rich2wall6",
+      "path": "/image-to-unreal-map/viewer/scene-textures/TO-Richurban2/rich2wall6-010a645889.png",
+      "width": 256,
+      "height": 256,
+      "sourcePackage": "TO-Richurban2",
+      "sourceFile": "TO-Richurban2.utx"
+    },
+    "to-richurban2.floor.rich2asphalt1": {
+      "ref": "TO-Richurban2.Floor.rich2asphalt1",
+      "path": "/image-to-unreal-map/viewer/scene-textures/TO-Richurban2/rich2asphalt1-8f8a4c0dce.png",
+      "width": 256,
+      "height": 256,
+      "sourcePackage": "TO-Richurban2",
+      "sourceFile": "TO-Richurban2.utx"
+    },
+    "to-richurban2.floor.rich2floor8": {
+      "ref": "TO-Richurban2.Floor.rich2floor8",
+      "path": "/image-to-unreal-map/viewer/scene-textures/TO-Richurban2/rich2floor8-b7363b526b.png",
+      "width": 128,
+      "height": 128,
+      "sourcePackage": "TO-Richurban2",
+      "sourceFile": "TO-Richurban2.utx"
+    },
+    "to-richurban2.walls.rich2wall2": {
+      "ref": "TO-Richurban2.Walls.rich2wall2",
+      "path": "/image-to-unreal-map/viewer/scene-textures/TO-Richurban2/rich2wall2-8266abb9ef.png",
+      "width": 256,
+      "height": 256,
+      "sourcePackage": "TO-Richurban2",
+      "sourceFile": "TO-Richurban2.utx"
+    },
+    "to-richurban2.trim.rich2trim12": {
+      "ref": "TO-Richurban2.Trim.rich2trim12",
+      "path": "/image-to-unreal-map/viewer/scene-textures/TO-Richurban2/rich2trim12-1dcf29ded3.png",
+      "width": 256,
+      "height": 64,
+      "sourcePackage": "TO-Richurban2",
+      "sourceFile": "TO-Richurban2.utx"
+    },
+    "to-richurban2.misc.rich2deco7": {
+      "ref": "TO-Richurban2.Misc.rich2deco7",
+      "path": "/image-to-unreal-map/viewer/scene-textures/TO-Richurban2/rich2deco7-428c856af0.png",
+      "width": 256,
+      "height": 128,
+      "sourcePackage": "TO-Richurban2",
+      "sourceFile": "TO-Richurban2.utx"
+    },
+    "to-richurban2.misc.lite": {
+      "ref": "TO-Richurban2.Misc.Lite",
+      "path": "/image-to-unreal-map/viewer/scene-textures/TO-Richurban2/Lite-3d044f0618.png",
+      "width": 256,
+      "height": 64,
+      "sourcePackage": "TO-Richurban2",
+      "sourceFile": "TO-Richurban2.utx"
+    },
+    "to-richurban2.base.finalsnowroof2": {
+      "ref": "TO-Richurban2.Base.finalsnowroof2",
+      "path": "/image-to-unreal-map/viewer/scene-textures/TO-Richurban2/finalsnowroof2-0f88f5a4e5.png",
+      "width": 256,
+      "height": 256,
+      "sourcePackage": "TO-Richurban2",
+      "sourceFile": "TO-Richurban2.utx"
+    },
+    "to-richurban2.walls.northwall18": {
+      "ref": "TO-Richurban2.Walls.northwall18",
+      "path": "/image-to-unreal-map/viewer/scene-textures/TO-Richurban2/northwall18-f9d8041575.png",
+      "width": 512,
+      "height": 512,
+      "sourcePackage": "TO-Richurban2",
+      "sourceFile": "TO-Richurban2.utx"
+    },
+    "to-richurban2.walls.northwall16tile": {
+      "ref": "TO-Richurban2.Walls.northwall16tile",
+      "path": "/image-to-unreal-map/viewer/scene-textures/TO-Richurban2/northwall16tile-851f3b7bc8.png",
+      "width": 256,
+      "height": 256,
+      "sourcePackage": "TO-Richurban2",
+      "sourceFile": "TO-Richurban2.utx"
+    },
+    "to-richurban2.base.bwoodsimple": {
+      "ref": "TO-Richurban2.Base.bwoodsimple",
+      "path": "/image-to-unreal-map/viewer/scene-textures/TO-Richurban2/bwoodsimple-972483e3f3.png",
+      "width": 128,
+      "height": 128,
+      "sourcePackage": "TO-Richurban2",
+      "sourceFile": "TO-Richurban2.utx"
+    },
+    "to-richurban2.walls.northwall5": {
+      "ref": "TO-Richurban2.Walls.northwall5",
+      "path": "/image-to-unreal-map/viewer/scene-textures/TO-Richurban2/northwall5-430b89af9a.png",
+      "width": 512,
+      "height": 512,
+      "sourcePackage": "TO-Richurban2",
+      "sourceFile": "TO-Richurban2.utx"
+    },
+    "to-richurban2.metal.rich2metal1": {
+      "ref": "TO-Richurban2.metal.rich2metal1",
+      "path": "/image-to-unreal-map/viewer/scene-textures/TO-Richurban2/rich2metal1-a4021cce1d.png",
+      "width": 256,
+      "height": 256,
+      "sourcePackage": "TO-Richurban2",
+      "sourceFile": "TO-Richurban2.utx"
+    },
+    "to-richurban2.floor.rich2asphalt3pcx": {
+      "ref": "TO-Richurban2.Floor.rich2asphalt3pcx",
+      "path": "/image-to-unreal-map/viewer/scene-textures/TO-Richurban2/rich2asphalt3pcx-245ef4e07d.png",
+      "width": 256,
+      "height": 256,
+      "sourcePackage": "TO-Richurban2",
+      "sourceFile": "TO-Richurban2.utx"
+    },
+    "to-richurban2.base.bmetal128": {
+      "ref": "TO-Richurban2.Base.bmetal128",
+      "path": "/image-to-unreal-map/viewer/scene-textures/TO-Richurban2/bmetal128-99085af579.png",
+      "width": 128,
+      "height": 128,
+      "sourcePackage": "TO-Richurban2",
+      "sourceFile": "TO-Richurban2.utx"
+    },
+    "to-richurban2.walls.rich2wall22": {
+      "ref": "TO-Richurban2.Walls.rich2wall22",
+      "path": "/image-to-unreal-map/viewer/scene-textures/TO-Richurban2/rich2wall22-bc2951ace0.png",
+      "width": 256,
+      "height": 256,
+      "sourcePackage": "TO-Richurban2",
+      "sourceFile": "TO-Richurban2.utx"
+    },
+    "to-richurban2.walls.snowwall22": {
+      "ref": "TO-Richurban2.Walls.snowwall22",
+      "path": "/image-to-unreal-map/viewer/scene-textures/TO-Richurban2/snowwall22-a145ad2490.png",
+      "width": 512,
+      "height": 512,
+      "sourcePackage": "TO-Richurban2",
+      "sourceFile": "TO-Richurban2.utx"
+    },
+    "to-richurban2.trim.rich2trim5": {
+      "ref": "TO-Richurban2.Trim.rich2trim5",
+      "path": "/image-to-unreal-map/viewer/scene-textures/TO-Richurban2/rich2trim5-26cc1773a8.png",
+      "width": 256,
+      "height": 32,
+      "sourcePackage": "TO-Richurban2",
+      "sourceFile": "TO-Richurban2.utx"
+    },
+    "to-richurban2.base.bdoor2new": {
+      "ref": "TO-Richurban2.Base.bdoor2new",
+      "path": "/image-to-unreal-map/viewer/scene-textures/TO-Richurban2/bdoor2new-5f56c9ec89.png",
+      "width": 128,
+      "height": 256,
+      "sourcePackage": "TO-Richurban2",
+      "sourceFile": "TO-Richurban2.utx"
+    },
+    "to-richurban2.floor.snogrunge1": {
+      "ref": "TO-Richurban2.Floor.snogrunge1",
+      "path": "/image-to-unreal-map/viewer/scene-textures/TO-Richurban2/snogrunge1-f47c7f3d91.png",
+      "width": 512,
+      "height": 512,
+      "sourcePackage": "TO-Richurban2",
+      "sourceFile": "TO-Richurban2.utx"
+    },
+    "to-richurban2.walls.rich2wall4": {
+      "ref": "TO-Richurban2.Walls.rich2wall4",
+      "path": "/image-to-unreal-map/viewer/scene-textures/TO-Richurban2/rich2wall4-088c5ee6b5.png",
+      "width": 256,
+      "height": 256,
+      "sourcePackage": "TO-Richurban2",
+      "sourceFile": "TO-Richurban2.utx"
+    },
+    "to-richurban2.misc.rich2sign2": {
+      "ref": "TO-Richurban2.Misc.rich2sign2",
+      "path": "/image-to-unreal-map/viewer/scene-textures/TO-Richurban2/rich2sign2-2426c5e373.png",
+      "width": 64,
+      "height": 128,
+      "sourcePackage": "TO-Richurban2",
+      "sourceFile": "TO-Richurban2.utx"
+    },
+    "to-richurban2.base.northcrete": {
+      "ref": "TO-Richurban2.Base.northcrete",
+      "path": "/image-to-unreal-map/viewer/scene-textures/TO-Richurban2/northcrete-2e4e45aa6b.png",
+      "width": 256,
+      "height": 256,
+      "sourcePackage": "TO-Richurban2",
+      "sourceFile": "TO-Richurban2.utx"
+    },
+    "to-richurban2.walls.rich2wall5": {
+      "ref": "TO-Richurban2.Walls.rich2wall5",
+      "path": "/image-to-unreal-map/viewer/scene-textures/TO-Richurban2/rich2wall5-7121787a76.png",
+      "width": 256,
+      "height": 256,
+      "sourcePackage": "TO-Richurban2",
+      "sourceFile": "TO-Richurban2.utx"
+    },
+    "to-richurban2.walls.northwall20tile": {
+      "ref": "TO-Richurban2.Walls.northwall20tile",
+      "path": "/image-to-unreal-map/viewer/scene-textures/TO-Richurban2/northwall20tile-374f299bd1.png",
+      "width": 256,
+      "height": 256,
+      "sourcePackage": "TO-Richurban2",
+      "sourceFile": "TO-Richurban2.utx"
+    },
+    "to-richurban2.walls.northwall20edge": {
+      "ref": "TO-Richurban2.Walls.northwall20edge",
+      "path": "/image-to-unreal-map/viewer/scene-textures/TO-Richurban2/northwall20edge-062a8b3b95.png",
+      "width": 256,
+      "height": 256,
+      "sourcePackage": "TO-Richurban2",
+      "sourceFile": "TO-Richurban2.utx"
+    },
+    "to-richurban2.base.greybrickfinal2": {
+      "ref": "TO-Richurban2.Base.greybrickfinal2",
+      "path": "/image-to-unreal-map/viewer/scene-textures/TO-Richurban2/greybrickfinal2-69077a66f0.png",
+      "width": 256,
+      "height": 256,
+      "sourcePackage": "TO-Richurban2",
+      "sourceFile": "TO-Richurban2.utx"
+    },
+    "to-richurban2.exterior.northwall2c": {
+      "ref": "TO-Richurban2.Exterior.northwall2c",
+      "path": "/image-to-unreal-map/viewer/scene-textures/TO-Richurban2/northwall2c-2ddc9e388f.png",
+      "width": 512,
+      "height": 512,
+      "sourcePackage": "TO-Richurban2",
+      "sourceFile": "TO-Richurban2.utx"
+    },
+    "to-richurban2.exterior.northwall21": {
+      "ref": "TO-Richurban2.Exterior.northwall21",
+      "path": "/image-to-unreal-map/viewer/scene-textures/TO-Richurban2/northwall21-9814e3ff06.png",
+      "width": 512,
+      "height": 512,
+      "sourcePackage": "TO-Richurban2",
+      "sourceFile": "TO-Richurban2.utx"
+    },
+    "to-richurban2.trim.rich2trim20": {
+      "ref": "TO-Richurban2.Trim.rich2trim20",
+      "path": "/image-to-unreal-map/viewer/scene-textures/TO-Richurban2/rich2trim20-b15756fce7.png",
+      "width": 256,
+      "height": 64,
+      "sourcePackage": "TO-Richurban2",
+      "sourceFile": "TO-Richurban2.utx"
+    },
+    "to-richurban2.walls.newbrick09": {
+      "ref": "TO-Richurban2.Walls.newbrick09",
+      "path": "/image-to-unreal-map/viewer/scene-textures/TO-Richurban2/newbrick09-368c0d3fe4.png",
+      "width": 256,
+      "height": 256,
+      "sourcePackage": "TO-Richurban2",
+      "sourceFile": "TO-Richurban2.utx"
+    },
+    "to-richurban2.base.blightrusty": {
+      "ref": "TO-Richurban2.Base.blightrusty",
+      "path": "/image-to-unreal-map/viewer/scene-textures/TO-Richurban2/blightrusty-7f920ed6ea.png",
+      "width": 64,
+      "height": 128,
+      "sourcePackage": "TO-Richurban2",
+      "sourceFile": "TO-Richurban2.utx"
+    },
+    "to-richurban2.floor.rich2stair3": {
+      "ref": "TO-Richurban2.Floor.rich2stair3",
+      "path": "/image-to-unreal-map/viewer/scene-textures/TO-Richurban2/rich2stair3-e067ae51d5.png",
+      "width": 256,
+      "height": 256,
+      "sourcePackage": "TO-Richurban2",
+      "sourceFile": "TO-Richurban2.utx"
+    },
+    "to-richurban2.base.bterrwall": {
+      "ref": "TO-Richurban2.Base.bterrwall",
+      "path": "/image-to-unreal-map/viewer/scene-textures/TO-Richurban2/bterrwall-55dca1952a.png",
+      "width": 256,
+      "height": 256,
+      "sourcePackage": "TO-Richurban2",
+      "sourceFile": "TO-Richurban2.utx"
+    },
+    "to-richurban2.misc.northboiler1": {
+      "ref": "TO-Richurban2.Misc.northboiler1",
+      "path": "/image-to-unreal-map/viewer/scene-textures/TO-Richurban2/northboiler1-e32477692d.png",
+      "width": 256,
+      "height": 256,
+      "sourcePackage": "TO-Richurban2",
+      "sourceFile": "TO-Richurban2.utx"
+    },
+    "to-richurban2.metal.rich2metal2": {
+      "ref": "TO-Richurban2.metal.rich2metal2",
+      "path": "/image-to-unreal-map/viewer/scene-textures/TO-Richurban2/rich2metal2-462a92894b.png",
+      "width": 256,
+      "height": 256,
+      "sourcePackage": "TO-Richurban2",
+      "sourceFile": "TO-Richurban2.utx"
+    },
+    "to-richurban2.floor.northrail": {
+      "ref": "TO-Richurban2.Floor.northrail",
+      "path": "/image-to-unreal-map/viewer/scene-textures/TO-Richurban2/northrail-55ae1994b5.png",
+      "width": 256,
+      "height": 256,
+      "sourcePackage": "TO-Richurban2",
+      "sourceFile": "TO-Richurban2.utx"
+    },
+    "to-richurban2.base.northroof1": {
+      "ref": "TO-Richurban2.Base.northroof1",
+      "path": "/image-to-unreal-map/viewer/scene-textures/TO-Richurban2/northroof1-bab5e84e82.png",
+      "width": 256,
+      "height": 256,
+      "sourcePackage": "TO-Richurban2",
+      "sourceFile": "TO-Richurban2.utx"
+    },
+    "to-richurban2.mask.rich2mask1": {
+      "ref": "TO-Richurban2.Mask.rich2mask1",
+      "path": "/image-to-unreal-map/viewer/scene-textures/TO-Richurban2/rich2mask1-4f87e28907.png",
+      "width": 128,
+      "height": 128,
+      "sourcePackage": "TO-Richurban2",
+      "sourceFile": "TO-Richurban2.utx"
+    },
+    "to-richurban2.base.fluxwindow2": {
+      "ref": "TO-Richurban2.Base.fluxwindow2",
+      "path": "/image-to-unreal-map/viewer/scene-textures/TO-Richurban2/fluxwindow2-de3c543c40.png",
+      "width": 256,
+      "height": 128,
+      "sourcePackage": "TO-Richurban2",
+      "sourceFile": "TO-Richurban2.utx"
+    },
+    "to-richurban2.misc.northsine3": {
+      "ref": "TO-Richurban2.Misc.northsine3",
+      "path": "/image-to-unreal-map/viewer/scene-textures/TO-Richurban2/northsine3-66d97415c9.png",
+      "width": 128,
+      "height": 128,
+      "sourcePackage": "TO-Richurban2",
+      "sourceFile": "TO-Richurban2.utx"
+    },
+    "to-richurban2.floor.rich2floor3": {
+      "ref": "TO-Richurban2.Floor.rich2floor3",
+      "path": "/image-to-unreal-map/viewer/scene-textures/TO-Richurban2/rich2floor3-14bae83322.png",
+      "width": 256,
+      "height": 256,
+      "sourcePackage": "TO-Richurban2",
+      "sourceFile": "TO-Richurban2.utx"
+    },
+    "to-richurban2.floor.snogrunge2": {
+      "ref": "TO-Richurban2.Floor.snogrunge2",
+      "path": "/image-to-unreal-map/viewer/scene-textures/TO-Richurban2/snogrunge2-7cf4fd8a69.png",
+      "width": 512,
+      "height": 512,
+      "sourcePackage": "TO-Richurban2",
+      "sourceFile": "TO-Richurban2.utx"
+    },
+    "to-richurban2.walls.northwall15": {
+      "ref": "TO-Richurban2.Walls.northwall15",
+      "path": "/image-to-unreal-map/viewer/scene-textures/TO-Richurban2/northwall15-153ad6b7c5.png",
+      "width": 512,
+      "height": 512,
+      "sourcePackage": "TO-Richurban2",
+      "sourceFile": "TO-Richurban2.utx"
+    },
+    "to-richurban2.misc.rich2sign1": {
+      "ref": "TO-Richurban2.Misc.rich2sign1",
+      "path": "/image-to-unreal-map/viewer/scene-textures/TO-Richurban2/rich2sign1-9bdab11d57.png",
+      "width": 128,
+      "height": 128,
+      "sourcePackage": "TO-Richurban2",
+      "sourceFile": "TO-Richurban2.utx"
+    },
+    "to-richurban2.walls.northwall12": {
+      "ref": "TO-Richurban2.Walls.northwall12",
+      "path": "/image-to-unreal-map/viewer/scene-textures/TO-Richurban2/northwall12-7da340c4fa.png",
+      "width": 512,
+      "height": 512,
+      "sourcePackage": "TO-Richurban2",
+      "sourceFile": "TO-Richurban2.utx"
+    },
+    "to-richurban2.walls.northsnowdoor": {
+      "ref": "TO-Richurban2.Walls.northsnowdoor",
+      "path": "/image-to-unreal-map/viewer/scene-textures/TO-Richurban2/northsnowdoor-218cc30c1d.png",
+      "width": 256,
+      "height": 256,
+      "sourcePackage": "TO-Richurban2",
+      "sourceFile": "TO-Richurban2.utx"
+    },
+    "to-richurban2.misc.rich2deco9": {
+      "ref": "TO-Richurban2.Misc.rich2deco9",
+      "path": "/image-to-unreal-map/viewer/scene-textures/TO-Richurban2/rich2deco9-96c922c2db.png",
+      "width": 64,
+      "height": 256,
+      "sourcePackage": "TO-Richurban2",
+      "sourceFile": "TO-Richurban2.utx"
+    },
+    "to-richurban2.floor.snogrunge3": {
+      "ref": "TO-Richurban2.Floor.snogrunge3",
+      "path": "/image-to-unreal-map/viewer/scene-textures/TO-Richurban2/snogrunge3-fa64ab2cce.png",
+      "width": 256,
+      "height": 256,
+      "sourcePackage": "TO-Richurban2",
+      "sourceFile": "TO-Richurban2.utx"
+    },
+    "to-richurban2.trim.rich2trim15": {
+      "ref": "TO-Richurban2.Trim.rich2trim15",
+      "path": "/image-to-unreal-map/viewer/scene-textures/TO-Richurban2/rich2trim15-e30a4efb80.png",
+      "width": 64,
+      "height": 256,
+      "sourcePackage": "TO-Richurban2",
+      "sourceFile": "TO-Richurban2.utx"
+    },
+    "to-richurban2.misc.rpanel1": {
+      "ref": "TO-Richurban2.Misc.rpanel1",
+      "path": "/image-to-unreal-map/viewer/scene-textures/TO-Richurban2/rpanel1-f9387d8480.png",
+      "width": 256,
+      "height": 256,
+      "sourcePackage": "TO-Richurban2",
+      "sourceFile": "TO-Richurban2.utx"
+    },
+    "to-richurban2.misc.rich2box1": {
+      "ref": "TO-Richurban2.Misc.rich2box1",
+      "path": "/image-to-unreal-map/viewer/scene-textures/TO-Richurban2/rich2box1-36628dd976.png",
+      "width": 128,
+      "height": 128,
+      "sourcePackage": "TO-Richurban2",
+      "sourceFile": "TO-Richurban2.utx"
+    },
+    "to-richurban2.walls.rich2wall21": {
+      "ref": "TO-Richurban2.Walls.rich2wall21",
+      "path": "/image-to-unreal-map/viewer/scene-textures/TO-Richurban2/rich2wall21-b4b4da9ecc.png",
+      "width": 256,
+      "height": 256,
+      "sourcePackage": "TO-Richurban2",
+      "sourceFile": "TO-Richurban2.utx"
+    },
+    "to-richurban2.misc.rich2deco8": {
+      "ref": "TO-Richurban2.Misc.rich2deco8",
+      "path": "/image-to-unreal-map/viewer/scene-textures/TO-Richurban2/rich2deco8-2f9c48fb4c.png",
+      "width": 256,
+      "height": 256,
+      "sourcePackage": "TO-Richurban2",
+      "sourceFile": "TO-Richurban2.utx"
+    },
+    "to-richurban3.u3trailerside": {
+      "ref": "to-richurban3.u3trailerside",
+      "path": "/image-to-unreal-map/viewer/scene-textures/to-richurban3/u3trailerside-8a649269e4.png",
+      "width": 256,
+      "height": 256,
+      "sourcePackage": "to-richurban3",
+      "sourceFile": "to-richurban3.utx"
+    },
+    "to-richurban3.u3trailerback": {
+      "ref": "to-richurban3.u3trailerback",
+      "path": "/image-to-unreal-map/viewer/scene-textures/to-richurban3/u3trailerback-bd43df9c4c.png",
+      "width": 256,
+      "height": 256,
+      "sourcePackage": "to-richurban3",
+      "sourceFile": "to-richurban3.utx"
+    },
+    "to-richurban3.111crete2": {
+      "ref": "to-richurban3.111crete2",
+      "path": "/image-to-unreal-map/viewer/scene-textures/to-richurban3/111crete2-b795f65caa.png",
+      "width": 256,
+      "height": 256,
+      "sourcePackage": "to-richurban3",
+      "sourceFile": "to-richurban3.utx"
+    },
+    "to-richurban3.droad": {
+      "ref": "to-richurban3.droad",
+      "path": "/image-to-unreal-map/viewer/scene-textures/to-richurban3/droad-51314b648c.png",
+      "width": 256,
+      "height": 256,
+      "sourcePackage": "to-richurban3",
+      "sourceFile": "to-richurban3.utx"
+    },
+    "to-richurban3.umach2b": {
+      "ref": "to-richurban3.umach2b",
+      "path": "/image-to-unreal-map/viewer/scene-textures/to-richurban3/umach2b-fa34f69081.png",
+      "width": 256,
+      "height": 256,
+      "sourcePackage": "to-richurban3",
+      "sourceFile": "to-richurban3.utx"
+    },
+    "to-richurban3.111windaz": {
+      "ref": "to-richurban3.111windaz",
+      "path": "/image-to-unreal-map/viewer/scene-textures/to-richurban3/111windaz-cdb8d2c33d.png",
+      "width": 256,
+      "height": 128,
+      "sourcePackage": "to-richurban3",
+      "sourceFile": "to-richurban3.utx"
+    },
+    "to-richurban3.umach2": {
+      "ref": "to-richurban3.umach2",
+      "path": "/image-to-unreal-map/viewer/scene-textures/to-richurban3/umach2-9ab6c5974f.png",
+      "width": 256,
+      "height": 256,
+      "sourcePackage": "to-richurban3",
+      "sourceFile": "to-richurban3.utx"
+    },
+    "to-richurban3.u3wall1": {
+      "ref": "to-richurban3.u3wall1",
+      "path": "/image-to-unreal-map/viewer/scene-textures/to-richurban3/u3wall1-f63bd2d6ee.png",
+      "width": 512,
+      "height": 512,
+      "sourcePackage": "to-richurban3",
+      "sourceFile": "to-richurban3.utx"
+    },
+    "to-richurban3.1atbalcon": {
+      "ref": "to-richurban3.1atbalcon",
+      "path": "/image-to-unreal-map/viewer/scene-textures/to-richurban3/1atbalcon-55e0b49d42.png",
+      "width": 256,
+      "height": 256,
+      "sourcePackage": "to-richurban3",
+      "sourceFile": "to-richurban3.utx"
+    },
+    "to-rig2.trim.i-beamlight": {
+      "ref": "TO-Rig2.Trim.i-beamlight",
+      "path": "/image-to-unreal-map/viewer/scene-textures/TO-Rig2/i-beamlight-4c12f29dfd.png",
+      "width": 256,
+      "height": 32,
+      "sourcePackage": "TO-Rig2",
+      "sourceFile": "TO-Rig2.utx"
+    },
+    "to-rig2.base.sidepanel": {
+      "ref": "TO-Rig2.Base.sidepanel",
+      "path": "/image-to-unreal-map/viewer/scene-textures/TO-Rig2/sidepanel-ff6b6ce100.png",
+      "width": 128,
+      "height": 128,
+      "sourcePackage": "TO-Rig2",
+      "sourceFile": "TO-Rig2.utx"
+    },
+    "to-rig2.base.tside1": {
+      "ref": "TO-Rig2.Base.tside1",
+      "path": "/image-to-unreal-map/viewer/scene-textures/TO-Rig2/tside1-9719bdd81f.png",
+      "width": 256,
+      "height": 64,
+      "sourcePackage": "TO-Rig2",
+      "sourceFile": "TO-Rig2.utx"
+    },
+    "to-rig2.base.baseyellow": {
+      "ref": "TO-Rig2.Base.baseyellow",
+      "path": "/image-to-unreal-map/viewer/scene-textures/TO-Rig2/baseyellow-400a3a7664.png",
+      "width": 128,
+      "height": 128,
+      "sourcePackage": "TO-Rig2",
+      "sourceFile": "TO-Rig2.utx"
+    },
+    "to-rig2.base.turbinewall1": {
+      "ref": "TO-Rig2.Base.turbinewall1",
+      "path": "/image-to-unreal-map/viewer/scene-textures/TO-Rig2/turbinewall1-9befc2e551.png",
+      "width": 256,
+      "height": 256,
+      "sourcePackage": "TO-Rig2",
+      "sourceFile": "TO-Rig2.utx"
+    },
+    "to-rig2.base.metalnew22b": {
+      "ref": "TO-Rig2.Base.metalnew22b",
+      "path": "/image-to-unreal-map/viewer/scene-textures/TO-Rig2/metalnew22b-73b27df016.png",
+      "width": 256,
+      "height": 256,
+      "sourcePackage": "TO-Rig2",
+      "sourceFile": "TO-Rig2.utx"
+    },
+    "to-rig2.base.rfloorpanel2": {
+      "ref": "TO-Rig2.Base.rfloorpanel2",
+      "path": "/image-to-unreal-map/viewer/scene-textures/TO-Rig2/rfloorpanel2-30682b3716.png",
+      "width": 128,
+      "height": 64,
+      "sourcePackage": "TO-Rig2",
+      "sourceFile": "TO-Rig2.utx"
+    },
+    "to-rig2.base.eva01": {
+      "ref": "TO-Rig2.Base.EVA01",
+      "path": "/image-to-unreal-map/viewer/scene-textures/TO-Rig2/EVA01-dd9b8fe55d.png",
+      "width": 128,
+      "height": 128,
+      "sourcePackage": "TO-Rig2",
+      "sourceFile": "TO-Rig2.utx"
+    },
+    "to-spinex-1.spaneld": {
+      "ref": "TO-Spinex-1.SPanelD",
+      "path": "/image-to-unreal-map/viewer/scene-textures/TO-Spinex-1/SPanelD-ead3d98002.png",
+      "width": 512,
+      "height": 256,
+      "sourcePackage": "TO-Spinex-1",
+      "sourceFile": "TO-Spinex-1.utx"
+    },
+    "to-spinex-1.spanelc": {
+      "ref": "TO-Spinex-1.SPanelC",
+      "path": "/image-to-unreal-map/viewer/scene-textures/TO-Spinex-1/SPanelC-63e38cbb30.png",
+      "width": 128,
+      "height": 256,
+      "sourcePackage": "TO-Spinex-1",
+      "sourceFile": "TO-Spinex-1.utx"
+    },
+    "to2-rainfx.r-g-lites": {
+      "ref": "TO2-RainFX.R-G-Lites",
+      "path": "/image-to-unreal-map/viewer/scene-textures/TO2-RainFX/R-G-Lites-a530dc0d19.png",
+      "width": 128,
+      "height": 128,
+      "sourcePackage": "TO2-RainFX",
+      "sourceFile": "RainFX.utx"
+    },
+    "to2-rainfx.amcrattop": {
+      "ref": "TO2-RainFX.Amcrattop",
+      "path": "/image-to-unreal-map/viewer/scene-textures/TO2-RainFX/Amcrattop-bf312b0896.png",
+      "width": 256,
+      "height": 128,
+      "sourcePackage": "TO2-RainFX",
+      "sourceFile": "RainFX.utx"
+    },
+    "to2-rainfx.amcratend": {
+      "ref": "TO2-RainFX.AmcratEnd",
+      "path": "/image-to-unreal-map/viewer/scene-textures/TO2-RainFX/AmcratEnd-12147d4156.png",
+      "width": 128,
+      "height": 128,
+      "sourcePackage": "TO2-RainFX",
+      "sourceFile": "RainFX.utx"
+    },
+    "uttech1.pillar.clfpilr3": {
+      "ref": "UTtech1.Pillar.ClfPilr3",
+      "path": "/image-to-unreal-map/viewer/scene-textures/UTtech1/ClfPilr3-0e947c8339.png",
+      "width": 128,
+      "height": 256,
+      "sourcePackage": "UTtech1",
+      "sourceFile": "UTtech1.utx"
+    },
+    "uttech1.wall.clifbrk3": {
+      "ref": "UTtech1.Wall.ClifBrk3",
+      "path": "/image-to-unreal-map/viewer/scene-textures/UTtech1/ClifBrk3-a08c8814e2.png",
+      "width": 256,
+      "height": 256,
+      "sourcePackage": "UTtech1",
+      "sourceFile": "UTtech1.utx"
+    },
+    "uttech1.light.xlight3x": {
+      "ref": "UTtech1.Light.Xlight3x",
+      "path": "/image-to-unreal-map/viewer/scene-textures/UTtech1/Xlight3x-7375db9ed9.png",
+      "width": 128,
+      "height": 32,
+      "sourcePackage": "UTtech1",
+      "sourceFile": "UTtech1.utx"
+    },
+    "uttech1.misc.mlb-rok3": {
+      "ref": "UTtech1.Misc.mlb-rok3",
+      "path": "/image-to-unreal-map/viewer/scene-textures/UTtech1/mlb-rok3-d71b22afbc.png",
+      "width": 256,
+      "height": 256,
+      "sourcePackage": "UTtech1",
+      "sourceFile": "UTtech1.utx"
+    },
+    "uttech1.wall.cliffbrk3a": {
+      "ref": "UTtech1.Wall.Cliffbrk3a",
+      "path": "/image-to-unreal-map/viewer/scene-textures/UTtech1/Cliffbrk3a-3ff514e04c.png",
+      "width": 256,
+      "height": 256,
+      "sourcePackage": "UTtech1",
+      "sourceFile": "UTtech1.utx"
+    },
+    "uttech1.wall.cliffbrk6": {
+      "ref": "UTtech1.Wall.Cliffbrk6",
+      "path": "/image-to-unreal-map/viewer/scene-textures/UTtech1/Cliffbrk6-99714b1784.png",
+      "width": 256,
+      "height": 256,
+      "sourcePackage": "UTtech1",
+      "sourceFile": "UTtech1.utx"
+    },
+    "uttech1.base.bmwallbase": {
+      "ref": "UTtech1.Base.bmwallBASE",
+      "path": "/image-to-unreal-map/viewer/scene-textures/UTtech1/bmwallBASE-472c86d48b.png",
+      "width": 256,
+      "height": 256,
+      "sourcePackage": "UTtech1",
+      "sourceFile": "UTtech1.utx"
+    },
+    "uttech1.ceiling.nmceiling5": {
+      "ref": "UTtech1.Ceiling.nmceiling5",
+      "path": "/image-to-unreal-map/viewer/scene-textures/UTtech1/nmceiling5-60b9bdd3fe.png",
+      "width": 256,
+      "height": 256,
+      "sourcePackage": "UTtech1",
+      "sourceFile": "UTtech1.utx"
+    },
+    "uttech1.light.rcliflt1": {
+      "ref": "UTtech1.Light.rClifLt1",
+      "path": "/image-to-unreal-map/viewer/scene-textures/UTtech1/rClifLt1-bc5fe9c140.png",
+      "width": 256,
+      "height": 128,
+      "sourcePackage": "UTtech1",
+      "sourceFile": "UTtech1.utx"
+    },
+    "uttech1.base.panelbase2": {
+      "ref": "UTtech1.Base.panelbase2",
+      "path": "/image-to-unreal-map/viewer/scene-textures/UTtech1/panelbase2-b49110f29d.png",
+      "width": 256,
+      "height": 256,
+      "sourcePackage": "UTtech1",
+      "sourceFile": "UTtech1.utx"
+    },
+    "uttech1.pillar.mlbpillarblt4": {
+      "ref": "UTtech1.Pillar.mlBpillarblt4",
+      "path": "/image-to-unreal-map/viewer/scene-textures/UTtech1/mlBpillarblt4-ba284002bd.png",
+      "width": 64,
+      "height": 128,
+      "sourcePackage": "UTtech1",
+      "sourceFile": "UTtech1.utx"
+    },
+    "uttech1.deco.bmbox3": {
+      "ref": "UTtech1.Deco.bmBox3",
+      "path": "/image-to-unreal-map/viewer/scene-textures/UTtech1/bmBox3-b6d15dc653.png",
+      "width": 256,
+      "height": 256,
+      "sourcePackage": "UTtech1",
+      "sourceFile": "UTtech1.utx"
+    },
+    "uttech1.wall.clifconc": {
+      "ref": "UTtech1.Wall.ClifConc",
+      "path": "/image-to-unreal-map/viewer/scene-textures/UTtech1/ClifConc-66a215a8e5.png",
+      "width": 256,
+      "height": 256,
+      "sourcePackage": "UTtech1",
+      "sourceFile": "UTtech1.utx"
+    },
+    "uttech1.light.xlight2": {
+      "ref": "UTtech1.Light.Xlight2",
+      "path": "/image-to-unreal-map/viewer/scene-textures/UTtech1/Xlight2-78d228476c.png",
+      "width": 128,
+      "height": 32,
+      "sourcePackage": "UTtech1",
+      "sourceFile": "UTtech1.utx"
+    },
+    "uttech1.light.aw_lit1a": {
+      "ref": "UTtech1.Light.aw_lit1a",
+      "path": "/image-to-unreal-map/viewer/scene-textures/UTtech1/aw_lit1a-0040be895f.png",
+      "width": 128,
+      "height": 64,
+      "sourcePackage": "UTtech1",
+      "sourceFile": "UTtech1.utx"
+    },
+    "uttech1.pillar.clfpilr2": {
+      "ref": "UTtech1.Pillar.ClfPilr2",
+      "path": "/image-to-unreal-map/viewer/scene-textures/UTtech1/ClfPilr2-ebe7ace9e1.png",
+      "width": 128,
+      "height": 256,
+      "sourcePackage": "UTtech1",
+      "sourceFile": "UTtech1.utx"
+    },
+    "uttech1.light.rcliflt2": {
+      "ref": "UTtech1.Light.rClifLt2",
+      "path": "/image-to-unreal-map/viewer/scene-textures/UTtech1/rClifLt2-d3dc100457.png",
+      "width": 256,
+      "height": 128,
+      "sourcePackage": "UTtech1",
+      "sourceFile": "UTtech1.utx"
+    },
+    "uttech1.wall.bmwall3_2": {
+      "ref": "UTtech1.Wall.bmwall3_2",
+      "path": "/image-to-unreal-map/viewer/scene-textures/UTtech1/bmwall3_2-4c68be5326.png",
+      "width": 256,
+      "height": 256,
+      "sourcePackage": "UTtech1",
+      "sourceFile": "UTtech1.utx"
+    },
+    "uttech1.window.clifbrk3x1": {
+      "ref": "UTtech1.Window.ClifBrk3x1",
+      "path": "/image-to-unreal-map/viewer/scene-textures/UTtech1/ClifBrk3x1-c73c3e501b.png",
+      "width": 256,
+      "height": 256,
+      "sourcePackage": "UTtech1",
+      "sourceFile": "UTtech1.utx"
+    },
+    "uttech1.light.ylight3": {
+      "ref": "UTtech1.Light.Ylight3",
+      "path": "/image-to-unreal-map/viewer/scene-textures/UTtech1/Ylight3-5d49d99089.png",
+      "width": 64,
+      "height": 32,
+      "sourcePackage": "UTtech1",
+      "sourceFile": "UTtech1.utx"
+    },
+    "uttech1.floor.bmfloor": {
+      "ref": "UTtech1.Floor.bmFloor",
+      "path": "/image-to-unreal-map/viewer/scene-textures/UTtech1/bmFloor-8933bd9ab5.png",
+      "width": 256,
+      "height": 256,
+      "sourcePackage": "UTtech1",
+      "sourceFile": "UTtech1.utx"
+    },
+    "uttech4.concrete.conc04": {
+      "ref": "UTtech4.Concrete.conc04",
+      "path": "/image-to-unreal-map/viewer/scene-textures/UTtech4/conc04-271704484d.png",
+      "width": 256,
+      "height": 256,
+      "sourcePackage": "UTtech4",
+      "sourceFile": "UTtech4.utx"
+    },
+    "uttech4.grate.grate05": {
+      "ref": "UTtech4.Grate.grate05",
+      "path": "/image-to-unreal-map/viewer/scene-textures/UTtech4/grate05-6a4a52f2d5.png",
+      "width": 256,
+      "height": 256,
+      "sourcePackage": "UTtech4",
+      "sourceFile": "UTtech4.utx"
+    },
+    "uttech4.light.light5": {
+      "ref": "UTtech4.Light.Light5",
+      "path": "/image-to-unreal-map/viewer/scene-textures/UTtech4/Light5-5b061ebe8c.png",
+      "width": 128,
+      "height": 128,
+      "sourcePackage": "UTtech4",
+      "sourceFile": "UTtech4.utx"
+    },
+    "uttech4.misc2.mbeam01": {
+      "ref": "UTtech4.Misc2.mbeam01",
+      "path": "/image-to-unreal-map/viewer/scene-textures/UTtech4/mbeam01-95d6c88eca.png",
+      "width": 256,
+      "height": 256,
+      "sourcePackage": "UTtech4",
+      "sourceFile": "UTtech4.utx"
+    },
+    "uttech4.misc2.wall2": {
+      "ref": "UTtech4.Misc2.wall2",
+      "path": "/image-to-unreal-map/viewer/scene-textures/UTtech4/wall2-d2c0a8c6d6.png",
+      "width": 256,
+      "height": 256,
+      "sourcePackage": "UTtech4",
+      "sourceFile": "UTtech4.utx"
+    },
+    "uttech4.concrete.conc01": {
+      "ref": "UTtech4.Concrete.conc01",
+      "path": "/image-to-unreal-map/viewer/scene-textures/UTtech4/conc01-127432f318.png",
+      "width": 256,
+      "height": 256,
+      "sourcePackage": "UTtech4",
+      "sourceFile": "UTtech4.utx"
+    },
+    "uttech4.light.light7": {
+      "ref": "uttech4.Light.Light7",
+      "path": "/image-to-unreal-map/viewer/scene-textures/uttech4/Light7-e0c975d38c.png",
+      "width": 256,
+      "height": 128,
+      "sourcePackage": "uttech4",
+      "sourceFile": "UTtech4.utx"
+    },
+    "uttech4.metal.metal12": {
+      "ref": "UTtech4.metal.metal12",
+      "path": "/image-to-unreal-map/viewer/scene-textures/UTtech4/metal12-d984f05194.png",
+      "width": 256,
+      "height": 256,
+      "sourcePackage": "UTtech4",
+      "sourceFile": "UTtech4.utx"
+    },
+    "uttech4.stone.stone14": {
+      "ref": "UTtech4.Stone.stone14",
+      "path": "/image-to-unreal-map/viewer/scene-textures/UTtech4/stone14-d2ce5914c0.png",
+      "width": 256,
+      "height": 256,
+      "sourcePackage": "UTtech4",
+      "sourceFile": "UTtech4.utx"
+    },
+    "uttech4.misc2.rock01": {
+      "ref": "UTtech4.Misc2.rock01",
+      "path": "/image-to-unreal-map/viewer/scene-textures/UTtech4/rock01-e44b201f79.png",
+      "width": 256,
+      "height": 256,
+      "sourcePackage": "UTtech4",
+      "sourceFile": "UTtech4.utx"
+    },
+    "uttech4.metal.metal02": {
+      "ref": "uttech4.metal.metal02",
+      "path": "/image-to-unreal-map/viewer/scene-textures/uttech4/metal02-7dfeee13c0.png",
+      "width": 256,
+      "height": 256,
+      "sourcePackage": "uttech4",
+      "sourceFile": "UTtech4.utx"
+    },
+    "uttech4.misc2.wood03": {
+      "ref": "UTtech4.Misc2.wood03",
+      "path": "/image-to-unreal-map/viewer/scene-textures/UTtech4/wood03-35c449a40e.png",
+      "width": 256,
+      "height": 256,
+      "sourcePackage": "UTtech4",
+      "sourceFile": "UTtech4.utx"
+    },
+    "uttech4.misc2.wood01": {
+      "ref": "UTtech4.Misc2.wood01",
+      "path": "/image-to-unreal-map/viewer/scene-textures/UTtech4/wood01-3b11187e7c.png",
+      "width": 256,
+      "height": 128,
+      "sourcePackage": "UTtech4",
+      "sourceFile": "UTtech4.utx"
+    },
+    "uttech4.light.light3b": {
+      "ref": "UTtech4.Light.light3b",
+      "path": "/image-to-unreal-map/viewer/scene-textures/UTtech4/light3b-89a4aa0adf.png",
+      "width": 256,
+      "height": 256,
+      "sourcePackage": "UTtech4",
+      "sourceFile": "UTtech4.utx"
+    },
+    "uttech4.concrete.conc22": {
+      "ref": "UTtech4.Concrete.Conc22",
+      "path": "/image-to-unreal-map/viewer/scene-textures/UTtech4/Conc22-2ed3479db9.png",
+      "width": 256,
+      "height": 256,
+      "sourcePackage": "UTtech4",
+      "sourceFile": "UTtech4.utx"
+    },
+    "uttech4.light.light1": {
+      "ref": "UTtech4.Light.light1",
+      "path": "/image-to-unreal-map/viewer/scene-textures/UTtech4/light1-d6d784cdb0.png",
+      "width": 128,
+      "height": 128,
+      "sourcePackage": "UTtech4",
+      "sourceFile": "UTtech4.utx"
+    },
+    "uttech4.concrete.conc43": {
+      "ref": "UTtech4.Concrete.conc43",
+      "path": "/image-to-unreal-map/viewer/scene-textures/UTtech4/conc43-59e12ce131.png",
+      "width": 256,
+      "height": 256,
+      "sourcePackage": "UTtech4",
+      "sourceFile": "UTtech4.utx"
+    },
+    "uttech4.metal.metal03": {
+      "ref": "uttech4.metal.metal03",
+      "path": "/image-to-unreal-map/viewer/scene-textures/uttech4/metal03-e2901f5c02.png",
+      "width": 256,
+      "height": 256,
+      "sourcePackage": "uttech4",
+      "sourceFile": "UTtech4.utx"
+    },
+    "uttech4.metal.metal01": {
+      "ref": "uttech4.metal.metal01",
+      "path": "/image-to-unreal-map/viewer/scene-textures/uttech4/metal01-de028f3cb7.png",
+      "width": 256,
+      "height": 256,
+      "sourcePackage": "uttech4",
+      "sourceFile": "UTtech4.utx"
+    },
+    "uttech4.deco.garaged1": {
+      "ref": "uttech4.Deco.garageD1",
+      "path": "/image-to-unreal-map/viewer/scene-textures/uttech4/garageD1-72e2a712c7.png",
+      "width": 256,
+      "height": 256,
+      "sourcePackage": "uttech4",
+      "sourceFile": "UTtech4.utx"
+    },
+    "uttech4.grate.grate06": {
+      "ref": "uttech4.Grate.grate06",
+      "path": "/image-to-unreal-map/viewer/scene-textures/uttech4/grate06-68f2065e27.png",
+      "width": 256,
+      "height": 256,
+      "sourcePackage": "uttech4",
+      "sourceFile": "UTtech4.utx"
+    },
+    "uttech4.misc1.walls1": {
+      "ref": "uttech4.Misc1.wallS1",
+      "path": "/image-to-unreal-map/viewer/scene-textures/uttech4/wallS1-6ef9ee5f4c.png",
+      "width": 256,
+      "height": 32,
+      "sourcePackage": "uttech4",
+      "sourceFile": "UTtech4.utx"
+    },
+    "sine_red": {
+      "ref": "sine_red",
+      "path": "/image-to-unreal-map/viewer/scene-textures/map-trooper/sine_red-a35597aa8a.png",
+      "width": 128,
+      "height": 64,
+      "sourcePackage": "map-trooper",
+      "sourceFile": "TO-Trooper.unr"
+    },
+    "sine_blue": {
+      "ref": "sine_blue",
+      "path": "/image-to-unreal-map/viewer/scene-textures/map-trooper/sine_blue-1d2ac0f510.png",
+      "width": 128,
+      "height": 64,
+      "sourcePackage": "map-trooper",
+      "sourceFile": "TO-Trooper.unr"
+    },
+    "carp": {
+      "ref": "carp",
+      "path": "/image-to-unreal-map/viewer/scene-textures/map-cia/carp-96fdff65c5.png",
+      "width": 256,
+      "height": 256,
+      "sourcePackage": "map-cia",
+      "sourceFile": "TO-CIA.unr"
+    },
+    "kjline": {
+      "ref": "kjline",
+      "path": "/image-to-unreal-map/viewer/scene-textures/map-cia/kjline-799269178a.png",
+      "width": 256,
+      "height": 32,
+      "sourcePackage": "map-cia",
+      "sourceFile": "TO-CIA.unr"
+    },
+    "rtbank": {
+      "ref": "rtbank",
+      "path": "/image-to-unreal-map/viewer/scene-textures/map-cia/rtbank-27710ef352.png",
+      "width": 256,
+      "height": 256,
+      "sourcePackage": "map-cia",
+      "sourceFile": "TO-CIA.unr"
+    },
+    "credit": {
+      "ref": "Credit",
+      "path": "/image-to-unreal-map/viewer/scene-textures/map-cia/Credit-9cf5e7cd8f.png",
+      "width": 256,
+      "height": 256,
+      "sourcePackage": "map-cia",
+      "sourceFile": "TO-CIA.unr"
+    },
+    "kjposter": {
+      "ref": "kjposter",
+      "path": "/image-to-unreal-map/viewer/scene-textures/map-cia/kjposter-a42f8e6766.png",
+      "width": 256,
+      "height": 256,
+      "sourcePackage": "map-cia",
+      "sourceFile": "TO-CIA.unr"
+    },
+    "derek": {
+      "ref": "derek",
+      "path": "/image-to-unreal-map/viewer/scene-textures/map-cia/derek-e1c79a582b.png",
+      "width": 256,
+      "height": 256,
+      "sourcePackage": "map-cia",
+      "sourceFile": "TO-CIA.unr"
+    },
+    "psky1b": {
+      "ref": "pSky1b",
+      "path": "/image-to-unreal-map/viewer/scene-textures/map-cold/pSky1b-daea9f8431.png",
+      "width": 256,
+      "height": 256,
+      "sourcePackage": "map-cold",
+      "sourceFile": "TO-2-ColdV34.unr"
+    },
+    "lantrn2": {
+      "ref": "LANTRN2",
+      "path": "/image-to-unreal-map/viewer/scene-textures/map-cold/LANTRN2-615be87661.png",
+      "width": 64,
+      "height": 64,
+      "sourcePackage": "map-cold",
+      "sourceFile": "TO-2-ColdV34.unr"
+    },
+    "rpcrated2small": {
+      "ref": "rpCrateD2small",
+      "path": "/image-to-unreal-map/viewer/scene-textures/map-cold/rpCrateD2small-4cd320cd0e.png",
+      "width": 128,
+      "height": 128,
+      "sourcePackage": "map-cold",
+      "sourceFile": "TO-2-ColdV34.unr"
+    },
+    "drcrowpebtrans": {
+      "ref": "DrCrowpebtrans",
+      "path": "/image-to-unreal-map/viewer/scene-textures/map-cold/DrCrowpebtrans-61ec08349e.png",
+      "width": 256,
+      "height": 256,
+      "sourcePackage": "map-cold",
+      "sourceFile": "TO-2-ColdV34.unr"
+    },
+    "rpcratec1small": {
+      "ref": "rpCrateC1small",
+      "path": "/image-to-unreal-map/viewer/scene-textures/map-cold/rpCrateC1small-42d1b47a4b.png",
+      "width": 128,
+      "height": 128,
+      "sourcePackage": "map-cold",
+      "sourceFile": "TO-2-ColdV34.unr"
+    },
+    "shpwood9": {
+      "ref": "ShpWood9",
+      "path": "/image-to-unreal-map/viewer/scene-textures/map-cold/ShpWood9-def9e27adf.png",
+      "width": 256,
+      "height": 256,
+      "sourcePackage": "map-cold",
+      "sourceFile": "TO-2-ColdV34.unr"
+    },
+    "specglas": {
+      "ref": "SpecGlas",
+      "path": "/image-to-unreal-map/viewer/scene-textures/map-cold/SpecGlas-311a02177b.png",
+      "width": 128,
+      "height": 256,
+      "sourcePackage": "map-cold",
+      "sourceFile": "TO-2-ColdV34.unr"
+    },
+    "shpwood4": {
+      "ref": "ShpWood4",
+      "path": "/image-to-unreal-map/viewer/scene-textures/map-cold/ShpWood4-7f5c0618f7.png",
+      "width": 256,
+      "height": 256,
+      "sourcePackage": "map-cold",
+      "sourceFile": "TO-2-ColdV34.unr"
+    }
+  },
+  "packages": {
+    "adv": {
+      "requested": 1,
+      "exported": 0,
+      "file": null
+    },
+    "botpack": {
+      "requested": 4,
+      "exported": 0,
+      "file": null
+    },
+    "city": {
+      "requested": 2,
+      "exported": 2,
+      "file": "city.utx"
+    },
+    "decayeds": {
+      "requested": 1,
+      "exported": 1,
+      "file": "DecayedS.utx"
+    },
+    "despurban-materials": {
+      "requested": 38,
+      "exported": 38,
+      "file": "DespUrban-Materials.utx"
+    },
+    "engine": {
+      "requested": 1,
+      "exported": 1,
+      "file": "Engine.u"
+    },
+    "genfluid": {
+      "requested": 3,
+      "exported": 3,
+      "file": "GenFluid.utx"
+    },
+    "genfluid_ut": {
+      "requested": 1,
+      "exported": 1,
+      "file": "GenFluid_UT.utx"
+    },
+    "genin": {
+      "requested": 2,
+      "exported": 2,
+      "file": "GenIn.utx"
+    },
+    "labdesp": {
+      "requested": 13,
+      "exported": 13,
+      "file": "labdesp.utx"
+    },
+    "mine": {
+      "requested": 6,
+      "exported": 6,
+      "file": "Mine.utx"
+    },
+    "neuro4": {
+      "requested": 4,
+      "exported": 4,
+      "file": "Neuro4.utx"
+    },
+    "pl4yrshp": {
+      "requested": 3,
+      "exported": 3,
+      "file": "Pl4yrShp.utx"
+    },
+    "richchurch": {
+      "requested": 2,
+      "exported": 2,
+      "file": "richchurch.utx"
+    },
+    "richrig": {
+      "requested": 16,
+      "exported": 15,
+      "file": "richrig.utx"
+    },
+    "richtrain": {
+      "requested": 2,
+      "exported": 2,
+      "file": "RichTrain.utx"
+    },
+    "rklphoto1": {
+      "requested": 6,
+      "exported": 6,
+      "file": "RKLphoto1.utx"
+    },
+    "screenshot": {
+      "requested": 1,
+      "exported": 0,
+      "file": null
+    },
+    "shaneday": {
+      "requested": 5,
+      "exported": 5,
+      "file": "ShaneDay.utx"
+    },
+    "skybox": {
+      "requested": 2,
+      "exported": 2,
+      "file": "Skybox.utx"
+    },
+    "spynet-pack": {
+      "requested": 8,
+      "exported": 8,
+      "file": "Spynet-pack.utx"
+    },
+    "starship": {
+      "requested": 1,
+      "exported": 1,
+      "file": "Starship.utx"
+    },
+    "taconeysigns": {
+      "requested": 1,
+      "exported": 1,
+      "file": "TAconeysigns.utx"
+    },
+    "taconeytex": {
+      "requested": 3,
+      "exported": 3,
+      "file": "TAconeytex.utx"
+    },
+    "terrorist3tex": {
+      "requested": 3,
+      "exported": 3,
+      "file": "Terrorist3tex.utx"
+    },
+    "to-anditrooper": {
+      "requested": 19,
+      "exported": 19,
+      "file": "TO-AndiTrooper.utx"
+    },
+    "to-andiverdon": {
+      "requested": 7,
+      "exported": 7,
+      "file": "TO-AndiVerdon.utx"
+    },
+    "to-asia": {
+      "requested": 12,
+      "exported": 12,
+      "file": "TO-Asia.utx"
+    },
+    "to-browntown": {
+      "requested": 3,
+      "exported": 3,
+      "file": "TO-Browntown.utx"
+    },
+    "to-desp-free1": {
+      "requested": 4,
+      "exported": 4,
+      "file": "TO-Desp-free1.utx"
+    },
+    "to-despfact-1": {
+      "requested": 1,
+      "exported": 1,
+      "file": "TO-DespFact-1.utx"
+    },
+    "to-epic": {
+      "requested": 1,
+      "exported": 1,
+      "file": "TO-Epic.utx"
+    },
+    "to-fluxicy": {
+      "requested": 2,
+      "exported": 2,
+      "file": "TO-FluxIcy.utx"
+    },
+    "to-ganja-free-1": {
+      "requested": 3,
+      "exported": 3,
+      "file": "TO-ganja-free-1.utx"
+    },
+    "to-kill-joy-ut": {
+      "requested": 1,
+      "exported": 0,
+      "file": "TO-Kill-Joy-UT.utx"
+    },
+    "to-nassausub": {
+      "requested": 6,
+      "exported": 6,
+      "file": "TO-Nassausub.utx"
+    },
+    "to-nassauvehicles": {
+      "requested": 31,
+      "exported": 31,
+      "file": "TO-Nassauvehicles.utx"
+    },
+    "to-old-city": {
+      "requested": 3,
+      "exported": 3,
+      "file": "TO-Old-City.utx"
+    },
+    "to-orient": {
+      "requested": 38,
+      "exported": 38,
+      "file": "TO-Orient.utx"
+    },
+    "to-rapid": {
+      "requested": 1,
+      "exported": 1,
+      "file": "TO-Rapid.utx"
+    },
+    "to-richsnow": {
+      "requested": 12,
+      "exported": 12,
+      "file": "to-richsnow.utx"
+    },
+    "to-richurban1": {
+      "requested": 25,
+      "exported": 25,
+      "file": "TO-richurban1.utx"
+    },
+    "to-richurban2": {
+      "requested": 61,
+      "exported": 60,
+      "file": "TO-Richurban2.utx"
+    },
+    "to-richurban3": {
+      "requested": 9,
+      "exported": 9,
+      "file": "to-richurban3.utx"
+    },
+    "to-rig2": {
+      "requested": 8,
+      "exported": 8,
+      "file": "TO-Rig2.utx"
+    },
+    "to-spinex-1": {
+      "requested": 2,
+      "exported": 2,
+      "file": "TO-Spinex-1.utx"
+    },
+    "to2-rainfx": {
+      "requested": 4,
+      "exported": 3,
+      "file": "RainFX.utx"
+    },
+    "uttech1": {
+      "requested": 21,
+      "exported": 21,
+      "file": "UTtech1.utx"
+    },
+    "uttech4": {
+      "requested": 24,
+      "exported": 24,
+      "file": "UTtech4.utx"
+    },
+    "uwindow": {
+      "requested": 1,
+      "exported": 0,
+      "file": null
+    },
+    "map:trooper": {
+      "requested": 2,
+      "exported": 2,
+      "file": "TO-Trooper.unr"
+    },
+    "map:cia": {
+      "requested": 6,
+      "exported": 6,
+      "file": "TO-CIA.unr"
+    },
+    "map:cold": {
+      "requested": 8,
+      "exported": 8,
+      "file": "TO-2-ColdV34.unr"
+    }
+  },
+  "coverage": {
+    "rapidwater": {
+      "triangles": 9826,
+      "resolvedTriangles": 9623,
+      "percent": 97.9,
+      "missingTop": [
+        [
+          "richrig.Water.Wateranim1",
+          193
+        ],
+        [
+          "TO2-RainFX.Fir-ext",
+          10
+        ]
+      ]
+    },
+    "deagle": {
+      "triangles": 1180,
+      "resolvedTriangles": 1158,
+      "percent": 98.1,
+      "missingTop": [
+        [
+          "Adv.Protext",
+          22
+        ]
+      ]
+    },
+    "trooper": {
+      "triangles": 10760,
+      "resolvedTriangles": 10758,
+      "percent": 100,
+      "missingTop": [
+        [
+          "Screenshot.richrocks",
+          2
+        ]
+      ]
+    },
+    "dragon": {
+      "triangles": 23900,
+      "resolvedTriangles": 23724,
+      "percent": 99.3,
+      "missingTop": [
+        [
+          "TO-Richurban2.Base.bwateranimold",
+          150
+        ],
+        [
+          "Botpack.Ammocount.AmmoCountBar",
+          26
+        ]
+      ]
+    },
+    "cia": {
+      "triangles": 40628,
+      "resolvedTriangles": 39296,
+      "percent": 96.7,
+      "missingTop": [
+        [
+          "Botpack.Ammocount.AmmoCountBar",
+          938
+        ],
+        [
+          "Botpack.Ammocount.miniammoled",
+          283
+        ],
+        [
+          "Botpack.Ammocount.AmmoCountJunk",
+          97
+        ],
+        [
+          "TO-Kill-Joy-UT.Glass.beam",
+          14
+        ]
+      ]
+    },
+    "cold": {
+      "triangles": 19088,
+      "resolvedTriangles": 18455,
+      "percent": 96.7,
+      "missingTop": [
+        [
+          "UWindow.WhiteTexture",
+          441
+        ],
+        [
+          "Botpack.Skins.jrim",
+          192
+        ]
+      ]
+    }
+  }
+}

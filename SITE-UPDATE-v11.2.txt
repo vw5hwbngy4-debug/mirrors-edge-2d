@@ -1,0 +1,42 @@
+SpawnMap.ai v11.2 — Semantic Runtime
+
+Base
+- Preserves the v11 / v11.1 layout, gamer clarity, current Suzhou v3 artifact, Overview, Spectator, graffiti/fruit assets and provenance.
+
+New validated runtime layer
+- TO-GPT Telemetry v0.1.1 is now the primary runtime proof.
+- 16 bots, both teams.
+- 32 SPAWN events.
+- 1,492 POS events.
+- 15 kills.
+- 2 round starts / 1 round end.
+- 32/32 SPAWN → first POS participant/life joins verified.
+- 0 unverified joins.
+- 0 impossible SF ↔ Terrorist spawn jumps.
+- 0 warnings naming TOGPTTelemetryMutator.
+- Exact Suzhou v3 SHA-256 remains unchanged.
+- Gameplay/navigation/map artifact remain observer-only.
+
+Tactical Ops buy phase
+- The strict 10-second exit metric correctly reports no observed exit inside that window.
+- This is contextualized on the site as the normal Tactical Ops buy/loadout phase in the buy zone.
+- First-round observed exits begin at roughly 28 seconds.
+- This is not presented as a navigation failure.
+
+Semantic Runtime Bridge
+- Real UE1 XYZ coordinates are mapped to named semantic map regions.
+- Browser-safe semantic map, region metrics and observed-flow JSON are included.
+- Analyze page now contains a real interactive semantic-region map.
+- Modes: movement, deaths, dwell, observed flow and regions.
+- Click a region to inspect measured runtime metrics.
+- Observed semantic flow is explicitly separated from the Unreal NavigationPoint graph.
+
+Semantic IR status
+- Architecture page now marks the Semantic Map IR proof as LIVE / PROVEN rather than only FORMALIZING.
+- Semantic Runtime Bridge is a distinct live proof layer.
+- Automatic telemetry-driven map revision remains NEXT, not a current feature.
+
+Data boundaries
+- Raw telemetry NDJSON is not shipped publicly.
+- Local Windows paths and secrets are not included.
+- One short bot-only session is not presented as a competitive-balance verdict.

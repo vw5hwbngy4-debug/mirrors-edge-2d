@@ -1,0 +1,10 @@
+SpawnMap.ai site update v11.3
+=============================
+
+- Connected the website to the public TO-GPT research server health feed.
+- Added a prominent homepage server card and direct unreal:// join link.
+- Shows human and bot participation separately.
+- Shows current server map, capacity and telemetry collector state.
+- Uses the VPS health feed first and the UE1 GameSpy UDP query as fallback.
+- Treats stale or unavailable server data as OFFLINE.
+- Updated asset cache versions to v11.3.

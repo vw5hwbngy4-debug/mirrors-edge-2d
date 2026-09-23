@@ -1,0 +1,26 @@
+SpawnMap Swipe v6
+
+Desktop
+- Full feed works with mouse drag, mouse wheel, trackpad, keyboard arrows and visible up/down map buttons.
+- Shift + mouse wheel changes WALK / OVERVIEW / TELEMETRY.
+- WALK now has working pointer-lock mouse look on classic maps and Suzhou.
+- WASD moves, Shift runs, Space jumps, Escape first releases mouse look and then exits WALK.
+
+Telemetry
+- Suzhou telemetry no longer performs three runtime JSON fetches before sceneReady.
+- A compact static telemetry payload is generated from the validated semantic-runtime v0.1.1 files.
+- Movement columns, kill markers, observed transition lines and the session summary render directly on the textured Suzhou map.
+- SceneReady is always emitted even if an overlay error occurs, so the feed cannot hang on TELEMETRY.
+
+About
+- Legacy long-form About page removed.
+- About is now a compact window over the live TikTok-style SpawnMap feed.
+- Copy:
+  hi im bami
+  how much was the fish?
+  i need a star.
+  greetings to Painful and not to Alper halal
+- Uses the existing Bamipangpang shooting artwork.
+
+Cleanup
+- Legacy homepage removed and its menu link removed.

@@ -1,0 +1,9 @@
+SpawnMap Swipe v8.2
+
+Landing stability fix:
+- The server-status landing is now shown only once per browser tab/session.
+- Dismissing it writes sessionStorage before the exit animation begins.
+- If Safari/Chrome refreshes because of an aggressive vertical gesture, the landing does not return.
+- An inline boot guard prevents a visible landing flash on reload.
+- html/body are fixed and overscroll is suppressed to reduce mobile pull-to-refresh / rubber-band behavior.
+- No visual redesign and no viewer/map changes from v8.1.

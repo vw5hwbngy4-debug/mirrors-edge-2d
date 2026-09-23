@@ -1,0 +1,64 @@
+{
+  "schema": "spawnmap.artifact-provenance.v0.1",
+  "mapId": "to-gpt-suzhou-canal",
+  "displayName": "TO-GPT-SuzhouCanal",
+  "artifact": {
+    "file": "TO-GPT-SuzhouCanal-GraffitiFruit-v3.unr",
+    "bytes": 2747210,
+    "sha256": "dd9530c3beffbec46435b9d53070b87488a4eb075311bfd69ebcb99ec782be93",
+    "unrealPackageVersion": 69
+  },
+  "parentArtifact": "TO-SuzhouCanal.unr",
+  "agenticBuild": {
+    "agent": "GPT Work",
+    "remoteRunner": "v0.5.0",
+    "executionPath": [
+      "GPT Work",
+      "SpawnMap remote runner",
+      "UCC / SpawnbornBuild",
+      "Tactical Ops 3.4"
+    ],
+    "workflow": "bounded edit of an existing .unr"
+  },
+  "contentDelta": {
+    "graffiti": [
+      {
+        "texture": "MyLevel.SM_Graffiti_Bamipangpang",
+        "actor": "SMGraffitiBamipangpang",
+        "placement": "west boundary wall",
+        "count": 1
+      },
+      {
+        "texture": "MyLevel.SM_Graffiti_TOGPT",
+        "actor": "SMGraffitiTOGPT",
+        "placement": "north boundary wall",
+        "count": 1
+      }
+    ],
+    "marketTextures": [
+      {
+        "source": "TO-BellaItalia.orangkach1",
+        "embeddedAs": "MyLevel.SM_Italia_Oranges",
+        "stalls": 4
+      },
+      {
+        "source": "TO-BellaItalia.veg1",
+        "embeddedAs": "MyLevel.SM_Italia_Tomatoes",
+        "stalls": 4
+      }
+    ],
+    "preview": "MyLevel.Screenshot restored and referenced by LevelInfo.Screenshot"
+  },
+  "validation": {
+    "playerStarts": 32,
+    "pathNodes": 149,
+    "sSWATPathNodes": 26,
+    "buyZones": 4,
+    "specialBase": 1,
+    "terrBase": 1,
+    "scenarioObjectivesPreserved": true,
+    "missingTextures": 0,
+    "gameplayGeometryChanged": false,
+    "runtimeLoad": "Tactical Ops 3.4 / s_SWATGame success"
+  }
+}

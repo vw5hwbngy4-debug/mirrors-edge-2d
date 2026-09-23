@@ -1,0 +1,8 @@
+SpawnMap Inspector v0.6
+
+What changed:
+- Spectator mode now runs directly on the map detail page instead of opening as a separate screen.
+- Overview stays top-down and clean.
+- Map lineage remains above Spectator.
+- Live prompt iteration now happens inside the embedded Spectator viewport.
+- Closing the detail page unloads both Overview and Spectator frames.

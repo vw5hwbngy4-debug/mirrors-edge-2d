@@ -1,0 +1,11 @@
+SpawnMap Swipe v7
+
+- Desktop up/down buttons removed.
+- Desktop WALK button pointer-capture bug fixed.
+- OVERVIEW/TELEMETRY no longer use a blocking feed spinner; poster stays until scene is ready, with iframe fallback reveal.
+- Feed-level TO-GPT logo removed.
+- Suzhou OVERVIEW/TELEMETRY show one logo only.
+- Suzhou WALK shows a small TO-GPT mark inside the title rectangle.
+- Runtime and Research pages are now native windows over the swipe feed.
+- Menu labels changed to About / Runtime / Research.
+- Feed supports ?map=suzhou&mode=telemetry deep links.

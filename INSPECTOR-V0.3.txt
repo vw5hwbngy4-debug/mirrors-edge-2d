@@ -1,0 +1,10 @@
+SpawnMap Inspector v0.3
+
+Mobile-first architecture:
+- Main page is a scalable compact map-row library. No repeated map detail/viewer content.
+- Tapping a row opens a dedicated full-screen map detail surface.
+- Detail surface shows a centered 3D Overview first.
+- Spectator launches as its own full-screen player-height surface.
+- Spectator mobile controls: left stick = camera-relative movement, swipe/drag world = look, Jump = jump.
+- CHANGE THIS AREA opens a location-aware iteration prompt that can be copied back to GPT.
+- Tactical Ops runtime remains the final authority for UE1 skybox/FakeBackdrop, lighting, pathing and gameplay.

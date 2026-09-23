@@ -1,0 +1,16 @@
+SpawnMap Inspector v0.2
+
+Mobile-first changes
+- The map no longer occupies a giant embedded viewer on phones.
+- A compact map preview row opens a dedicated full-screen map stage.
+- Full-screen stage has two clear modes: OVERVIEW and SPECTATOR.
+- Overview camera fits the gameplay area (PlayerStarts/PathNodes) instead of the full world shell/sky volume.
+- Spectator is the player-height walking mode.
+- Mobile movement is camera-relative: up = forward, down = backward, left/right strafe.
+- Swipe the world to mouse-look on touch.
+- Jump remains a dedicated right-side button.
+- Mobile HUD was decluttered; team/collision controls are removed from the top overlay in embedded mobile mode.
+- "Change this area" opens a compact prompt sheet and copies a GPT iteration prompt including current Unreal coordinates and view direction.
+
+Runtime boundary
+Spectator is a fast design preview, not Tactical Ops runtime emulation. Final UE1 skybox/FakeBackdrop, BSP, lighting, pathing, objectives and gameplay remain runtime validation steps.

@@ -1,0 +1,28 @@
+SpawnMap Swipe v8
+
+Landing
+- Navy TO-GPT server landing screen.
+- Uses the restored working PHP server bridge.
+- Live status text: TO-GPT SERVER STATUS: ONLINE / OFFLINE.
+- Human, Bot and Hossie portraits with live counts.
+- Hossie is only counted when the health feed identifies it separately; otherwise the site shows — instead of inventing a number.
+- Bottom floating SWIPE FOR MAPS pointer.
+- Desktop: scroll down, Arrow Down, Enter or click the pointer to enter the feed.
+
+Overview
+- Suzhou OVERVIEW now uses the older working SpawnMap overview implementation from the supplied spawnmap.ai archive.
+- Its original preview renderer is isolated as spawnborn-map-preview.overview.js so it does not disturb WALK.
+- Fixed camera settle logic and the original textured T3D + asset-cache pipeline are preserved.
+- It now also posts sceneReady back to the TikTok shell.
+
+Fourth horizontal mode
+- WALK → OVERVIEW → TELEMETRY → MAPS.
+- One more left swipe after TELEMETRY opens MAPS.
+- MAPS is a black full-screen grid with all current maps as square tiles.
+- Selecting a tile returns directly to that map in WALK mode.
+- Final light-gray animated GENERATE… tile is intentionally future-facing and marked FUTURE · REVIEWED. It does not pretend public map generation exists today.
+
+Server state
+- server-status.php and server-config.php restored from the supplied working site.
+- Health feed remains preferred; GameSpy UDP query remains the fallback.
+- Optional future Hossie health keys are supported without guessing from the generic bot count.

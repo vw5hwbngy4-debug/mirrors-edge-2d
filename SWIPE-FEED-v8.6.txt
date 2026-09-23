@@ -1,0 +1,25 @@
+SpawnMap Swipe v8.6
+
+Overview
+- Overview is now a true interaction container.
+- Removed the TikTok feed gesture bridge from Suzhou Overview and every classic Overview.
+- No horizontal or vertical feed swipe can fire from inside Overview.
+- Drag/orbit, pinch/zoom and pan belong exclusively to OrbitControls.
+- Leave Overview using the visible WALK / OVERVIEW / TELEMETRY tabs.
+
+Telemetry without data
+- Fixed the freeze on classic maps with no telemetry.
+- Root cause: removing iframe src produced an about:blank load event; the fallback then marked
+  the blank iframe scene-ready and it stole touch input.
+- about:blank/no-src loads are now ignored.
+- No-data telemetry never activates an iframe.
+- A compact NO SERVER SESSION card appears over the map poster instead.
+
+Suzhou telemetry mobile layout
+- Removed normal feed title/count/swipe chrome while Telemetry is active.
+- This eliminates the large Suzhou Canal / 4 of 7 overlap visible in the screenshot.
+- Hot zones are now one full-width mobile panel above a compact scoreboard-status strip.
+- Hot-zone list is limited to four entries on the compact telemetry HUD.
+- Current collector still does not publish a real Top 10 scoreboard, so no fake player data is shown.
+
+Horizontal MAPS access from WALK/TELEMETRY is unchanged.

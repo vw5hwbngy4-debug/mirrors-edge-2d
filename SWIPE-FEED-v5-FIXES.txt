@@ -1,0 +1,16 @@
+SpawnMap Swipe v5
+
+Fixes
+- OVERVIEW no longer waits for every texture before becoming usable.
+  Geometry appears immediately and textures hydrate progressively.
+- The feed has a 5-second safety fallback so a failed iframe cannot leave an endless spinner.
+- RapidWater][ and Trooper now use explicit known-good in-map PlayerStart positions.
+- TeamNumber omitted by Unreal is now correctly treated as default team 0.
+- GPT-built Suzhou Canal now carries the supplied TO-GPT mark in the feed and full-screen viewer.
+- Cache versions bumped to v5.
+
+Unchanged
+- Vertical swipe changes map.
+- Horizontal swipe changes WALK / OVERVIEW / TELEMETRY.
+- Classic map texture assignments from v4 are preserved.
+- Suzhou continues to use the proven textured T3D + SpawnMap asset-cache renderer.

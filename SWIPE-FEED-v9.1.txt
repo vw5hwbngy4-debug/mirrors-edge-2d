@@ -1,0 +1,16 @@
+SpawnMap Swipe v9.1
+
+RapidwatersII
+- Public name changed exactly to RapidwatersII.
+- Removed the custom Rapidwaters spawn override.
+- The walker now uses the map's own first official team-0/default PlayerStart:
+  x=-810.7201538085938, y=40, z=466.188720703125, yaw=2768.
+
+Rooftop spawn bug
+- Fixed the actual cause in the browser walker.
+- Previously, spawnWalk cast downward from 240 units above a PlayerStart.
+- In a covered spawn room this could hit the ROOF before the floor and move the camera onto the roof.
+- Official PlayerStarts now only floor-snap within 24 units above / 128 units below their own authored height.
+- This preserves the real Unreal PlayerStart instead of searching from above the building.
+
+No changes to landing, Overview, Telemetry, MAPS, GPT BUILDS, textures or navigation.

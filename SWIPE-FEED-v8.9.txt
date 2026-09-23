@@ -1,0 +1,28 @@
+SpawnMap Swipe v8.9
+
+Landing
+- Added matching lime-green GPT BUILDS glow on the right edge.
+- Tap/click it to go straight to the first GPT map's build history.
+- Mobile landing: swipe left -> MAPS, swipe right -> GPT BUILDS, vertical -> map feed.
+
+Desktop keyboard navigation
+- W / Arrow Up: previous map.
+- S / Arrow Down: next map.
+- A / Arrow Left: MAPS.
+- D / Arrow Right: GPT BUILDS when the selected map is GPT-built.
+- From MAPS, D / Arrow Right returns to WALK.
+- From GPT BUILDS, A / Arrow Left returns to TELEMETRY.
+- Escape keeps the same side-view return behavior.
+- Mouse edge glows remain available.
+
+Phone MAPS page
+- MAPS no longer participates in feed swipe navigation.
+- Horizontal overflow and horizontal overscroll are disabled.
+- MAPS is now a genuine vertically scrollable page.
+- Mobile tile size is based on screen width, not screen height, so lower rows are no longer cut off.
+- Natural exits remain:
+  * tap SPAWNMAP.AI -> homepage / landing
+  * tap any map tile -> that map in WALK
+- ITERATIONS receives the same no-horizontal-swipe / vertical-scroll treatment.
+
+No changes to the working Overview, Walk renderer, map textures or tactical telemetry.

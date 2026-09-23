@@ -1,0 +1,85 @@
+{
+  "schema": "SpawnMapSwipeFeed-v1",
+  "maps": [
+    {
+      "id": "rapidwater",
+      "title": "RapidwatersII",
+      "kind": "classic",
+      "badge": "CLASSIC",
+      "thumb": "/image-to-unreal-map/media/classics/rapidwater.webp",
+      "scene": "/image-to-unreal-map/data/scenes/rapidwater.scene.json",
+      "palette": "#7f9193"
+    },
+    {
+      "id": "deagle",
+      "title": "Deagle5v12",
+      "kind": "classic",
+      "badge": "CLASSIC",
+      "thumb": "/image-to-unreal-map/media/classics/deagle.webp",
+      "scene": "/image-to-unreal-map/data/scenes/deagle.scene.json",
+      "palette": "#8d8578"
+    },
+    {
+      "id": "trooper",
+      "title": "Trooper",
+      "kind": "classic",
+      "badge": "CLASSIC",
+      "thumb": "/image-to-unreal-map/media/classics/trooper.webp",
+      "scene": "/image-to-unreal-map/data/scenes/trooper.scene.json",
+      "palette": "#7d8878",
+      "walkSpawn": {
+        "x": -346.6084289550781,
+        "y": -44.51165771484375,
+        "z": -609.8499145507812,
+        "yaw": -21384
+      }
+    },
+    {
+      "id": "suzhou",
+      "title": "Suzhou Canal",
+      "kind": "gpt",
+      "badge": "GPT BUILT",
+      "thumb": "/image-to-unreal-map/media/TO-GPT-SuzhouCanal-GraffitiFruit-v3-Overview.png",
+      "scene": "/image-to-unreal-map/data/scenes/suzhou.scene.json",
+      "palette": "#718b7f",
+      "telemetry": {
+        "summary": "/image-to-unreal-map/data/semantic-runtime-v011/suzhou-v3.semantic-runtime-summary.json",
+        "regions": "/image-to-unreal-map/data/semantic-runtime-v011/suzhou-v3.semantic-regions.geo.json",
+        "transitions": "/image-to-unreal-map/data/semantic-runtime-v011/suzhou-v3.semantic-transitions.json"
+      }
+    },
+    {
+      "id": "dragon",
+      "title": "Dragon",
+      "kind": "classic",
+      "badge": "CLASSIC",
+      "thumb": "/image-to-unreal-map/media/classics/dragon.webp",
+      "scene": "/image-to-unreal-map/data/scenes/dragon.scene.json",
+      "palette": "#8b7774",
+      "walkSpawn": {
+        "x": -842.2923583984375,
+        "y": -1504.611572265625,
+        "z": 1976.65283203125,
+        "yaw": -16360
+      }
+    },
+    {
+      "id": "cia",
+      "title": "CIA",
+      "kind": "classic",
+      "badge": "CLASSIC",
+      "thumb": "/image-to-unreal-map/media/classics/cia.webp",
+      "scene": "/image-to-unreal-map/data/scenes/cia.scene.json",
+      "palette": "#75858e"
+    },
+    {
+      "id": "cold",
+      "title": "2-ColdV34",
+      "kind": "classic",
+      "badge": "CLASSIC",
+      "thumb": "/image-to-unreal-map/media/classics/cold.webp",
+      "scene": "/image-to-unreal-map/data/scenes/cold.scene.json",
+      "palette": "#7b8d95"
+    }
+  ]
+}

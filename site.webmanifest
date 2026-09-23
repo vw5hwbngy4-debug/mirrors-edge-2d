@@ -1,0 +1,14 @@
+{
+  "name": "SpawnMap.ai",
+  "short_name": "SpawnMap",
+  "description": "Agentic level engineering for Unreal Engine 1 / Tactical Ops.",
+  "start_url": "/image-to-unreal-map/",
+  "scope": "/image-to-unreal-map/",
+  "icons": [
+    {"src": "/image-to-unreal-map/android-chrome-192x192.png", "sizes": "192x192", "type": "image/png"},
+    {"src": "/image-to-unreal-map/android-chrome-512x512.png", "sizes": "512x512", "type": "image/png"}
+  ],
+  "theme_color": "#070a0b",
+  "background_color": "#070a0b",
+  "display": "standalone"
+}

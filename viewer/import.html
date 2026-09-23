@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover,user-scalable=no">
+<meta name="theme-color" content="#071421">
+<title>SpawnMap.ai · Import map</title>
+<meta name="description" content="Drop a Tactical Ops T3D or SpawnMap artifact and inspect it instantly in the browser.">
+<link rel="icon" href="/image-to-unreal-map/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/image-to-unreal-map/viewer/import/import.css?v=9.4">
+</head>
+<body>
+<div class="preview"><spawnborn-map-preview></spawnborn-map-preview></div>
+
+<header class="top">
+  <a class="brand" href="/image-to-unreal-map/">SPAWNMAP<span>.AI</span></a>
+  <div style="display:flex;gap:7px">
+    <button class="import-again" type="button" data-import-again hidden>IMPORT ANOTHER</button>
+    <a class="back" href="/image-to-unreal-map/">BACK TO MAPS</a>
+  </div>
+</header>
+
+<section class="import-screen" data-import-screen>
+  <div class="drop-card" data-drop-card>
+    <div class="kicker">SPAWNMAP · LOCAL ARTIFACT LOADER</div>
+    <div class="drop-symbol">↓</div>
+    <h1>DROP THE MAP.</h1>
+    <p>Open a Tactical Ops <b>.t3d</b> instantly. A SpawnMap <b>.zip</b> can include the T3D, MapGenome, validation and .unr sidecar. Files stay in your browser; importing does not publish them.</p>
+    <div class="actions">
+      <button class="primary" type="button" data-pick>CHOOSE ARTIFACT</button>
+      <button class="secondary" type="button" onclick="location.href='/image-to-unreal-map/'">MAP FEED</button>
+    </div>
+    <p class="support">T3D · MAPGENOME.JSON · VALIDATION.JSON · SPAWNMAP ZIP</p>
+    <input data-picker type="file" multiple accept=".t3d,.json,.zip,.unr,application/zip,text/plain,application/json">
+  </div>
+</section>
+
+<div class="map-hud" data-map-hud hidden>
+  <div class="map-card">
+    <small data-map-kind>T3D IMPORT</small>
+    <strong data-map-title>Imported map</strong>
+    <span data-map-status>LOCAL PREVIEW</span>
+  </div>
+  <div class="mode-card">
+    <button type="button" class="active" data-view-mode="overview">OVERVIEW</button>
+    <button type="button" data-view-mode="walk">WALK</button>
+    <button type="button" data-info>INFO</button>
+  </div>
+</div>
+
+<aside class="meta-drawer" data-meta hidden>
+  <h2>ARTIFACT / MAP GENOME</h2>
+  <div class="meta-grid" data-meta-grid></div>
+  <div class="artifacts" data-artifacts></div>
+</aside>
+
+<div class="walk-ui" data-walk-ui hidden>
+  <div class="look-zone" data-look-zone></div>
+  <div class="crosshair"></div>
+  <div class="coords" data-coords>PLAYER HEIGHT</div>
+  <div class="joystick" data-joystick><div class="stick" data-stick></div></div>
+  <button class="jump" type="button" data-jump>JUMP</button>
+  <div class="desktop-help">WASD · DRAG TO LOOK · SHIFT SPRINT · SPACE JUMP</div>
+</div>
+
+<script src="/image-to-unreal-map/viewer/preview/vendor/three.min.js"></script>
+<script src="/image-to-unreal-map/viewer/preview/vendor/three-orbit-controls.js"></script>
+<script src="/image-to-unreal-map/viewer/asset-cache/scene-texture-manifest.js?v=9.4"></script>
+<script src="/image-to-unreal-map/viewer/asset-cache/asset-resolver.js?v=9.4"></script>
+<script src="/image-to-unreal-map/viewer/preview/t3d-parser.js?v=9.4"></script>
+<script src="/image-to-unreal-map/viewer/preview/spawnborn-map-preview.js?v=9.4"></script>
+<script src="/image-to-unreal-map/viewer/import/import.js?v=9.4"></script>
+</body>
+</html>

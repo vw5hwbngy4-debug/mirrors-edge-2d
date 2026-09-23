@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover,user-scalable=no">
+<meta name="theme-color" content="#071013">
+<title>SpawnMap Scene</title>
+<link rel="stylesheet" href="/image-to-unreal-map/viewer/scene/scene.css?v=8.6">
+</head>
+<body>
+<canvas data-canvas></canvas>
+<div class="loading" data-loading><i></i><span>LOADING MAP</span></div>
+<div class="scene-ui" data-ui hidden>
+  <div class="walk-look" data-look></div>
+  <div class="crosshair" data-crosshair></div>
+  <header data-header>
+    <div class="scene-title"><small data-kind>MAP</small><strong data-title>TACTICAL OPS</strong></div>
+    <button type="button" data-exit aria-label="Exit walk">×</button>
+  </header>
+  <div class="telemetry-summary" data-telemetry-summary hidden></div>
+  <div class="no-telemetry" data-no-telemetry hidden><small>TELEMETRY</small><strong>NO SERVER DATA</strong><span>Walk and Overview are still available.</span></div>
+  <div class="walk-controls" data-walk-controls hidden>
+    <div class="joystick" data-joy><div class="stick" data-stick></div></div>
+    <button class="jump" data-jump type="button">JUMP</button>
+    <div class="desktop-help">WASD · CLICK WORLD FOR MOUSE LOOK · SPACE JUMP</div>
+  </div>
+</div>
+<script src="/image-to-unreal-map/viewer/preview/vendor/three.min.js"></script>
+<script src="/image-to-unreal-map/viewer/preview/vendor/three-orbit-controls.js"></script>
+<script src="/image-to-unreal-map/viewer/scene/scene.js?v=9.1"></script>
+</body>
+</html>

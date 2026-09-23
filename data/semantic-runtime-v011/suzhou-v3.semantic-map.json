@@ -1,0 +1,1264 @@
+{
+  "schemaVersion": "SpawnMap-SemanticOverlay-v0.1",
+  "compatibleTerminology": "SpawnMap-SemanticIR-v0.1",
+  "overlayId": "suzhou-v3-semantic-overlay-v0.1",
+  "mapId": "TO-GPT-SuzhouCanal-GraffitiFruit-v3",
+  "mapName": "TO-GPT-SuzhouCanal",
+  "buildIdentity": {
+    "file": "TO-GPT-SuzhouCanal-GraffitiFruit-v3.unr",
+    "sha256": "dd9530c3beffbec46435b9d53070b87488a4eb075311bfd69ebcb99ec782be93",
+    "size": 2747210
+  },
+  "coordinateSystem": {
+    "name": "UE1-world-uu",
+    "axes": {
+      "x": "world X",
+      "y": "world Y",
+      "z": "world Z"
+    }
+  },
+  "scope": {
+    "kind": "versioned-semantic-overlay-for-legacy-map",
+    "completeOriginalDesignIntentRecovered": false,
+    "statement": "Only features reliably supported by the exact current T3D/map facts and bounded deterministic derivations are named. This is not a claim to recover the map's full original design intent."
+  },
+  "matchPolicy": {
+    "method": "3D AABB bounds membership",
+    "primary": "highest matchPriority, then confidence, then stable ID",
+    "allMatchesPreserved": true,
+    "ambiguityNeverSilentlyDiscarded": true
+  },
+  "regions": [
+    {
+      "id": "spawn.terr",
+      "type": "spawn",
+      "label": "Terrorist spawn and buy area",
+      "membership": {
+        "kind": "aabb3",
+        "min": [
+          -3520,
+          -2360,
+          0
+        ],
+        "max": [
+          -2880,
+          -1760,
+          160
+        ],
+        "coordinateSystem": "UE1-world-uu"
+      },
+      "matchPriority": 120,
+      "relatedRoutes": [
+        "route.south_bridge"
+      ],
+      "relatedSemanticObjects": [
+        "buyzone.terr",
+        "nav.terr_base"
+      ],
+      "source": {
+        "factKind": "directly-recovered-map-fact",
+        "references": [
+          "PlayerStart0..15",
+          "V42TerrBuyZone",
+          "RW5_TerrBase"
+        ],
+        "note": null
+      },
+      "confidence": 1.0
+    },
+    {
+      "id": "spawn.sf",
+      "type": "spawn",
+      "label": "Special Forces spawn and buy area",
+      "membership": {
+        "kind": "aabb3",
+        "min": [
+          2880,
+          1760,
+          0
+        ],
+        "max": [
+          3520,
+          2360,
+          160
+        ],
+        "coordinateSystem": "UE1-world-uu"
+      },
+      "matchPriority": 120,
+      "relatedRoutes": [
+        "route.north_bridge"
+      ],
+      "relatedSemanticObjects": [
+        "buyzone.sf",
+        "nav.special_base"
+      ],
+      "source": {
+        "factKind": "directly-recovered-map-fact",
+        "references": [
+          "PlayerStart16..31",
+          "V42SFBuyZone",
+          "RW5_SpecialBase"
+        ],
+        "note": null
+      },
+      "confidence": 1.0
+    },
+    {
+      "id": "route.south_bridge",
+      "type": "route",
+      "label": "South canal bridge",
+      "membership": {
+        "kind": "aabb3",
+        "min": [
+          -720,
+          -1560,
+          -16
+        ],
+        "max": [
+          720,
+          -1240,
+          128
+        ],
+        "coordinateSystem": "UE1-world-uu"
+      },
+      "matchPriority": 110,
+      "relatedRoutes": [
+        "route.south_bridge"
+      ],
+      "relatedSemanticObjects": [],
+      "source": {
+        "factKind": "deterministic-spatial-derivation",
+        "references": [
+          "V3Bridge0",
+          "V3BridgeCover0_-560",
+          "V3BridgeCover0_560"
+        ],
+        "note": "Named T3D geometry expanded into a player-location capture volume; solid brush bounds themselves are not treated as telemetry positions."
+      },
+      "confidence": 0.99
+    },
+    {
+      "id": "route.central_bridge",
+      "type": "route",
+      "label": "Central canal bridge",
+      "membership": {
+        "kind": "aabb3",
+        "min": [
+          -720,
+          -160,
+          -16
+        ],
+        "max": [
+          720,
+          160,
+          128
+        ],
+        "coordinateSystem": "UE1-world-uu"
+      },
+      "matchPriority": 110,
+      "relatedRoutes": [
+        "route.central_bridge"
+      ],
+      "relatedSemanticObjects": [],
+      "source": {
+        "factKind": "deterministic-spatial-derivation",
+        "references": [
+          "V3Bridge1",
+          "V3BridgeCover1_-560",
+          "V3BridgeCover1_560"
+        ],
+        "note": "Named T3D geometry expanded into a player-location capture volume; solid brush bounds themselves are not treated as telemetry positions."
+      },
+      "confidence": 0.99
+    },
+    {
+      "id": "route.north_bridge",
+      "type": "route",
+      "label": "North canal bridge",
+      "membership": {
+        "kind": "aabb3",
+        "min": [
+          -720,
+          1240,
+          -16
+        ],
+        "max": [
+          720,
+          1560,
+          128
+        ],
+        "coordinateSystem": "UE1-world-uu"
+      },
+      "matchPriority": 110,
+      "relatedRoutes": [
+        "route.north_bridge"
+      ],
+      "relatedSemanticObjects": [],
+      "source": {
+        "factKind": "deterministic-spatial-derivation",
+        "references": [
+          "V3Bridge2",
+          "V3BridgeCover2_-560",
+          "V3BridgeCover2_560"
+        ],
+        "note": "Named T3D geometry expanded into a player-location capture volume; solid brush bounds themselves are not treated as telemetry positions."
+      },
+      "confidence": 0.99
+    },
+    {
+      "id": "area.garage.west",
+      "type": "room",
+      "label": "West-bank garage",
+      "membership": {
+        "kind": "aabb3",
+        "min": [
+          -3504,
+          -984,
+          -16
+        ],
+        "max": [
+          -2640,
+          -96,
+          320
+        ],
+        "coordinateSystem": "UE1-world-uu"
+      },
+      "matchPriority": 105,
+      "relatedRoutes": [
+        "route.central_bridge"
+      ],
+      "relatedSemanticObjects": [
+        "interaction.garage_door",
+        "interaction.garage_button.outside",
+        "interaction.garage_button.inside"
+      ],
+      "source": {
+        "factKind": "directly-recovered-map-fact",
+        "references": [
+          "V4GarageFloor",
+          "V4GarageWest",
+          "V4GarageSouth",
+          "V4GarageNorth",
+          "V4GarageRoof",
+          "V4GarageDoor",
+          "V4GarageButtonOutside",
+          "V4GarageButtonInside"
+        ],
+        "note": null
+      },
+      "confidence": 1.0
+    },
+    {
+      "id": "area.boat.south_pocket",
+      "type": "traversal",
+      "label": "South calm-water tactical boat pocket",
+      "membership": {
+        "kind": "aabb3",
+        "min": [
+          -192,
+          -2496,
+          -208
+        ],
+        "max": [
+          576,
+          -1800,
+          192
+        ],
+        "coordinateSystem": "UE1-world-uu"
+      },
+      "matchPriority": 103,
+      "relatedRoutes": [
+        "route.south_bridge"
+      ],
+      "relatedSemanticObjects": [
+        "boat.south",
+        "connector.boat_south_gangway"
+      ],
+      "source": {
+        "factKind": "directly-recovered-map-fact",
+        "references": [
+          "V42Boat0*",
+          "FIX6 open-boat additions and gangway"
+        ],
+        "note": null
+      },
+      "confidence": 0.98
+    },
+    {
+      "id": "area.boat.central",
+      "type": "traversal",
+      "label": "Central canal boat",
+      "membership": {
+        "kind": "aabb3",
+        "min": [
+          -24,
+          -984,
+          -208
+        ],
+        "max": [
+          336,
+          -320,
+          128
+        ],
+        "coordinateSystem": "UE1-world-uu"
+      },
+      "matchPriority": 103,
+      "relatedRoutes": [
+        "route.central_bridge"
+      ],
+      "relatedSemanticObjects": [
+        "boat.central"
+      ],
+      "source": {
+        "factKind": "directly-recovered-map-fact",
+        "references": [
+          "V42Boat1*"
+        ],
+        "note": null
+      },
+      "confidence": 1.0
+    },
+    {
+      "id": "area.boat.north",
+      "type": "traversal",
+      "label": "North canal boat",
+      "membership": {
+        "kind": "aabb3",
+        "min": [
+          -304,
+          1720,
+          -208
+        ],
+        "max": [
+          64,
+          2400,
+          128
+        ],
+        "coordinateSystem": "UE1-world-uu"
+      },
+      "matchPriority": 103,
+      "relatedRoutes": [
+        "route.north_bridge"
+      ],
+      "relatedSemanticObjects": [
+        "boat.north"
+      ],
+      "source": {
+        "factKind": "directly-recovered-map-fact",
+        "references": [
+          "V42Boat2*"
+        ],
+        "note": null
+      },
+      "confidence": 1.0
+    },
+    {
+      "id": "connector.rooftop_bridge",
+      "type": "connector",
+      "label": "Cross-canal rooftop bridge",
+      "membership": {
+        "kind": "aabb3",
+        "min": [
+          -1024,
+          480,
+          240
+        ],
+        "max": [
+          1024,
+          720,
+          384
+        ],
+        "coordinateSystem": "UE1-world-uu"
+      },
+      "matchPriority": 102,
+      "relatedRoutes": [
+        "route.rooftop"
+      ],
+      "relatedSemanticObjects": [
+        "ladder.roof.west",
+        "ladder.roof.east"
+      ],
+      "source": {
+        "factKind": "deterministic-spatial-derivation",
+        "references": [
+          "V3RoofBridge"
+        ],
+        "note": "Named T3D geometry expanded into a player-location capture volume; solid brush bounds themselves are not treated as telemetry positions."
+      },
+      "confidence": 0.99
+    },
+    {
+      "id": "rooftop.west",
+      "type": "roof",
+      "label": "West-bank connected rooftops",
+      "membership": {
+        "kind": "aabb3",
+        "min": [
+          -2016,
+          -2240,
+          224
+        ],
+        "max": [
+          -800,
+          2240,
+          384
+        ],
+        "coordinateSystem": "UE1-world-uu"
+      },
+      "matchPriority": 100,
+      "relatedRoutes": [
+        "route.rooftop"
+      ],
+      "relatedSemanticObjects": [
+        "ladder.roof.west"
+      ],
+      "source": {
+        "factKind": "agent-assigned-semantic-interpretation",
+        "references": [
+          "V3HouseWest0Roof..V3HouseWest3Roof",
+          "V3RoofStepW0..15",
+          "V3RoofLandingW",
+          "V3RoofLadder0"
+        ],
+        "note": null
+      },
+      "confidence": 0.94
+    },
+    {
+      "id": "rooftop.east",
+      "type": "roof",
+      "label": "East-bank connected rooftops",
+      "membership": {
+        "kind": "aabb3",
+        "min": [
+          800,
+          -2240,
+          224
+        ],
+        "max": [
+          2016,
+          2240,
+          384
+        ],
+        "coordinateSystem": "UE1-world-uu"
+      },
+      "matchPriority": 100,
+      "relatedRoutes": [
+        "route.rooftop"
+      ],
+      "relatedSemanticObjects": [
+        "ladder.roof.east"
+      ],
+      "source": {
+        "factKind": "agent-assigned-semantic-interpretation",
+        "references": [
+          "V3HouseEast0Roof..V3HouseEast3Roof",
+          "V3RoofStepE0..15",
+          "V3RoofLandingE",
+          "V3RoofLadder1"
+        ],
+        "note": null
+      },
+      "confidence": 0.94
+    },
+    {
+      "id": "feature.waterfall.north",
+      "type": "water",
+      "label": "North canal waterfall",
+      "membership": {
+        "kind": "aabb3",
+        "min": [
+          -384,
+          2528,
+          -256
+        ],
+        "max": [
+          384,
+          2720,
+          288
+        ],
+        "coordinateSystem": "UE1-world-uu"
+      },
+      "matchPriority": 98,
+      "relatedRoutes": [
+        "route.north_bridge"
+      ],
+      "relatedSemanticObjects": [
+        "waterfall.north"
+      ],
+      "source": {
+        "factKind": "directly-recovered-map-fact",
+        "references": [
+          "V42WaterfallFrameWest",
+          "V42WaterfallFrameEast",
+          "V42WaterfallLintel",
+          "V42WaterfallSheet0..2",
+          "V42WaterfallSound"
+        ],
+        "note": null
+      },
+      "confidence": 1.0
+    },
+    {
+      "id": "building.house.west.0",
+      "type": "building",
+      "label": "West-bank traversable house 1",
+      "membership": {
+        "kind": "aabb3",
+        "min": [
+          -1968,
+          -2200,
+          -16
+        ],
+        "max": [
+          -832,
+          -1400,
+          240
+        ],
+        "coordinateSystem": "UE1-world-uu"
+      },
+      "matchPriority": 90,
+      "relatedRoutes": [
+        "route.rooftop"
+      ],
+      "relatedSemanticObjects": [],
+      "source": {
+        "factKind": "directly-recovered-map-fact",
+        "references": [
+          "V3HouseWest0Floor",
+          "V3HouseWest0*"
+        ],
+        "note": "Bounds follow the directly named house shell; room-level intent is not claimed."
+      },
+      "confidence": 0.98
+    },
+    {
+      "id": "building.house.west.1",
+      "type": "building",
+      "label": "West-bank traversable house 2",
+      "membership": {
+        "kind": "aabb3",
+        "min": [
+          -1968,
+          -1000,
+          -16
+        ],
+        "max": [
+          -832,
+          -200,
+          240
+        ],
+        "coordinateSystem": "UE1-world-uu"
+      },
+      "matchPriority": 90,
+      "relatedRoutes": [
+        "route.rooftop"
+      ],
+      "relatedSemanticObjects": [],
+      "source": {
+        "factKind": "directly-recovered-map-fact",
+        "references": [
+          "V3HouseWest1Floor",
+          "V3HouseWest1*"
+        ],
+        "note": "Bounds follow the directly named house shell; room-level intent is not claimed."
+      },
+      "confidence": 0.98
+    },
+    {
+      "id": "building.house.west.2",
+      "type": "building",
+      "label": "West-bank traversable house 3",
+      "membership": {
+        "kind": "aabb3",
+        "min": [
+          -1968,
+          200,
+          -16
+        ],
+        "max": [
+          -832,
+          1000,
+          240
+        ],
+        "coordinateSystem": "UE1-world-uu"
+      },
+      "matchPriority": 90,
+      "relatedRoutes": [
+        "route.rooftop"
+      ],
+      "relatedSemanticObjects": [],
+      "source": {
+        "factKind": "directly-recovered-map-fact",
+        "references": [
+          "V3HouseWest2Floor",
+          "V3HouseWest2*"
+        ],
+        "note": "Bounds follow the directly named house shell; room-level intent is not claimed."
+      },
+      "confidence": 0.98
+    },
+    {
+      "id": "building.house.west.3",
+      "type": "building",
+      "label": "West-bank traversable house 4",
+      "membership": {
+        "kind": "aabb3",
+        "min": [
+          -1968,
+          1400,
+          -16
+        ],
+        "max": [
+          -832,
+          2200,
+          240
+        ],
+        "coordinateSystem": "UE1-world-uu"
+      },
+      "matchPriority": 90,
+      "relatedRoutes": [
+        "route.rooftop"
+      ],
+      "relatedSemanticObjects": [],
+      "source": {
+        "factKind": "directly-recovered-map-fact",
+        "references": [
+          "V3HouseWest3Floor",
+          "V3HouseWest3*"
+        ],
+        "note": "Bounds follow the directly named house shell; room-level intent is not claimed."
+      },
+      "confidence": 0.98
+    },
+    {
+      "id": "building.house.east.0",
+      "type": "building",
+      "label": "East-bank traversable house 1",
+      "membership": {
+        "kind": "aabb3",
+        "min": [
+          832,
+          -2200,
+          -16
+        ],
+        "max": [
+          1968,
+          -1400,
+          240
+        ],
+        "coordinateSystem": "UE1-world-uu"
+      },
+      "matchPriority": 90,
+      "relatedRoutes": [
+        "route.rooftop"
+      ],
+      "relatedSemanticObjects": [],
+      "source": {
+        "factKind": "directly-recovered-map-fact",
+        "references": [
+          "V3HouseEast0Floor",
+          "V3HouseEast0*"
+        ],
+        "note": "Bounds follow the directly named house shell; room-level intent is not claimed."
+      },
+      "confidence": 0.98
+    },
+    {
+      "id": "building.house.east.1",
+      "type": "building",
+      "label": "East-bank traversable house 2",
+      "membership": {
+        "kind": "aabb3",
+        "min": [
+          832,
+          -1000,
+          -16
+        ],
+        "max": [
+          1968,
+          -200,
+          240
+        ],
+        "coordinateSystem": "UE1-world-uu"
+      },
+      "matchPriority": 90,
+      "relatedRoutes": [
+        "route.rooftop"
+      ],
+      "relatedSemanticObjects": [],
+      "source": {
+        "factKind": "directly-recovered-map-fact",
+        "references": [
+          "V3HouseEast1Floor",
+          "V3HouseEast1*"
+        ],
+        "note": "Bounds follow the directly named house shell; room-level intent is not claimed."
+      },
+      "confidence": 0.98
+    },
+    {
+      "id": "building.house.east.2",
+      "type": "building",
+      "label": "East-bank traversable house 3",
+      "membership": {
+        "kind": "aabb3",
+        "min": [
+          832,
+          200,
+          -16
+        ],
+        "max": [
+          1968,
+          1000,
+          240
+        ],
+        "coordinateSystem": "UE1-world-uu"
+      },
+      "matchPriority": 90,
+      "relatedRoutes": [
+        "route.rooftop"
+      ],
+      "relatedSemanticObjects": [],
+      "source": {
+        "factKind": "directly-recovered-map-fact",
+        "references": [
+          "V3HouseEast2Floor",
+          "V3HouseEast2*"
+        ],
+        "note": "Bounds follow the directly named house shell; room-level intent is not claimed."
+      },
+      "confidence": 0.98
+    },
+    {
+      "id": "building.house.east.3",
+      "type": "building",
+      "label": "East-bank traversable house 4",
+      "membership": {
+        "kind": "aabb3",
+        "min": [
+          832,
+          1400,
+          -16
+        ],
+        "max": [
+          1968,
+          2200,
+          240
+        ],
+        "coordinateSystem": "UE1-world-uu"
+      },
+      "matchPriority": 90,
+      "relatedRoutes": [
+        "route.rooftop"
+      ],
+      "relatedSemanticObjects": [],
+      "source": {
+        "factKind": "directly-recovered-map-fact",
+        "references": [
+          "V3HouseEast3Floor",
+          "V3HouseEast3*"
+        ],
+        "note": "Bounds follow the directly named house shell; room-level intent is not claimed."
+      },
+      "confidence": 0.98
+    },
+    {
+      "id": "area.market.west",
+      "type": "combat",
+      "label": "West-bank market frontage",
+      "membership": {
+        "kind": "aabb3",
+        "min": [
+          -3264,
+          -2200,
+          -32
+        ],
+        "max": [
+          -2080,
+          2200,
+          224
+        ],
+        "coordinateSystem": "UE1-world-uu"
+      },
+      "matchPriority": 70,
+      "relatedRoutes": [
+        "route.south_bridge",
+        "route.central_bridge",
+        "route.north_bridge"
+      ],
+      "relatedSemanticObjects": [],
+      "source": {
+        "factKind": "agent-assigned-semantic-interpretation",
+        "references": [
+          "V3MarketCoverW0..6",
+          "V4StallTable0..3",
+          "V4StallTop0..3",
+          "market props"
+        ],
+        "note": null
+      },
+      "confidence": 0.92
+    },
+    {
+      "id": "area.market.east",
+      "type": "combat",
+      "label": "East-bank market frontage",
+      "membership": {
+        "kind": "aabb3",
+        "min": [
+          2080,
+          -2200,
+          -32
+        ],
+        "max": [
+          3264,
+          2200,
+          224
+        ],
+        "coordinateSystem": "UE1-world-uu"
+      },
+      "matchPriority": 70,
+      "relatedRoutes": [
+        "route.south_bridge",
+        "route.central_bridge",
+        "route.north_bridge"
+      ],
+      "relatedSemanticObjects": [],
+      "source": {
+        "factKind": "agent-assigned-semantic-interpretation",
+        "references": [
+          "V3MarketCoverE0..6",
+          "V4StallTable4..7",
+          "V4StallTop4..7",
+          "market props"
+        ],
+        "note": null
+      },
+      "confidence": 0.92
+    },
+    {
+      "id": "area.canal",
+      "type": "water",
+      "label": "Canal water volume",
+      "membership": {
+        "kind": "aabb3",
+        "min": [
+          -512,
+          -2688,
+          -256
+        ],
+        "max": [
+          512,
+          2688,
+          -32
+        ],
+        "coordinateSystem": "UE1-world-uu"
+      },
+      "matchPriority": 60,
+      "relatedRoutes": [
+        "route.south_bridge",
+        "route.central_bridge",
+        "route.north_bridge"
+      ],
+      "relatedSemanticObjects": [
+        "ladder.canal.0",
+        "ladder.canal.1",
+        "ladder.canal.2",
+        "ladder.canal.3",
+        "ladder.canal.4",
+        "ladder.canal.5",
+        "ladder.canal.6",
+        "ladder.canal.7"
+      ],
+      "source": {
+        "factKind": "deterministic-spatial-derivation",
+        "references": [
+          "V4CanalFloor",
+          "V4CanalWater",
+          "WaterZone0",
+          "WaterZone1"
+        ],
+        "note": "3D volume is deterministically bounded by the canal floor, water sheet and end caps."
+      },
+      "confidence": 1.0
+    },
+    {
+      "id": "area.west_bank",
+      "type": "combat",
+      "label": "West canal bank",
+      "membership": {
+        "kind": "aabb3",
+        "min": [
+          -4096,
+          -3072,
+          -32
+        ],
+        "max": [
+          -512,
+          3072,
+          224
+        ],
+        "coordinateSystem": "UE1-world-uu"
+      },
+      "matchPriority": 20,
+      "relatedRoutes": [
+        "route.south_bridge",
+        "route.central_bridge",
+        "route.north_bridge"
+      ],
+      "relatedSemanticObjects": [],
+      "source": {
+        "factKind": "deterministic-spatial-derivation",
+        "references": [
+          "V3GroundWest"
+        ],
+        "note": null
+      },
+      "confidence": 0.99
+    },
+    {
+      "id": "area.east_bank",
+      "type": "combat",
+      "label": "East canal bank",
+      "membership": {
+        "kind": "aabb3",
+        "min": [
+          512,
+          -3072,
+          -32
+        ],
+        "max": [
+          4096,
+          3072,
+          224
+        ],
+        "coordinateSystem": "UE1-world-uu"
+      },
+      "matchPriority": 20,
+      "relatedRoutes": [
+        "route.south_bridge",
+        "route.central_bridge",
+        "route.north_bridge"
+      ],
+      "relatedSemanticObjects": [],
+      "source": {
+        "factKind": "deterministic-spatial-derivation",
+        "references": [
+          "V3GroundEast"
+        ],
+        "note": null
+      },
+      "confidence": 0.99
+    }
+  ],
+  "semanticObjects": [
+    {
+      "id": "route.rooftop",
+      "type": "route_system",
+      "label": "Connected rooftop route system",
+      "unrealNames": [
+        "V3House*Roof",
+        "V3RoofStep*",
+        "V3RoofLanding*",
+        "V3RoofBridge",
+        "V3RoofLadder*"
+      ],
+      "sourceFactKind": "agent-assigned-semantic-interpretation",
+      "confidence": 0.94
+    },
+    {
+      "id": "buyzone.terr",
+      "type": "buy_zone",
+      "label": "Terrorist buy zone",
+      "unrealNames": [
+        "V42TerrBuyZone"
+      ],
+      "sourceFactKind": "directly-recovered-map-fact",
+      "confidence": 1.0
+    },
+    {
+      "id": "buyzone.sf",
+      "type": "buy_zone",
+      "label": "Special Forces buy zone",
+      "unrealNames": [
+        "V42SFBuyZone"
+      ],
+      "sourceFactKind": "directly-recovered-map-fact",
+      "confidence": 1.0
+    },
+    {
+      "id": "nav.terr_base",
+      "type": "navigation_anchor",
+      "label": "TerrBase",
+      "unrealNames": [
+        "RW5_TerrBase"
+      ],
+      "sourceFactKind": "directly-recovered-map-fact",
+      "confidence": 1.0
+    },
+    {
+      "id": "nav.special_base",
+      "type": "navigation_anchor",
+      "label": "SpecialBase",
+      "unrealNames": [
+        "RW5_SpecialBase"
+      ],
+      "sourceFactKind": "directly-recovered-map-fact",
+      "confidence": 1.0
+    },
+    {
+      "id": "objective.scenario",
+      "type": "objective_binding",
+      "label": "TO ScenarioInfo objective bindings",
+      "unrealNames": [
+        "TO_ScenarioInfo0",
+        "RW5_TerrBase",
+        "RW5_SpecialBase"
+      ],
+      "sourceFactKind": "directly-recovered-map-fact",
+      "confidence": 1.0
+    },
+    {
+      "id": "interaction.garage_door",
+      "type": "mover",
+      "label": "West garage door",
+      "unrealNames": [
+        "V4GarageDoor"
+      ],
+      "sourceFactKind": "directly-recovered-map-fact",
+      "confidence": 1.0
+    },
+    {
+      "id": "interaction.garage_button.outside",
+      "type": "trigger",
+      "label": "Outside garage button",
+      "unrealNames": [
+        "V4GarageButtonOutside"
+      ],
+      "sourceFactKind": "directly-recovered-map-fact",
+      "confidence": 1.0
+    },
+    {
+      "id": "interaction.garage_button.inside",
+      "type": "trigger",
+      "label": "Inside garage button",
+      "unrealNames": [
+        "V4GarageButtonInside"
+      ],
+      "sourceFactKind": "directly-recovered-map-fact",
+      "confidence": 1.0
+    },
+    {
+      "id": "boat.south",
+      "type": "traversal_object",
+      "label": "Open south tactical boat",
+      "unrealNames": [
+        "V42Boat0*",
+        "FIX6*"
+      ],
+      "sourceFactKind": "directly-recovered-map-fact",
+      "confidence": 0.98
+    },
+    {
+      "id": "boat.central",
+      "type": "traversal_object",
+      "label": "Central canal boat",
+      "unrealNames": [
+        "V42Boat1*"
+      ],
+      "sourceFactKind": "directly-recovered-map-fact",
+      "confidence": 1.0
+    },
+    {
+      "id": "boat.north",
+      "type": "traversal_object",
+      "label": "North canal boat",
+      "unrealNames": [
+        "V42Boat2*"
+      ],
+      "sourceFactKind": "directly-recovered-map-fact",
+      "confidence": 1.0
+    },
+    {
+      "id": "waterfall.north",
+      "type": "water_feature",
+      "label": "North waterfall",
+      "unrealNames": [
+        "V42Waterfall*"
+      ],
+      "sourceFactKind": "directly-recovered-map-fact",
+      "confidence": 1.0
+    },
+    {
+      "id": "ladder.roof.west",
+      "type": "ladder",
+      "label": "West rooftop ladder",
+      "unrealNames": [
+        "V3RoofLadder0"
+      ],
+      "sourceFactKind": "directly-recovered-map-fact",
+      "confidence": 1.0
+    },
+    {
+      "id": "ladder.roof.east",
+      "type": "ladder",
+      "label": "East rooftop ladder",
+      "unrealNames": [
+        "V3RoofLadder1"
+      ],
+      "sourceFactKind": "directly-recovered-map-fact",
+      "confidence": 1.0
+    },
+    {
+      "id": "ladder.canal.0",
+      "type": "ladder",
+      "label": "Canal exit ladder 1",
+      "unrealNames": [
+        "V4CanalLadder0"
+      ],
+      "sourceFactKind": "directly-recovered-map-fact",
+      "confidence": 1.0
+    },
+    {
+      "id": "ladder.canal.1",
+      "type": "ladder",
+      "label": "Canal exit ladder 2",
+      "unrealNames": [
+        "V4CanalLadder1"
+      ],
+      "sourceFactKind": "directly-recovered-map-fact",
+      "confidence": 1.0
+    },
+    {
+      "id": "ladder.canal.2",
+      "type": "ladder",
+      "label": "Canal exit ladder 3",
+      "unrealNames": [
+        "V4CanalLadder2"
+      ],
+      "sourceFactKind": "directly-recovered-map-fact",
+      "confidence": 1.0
+    },
+    {
+      "id": "ladder.canal.3",
+      "type": "ladder",
+      "label": "Canal exit ladder 4",
+      "unrealNames": [
+        "V4CanalLadder3"
+      ],
+      "sourceFactKind": "directly-recovered-map-fact",
+      "confidence": 1.0
+    },
+    {
+      "id": "ladder.canal.4",
+      "type": "ladder",
+      "label": "Canal exit ladder 5",
+      "unrealNames": [
+        "V4CanalLadder4"
+      ],
+      "sourceFactKind": "directly-recovered-map-fact",
+      "confidence": 1.0
+    },
+    {
+      "id": "ladder.canal.5",
+      "type": "ladder",
+      "label": "Canal exit ladder 6",
+      "unrealNames": [
+        "V4CanalLadder5"
+      ],
+      "sourceFactKind": "directly-recovered-map-fact",
+      "confidence": 1.0
+    },
+    {
+      "id": "ladder.canal.6",
+      "type": "ladder",
+      "label": "Canal exit ladder 7",
+      "unrealNames": [
+        "V4CanalLadder6"
+      ],
+      "sourceFactKind": "directly-recovered-map-fact",
+      "confidence": 1.0
+    },
+    {
+      "id": "ladder.canal.7",
+      "type": "ladder",
+      "label": "Canal exit ladder 8",
+      "unrealNames": [
+        "V4CanalLadder7"
+      ],
+      "sourceFactKind": "directly-recovered-map-fact",
+      "confidence": 1.0
+    }
+  ],
+  "relationships": [
+    {
+      "type": "connects",
+      "from": "route.south_bridge",
+      "to": [
+        "area.west_bank",
+        "area.east_bank"
+      ]
+    },
+    {
+      "type": "connects",
+      "from": "route.central_bridge",
+      "to": [
+        "area.west_bank",
+        "area.east_bank"
+      ]
+    },
+    {
+      "type": "connects",
+      "from": "route.north_bridge",
+      "to": [
+        "area.west_bank",
+        "area.east_bank"
+      ]
+    },
+    {
+      "type": "connects",
+      "from": "connector.rooftop_bridge",
+      "to": [
+        "rooftop.west",
+        "rooftop.east"
+      ]
+    },
+    {
+      "type": "contains",
+      "from": "area.west_bank",
+      "to": [
+        "area.garage.west",
+        "area.market.west"
+      ]
+    },
+    {
+      "type": "contains",
+      "from": "area.canal",
+      "to": [
+        "area.boat.south_pocket",
+        "area.boat.central",
+        "area.boat.north",
+        "feature.waterfall.north"
+      ]
+    }
+  ],
+  "sourceProvenance": {
+    "unr": {
+      "path": "C:\\spawnmapserver\\Maps\\TO-GPT-SuzhouCanal-GraffitiFruit-v3.unr",
+      "sha256": "dd9530c3beffbec46435b9d53070b87488a4eb075311bfd69ebcb99ec782be93",
+      "size": 2747210,
+      "mtimeUtc": "2026-08-13T15:09:13.421552+00:00"
+    },
+    "t3d": {
+      "path": "C:\\Users\\shado\\Documents\\Codex\\2026-08-10\\referenced-chatgpt-conversation-this-is-an\\work\\graffiti-fruit\\TO-GPT-SuzhouCanal-GraffitiFruit-v3.t3d",
+      "sha256": "35cfe14b4e31cdcbfae7cbc152fbfeea6987fe5a367b3777cba7308c545cae2e",
+      "size": 2508865,
+      "mtimeUtc": "2026-08-13T15:08:40.324769+00:00"
+    },
+    "semanticIrSchema": {
+      "path": "C:\\Users\\shado\\Documents\\Codex\\2026-08-10\\referenced-chatgpt-conversation-this-is-an\\work\\semantic-map-ir-v01\\SCHEMA-SUMMARY.md",
+      "sha256": "ca407645e4264447e15b583d552cf661c77abb94d2ba16c669f59673d77e47ee"
+    }
+  }
+}

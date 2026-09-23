@@ -1,0 +1,474 @@
+{
+  "schemaVersion": "SpawnMap-SemanticRuntimeSummary-v0.1.1",
+  "mapId": "TO-GPT-SuzhouCanal-GraffitiFruit-v3",
+  "mapSha256": "dd9530c3beffbec46435b9d53070b87488a4eb075311bfd69ebcb99ec782be93",
+  "sessionId": "20260813-205443-15249",
+  "scopeWarning": "One short successful test session. These are observations, not map-balance conclusions.",
+  "sourceEventCounts": {
+    "KILL": 15,
+    "POS": 1492,
+    "ROUND_END": 1,
+    "ROUND_START": 2,
+    "SESSION_START": 1,
+    "SPAWN": 32
+  },
+  "movementAccounting": {
+    "allPOSSourceEvents": 1492,
+    "coordinateCompletePOS": 1492,
+    "coordinateMissingPOS": 0
+  },
+  "coordinateBearingSourceEvents": {
+    "total": 1539,
+    "matchedAtLeastOneSemanticRegion": 1538,
+    "matchedMultipleSemanticRegions": 1214,
+    "containedAtLeastOneUnmatchedCoordinate": 1
+  },
+  "coordinateLocations": {
+    "total": 1554,
+    "matched": 1553,
+    "multiple": 1217,
+    "unmatched": 1
+  },
+  "regionMetrics": [
+    {
+      "regionId": "spawn.sf",
+      "label": "Special Forces spawn and buy area",
+      "movementSamples": 410,
+      "botMovementSamples": 410,
+      "humanMovementSamples": 0,
+      "approximateDwellSeconds": 784.0,
+      "spawnEvents": 16,
+      "killsByVictimLocation": 0,
+      "killsByKillerLocation": 0
+    },
+    {
+      "regionId": "spawn.terr",
+      "label": "Terrorist spawn and buy area",
+      "movementSamples": 293,
+      "botMovementSamples": 293,
+      "humanMovementSamples": 0,
+      "approximateDwellSeconds": 552.0,
+      "spawnEvents": 16,
+      "killsByVictimLocation": 0,
+      "killsByKillerLocation": 0
+    },
+    {
+      "regionId": "area.market.east",
+      "label": "East-bank market frontage",
+      "movementSamples": 285,
+      "botMovementSamples": 285,
+      "humanMovementSamples": 0,
+      "approximateDwellSeconds": 530.0,
+      "spawnEvents": 0,
+      "killsByVictimLocation": 2,
+      "killsByKillerLocation": 2
+    },
+    {
+      "regionId": "area.east_bank",
+      "label": "East canal bank",
+      "movementSamples": 115,
+      "botMovementSamples": 115,
+      "humanMovementSamples": 0,
+      "approximateDwellSeconds": 158.0,
+      "spawnEvents": 0,
+      "killsByVictimLocation": 5,
+      "killsByKillerLocation": 5
+    },
+    {
+      "regionId": "route.central_bridge",
+      "label": "Central canal bridge",
+      "movementSamples": 100,
+      "botMovementSamples": 100,
+      "humanMovementSamples": 0,
+      "approximateDwellSeconds": 154.0,
+      "spawnEvents": 0,
+      "killsByVictimLocation": 6,
+      "killsByKillerLocation": 7
+    },
+    {
+      "regionId": "area.market.west",
+      "label": "West-bank market frontage",
+      "movementSamples": 98,
+      "botMovementSamples": 98,
+      "humanMovementSamples": 0,
+      "approximateDwellSeconds": 158.0,
+      "spawnEvents": 0,
+      "killsByVictimLocation": 0,
+      "killsByKillerLocation": 0
+    },
+    {
+      "regionId": "area.canal",
+      "label": "Canal water volume",
+      "movementSamples": 84,
+      "botMovementSamples": 84,
+      "humanMovementSamples": 0,
+      "approximateDwellSeconds": 158.0,
+      "spawnEvents": 0,
+      "killsByVictimLocation": 0,
+      "killsByKillerLocation": 0
+    },
+    {
+      "regionId": "area.west_bank",
+      "label": "West canal bank",
+      "movementSamples": 55,
+      "botMovementSamples": 55,
+      "humanMovementSamples": 0,
+      "approximateDwellSeconds": 58.0,
+      "spawnEvents": 0,
+      "killsByVictimLocation": 0,
+      "killsByKillerLocation": 1
+    },
+    {
+      "regionId": "building.house.west.1",
+      "label": "West-bank traversable house 2",
+      "movementSamples": 22,
+      "botMovementSamples": 22,
+      "humanMovementSamples": 0,
+      "approximateDwellSeconds": 10.0,
+      "spawnEvents": 0,
+      "killsByVictimLocation": 1,
+      "killsByKillerLocation": 0
+    },
+    {
+      "regionId": "area.boat.central",
+      "label": "Central canal boat",
+      "movementSamples": 18,
+      "botMovementSamples": 18,
+      "humanMovementSamples": 0,
+      "approximateDwellSeconds": 26.0,
+      "spawnEvents": 0,
+      "killsByVictimLocation": 1,
+      "killsByKillerLocation": 0
+    },
+    {
+      "regionId": "building.house.east.1",
+      "label": "East-bank traversable house 2",
+      "movementSamples": 11,
+      "botMovementSamples": 11,
+      "humanMovementSamples": 0,
+      "approximateDwellSeconds": 2.0,
+      "spawnEvents": 0,
+      "killsByVictimLocation": 0,
+      "killsByKillerLocation": 0
+    },
+    {
+      "regionId": "area.boat.north",
+      "label": "North canal boat",
+      "movementSamples": 0,
+      "botMovementSamples": 0,
+      "humanMovementSamples": 0,
+      "approximateDwellSeconds": 0.0,
+      "spawnEvents": 0,
+      "killsByVictimLocation": 0,
+      "killsByKillerLocation": 0
+    },
+    {
+      "regionId": "area.boat.south_pocket",
+      "label": "South calm-water tactical boat pocket",
+      "movementSamples": 0,
+      "botMovementSamples": 0,
+      "humanMovementSamples": 0,
+      "approximateDwellSeconds": 0.0,
+      "spawnEvents": 0,
+      "killsByVictimLocation": 0,
+      "killsByKillerLocation": 0
+    },
+    {
+      "regionId": "area.garage.west",
+      "label": "West-bank garage",
+      "movementSamples": 0,
+      "botMovementSamples": 0,
+      "humanMovementSamples": 0,
+      "approximateDwellSeconds": 0.0,
+      "spawnEvents": 0,
+      "killsByVictimLocation": 0,
+      "killsByKillerLocation": 0
+    },
+    {
+      "regionId": "building.house.east.0",
+      "label": "East-bank traversable house 1",
+      "movementSamples": 0,
+      "botMovementSamples": 0,
+      "humanMovementSamples": 0,
+      "approximateDwellSeconds": 0.0,
+      "spawnEvents": 0,
+      "killsByVictimLocation": 0,
+      "killsByKillerLocation": 0
+    },
+    {
+      "regionId": "building.house.east.2",
+      "label": "East-bank traversable house 3",
+      "movementSamples": 0,
+      "botMovementSamples": 0,
+      "humanMovementSamples": 0,
+      "approximateDwellSeconds": 0.0,
+      "spawnEvents": 0,
+      "killsByVictimLocation": 0,
+      "killsByKillerLocation": 0
+    },
+    {
+      "regionId": "building.house.east.3",
+      "label": "East-bank traversable house 4",
+      "movementSamples": 0,
+      "botMovementSamples": 0,
+      "humanMovementSamples": 0,
+      "approximateDwellSeconds": 0.0,
+      "spawnEvents": 0,
+      "killsByVictimLocation": 0,
+      "killsByKillerLocation": 0
+    },
+    {
+      "regionId": "building.house.west.0",
+      "label": "West-bank traversable house 1",
+      "movementSamples": 0,
+      "botMovementSamples": 0,
+      "humanMovementSamples": 0,
+      "approximateDwellSeconds": 0.0,
+      "spawnEvents": 0,
+      "killsByVictimLocation": 0,
+      "killsByKillerLocation": 0
+    },
+    {
+      "regionId": "building.house.west.2",
+      "label": "West-bank traversable house 3",
+      "movementSamples": 0,
+      "botMovementSamples": 0,
+      "humanMovementSamples": 0,
+      "approximateDwellSeconds": 0.0,
+      "spawnEvents": 0,
+      "killsByVictimLocation": 0,
+      "killsByKillerLocation": 0
+    },
+    {
+      "regionId": "building.house.west.3",
+      "label": "West-bank traversable house 4",
+      "movementSamples": 0,
+      "botMovementSamples": 0,
+      "humanMovementSamples": 0,
+      "approximateDwellSeconds": 0.0,
+      "spawnEvents": 0,
+      "killsByVictimLocation": 0,
+      "killsByKillerLocation": 0
+    },
+    {
+      "regionId": "connector.rooftop_bridge",
+      "label": "Cross-canal rooftop bridge",
+      "movementSamples": 0,
+      "botMovementSamples": 0,
+      "humanMovementSamples": 0,
+      "approximateDwellSeconds": 0.0,
+      "spawnEvents": 0,
+      "killsByVictimLocation": 0,
+      "killsByKillerLocation": 0
+    },
+    {
+      "regionId": "feature.waterfall.north",
+      "label": "North canal waterfall",
+      "movementSamples": 0,
+      "botMovementSamples": 0,
+      "humanMovementSamples": 0,
+      "approximateDwellSeconds": 0.0,
+      "spawnEvents": 0,
+      "killsByVictimLocation": 0,
+      "killsByKillerLocation": 0
+    },
+    {
+      "regionId": "rooftop.east",
+      "label": "East-bank connected rooftops",
+      "movementSamples": 0,
+      "botMovementSamples": 0,
+      "humanMovementSamples": 0,
+      "approximateDwellSeconds": 0.0,
+      "spawnEvents": 0,
+      "killsByVictimLocation": 0,
+      "killsByKillerLocation": 0
+    },
+    {
+      "regionId": "rooftop.west",
+      "label": "West-bank connected rooftops",
+      "movementSamples": 0,
+      "botMovementSamples": 0,
+      "humanMovementSamples": 0,
+      "approximateDwellSeconds": 0.0,
+      "spawnEvents": 0,
+      "killsByVictimLocation": 0,
+      "killsByKillerLocation": 0
+    },
+    {
+      "regionId": "route.north_bridge",
+      "label": "North canal bridge",
+      "movementSamples": 0,
+      "botMovementSamples": 0,
+      "humanMovementSamples": 0,
+      "approximateDwellSeconds": 0.0,
+      "spawnEvents": 0,
+      "killsByVictimLocation": 0,
+      "killsByKillerLocation": 0
+    },
+    {
+      "regionId": "route.south_bridge",
+      "label": "South canal bridge",
+      "movementSamples": 0,
+      "botMovementSamples": 0,
+      "humanMovementSamples": 0,
+      "approximateDwellSeconds": 0.0,
+      "spawnEvents": 0,
+      "killsByVictimLocation": 0,
+      "killsByKillerLocation": 0
+    }
+  ],
+  "dwellMethod": "For consecutive samples of one participant, add delta-t only when the primary semantic region is unchanged and 0 < delta-t <= 3 seconds.",
+  "observedTransitionCount": 163,
+  "topObservedTransitions": [
+    {
+      "from": "spawn.terr",
+      "to": "area.market.west",
+      "count": 17,
+      "botCount": 17,
+      "humanCount": 0
+    },
+    {
+      "from": "building.house.west.1",
+      "to": "area.west_bank",
+      "count": 15,
+      "botCount": 15,
+      "humanCount": 0
+    },
+    {
+      "from": "spawn.sf",
+      "to": "area.market.east",
+      "count": 14,
+      "botCount": 14,
+      "humanCount": 0
+    },
+    {
+      "from": "area.west_bank",
+      "to": "building.house.west.1",
+      "count": 14,
+      "botCount": 14,
+      "humanCount": 0
+    },
+    {
+      "from": "area.market.east",
+      "to": "area.east_bank",
+      "count": 13,
+      "botCount": 13,
+      "humanCount": 0
+    },
+    {
+      "from": "area.east_bank",
+      "to": "route.central_bridge",
+      "count": 13,
+      "botCount": 13,
+      "humanCount": 0
+    },
+    {
+      "from": "route.central_bridge",
+      "to": "area.east_bank",
+      "count": 12,
+      "botCount": 12,
+      "humanCount": 0
+    },
+    {
+      "from": "area.west_bank",
+      "to": "route.central_bridge",
+      "count": 10,
+      "botCount": 10,
+      "humanCount": 0
+    },
+    {
+      "from": "area.east_bank",
+      "to": "building.house.east.1",
+      "count": 10,
+      "botCount": 10,
+      "humanCount": 0
+    },
+    {
+      "from": "building.house.east.1",
+      "to": "area.east_bank",
+      "count": 10,
+      "botCount": 10,
+      "humanCount": 0
+    },
+    {
+      "from": "area.market.west",
+      "to": "area.west_bank",
+      "count": 10,
+      "botCount": 10,
+      "humanCount": 0
+    },
+    {
+      "from": "area.east_bank",
+      "to": "area.market.east",
+      "count": 6,
+      "botCount": 6,
+      "humanCount": 0
+    },
+    {
+      "from": "area.canal",
+      "to": "area.boat.central",
+      "count": 4,
+      "botCount": 4,
+      "humanCount": 0
+    },
+    {
+      "from": "area.boat.central",
+      "to": "area.canal",
+      "count": 4,
+      "botCount": 4,
+      "humanCount": 0
+    },
+    {
+      "from": "area.market.west",
+      "to": "building.house.west.1",
+      "count": 3,
+      "botCount": 3,
+      "humanCount": 0
+    },
+    {
+      "from": "area.market.east",
+      "to": "spawn.sf",
+      "count": 2,
+      "botCount": 2,
+      "humanCount": 0
+    },
+    {
+      "from": "area.west_bank",
+      "to": "area.market.west",
+      "count": 2,
+      "botCount": 2,
+      "humanCount": 0
+    },
+    {
+      "from": "route.central_bridge",
+      "to": "area.canal",
+      "count": 1,
+      "botCount": 1,
+      "humanCount": 0
+    },
+    {
+      "from": "route.central_bridge",
+      "to": "area.west_bank",
+      "count": 1,
+      "botCount": 1,
+      "humanCount": 0
+    },
+    {
+      "from": "route.central_bridge",
+      "to": "area.boat.central",
+      "count": 1,
+      "botCount": 1,
+      "humanCount": 0
+    },
+    {
+      "from": "area.market.west",
+      "to": "spawn.terr",
+      "count": 1,
+      "botCount": 1,
+      "humanCount": 0
+    }
+  ],
+  "spawnExitAttribution": {
+    "verified": 32
+  }
+}

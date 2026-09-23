@@ -1,0 +1,91 @@
+{
+  "schemaVersion": "TOGPT-Telemetry-IdentityValidation-v0.1.1",
+  "counts": {
+    "SESSION_START": 1,
+    "SPAWN": 32,
+    "POS": 1492,
+    "ROUND_START": 2,
+    "KILL": 15,
+    "ROUND_END": 1
+  },
+  "spawnJoins": {
+    "total": 32,
+    "verified": 32,
+    "unverified": 0
+  },
+  "checks": {
+    "sameLifeContinuity": true,
+    "teamContinuity": true,
+    "physicallyPlausibleFirstPosition": true,
+    "lifeSequenceStrictlyIncreasing": true,
+    "simultaneousParticipantLifeIdentityUnique": true
+  },
+  "participantsWithMultipleLives": {
+    "p16": [
+      "p16_life_1",
+      "p16_life_2"
+    ],
+    "p15": [
+      "p15_life_1",
+      "p15_life_2"
+    ],
+    "p14": [
+      "p14_life_1",
+      "p14_life_2"
+    ],
+    "p13": [
+      "p13_life_1",
+      "p13_life_2"
+    ],
+    "p12": [
+      "p12_life_1",
+      "p12_life_2"
+    ],
+    "p11": [
+      "p11_life_1",
+      "p11_life_2"
+    ],
+    "p10": [
+      "p10_life_1",
+      "p10_life_2"
+    ],
+    "p9": [
+      "p9_life_1",
+      "p9_life_2"
+    ],
+    "p8": [
+      "p8_life_1",
+      "p8_life_2"
+    ],
+    "p7": [
+      "p7_life_1",
+      "p7_life_2"
+    ],
+    "p6": [
+      "p6_life_1",
+      "p6_life_2"
+    ],
+    "p5": [
+      "p5_life_1",
+      "p5_life_2"
+    ],
+    "p4": [
+      "p4_life_1",
+      "p4_life_2"
+    ],
+    "p3": [
+      "p3_life_1",
+      "p3_life_2"
+    ],
+    "p2": [
+      "p2_life_1",
+      "p2_life_2"
+    ],
+    "p1": [
+      "p1_life_1",
+      "p1_life_2"
+    ]
+  },
+  "errors": [],
+  "note": "Public aggregate identity-validation proof. Local filesystem paths and raw telemetry are intentionally omitted."
+}

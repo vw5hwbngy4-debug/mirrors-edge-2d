@@ -1,0 +1,12 @@
+SpawnMap Swipe v8.1
+
+iOS landing fix
+- Removed Pointer Capture from the first server-status screen.
+- Uses touchstart/touchmove/touchend for the onboarding swipe.
+- Prevents Safari page/rubber-band panning during that gesture.
+- Landing stops receiving pointer events immediately when dismissed.
+- Either deliberate vertical swipe enters the map feed.
+- Click/tap on SWIPE FOR MAPS still works.
+- Desktop wheel/trackpad still enters the feed.
+
+No visual redesign and no map/viewer changes from v8.

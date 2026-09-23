@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover,user-scalable=no">
+<meta name="theme-color" content="#080a0c">
+<title>SpawnMap Spectator</title>
+<link rel="icon" href="/image-to-unreal-map/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/image-to-unreal-map/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/image-to-unreal-map/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/image-to-unreal-map/favicon-16x16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/image-to-unreal-map/apple-touch-icon.png">
+<link rel="manifest" href="/image-to-unreal-map/site.webmanifest">
+<link rel="stylesheet" href="./spectator/spectator.v07.css?v=11">
+</head>
+<body>
+<div class="loading">Loading Spectator…</div>
+<spawnborn-map-preview></spawnborn-map-preview>
+<div class="spectator-ui" hidden>
+  <div class="look-zone" aria-label="Drag to look"></div>
+  <div class="crosshair" aria-hidden="true"></div>
+  <div class="coords" data-coords>PLAYER HEIGHT</div>
+  <div class="look-hint" data-look-hint>DRAG TO LOOK</div>
+  <div class="joystick" data-joystick><div class="stick" data-stick></div><span>MOVE</span></div>
+  <button class="jump" type="button" data-jump>JUMP</button>
+  <section class="iteration-dock" data-prompt>
+    <div class="iteration-dock-head">
+      <span>CHANGE THIS AREA</span>
+      <small>location attached automatically</small>
+    </div>
+    <div class="iteration-dock-row">
+      <input id="iteration-note" data-note maxlength="320" placeholder="Make this alley narrower…" aria-label="Describe what should change here">
+      <button class="copy" type="button" data-copy>COPY PROMPT</button>
+    </div>
+  </section>
+</div>
+<script src="./preview/vendor/three.min.js"></script>
+<script src="./preview/vendor/three-orbit-controls.js"></script>
+<script src="./asset-cache/asset-cache-manifest.js"></script>
+<script src="./asset-cache/my-level-manifest.js?v=11"></script>
+<script src="./asset-cache/asset-resolver.js"></script>
+<script src="./preview/t3d-parser.js"></script>
+<script src="./preview/spawnborn-map-preview.js"></script>
+<script src="./spectator/spectator.v08.js?v=11"></script>
+</body>
+</html>

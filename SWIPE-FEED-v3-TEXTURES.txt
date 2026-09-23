@@ -1,0 +1,14 @@
+SpawnMap Swipe Feed v3 · textured repair
+
+Why v2 was white:
+The v2 scene renderer intentionally discarded Unreal material/texture assignments and rendered every compiled BSP scene with one palette-coloured MeshStandardMaterial. The texture cache was present in the ZIP but the new viewer never used it.
+
+v3 fixes:
+- Suzhou Canal routes back through the proven SpawnMap T3D + Asset Cache renderer used by the earlier working website. Walk, Overview and Telemetry now share that textured world.
+- Classic .unr preprocessing now preserves per-BSP-surface Unreal texture references, TextureU/TextureV coordinates, pan values and material flags.
+- Referenced textures available in the supplied Textures.zip are extracted to web PNGs and loaded with UE1 repeat UVs.
+- Unresolved packages use coloured material fallbacks instead of white surfaces.
+- Deagle5v12, Trooper, Dragon, CIA and 2-ColdV34 have approximately 96-100% texture coverage from the supplied package set after hidden/portal surfaces are excluded.
+- RapidWater][ remains only partially textured because the supplied Textures.zip does not contain most of that map's external dependencies. Major missing packages include UTtech1, Mine, TO-ganja-free-1, RKLphoto1 and terrorist3tex. Its geometry/walking still works and unresolved surfaces are no longer white.
+
+The public swipe UX is otherwise unchanged: vertical swipe changes map; horizontal swipe changes WALK / OVERVIEW / TELEMETRY.

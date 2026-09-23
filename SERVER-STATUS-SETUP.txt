@@ -1,0 +1,29 @@
+SpawnMap.ai · TO-GPT server status setup
+========================================
+
+The website now polls /server-status.php every 30 seconds.
+
+This upload package is preconfigured for the public research server:
+
+  play.spawnmap.ai:7777
+
+The bridge first reads:
+
+  http://play.spawnmap.ai/health.json
+
+This provides the real running map, separate human and bot counts, capacity,
+telemetry health and exact map SHA-256. It only displays ONLINE when that feed
+is recent and the game process is alive.
+
+Optional Hostinger environment overrides:
+
+  TO_GPT_SERVER_HOST=your.public.server.hostname.or.ip
+  TO_GPT_SERVER_PORT=7777
+  TO_GPT_SERVER_QUERY_PORT=7778
+  TO_GPT_SERVER_HEALTH_URL=http://play.spawnmap.ai/health.json
+
+The query port normally equals game port + 1.
+
+If the health feed cannot be reached from Hostinger, the bridge falls back to
+the UE1/UT GameSpy query on UDP 7778. If neither source answers, the website
+safely displays OFFLINE rather than a simulated status.

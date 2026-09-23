@@ -1,0 +1,30 @@
+SPAWNMAP SWIPE v9.4 · GENERIC ARTIFACT IMPORTER
+================================================
+
+NEW
+- /viewer/import.html is one generic viewer for generated maps.
+- Drag/drop or choose .t3d directly.
+- Drag/drop SpawnMap .zip containing .t3d + MapGenome + validation + optional .unr.
+- Drop MapGenome/validation JSON sidecars alongside T3D.
+- OVERVIEW and WALK modes in the same generic page.
+- Imported files remain local in the browser. Importing does not publish/upload them.
+- ?src=/path/to/map.t3d loads a deployed T3D with the same viewer; no per-map HTML is required.
+- Home landing page and MAPS library now link to IMPORT MAP.
+- Importer uses the broad /viewer/scene-textures cache for real TO textures when available.
+
+STATIC HOSTING
+Upload this package as the website root. No PHP is required for the importer.
+The existing TO-GPT server-status.php feature still requires PHP if you want live server status.
+
+EXAMPLES
+Local artifact:
+  Open https://vw5hwbngy4-debug.github.io/image-to-unreal-map/viewer/import.html
+  Drop TO-Whatever.t3d or a SpawnMap artifact ZIP.
+
+Deployed artifact:
+  Put the T3D at /maps/generated/TO-Whatever.t3d
+  Open:
+  /viewer/import.html?src=/maps/generated/TO-Whatever.t3d
+
+SECURITY / PRIVACY
+A local drag/drop is parsed in the browser. The page does not upload the selected file.

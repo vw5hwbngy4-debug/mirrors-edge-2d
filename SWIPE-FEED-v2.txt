@@ -1,0 +1,21 @@
+SpawnMap.ai Swipe Feed v2
+
+Public UX:
+- Vertical swipe = next/previous Tactical Ops map.
+- Horizontal swipe = WALK / OVERVIEW / TELEMETRY.
+- WALK is deliberately opt-in. Once entered, feed gestures are disabled and the map owns touch/mouse input.
+- OVERVIEW is the same map in a clean 3D map view.
+- TELEMETRY uses actual SpawnMap runtime evidence where available. No data is invented for classic maps.
+
+Map scenes:
+- Classic .unr files are preprocessed OFFLINE from the compiled UE1 BSP model into compact SpawnMapScene-v1 JSON.
+- This avoids the previous broken browser-time .unr parsing path and makes the public viewer fast and deterministic.
+- Original classic .unr files are not required by the deployed site.
+- Suzhou Canal is converted from the existing SpawnMap T3D build into the same scene format.
+
+Important product boundary:
+- This public site does NOT claim public self-service map generation.
+- Real .unr generation still uses the private SpawnMap GPT/plugin plus the private PC build worker.
+- The public site focuses on experiencing maps and runtime evidence.
+
+Existing technical pages remain available through the ••• menu.

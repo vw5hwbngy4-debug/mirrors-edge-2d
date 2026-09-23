@@ -1,0 +1,31 @@
+SpawnMap Swipe v8.8
+
+Navigation affordances
+- Added subtle lime-green ambient edge glows rather than large arrow buttons.
+- Left edge = MAPS.
+- Right edge = GPT BUILDS when the selected map is GPT-built.
+- Edge hints are clickable on desktop and tappable on mobile.
+- They stay intentionally narrow so the 3D map remains the visual focus.
+
+Phone gestures
+- Restored a dedicated native touch path for WALK.
+- WALK swipe LEFT opens MAPS.
+- Vertical WALK swipe still changes maps.
+- The touch path uses touchstart/touchmove/touchend instead of sharing desktop PointerEvents.
+- OVERVIEW remains completely protected: drag/pinch/pan only control the 3D map.
+- TELEMETRY keeps its dedicated swipe RIGHT -> current map ITERATIONS bridge.
+
+Landing
+- Left-edge MAPS glow is visible immediately.
+- Vertical swipe still enters the map feed.
+- Swipe LEFT still goes directly to the square MAPS collection.
+
+Desktop
+- The edge glows make MAPS / GPT BUILDS discoverable even when the user is in Overview.
+- Clicking MAPS opens the collection from WALK, OVERVIEW or TELEMETRY.
+- Clicking GPT BUILDS opens iterations/remixes for the selected GPT map.
+- Escape returns MAPS -> WALK and ITERATIONS -> TELEMETRY.
+
+Iterations
+- The side view now describes itself as GPT BUILDS / ITERATIONS · REMIXES.
+- Existing iteration data remains provenance-backed; no old versions are invented.

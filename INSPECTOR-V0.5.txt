@@ -1,0 +1,11 @@
+SpawnMap Inspector v0.5
+
+Map detail flow:
+01 Overview
+02 Remixes / Versions
+03 Spectator
+04 Output / Download
+
+Spectator keeps prompt iteration permanently available:
+walk / look -> describe change -> Copy Prompt.
+The generated prompt carries Unreal X/Y/Z and facing direction automatically.

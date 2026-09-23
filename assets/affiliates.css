@@ -1,0 +1,83 @@
+
+.affiliates-window{width:min(880px,calc(100% - 36px))}
+.affiliates-body{padding:30px}
+.affiliate-intro{margin-bottom:22px}
+.affiliate-intro h1{margin-bottom:9px}
+.affiliate-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.affiliate-card{
+  position:relative;
+  min-height:250px;
+  display:grid;
+  grid-template-rows:auto 1fr auto;
+  gap:22px;
+  padding:20px;
+  border:1px solid rgba(229,238,241,.16);
+  background:rgba(10,15,17,.76);
+  color:#eef3f4;
+  text-decoration:none;
+  overflow:hidden;
+  transition:transform .18s ease,border-color .18s ease,background .18s ease;
+}
+.affiliate-card:before{
+  content:"";
+  position:absolute;
+  inset:auto -20% -42% -20%;
+  height:70%;
+  background:radial-gradient(circle,rgba(184,230,52,.10),transparent 66%);
+  pointer-events:none;
+}
+.affiliate-card:hover,.affiliate-card:focus-visible{
+  transform:translateY(-3px);
+  border-color:rgba(184,230,52,.44);
+  background:rgba(12,18,16,.88);
+  outline:none;
+}
+.affiliate-mark{
+  width:48px;
+  height:48px;
+  display:grid;
+  place-items:center;
+  border:1px solid rgba(184,230,52,.34);
+  background:#0c120e;
+  color:#b8e634;
+  font-size:14px;
+  font-weight:1000;
+  letter-spacing:.08em;
+  box-shadow:0 0 28px rgba(184,230,52,.08);
+}
+.hossie-card .affiliate-mark{border-radius:50%}
+.affiliate-copy{align-self:end}
+.affiliate-copy small{
+  display:block;
+  color:#b8e634;
+  font-size:7px;
+  font-weight:950;
+  letter-spacing:.13em;
+  margin-bottom:6px;
+}
+.affiliate-copy strong{
+  display:block;
+  color:#f1f5f6;
+  font-size:clamp(24px,3vw,36px);
+  line-height:1;
+  letter-spacing:-.045em;
+}
+.affiliate-copy p{
+  margin:10px 0 0;
+  color:#99a6aa;
+  font-size:11px;
+  line-height:1.5;
+}
+.affiliate-arrow{
+  color:#dce5e7;
+  font-size:8px;
+  font-weight:950;
+  letter-spacing:.11em;
+}
+@media(max-width:700px){
+  .affiliates-window{width:calc(100% - 20px)}
+  .affiliates-body{padding:20px 16px}
+  .affiliate-grid{grid-template-columns:1fr}
+  .affiliate-card{min-height:190px;padding:16px;gap:15px}
+  .affiliate-copy strong{font-size:30px}
+}

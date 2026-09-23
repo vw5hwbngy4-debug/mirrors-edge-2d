@@ -1,0 +1,11 @@
+SpawnMap Inspector v0.4
+
+Changes from v0.3:
+- Overview and Spectator are now separate viewer surfaces.
+- Overview loads no Spectator HUD or controls.
+- Removed "Maquette", "Walk the proposal" and other non-technical labels.
+- Mobile Spectator uses camera-relative movement: up=forward, down=back, left=left, right=right.
+- Mobile touch-look is bound directly to a dedicated touch layer above WebGL.
+- Jump remains separate.
+- Location-aware GPT iteration prompt remains available from Spectator.
+- New v0.4 filenames avoid stale mobile browser cache.

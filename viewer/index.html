@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, user-scalable=no">
+  <meta name="theme-color" content="#0a0c0e">
+  <title>TO-GPT-SuzhouCanal GraffitiFruit v3 · SpawnMap Inspector</title>
+<link rel="icon" href="/image-to-unreal-map/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/image-to-unreal-map/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/image-to-unreal-map/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/image-to-unreal-map/favicon-16x16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/image-to-unreal-map/apple-touch-icon.png">
+<link rel="manifest" href="/image-to-unreal-map/site.webmanifest">
+  <link rel="stylesheet" href="./inspector/inspector.css">
+  <style>
+    html,body{margin:0;width:100%;height:100%;overflow:hidden;background:#080a0c;overscroll-behavior:none}
+    spawnborn-map-preview{display:block;width:100%;height:100vh}
+    .loading{position:fixed;inset:0;display:grid;place-items:center;color:#d5dde2;font:600 12px/1 system-ui;letter-spacing:.15em;text-transform:uppercase;background:#080a0c;z-index:100}
+    .loading.done{opacity:0;pointer-events:none;transition:opacity .35s ease}
+  </style>
+</head>
+<body>
+  <div class="loading">Building Inspector preview…</div>
+  <spawnborn-map-preview></spawnborn-map-preview>
+  <script src="./preview/vendor/three.min.js"></script>
+  <script src="./preview/vendor/three-orbit-controls.js"></script>
+  <script src="./asset-cache/asset-cache-manifest.js"></script>
+<script src="./asset-cache/my-level-manifest.js?v=11"></script>
+  <script src="./asset-cache/asset-resolver.js"></script>
+  <script src="./preview/t3d-parser.js"></script>
+  <script src="./preview/spawnborn-map-preview.js"></script>
+  <script src="./inspector/inspector.js"></script>
+  <script>
+    const preview = document.querySelector('spawnborn-map-preview');
+    const loading = document.querySelector('.loading');
+    preview.addEventListener('spawnborn-preview-ready', () => loading.classList.add('done'), { once:true });
+    fetch('../maps/TO-GPT-SuzhouCanal-GraffitiFruit-v3.t3d')
+      .then(response => { if (!response.ok) throw new Error('Map source could not be loaded.'); return response.text(); })
+      .then(text => preview.loadT3D(text, { name:'TO-GPT-SuzhouCanal-GraffitiFruit-v3.t3d' }))
+      .catch(error => { loading.textContent = error.message; });
+  </script>
+</body>
+</html>

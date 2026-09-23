@@ -1,0 +1,26 @@
+SpawnMap Swipe v8.5
+
+OVERVIEW
+- Root cause of the "static overview" was the parent TikTok iframe having pointer-events:none.
+- OVERVIEW and TELEMETRY iframes now receive pointer/touch input.
+- Suzhou keeps the original working public_html (6) Overview / OrbitControls method.
+- RapidWater, Deagle, Trooper, Dragon, CIA and 2-Cold now also use OrbitControls in Overview.
+- Overview controls: drag = orbit, pinch/wheel = zoom, pan = OrbitControls.
+- A fast flick inside an interactive Overview changes the feed; a normal/slow drag remains orbit:
+  quick left/right = mode, quick up/down = map.
+- Keyboard arrows inside an interactive iframe also navigate the feed.
+
+HORIZONTAL MODE RING
+- MAPS is reachable from both sides:
+  MAPS ← WALK ↔ OVERVIEW ↔ TELEMETRY → MAPS
+- Horizontal navigation wraps instead of stopping at WALK or MAPS.
+
+TELEMETRY
+- Telemetry is no longer the same Overview with a few points.
+- Suzhou gets a dedicated tactical bird's-eye session view:
+  death hotspots, killer-position markers, observed route flow, death/spawn totals and hot-zone ranking.
+- Current public data supports region-level death evidence from the archived bot-only test.
+- It does NOT support a real Top 10 player ranking yet; the UI says so instead of inventing names/scores.
+- /telemetry-live.php polls a future VPS telemetry-live.json every 15 seconds.
+  When the collector later publishes leaderboard/death-event data, the page can become live without redesign.
+- Classic maps with no telemetry keep their poster and explicitly say no server sessions are recorded.

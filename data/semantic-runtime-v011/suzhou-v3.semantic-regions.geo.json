@@ -1,0 +1,1238 @@
+{
+  "type": "FeatureCollection",
+  "schemaVersion": "SpawnMap-SemanticRegionsGeo-v0.1",
+  "coordinateReferenceSystem": {
+    "name": "UE1-world-uu",
+    "axes": [
+      "X",
+      "Y"
+    ],
+    "verticalAxis": "Z in properties"
+  },
+  "mapId": "TO-GPT-SuzhouCanal-GraffitiFruit-v3",
+  "mapSha256": "dd9530c3beffbec46435b9d53070b87488a4eb075311bfd69ebcb99ec782be93",
+  "features": [
+    {
+      "type": "Feature",
+      "id": "spawn.terr",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -3520,
+              -2360
+            ],
+            [
+              -2880,
+              -2360
+            ],
+            [
+              -2880,
+              -1760
+            ],
+            [
+              -3520,
+              -1760
+            ],
+            [
+              -3520,
+              -2360
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "regionId": "spawn.terr",
+        "regionType": "spawn",
+        "label": "Terrorist spawn and buy area",
+        "minZ": 0,
+        "maxZ": 160,
+        "confidence": 1.0,
+        "sourceFactKind": "directly-recovered-map-fact",
+        "movementSamples": 293,
+        "botMovementSamples": 293,
+        "humanMovementSamples": 0,
+        "approximateDwellSeconds": 552.0,
+        "spawnEvents": 16,
+        "killsByVictimLocation": 0,
+        "killsByKillerLocation": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "spawn.sf",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              2880,
+              1760
+            ],
+            [
+              3520,
+              1760
+            ],
+            [
+              3520,
+              2360
+            ],
+            [
+              2880,
+              2360
+            ],
+            [
+              2880,
+              1760
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "regionId": "spawn.sf",
+        "regionType": "spawn",
+        "label": "Special Forces spawn and buy area",
+        "minZ": 0,
+        "maxZ": 160,
+        "confidence": 1.0,
+        "sourceFactKind": "directly-recovered-map-fact",
+        "movementSamples": 410,
+        "botMovementSamples": 410,
+        "humanMovementSamples": 0,
+        "approximateDwellSeconds": 784.0,
+        "spawnEvents": 16,
+        "killsByVictimLocation": 0,
+        "killsByKillerLocation": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "route.south_bridge",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -720,
+              -1560
+            ],
+            [
+              720,
+              -1560
+            ],
+            [
+              720,
+              -1240
+            ],
+            [
+              -720,
+              -1240
+            ],
+            [
+              -720,
+              -1560
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "regionId": "route.south_bridge",
+        "regionType": "route",
+        "label": "South canal bridge",
+        "minZ": -16,
+        "maxZ": 128,
+        "confidence": 0.99,
+        "sourceFactKind": "deterministic-spatial-derivation",
+        "movementSamples": 0,
+        "botMovementSamples": 0,
+        "humanMovementSamples": 0,
+        "approximateDwellSeconds": 0.0,
+        "spawnEvents": 0,
+        "killsByVictimLocation": 0,
+        "killsByKillerLocation": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "route.central_bridge",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -720,
+              -160
+            ],
+            [
+              720,
+              -160
+            ],
+            [
+              720,
+              160
+            ],
+            [
+              -720,
+              160
+            ],
+            [
+              -720,
+              -160
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "regionId": "route.central_bridge",
+        "regionType": "route",
+        "label": "Central canal bridge",
+        "minZ": -16,
+        "maxZ": 128,
+        "confidence": 0.99,
+        "sourceFactKind": "deterministic-spatial-derivation",
+        "movementSamples": 100,
+        "botMovementSamples": 100,
+        "humanMovementSamples": 0,
+        "approximateDwellSeconds": 154.0,
+        "spawnEvents": 0,
+        "killsByVictimLocation": 6,
+        "killsByKillerLocation": 7
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "route.north_bridge",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -720,
+              1240
+            ],
+            [
+              720,
+              1240
+            ],
+            [
+              720,
+              1560
+            ],
+            [
+              -720,
+              1560
+            ],
+            [
+              -720,
+              1240
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "regionId": "route.north_bridge",
+        "regionType": "route",
+        "label": "North canal bridge",
+        "minZ": -16,
+        "maxZ": 128,
+        "confidence": 0.99,
+        "sourceFactKind": "deterministic-spatial-derivation",
+        "movementSamples": 0,
+        "botMovementSamples": 0,
+        "humanMovementSamples": 0,
+        "approximateDwellSeconds": 0.0,
+        "spawnEvents": 0,
+        "killsByVictimLocation": 0,
+        "killsByKillerLocation": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "area.garage.west",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -3504,
+              -984
+            ],
+            [
+              -2640,
+              -984
+            ],
+            [
+              -2640,
+              -96
+            ],
+            [
+              -3504,
+              -96
+            ],
+            [
+              -3504,
+              -984
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "regionId": "area.garage.west",
+        "regionType": "room",
+        "label": "West-bank garage",
+        "minZ": -16,
+        "maxZ": 320,
+        "confidence": 1.0,
+        "sourceFactKind": "directly-recovered-map-fact",
+        "movementSamples": 0,
+        "botMovementSamples": 0,
+        "humanMovementSamples": 0,
+        "approximateDwellSeconds": 0.0,
+        "spawnEvents": 0,
+        "killsByVictimLocation": 0,
+        "killsByKillerLocation": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "area.boat.south_pocket",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -192,
+              -2496
+            ],
+            [
+              576,
+              -2496
+            ],
+            [
+              576,
+              -1800
+            ],
+            [
+              -192,
+              -1800
+            ],
+            [
+              -192,
+              -2496
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "regionId": "area.boat.south_pocket",
+        "regionType": "traversal",
+        "label": "South calm-water tactical boat pocket",
+        "minZ": -208,
+        "maxZ": 192,
+        "confidence": 0.98,
+        "sourceFactKind": "directly-recovered-map-fact",
+        "movementSamples": 0,
+        "botMovementSamples": 0,
+        "humanMovementSamples": 0,
+        "approximateDwellSeconds": 0.0,
+        "spawnEvents": 0,
+        "killsByVictimLocation": 0,
+        "killsByKillerLocation": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "area.boat.central",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -24,
+              -984
+            ],
+            [
+              336,
+              -984
+            ],
+            [
+              336,
+              -320
+            ],
+            [
+              -24,
+              -320
+            ],
+            [
+              -24,
+              -984
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "regionId": "area.boat.central",
+        "regionType": "traversal",
+        "label": "Central canal boat",
+        "minZ": -208,
+        "maxZ": 128,
+        "confidence": 1.0,
+        "sourceFactKind": "directly-recovered-map-fact",
+        "movementSamples": 18,
+        "botMovementSamples": 18,
+        "humanMovementSamples": 0,
+        "approximateDwellSeconds": 26.0,
+        "spawnEvents": 0,
+        "killsByVictimLocation": 1,
+        "killsByKillerLocation": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "area.boat.north",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -304,
+              1720
+            ],
+            [
+              64,
+              1720
+            ],
+            [
+              64,
+              2400
+            ],
+            [
+              -304,
+              2400
+            ],
+            [
+              -304,
+              1720
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "regionId": "area.boat.north",
+        "regionType": "traversal",
+        "label": "North canal boat",
+        "minZ": -208,
+        "maxZ": 128,
+        "confidence": 1.0,
+        "sourceFactKind": "directly-recovered-map-fact",
+        "movementSamples": 0,
+        "botMovementSamples": 0,
+        "humanMovementSamples": 0,
+        "approximateDwellSeconds": 0.0,
+        "spawnEvents": 0,
+        "killsByVictimLocation": 0,
+        "killsByKillerLocation": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "connector.rooftop_bridge",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -1024,
+              480
+            ],
+            [
+              1024,
+              480
+            ],
+            [
+              1024,
+              720
+            ],
+            [
+              -1024,
+              720
+            ],
+            [
+              -1024,
+              480
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "regionId": "connector.rooftop_bridge",
+        "regionType": "connector",
+        "label": "Cross-canal rooftop bridge",
+        "minZ": 240,
+        "maxZ": 384,
+        "confidence": 0.99,
+        "sourceFactKind": "deterministic-spatial-derivation",
+        "movementSamples": 0,
+        "botMovementSamples": 0,
+        "humanMovementSamples": 0,
+        "approximateDwellSeconds": 0.0,
+        "spawnEvents": 0,
+        "killsByVictimLocation": 0,
+        "killsByKillerLocation": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "rooftop.west",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -2016,
+              -2240
+            ],
+            [
+              -800,
+              -2240
+            ],
+            [
+              -800,
+              2240
+            ],
+            [
+              -2016,
+              2240
+            ],
+            [
+              -2016,
+              -2240
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "regionId": "rooftop.west",
+        "regionType": "roof",
+        "label": "West-bank connected rooftops",
+        "minZ": 224,
+        "maxZ": 384,
+        "confidence": 0.94,
+        "sourceFactKind": "agent-assigned-semantic-interpretation",
+        "movementSamples": 0,
+        "botMovementSamples": 0,
+        "humanMovementSamples": 0,
+        "approximateDwellSeconds": 0.0,
+        "spawnEvents": 0,
+        "killsByVictimLocation": 0,
+        "killsByKillerLocation": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "rooftop.east",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              800,
+              -2240
+            ],
+            [
+              2016,
+              -2240
+            ],
+            [
+              2016,
+              2240
+            ],
+            [
+              800,
+              2240
+            ],
+            [
+              800,
+              -2240
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "regionId": "rooftop.east",
+        "regionType": "roof",
+        "label": "East-bank connected rooftops",
+        "minZ": 224,
+        "maxZ": 384,
+        "confidence": 0.94,
+        "sourceFactKind": "agent-assigned-semantic-interpretation",
+        "movementSamples": 0,
+        "botMovementSamples": 0,
+        "humanMovementSamples": 0,
+        "approximateDwellSeconds": 0.0,
+        "spawnEvents": 0,
+        "killsByVictimLocation": 0,
+        "killsByKillerLocation": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "feature.waterfall.north",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -384,
+              2528
+            ],
+            [
+              384,
+              2528
+            ],
+            [
+              384,
+              2720
+            ],
+            [
+              -384,
+              2720
+            ],
+            [
+              -384,
+              2528
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "regionId": "feature.waterfall.north",
+        "regionType": "water",
+        "label": "North canal waterfall",
+        "minZ": -256,
+        "maxZ": 288,
+        "confidence": 1.0,
+        "sourceFactKind": "directly-recovered-map-fact",
+        "movementSamples": 0,
+        "botMovementSamples": 0,
+        "humanMovementSamples": 0,
+        "approximateDwellSeconds": 0.0,
+        "spawnEvents": 0,
+        "killsByVictimLocation": 0,
+        "killsByKillerLocation": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "building.house.west.0",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -1968,
+              -2200
+            ],
+            [
+              -832,
+              -2200
+            ],
+            [
+              -832,
+              -1400
+            ],
+            [
+              -1968,
+              -1400
+            ],
+            [
+              -1968,
+              -2200
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "regionId": "building.house.west.0",
+        "regionType": "building",
+        "label": "West-bank traversable house 1",
+        "minZ": -16,
+        "maxZ": 240,
+        "confidence": 0.98,
+        "sourceFactKind": "directly-recovered-map-fact",
+        "movementSamples": 0,
+        "botMovementSamples": 0,
+        "humanMovementSamples": 0,
+        "approximateDwellSeconds": 0.0,
+        "spawnEvents": 0,
+        "killsByVictimLocation": 0,
+        "killsByKillerLocation": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "building.house.west.1",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -1968,
+              -1000
+            ],
+            [
+              -832,
+              -1000
+            ],
+            [
+              -832,
+              -200
+            ],
+            [
+              -1968,
+              -200
+            ],
+            [
+              -1968,
+              -1000
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "regionId": "building.house.west.1",
+        "regionType": "building",
+        "label": "West-bank traversable house 2",
+        "minZ": -16,
+        "maxZ": 240,
+        "confidence": 0.98,
+        "sourceFactKind": "directly-recovered-map-fact",
+        "movementSamples": 22,
+        "botMovementSamples": 22,
+        "humanMovementSamples": 0,
+        "approximateDwellSeconds": 10.0,
+        "spawnEvents": 0,
+        "killsByVictimLocation": 1,
+        "killsByKillerLocation": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "building.house.west.2",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -1968,
+              200
+            ],
+            [
+              -832,
+              200
+            ],
+            [
+              -832,
+              1000
+            ],
+            [
+              -1968,
+              1000
+            ],
+            [
+              -1968,
+              200
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "regionId": "building.house.west.2",
+        "regionType": "building",
+        "label": "West-bank traversable house 3",
+        "minZ": -16,
+        "maxZ": 240,
+        "confidence": 0.98,
+        "sourceFactKind": "directly-recovered-map-fact",
+        "movementSamples": 0,
+        "botMovementSamples": 0,
+        "humanMovementSamples": 0,
+        "approximateDwellSeconds": 0.0,
+        "spawnEvents": 0,
+        "killsByVictimLocation": 0,
+        "killsByKillerLocation": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "building.house.west.3",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -1968,
+              1400
+            ],
+            [
+              -832,
+              1400
+            ],
+            [
+              -832,
+              2200
+            ],
+            [
+              -1968,
+              2200
+            ],
+            [
+              -1968,
+              1400
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "regionId": "building.house.west.3",
+        "regionType": "building",
+        "label": "West-bank traversable house 4",
+        "minZ": -16,
+        "maxZ": 240,
+        "confidence": 0.98,
+        "sourceFactKind": "directly-recovered-map-fact",
+        "movementSamples": 0,
+        "botMovementSamples": 0,
+        "humanMovementSamples": 0,
+        "approximateDwellSeconds": 0.0,
+        "spawnEvents": 0,
+        "killsByVictimLocation": 0,
+        "killsByKillerLocation": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "building.house.east.0",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              832,
+              -2200
+            ],
+            [
+              1968,
+              -2200
+            ],
+            [
+              1968,
+              -1400
+            ],
+            [
+              832,
+              -1400
+            ],
+            [
+              832,
+              -2200
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "regionId": "building.house.east.0",
+        "regionType": "building",
+        "label": "East-bank traversable house 1",
+        "minZ": -16,
+        "maxZ": 240,
+        "confidence": 0.98,
+        "sourceFactKind": "directly-recovered-map-fact",
+        "movementSamples": 0,
+        "botMovementSamples": 0,
+        "humanMovementSamples": 0,
+        "approximateDwellSeconds": 0.0,
+        "spawnEvents": 0,
+        "killsByVictimLocation": 0,
+        "killsByKillerLocation": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "building.house.east.1",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              832,
+              -1000
+            ],
+            [
+              1968,
+              -1000
+            ],
+            [
+              1968,
+              -200
+            ],
+            [
+              832,
+              -200
+            ],
+            [
+              832,
+              -1000
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "regionId": "building.house.east.1",
+        "regionType": "building",
+        "label": "East-bank traversable house 2",
+        "minZ": -16,
+        "maxZ": 240,
+        "confidence": 0.98,
+        "sourceFactKind": "directly-recovered-map-fact",
+        "movementSamples": 11,
+        "botMovementSamples": 11,
+        "humanMovementSamples": 0,
+        "approximateDwellSeconds": 2.0,
+        "spawnEvents": 0,
+        "killsByVictimLocation": 0,
+        "killsByKillerLocation": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "building.house.east.2",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              832,
+              200
+            ],
+            [
+              1968,
+              200
+            ],
+            [
+              1968,
+              1000
+            ],
+            [
+              832,
+              1000
+            ],
+            [
+              832,
+              200
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "regionId": "building.house.east.2",
+        "regionType": "building",
+        "label": "East-bank traversable house 3",
+        "minZ": -16,
+        "maxZ": 240,
+        "confidence": 0.98,
+        "sourceFactKind": "directly-recovered-map-fact",
+        "movementSamples": 0,
+        "botMovementSamples": 0,
+        "humanMovementSamples": 0,
+        "approximateDwellSeconds": 0.0,
+        "spawnEvents": 0,
+        "killsByVictimLocation": 0,
+        "killsByKillerLocation": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "building.house.east.3",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              832,
+              1400
+            ],
+            [
+              1968,
+              1400
+            ],
+            [
+              1968,
+              2200
+            ],
+            [
+              832,
+              2200
+            ],
+            [
+              832,
+              1400
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "regionId": "building.house.east.3",
+        "regionType": "building",
+        "label": "East-bank traversable house 4",
+        "minZ": -16,
+        "maxZ": 240,
+        "confidence": 0.98,
+        "sourceFactKind": "directly-recovered-map-fact",
+        "movementSamples": 0,
+        "botMovementSamples": 0,
+        "humanMovementSamples": 0,
+        "approximateDwellSeconds": 0.0,
+        "spawnEvents": 0,
+        "killsByVictimLocation": 0,
+        "killsByKillerLocation": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "area.market.west",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -3264,
+              -2200
+            ],
+            [
+              -2080,
+              -2200
+            ],
+            [
+              -2080,
+              2200
+            ],
+            [
+              -3264,
+              2200
+            ],
+            [
+              -3264,
+              -2200
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "regionId": "area.market.west",
+        "regionType": "combat",
+        "label": "West-bank market frontage",
+        "minZ": -32,
+        "maxZ": 224,
+        "confidence": 0.92,
+        "sourceFactKind": "agent-assigned-semantic-interpretation",
+        "movementSamples": 98,
+        "botMovementSamples": 98,
+        "humanMovementSamples": 0,
+        "approximateDwellSeconds": 158.0,
+        "spawnEvents": 0,
+        "killsByVictimLocation": 0,
+        "killsByKillerLocation": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "area.market.east",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              2080,
+              -2200
+            ],
+            [
+              3264,
+              -2200
+            ],
+            [
+              3264,
+              2200
+            ],
+            [
+              2080,
+              2200
+            ],
+            [
+              2080,
+              -2200
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "regionId": "area.market.east",
+        "regionType": "combat",
+        "label": "East-bank market frontage",
+        "minZ": -32,
+        "maxZ": 224,
+        "confidence": 0.92,
+        "sourceFactKind": "agent-assigned-semantic-interpretation",
+        "movementSamples": 285,
+        "botMovementSamples": 285,
+        "humanMovementSamples": 0,
+        "approximateDwellSeconds": 530.0,
+        "spawnEvents": 0,
+        "killsByVictimLocation": 2,
+        "killsByKillerLocation": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "area.canal",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -512,
+              -2688
+            ],
+            [
+              512,
+              -2688
+            ],
+            [
+              512,
+              2688
+            ],
+            [
+              -512,
+              2688
+            ],
+            [
+              -512,
+              -2688
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "regionId": "area.canal",
+        "regionType": "water",
+        "label": "Canal water volume",
+        "minZ": -256,
+        "maxZ": -32,
+        "confidence": 1.0,
+        "sourceFactKind": "deterministic-spatial-derivation",
+        "movementSamples": 84,
+        "botMovementSamples": 84,
+        "humanMovementSamples": 0,
+        "approximateDwellSeconds": 158.0,
+        "spawnEvents": 0,
+        "killsByVictimLocation": 0,
+        "killsByKillerLocation": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "area.west_bank",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -4096,
+              -3072
+            ],
+            [
+              -512,
+              -3072
+            ],
+            [
+              -512,
+              3072
+            ],
+            [
+              -4096,
+              3072
+            ],
+            [
+              -4096,
+              -3072
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "regionId": "area.west_bank",
+        "regionType": "combat",
+        "label": "West canal bank",
+        "minZ": -32,
+        "maxZ": 224,
+        "confidence": 0.99,
+        "sourceFactKind": "deterministic-spatial-derivation",
+        "movementSamples": 55,
+        "botMovementSamples": 55,
+        "humanMovementSamples": 0,
+        "approximateDwellSeconds": 58.0,
+        "spawnEvents": 0,
+        "killsByVictimLocation": 0,
+        "killsByKillerLocation": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "area.east_bank",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              512,
+              -3072
+            ],
+            [
+              4096,
+              -3072
+            ],
+            [
+              4096,
+              3072
+            ],
+            [
+              512,
+              3072
+            ],
+            [
+              512,
+              -3072
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "regionId": "area.east_bank",
+        "regionType": "combat",
+        "label": "East canal bank",
+        "minZ": -32,
+        "maxZ": 224,
+        "confidence": 0.99,
+        "sourceFactKind": "deterministic-spatial-derivation",
+        "movementSamples": 115,
+        "botMovementSamples": 115,
+        "humanMovementSamples": 0,
+        "approximateDwellSeconds": 158.0,
+        "spawnEvents": 0,
+        "killsByVictimLocation": 5,
+        "killsByKillerLocation": 5
+      }
+    }
+  ]
+}

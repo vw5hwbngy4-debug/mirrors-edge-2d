@@ -1,0 +1,44 @@
+{
+  "schema": "spawnmap.runtime-eval.public-summary.v0.1.1",
+  "evalId": "runtime-eval-001b",
+  "status": "experimental-validated-observer",
+  "map": {
+    "file": "TO-GPT-SuzhouCanal-GraffitiFruit-v3.unr",
+    "sha256": "dd9530c3beffbec46435b9d53070b87488a4eb075311bfd69ebcb99ec782be93"
+  },
+  "session": {
+    "id": "20260813-205443-15249",
+    "botOnly": true,
+    "scopeWarning": "One short successful test session. These are observations, not map-balance conclusions."
+  },
+  "telemetry": {
+    "mutator": "TOGPTTelemetry.TOGPTTelemetryMutator",
+    "version": "0.1.1",
+    "movementSamples": 1492,
+    "spawnEvents": 32,
+    "kills": 15,
+    "roundStarts": 2,
+    "roundEnds": 1,
+    "verifiedSpawnPosLifeJoins": 32,
+    "unverifiedSpawnPosLifeJoins": 0
+  },
+  "buyPhaseContext": {
+    "note": "The opening Tactical Ops buy/loadout window keeps players and bots in their buy zones before normal movement begins. Therefore no observed semantic exit within the first 10 seconds is expected here and is not a navigation failure.",
+    "firstRoundFirstObservedExitsApproxSeconds": 28
+  },
+  "runtimeContract": {
+    "bothTeamsEventuallyExitedSpawn": true,
+    "telemetryMutatorWarnings": 0,
+    "identityChecksPassed": true,
+    "mapUnchanged": true,
+    "navigationUnchanged": true,
+    "automaticMapEditingFromTelemetry": false
+  },
+  "semanticBridge": {
+    "regionCount": 26,
+    "coordinateLocationsTotal": 1554,
+    "coordinateLocationsMatched": 1553,
+    "coordinateLocationsUnmatched": 1,
+    "observedFlowGraphIsNotUnrealNavigationData": true
+  }
+}

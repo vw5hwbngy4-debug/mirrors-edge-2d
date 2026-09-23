@@ -1,0 +1,16 @@
+SpawnMap Swipe Feed v4 - texture completion
+
+The new texture package upload has been merged with the previous supplied texture set.
+Classic maps are preprocessed from their UE1 BSP and original surface texture assignments.
+Textures are exported only for references used by the supplied maps.
+
+Classic rendered-surface texture coverage in this build:
+- RapidWater][: 99.4%
+- Deagle5v12: 98.1%
+- Trooper: 100%
+- Dragon: 100%
+- CIA: 100%
+- 2-ColdV34: 96.6%
+
+Suzhou Canal continues to use the proven original textured SpawnMap T3D + asset-cache renderer.
+The public site exposes no private GPT map-building plugin or private PC worker.

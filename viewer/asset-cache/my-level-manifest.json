@@ -1,0 +1,39 @@
+{
+  "schema": "spawnborn.asset-cache.v0.2-extension",
+  "package": "MyLevel",
+  "sourceMap": "TO-GPT-SuzhouCanal-GraffitiFruit-v3.unr",
+  "textures": {
+    "SM_Italia_Tomatoes": {
+      "source": "MyLevel.SM_Italia_Tomatoes",
+      "file": "textures/MyLevel/SM_Italia_Tomatoes.png",
+      "width": 256,
+      "height": 256,
+      "masked": false,
+      "provenance": "TO-BellaItalia.veg1 \u2192 embedded into MyLevel"
+    },
+    "SM_Italia_Oranges": {
+      "source": "MyLevel.SM_Italia_Oranges",
+      "file": "textures/MyLevel/SM_Italia_Oranges.png",
+      "width": 256,
+      "height": 256,
+      "masked": false,
+      "provenance": "TO-BellaItalia.orangkach1 \u2192 embedded into MyLevel"
+    },
+    "SM_Graffiti_TOGPT": {
+      "source": "MyLevel.SM_Graffiti_TOGPT",
+      "file": "textures/MyLevel/SM_Graffiti_TOGPT.png",
+      "width": 512,
+      "height": 512,
+      "masked": true,
+      "provenance": "custom TO-GPT graffiti embedded into MyLevel"
+    },
+    "SM_Graffiti_Bamipangpang": {
+      "source": "MyLevel.SM_Graffiti_Bamipangpang",
+      "file": "textures/MyLevel/SM_Graffiti_Bamipangpang.png",
+      "width": 512,
+      "height": 512,
+      "masked": true,
+      "provenance": "custom [BoBo]Bamipangpang graffiti embedded into MyLevel"
+    }
+  }
+}

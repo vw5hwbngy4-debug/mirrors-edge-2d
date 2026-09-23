@@ -1,0 +1,320 @@
+{
+  "schema": "spawnborn.asset-cache.v0.1",
+  "package": "TO-Orient",
+  "sourcePackage": "TO-Orient.utx",
+  "packageVersion": 69,
+  "textures": {
+    "chinsign3": {
+      "source": "TO-Orient.chinsign3",
+      "file": "textures/TO-Orient/chinsign3.png",
+      "width": 64,
+      "height": 256,
+      "mipCount": 9,
+      "paletteObject": "Palette19"
+    },
+    "chinsign6": {
+      "source": "TO-Orient.chinsign6",
+      "file": "textures/TO-Orient/chinsign6.png",
+      "width": 256,
+      "height": 64,
+      "mipCount": 9,
+      "paletteObject": "Palette23"
+    },
+    "orientwall8": {
+      "source": "TO-Orient.orientwall8",
+      "file": "textures/TO-Orient/orientwall8.png",
+      "width": 256,
+      "height": 256,
+      "mipCount": 9,
+      "paletteObject": "Palette67"
+    },
+    "orientwall4": {
+      "source": "TO-Orient.orientwall4",
+      "file": "textures/TO-Orient/orientwall4.png",
+      "width": 256,
+      "height": 256,
+      "mipCount": 9,
+      "paletteObject": "Palette59"
+    },
+    "chinart4": {
+      "source": "TO-Orient.chinart4",
+      "file": "textures/TO-Orient/chinart4.png",
+      "width": 256,
+      "height": 256,
+      "mipCount": 9,
+      "paletteObject": "Palette9"
+    },
+    "orientwall13": {
+      "source": "TO-Orient.orientwall13",
+      "file": "textures/TO-Orient/orientwall13.png",
+      "width": 256,
+      "height": 256,
+      "mipCount": 9,
+      "paletteObject": "Palette53"
+    },
+    "orientwall14": {
+      "source": "TO-Orient.orientwall14",
+      "file": "textures/TO-Orient/orientwall14.png",
+      "width": 256,
+      "height": 256,
+      "mipCount": 9,
+      "paletteObject": "Palette1"
+    },
+    "orientwall10": {
+      "source": "TO-Orient.orientwall10",
+      "file": "textures/TO-Orient/orientwall10.png",
+      "width": 256,
+      "height": 256,
+      "mipCount": 9,
+      "paletteObject": "Palette41"
+    },
+    "chintrimC": {
+      "source": "TO-Orient.chintrimC",
+      "file": "textures/TO-Orient/chintrimC.png",
+      "width": 256,
+      "height": 32,
+      "mipCount": 9,
+      "paletteObject": "Palette73"
+    },
+    "chintrimB": {
+      "source": "TO-Orient.chintrimB",
+      "file": "textures/TO-Orient/chintrimB.png",
+      "width": 256,
+      "height": 32,
+      "mipCount": 9,
+      "paletteObject": "Palette29"
+    },
+    "chinflag1": {
+      "source": "TO-Orient.chinflag1",
+      "file": "textures/TO-Orient/chinflag1.png",
+      "width": 64,
+      "height": 128,
+      "mipCount": 8,
+      "paletteObject": "Palette13"
+    },
+    "chinwallD": {
+      "source": "TO-Orient.chinwallD",
+      "file": "textures/TO-Orient/chinwallD.png",
+      "width": 256,
+      "height": 256,
+      "mipCount": 9,
+      "paletteObject": "Palette31"
+    },
+    "orientwall5": {
+      "source": "TO-Orient.orientwall5",
+      "file": "textures/TO-Orient/orientwall5.png",
+      "width": 256,
+      "height": 256,
+      "mipCount": 9,
+      "paletteObject": "Palette61"
+    },
+    "orientwall9": {
+      "source": "TO-Orient.orientwall9",
+      "file": "textures/TO-Orient/orientwall9.png",
+      "width": 256,
+      "height": 256,
+      "mipCount": 9,
+      "paletteObject": "Palette69"
+    },
+    "chinsign7": {
+      "source": "TO-Orient.chinsign7",
+      "file": "textures/TO-Orient/chinsign7.png",
+      "width": 256,
+      "height": 64,
+      "mipCount": 9,
+      "paletteObject": "Palette25"
+    },
+    "orientwall12": {
+      "source": "TO-Orient.orientwall12",
+      "file": "textures/TO-Orient/orientwall12.png",
+      "width": 256,
+      "height": 256,
+      "mipCount": 9,
+      "paletteObject": "Palette3"
+    },
+    "orientwall12b": {
+      "source": "TO-Orient.orientwall12b",
+      "file": "textures/TO-Orient/orientwall12b.png",
+      "width": 256,
+      "height": 256,
+      "mipCount": 9,
+      "paletteObject": "Palette51"
+    },
+    "greentileroof": {
+      "source": "TO-Orient.greentileroof",
+      "file": "textures/TO-Orient/greentileroof.png",
+      "width": 256,
+      "height": 256,
+      "mipCount": 9,
+      "paletteObject": "Palette12"
+    },
+    "woodsign": {
+      "source": "TO-Orient.woodsign",
+      "file": "textures/TO-Orient/woodsign.png",
+      "width": 128,
+      "height": 256,
+      "mipCount": 9,
+      "paletteObject": "Palette71"
+    },
+    "chinsign5": {
+      "source": "TO-Orient.chinsign5",
+      "file": "textures/TO-Orient/chinsign5.png",
+      "width": 128,
+      "height": 128,
+      "mipCount": 8,
+      "paletteObject": "Palette21"
+    },
+    "orientwall1": {
+      "source": "TO-Orient.orientwall1",
+      "file": "textures/TO-Orient/orientwall1.png",
+      "width": 256,
+      "height": 256,
+      "mipCount": 9,
+      "paletteObject": "Palette39"
+    },
+    "blueshingle": {
+      "source": "TO-Orient.blueshingle",
+      "file": "textures/TO-Orient/blueshingle.png",
+      "width": 256,
+      "height": 128,
+      "mipCount": 9,
+      "paletteObject": "Palette10"
+    },
+    "orientwall11": {
+      "source": "TO-Orient.orientwall11",
+      "file": "textures/TO-Orient/orientwall11.png",
+      "width": 256,
+      "height": 256,
+      "mipCount": 9,
+      "paletteObject": "Palette8"
+    },
+    "chinrail2": {
+      "source": "TO-Orient.chinrail2",
+      "file": "textures/TO-Orient/chinrail2.png",
+      "width": 256,
+      "height": 128,
+      "mipCount": 9,
+      "paletteObject": "Palette17"
+    },
+    "orientwall6": {
+      "source": "TO-Orient.orientwall6",
+      "file": "textures/TO-Orient/orientwall6.png",
+      "width": 256,
+      "height": 256,
+      "mipCount": 9,
+      "paletteObject": "Palette63"
+    },
+    "chinrail": {
+      "source": "TO-Orient.chinrail",
+      "file": "textures/TO-Orient/chinrail.png",
+      "width": 256,
+      "height": 256,
+      "mipCount": 9,
+      "paletteObject": "Palette15"
+    },
+    "dragsky4": {
+      "source": "TO-Orient.dragsky4",
+      "file": "textures/TO-Orient/dragsky4.png",
+      "width": 256,
+      "height": 256,
+      "mipCount": 9,
+      "paletteObject": "Palette20"
+    },
+    "chindoor3": {
+      "source": "TO-Orient.chindoor3",
+      "file": "textures/TO-Orient/chindoor3.png",
+      "width": 256,
+      "height": 256,
+      "mipCount": 9,
+      "paletteObject": "Palette11"
+    },
+    "orientwall11a": {
+      "source": "TO-Orient.orientwall11a",
+      "file": "textures/TO-Orient/orientwall11a.png",
+      "width": 256,
+      "height": 256,
+      "mipCount": 9,
+      "paletteObject": "Palette45"
+    },
+    "andiwall1": {
+      "source": "TO-Orient.andiwall1",
+      "file": "textures/TO-Orient/andiwall1.png",
+      "width": 256,
+      "height": 256,
+      "mipCount": 9,
+      "paletteObject": "Palette7"
+    },
+    "chinwood2": {
+      "source": "TO-Orient.chinwood2",
+      "file": "textures/TO-Orient/chinwood2.png",
+      "width": 256,
+      "height": 256,
+      "mipCount": 9,
+      "paletteObject": "Palette33"
+    },
+    "orientwall7": {
+      "source": "TO-Orient.orientwall7",
+      "file": "textures/TO-Orient/orientwall7.png",
+      "width": 256,
+      "height": 256,
+      "mipCount": 9,
+      "paletteObject": "Palette65"
+    },
+    "orientwall11b": {
+      "source": "TO-Orient.orientwall11b",
+      "file": "textures/TO-Orient/orientwall11b.png",
+      "width": 256,
+      "height": 256,
+      "mipCount": 9,
+      "paletteObject": "Palette47"
+    },
+    "orientwall14a": {
+      "source": "TO-Orient.orientwall14a",
+      "file": "textures/TO-Orient/orientwall14a.png",
+      "width": 256,
+      "height": 256,
+      "mipCount": 9,
+      "paletteObject": "Palette18"
+    },
+    "redxlamp": {
+      "source": "TO-Orient.redxlamp",
+      "file": "textures/TO-Orient/redxlamp.png",
+      "width": 32,
+      "height": 64,
+      "mipCount": 7,
+      "paletteObject": "Palette14"
+    },
+    "redtileroof": {
+      "source": "TO-Orient.redtileroof",
+      "file": "textures/TO-Orient/redtileroof.png",
+      "width": 256,
+      "height": 256,
+      "mipCount": 9,
+      "paletteObject": "Palette4"
+    },
+    "despwall2": {
+      "source": "TO-Orient.despwall2",
+      "file": "textures/TO-Orient/despwall2.png",
+      "width": 512,
+      "height": 512,
+      "mipCount": 10,
+      "paletteObject": "Palette37"
+    },
+    "dragsky3": {
+      "source": "TO-Orient.dragsky3",
+      "file": "textures/TO-Orient/dragsky3.png",
+      "width": 256,
+      "height": 256,
+      "mipCount": 9,
+      "paletteObject": "Palette6"
+    },
+    "orientwall3": {
+      "source": "TO-Orient.orientwall3",
+      "file": "textures/TO-Orient/orientwall3.png",
+      "width": 256,
+      "height": 256,
+      "mipCount": 9,
+      "paletteObject": "Palette57"
+    }
+  }
+}

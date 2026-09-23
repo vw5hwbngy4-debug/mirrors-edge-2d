@@ -1,0 +1,14 @@
+SpawnMap Swipe v9.3
+
+Affiliates
+- Removed the public Research section from the main navigation.
+- Menu is now: About / Runtime / Affiliates.
+- Added a SpawnMap-native Affiliates window over the map feed.
+- tactical-ops.eu:
+  Servers, maps, downloads and Tactical Ops preservation.
+- hossie.org:
+  Hossie lives here.
+- Old /architecture.html redirects to /affiliates.html so stale links do not break.
+
+No changes to the talking ••• assistant, landing, map feed, Overview, Telemetry,
+MAPS, GPT BUILDS, textures, spawns or navigation.

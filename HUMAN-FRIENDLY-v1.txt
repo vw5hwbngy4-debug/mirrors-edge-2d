@@ -1,0 +1,19 @@
+SpawnMap Human-Friendly v1
+
+Goal:
+- Keep the existing working site/tooling intact.
+- Replace the homepage with a human-first map-select experience.
+- Make map walking full-screen and remove telemetry/dashboard clutter from the public path.
+
+New:
+- Horizontal visual level-select rail.
+- Accurate thumbnails extracted from each supplied classic .unr's embedded Screenshot texture.
+- Featured: RapidWater][, Deagle5v12, Trooper, GPT-built Suzhou Canal.
+- Additional supplied classics: Dragon, CIA, 2-ColdV34.
+- Clean Suzhou full-screen walker with mobile joystick, right-side look, Jump and live overview PiP.
+- Experimental classic browser walk: reads the original .unr client-side with UTPackage.js and renders brush geometry. External game texture packages are intentionally not redistributed, so classic walks use a clean geometry view.
+- Simple Make the Map prompt box.
+- Server state reduced to one small header indicator.
+- Old homepage preserved as /index-legacy-v11.html.
+
+No telemetry/dashboard components were added to the homepage.

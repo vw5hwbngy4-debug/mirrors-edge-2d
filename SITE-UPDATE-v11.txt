@@ -1,0 +1,38 @@
+SpawnMap.ai v11 · Agentic Build + Suzhou GraffitiFruit v3
+2026-08-13
+
+CURRENT MAP ARTIFACT
+- downloads/TO-GPT-SuzhouCanal-GraffitiFruit-v3.unr
+- SHA-256: dd9530c3beffbec46435b9d53070b87488a4eb075311bfd69ebcb99ec782be93
+- Previous known-good parent retained as downloads/TO-SuzhouCanal-previous.unr
+
+CURRENT BROWSER REPRESENTATION
+- maps/TO-GPT-SuzhouCanal-GraffitiFruit-v3.t3d
+- Derived from the previous known-good browser T3D because Work reported no gameplay geometry change.
+- Patched from the uploaded v3 UNR's exact editable brush data for:
+  * MyLevel.SM_Graffiti_Bamipangpang sheet placement
+  * MyLevel.SM_Graffiti_TOGPT sheet placement
+  * V4StallTable0..7 top-surface fruit texture assignments
+- Browser T3D validation: 585 Brush actors + the existing Mover brush, 3429 polygons, 32 PlayerStarts, 149 PathNodes, 26 s_SWATPathNodes.
+
+MYLEVEL WEB ASSET CACHE
+- Exact indexed textures extracted from the uploaded v3 UNR:
+  * SM_Graffiti_Bamipangpang 512x512
+  * SM_Graffiti_TOGPT 512x512
+  * SM_Italia_Oranges 256x256
+  * SM_Italia_Tomatoes 256x256
+  * Screenshot 256x256
+- UE1 masked palette index 0 is preserved as alpha for the two web graffiti textures.
+- Overview and Spectator resolve the new MyLevel references through my-level-manifest.js.
+
+SITE / UX
+- Homepage repositioned as agentic level engineering rather than a generic map gallery.
+- New architecture.html documents the current control plane, map state, deterministic lowering, remote execution, artifact provenance and future runtime-eval loop.
+- Current map inspector now includes Overview, embedded asset delta, agentic build provenance, lineage, Spectator and runtime contract.
+- Build provenance JSON added at maps/TO-GPT-SuzhouCanal-GraffitiFruit-v3.provenance.json.
+- About page expanded with the v0.5.0 runner / edit_unr execution path and current v3 artifact case study.
+- Current embedded MyLevel.Screenshot is used as the site/library preview.
+- OpenGraph metadata, sitemap and robots file added/refreshed.
+
+DEPLOY
+Upload the contents of public_html/ to the web root. Existing server-config.php can stay configured for the TO-GPT server status bridge.

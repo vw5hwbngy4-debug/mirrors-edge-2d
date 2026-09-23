@@ -1,0 +1,13 @@
+SpawnMap Swipe v9.0
+
+Map corrections
+- Renamed RapidWater][ to RapidWaters 2 in the public feed.
+- RapidWaters 2 now spawns at a different real PlayerStart:
+  x=-567.7156, y=40.0972, z=-1620.6466, yaw=-2816.
+  This point has a broad continuous floor around it in the extracted BSP.
+- Dragon now uses an explicit real Team 1 PlayerStart:
+  x=-842.2924, y=-1504.6116, z=1976.6528, yaw=-16360.
+  This avoids the old automatic TeamNumber-null start that put the browser player
+  in the broken/inaccessible part of the map.
+
+No changes to Overview, Telemetry, textures, landing, MAPS, GPT BUILDS or navigation.

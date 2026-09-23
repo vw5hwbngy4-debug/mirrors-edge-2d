@@ -1,0 +1,32 @@
+{
+  "rapidwater": {
+    "title": "RapidWater][",
+    "file": "/image-to-unreal-map/maps/classics/TO-RapidWater][.unr",
+    "thumb": "/image-to-unreal-map/media/classics/rapidwater.webp"
+  },
+  "deagle": {
+    "title": "Deagle5v12",
+    "file": "/image-to-unreal-map/maps/classics/TO-Deagle5v12.unr",
+    "thumb": "/image-to-unreal-map/media/classics/deagle.webp"
+  },
+  "trooper": {
+    "title": "Trooper",
+    "file": "/image-to-unreal-map/maps/classics/TO-Trooper.unr",
+    "thumb": "/image-to-unreal-map/media/classics/trooper.webp"
+  },
+  "dragon": {
+    "title": "Dragon",
+    "file": "/image-to-unreal-map/maps/classics/TO-Dragon.unr",
+    "thumb": "/image-to-unreal-map/media/classics/dragon.webp"
+  },
+  "cia": {
+    "title": "CIA",
+    "file": "/image-to-unreal-map/maps/classics/TO-CIA.unr",
+    "thumb": "/image-to-unreal-map/media/classics/cia.webp"
+  },
+  "cold": {
+    "title": "2-ColdV34",
+    "file": "/image-to-unreal-map/maps/classics/TO-2-ColdV34.unr",
+    "thumb": "/image-to-unreal-map/media/classics/cold.webp"
+  }
+}

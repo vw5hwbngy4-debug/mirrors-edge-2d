@@ -1,0 +1,36 @@
+{
+  "schema": "spawnmap.runtime-eval.public-summary.v0.1",
+  "evalId": "runtime-eval-001",
+  "status": "experimental-validated-observer",
+  "map": {
+    "file": "TO-GPT-SuzhouCanal-GraffitiFruit-v3.unr",
+    "sha256": "dd9530c3beffbec46435b9d53070b87488a4eb075311bfd69ebcb99ec782be93"
+  },
+  "telemetry": {
+    "mutator": "TOGPTTelemetry.TOGPTTelemetryMutator",
+    "movementSamples": 1491,
+    "botMovementSamples": 1371,
+    "humanMovementSamples": 120,
+    "spawnEvents": 31,
+    "kills": 13,
+    "roundStarts": 2,
+    "roundEnds": 1
+  },
+  "runtimeContract": {
+    "bothTeamsExitedSpawnAutonomously": true,
+    "scriptWarnings": 0,
+    "accessedNone": 0,
+    "criticalErrors": 0,
+    "gameplayChanged": false,
+    "mapChangedByObserver": false,
+    "navigationChangedByObserver": false,
+    "corePackagesChanged": false
+  },
+  "analysisProductsConfirmed": [
+    "movement-density",
+    "death-hotspots",
+    "dwell-cells"
+  ],
+  "publicDataBoundary": "Aggregate proof only. Raw NDJSON/spatial shapes are not included in this website build.",
+  "automaticMapEditingFromTelemetry": false
+}

@@ -1,0 +1,14 @@
+SpawnMap Swipe v9.2
+
+Talking menu
+- The existing ••• menu now behaves like a tiny AI-site personality orb.
+- Shortly after load, a speech bubble appears with:
+  "hi."
+- After a few seconds it changes to:
+  "hi, do you wanna die a painful death?"
+- The bubble fades away on its own so it doesn't permanently cover the maps.
+- Hovering or keyboard-focusing the ••• button on desktop replays the sequence.
+- Opening the actual About / Runtime / Affiliates drawer hides the speech bubble immediately.
+- The bubble is deliberately small, dark and translucent with a subtle lime status dot.
+
+No map, spawn, Overview, Telemetry, landing, MAPS or GPT BUILDS behavior changed.

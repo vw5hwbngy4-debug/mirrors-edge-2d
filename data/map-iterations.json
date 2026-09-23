@@ -1,0 +1,17 @@
+{
+  "schema": "SpawnMapIterations-v0.1",
+  "maps": {
+    "suzhou": [
+      {
+        "iterationId": "v3",
+        "label": "GraffitiFruit v3",
+        "status": "current",
+        "artifact": "TO-GPT-SuzhouCanal-GraffitiFruit-v3.unr",
+        "sha256": "dd9530c3beffbec46435b9d53070b87488a4eb075311bfd69ebcb99ec782be93",
+        "bytes": 2747210,
+        "parentArtifact": "TO-SuzhouCanal.unr",
+        "thumb": "/image-to-unreal-map/media/TO-GPT-SuzhouCanal-GraffitiFruit-v3-Overview.png"
+      }
+    ]
+  }
+}

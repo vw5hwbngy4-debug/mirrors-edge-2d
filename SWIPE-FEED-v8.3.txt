@@ -1,0 +1,14 @@
+SpawnMap Swipe v8.3
+
+Landing state-machine fix
+- The TO-GPT server landing is now a true one-shot gate, not a hidden/animated feed layer.
+- On dismiss it is physically removed from the DOM immediately.
+- It therefore cannot snap back over the map feed.
+- On mobile, the landing is removed only on touchend, never during touchmove.
+  This avoids Safari losing the active touch target mid-gesture.
+- A vertical swipe, the SWIPE FOR MAPS button, desktop wheel/trackpad, Enter or Arrow Down can dismiss it.
+- sessionStorage still skips the gate after returning to SpawnMap in the same tab.
+- Deep links remove the landing from the DOM too.
+- Server polling stops once the landing has been removed.
+
+No map/viewer/overview/telemetry redesign in this build.

@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover,user-scalable=no">
+<meta name="theme-color" content="#080a0c">
+<title>SpawnMap Overview</title>
+<link rel="icon" href="/image-to-unreal-map/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/image-to-unreal-map/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/image-to-unreal-map/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/image-to-unreal-map/favicon-16x16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/image-to-unreal-map/apple-touch-icon.png">
+<link rel="manifest" href="/image-to-unreal-map/site.webmanifest">
+<style>
+html,body{margin:0;width:100%;height:100%;overflow:hidden;background:#080a0c;overscroll-behavior:none;touch-action:none}
+spawnborn-map-preview{display:block;width:100%;height:100vh}
+.loading{position:fixed;inset:0;display:grid;place-items:center;color:#aeb8bc;font:700 10px/1 system-ui;letter-spacing:.14em;text-transform:uppercase;background:#080a0c;z-index:100}
+.loading.done{opacity:0;pointer-events:none;transition:opacity .25s ease}
+</style>
+</head>
+<body>
+<div class="loading">Loading overview…</div>
+<spawnborn-map-preview></spawnborn-map-preview>
+<script src="./preview/vendor/three.min.js"></script>
+<script src="./preview/vendor/three-orbit-controls.js"></script>
+<script src="./asset-cache/asset-cache-manifest.js"></script>
+<script src="./asset-cache/my-level-manifest.js?v=11"></script>
+<script src="./asset-cache/asset-resolver.js"></script>
+<script src="./preview/t3d-parser.js"></script>
+<script src="./preview/spawnborn-map-preview.js?v=interactive-v86"></script>
+<script src="./overview.v13.js?v=interactive-v86"></script>
+</body>
+</html>

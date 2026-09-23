@@ -1,0 +1,17 @@
+SpawnMap Swipe v8.4
+
+Landing
+- The navy TO-GPT server landing is back on every normal visit to /.
+- It is no longer remembered in sessionStorage.
+- Once you swipe/tap into the feed, the landing is removed from the DOM for that page and cannot snap back.
+- Explicit deep links such as /?map=suzhou&mode=overview skip the landing intentionally.
+
+Overview
+- Suzhou OVERVIEW has been restored from the user's original public_html (6).zip.
+- viewer/overview.html and viewer/overview.v13.js use the original interactive OrbitControls implementation.
+- The exact original Spawnborn preview renderer, T3D parser, Three.js, OrbitControls, asset cache manifest,
+  MyLevel manifest, asset resolver and Suzhou T3D were restored as well.
+- No rewritten overview camera or simplified scene renderer is used.
+- Cache-busting query strings were changed so phones cannot reuse the previously broken overview files.
+
+The rest of the v8.3 map feed, walk mode, telemetry, server landing design and MAPS grid are preserved.

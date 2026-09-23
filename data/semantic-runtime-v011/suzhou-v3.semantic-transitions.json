@@ -1,0 +1,634 @@
+{
+  "schemaVersion": "SpawnMap-SemanticObservedFlow-v0.1.1",
+  "mapId": "TO-GPT-SuzhouCanal-GraffitiFruit-v3",
+  "mapSha256": "dd9530c3beffbec46435b9d53070b87488a4eb075311bfd69ebcb99ec782be93",
+  "sessionId": "20260813-205443-15249",
+  "graphKind": "observed-semantic-participant-flow",
+  "notUnrealNavigationData": true,
+  "derivation": "Transitions between consecutive coordinate-bearing POS samples for the same participant, only when 0 < delta-t <= 3 seconds and straight-line displacement <= 900 uu. This rejects respawn/teleport jumps. Repeated positions in the same region are collapsed into dwell evidence rather than graph edges.",
+  "nodes": [
+    {
+      "id": "spawn.terr",
+      "label": "Terrorist spawn and buy area"
+    },
+    {
+      "id": "spawn.sf",
+      "label": "Special Forces spawn and buy area"
+    },
+    {
+      "id": "route.south_bridge",
+      "label": "South canal bridge"
+    },
+    {
+      "id": "route.central_bridge",
+      "label": "Central canal bridge"
+    },
+    {
+      "id": "route.north_bridge",
+      "label": "North canal bridge"
+    },
+    {
+      "id": "area.garage.west",
+      "label": "West-bank garage"
+    },
+    {
+      "id": "area.boat.south_pocket",
+      "label": "South calm-water tactical boat pocket"
+    },
+    {
+      "id": "area.boat.central",
+      "label": "Central canal boat"
+    },
+    {
+      "id": "area.boat.north",
+      "label": "North canal boat"
+    },
+    {
+      "id": "connector.rooftop_bridge",
+      "label": "Cross-canal rooftop bridge"
+    },
+    {
+      "id": "rooftop.west",
+      "label": "West-bank connected rooftops"
+    },
+    {
+      "id": "rooftop.east",
+      "label": "East-bank connected rooftops"
+    },
+    {
+      "id": "feature.waterfall.north",
+      "label": "North canal waterfall"
+    },
+    {
+      "id": "building.house.west.0",
+      "label": "West-bank traversable house 1"
+    },
+    {
+      "id": "building.house.west.1",
+      "label": "West-bank traversable house 2"
+    },
+    {
+      "id": "building.house.west.2",
+      "label": "West-bank traversable house 3"
+    },
+    {
+      "id": "building.house.west.3",
+      "label": "West-bank traversable house 4"
+    },
+    {
+      "id": "building.house.east.0",
+      "label": "East-bank traversable house 1"
+    },
+    {
+      "id": "building.house.east.1",
+      "label": "East-bank traversable house 2"
+    },
+    {
+      "id": "building.house.east.2",
+      "label": "East-bank traversable house 3"
+    },
+    {
+      "id": "building.house.east.3",
+      "label": "East-bank traversable house 4"
+    },
+    {
+      "id": "area.market.west",
+      "label": "West-bank market frontage"
+    },
+    {
+      "id": "area.market.east",
+      "label": "East-bank market frontage"
+    },
+    {
+      "id": "area.canal",
+      "label": "Canal water volume"
+    },
+    {
+      "id": "area.west_bank",
+      "label": "West canal bank"
+    },
+    {
+      "id": "area.east_bank",
+      "label": "East canal bank"
+    }
+  ],
+  "edges": [
+    {
+      "from": "spawn.terr",
+      "to": "area.market.west",
+      "count": 17,
+      "botCount": 17,
+      "humanCount": 0
+    },
+    {
+      "from": "building.house.west.1",
+      "to": "area.west_bank",
+      "count": 15,
+      "botCount": 15,
+      "humanCount": 0
+    },
+    {
+      "from": "spawn.sf",
+      "to": "area.market.east",
+      "count": 14,
+      "botCount": 14,
+      "humanCount": 0
+    },
+    {
+      "from": "area.west_bank",
+      "to": "building.house.west.1",
+      "count": 14,
+      "botCount": 14,
+      "humanCount": 0
+    },
+    {
+      "from": "area.market.east",
+      "to": "area.east_bank",
+      "count": 13,
+      "botCount": 13,
+      "humanCount": 0
+    },
+    {
+      "from": "area.east_bank",
+      "to": "route.central_bridge",
+      "count": 13,
+      "botCount": 13,
+      "humanCount": 0
+    },
+    {
+      "from": "route.central_bridge",
+      "to": "area.east_bank",
+      "count": 12,
+      "botCount": 12,
+      "humanCount": 0
+    },
+    {
+      "from": "area.west_bank",
+      "to": "route.central_bridge",
+      "count": 10,
+      "botCount": 10,
+      "humanCount": 0
+    },
+    {
+      "from": "area.east_bank",
+      "to": "building.house.east.1",
+      "count": 10,
+      "botCount": 10,
+      "humanCount": 0
+    },
+    {
+      "from": "building.house.east.1",
+      "to": "area.east_bank",
+      "count": 10,
+      "botCount": 10,
+      "humanCount": 0
+    },
+    {
+      "from": "area.market.west",
+      "to": "area.west_bank",
+      "count": 10,
+      "botCount": 10,
+      "humanCount": 0
+    },
+    {
+      "from": "area.east_bank",
+      "to": "area.market.east",
+      "count": 6,
+      "botCount": 6,
+      "humanCount": 0
+    },
+    {
+      "from": "area.canal",
+      "to": "area.boat.central",
+      "count": 4,
+      "botCount": 4,
+      "humanCount": 0
+    },
+    {
+      "from": "area.boat.central",
+      "to": "area.canal",
+      "count": 4,
+      "botCount": 4,
+      "humanCount": 0
+    },
+    {
+      "from": "area.market.west",
+      "to": "building.house.west.1",
+      "count": 3,
+      "botCount": 3,
+      "humanCount": 0
+    },
+    {
+      "from": "area.market.east",
+      "to": "spawn.sf",
+      "count": 2,
+      "botCount": 2,
+      "humanCount": 0
+    },
+    {
+      "from": "area.west_bank",
+      "to": "area.market.west",
+      "count": 2,
+      "botCount": 2,
+      "humanCount": 0
+    },
+    {
+      "from": "route.central_bridge",
+      "to": "area.canal",
+      "count": 1,
+      "botCount": 1,
+      "humanCount": 0
+    },
+    {
+      "from": "route.central_bridge",
+      "to": "area.west_bank",
+      "count": 1,
+      "botCount": 1,
+      "humanCount": 0
+    },
+    {
+      "from": "route.central_bridge",
+      "to": "area.boat.central",
+      "count": 1,
+      "botCount": 1,
+      "humanCount": 0
+    },
+    {
+      "from": "area.market.west",
+      "to": "spawn.terr",
+      "count": 1,
+      "botCount": 1,
+      "humanCount": 0
+    }
+  ],
+  "spawnExitAttributionPolicy": "Requires exact participant_id + life_id, POS after SPAWN within 10 seconds, non-contradictory team, and physically plausible displacement. Unverified records are never forced into an exit classification.",
+  "spawnExitAttribution": {
+    "verified": 32
+  },
+  "spawnExitAttributionRecords": [
+    {
+      "participantId": "p16",
+      "lifeId": "p16_life_1",
+      "spawnRegion": "spawn.sf",
+      "firstRegion": "no-observed-exit-within-10s",
+      "attributionStatus": "verified",
+      "team": "1",
+      "verifiedPositionCount": 6,
+      "firstExitDeltaSeconds": null,
+      "firstExitDisplacementUU": null
+    },
+    {
+      "participantId": "p15",
+      "lifeId": "p15_life_1",
+      "spawnRegion": "spawn.terr",
+      "firstRegion": "no-observed-exit-within-10s",
+      "attributionStatus": "verified",
+      "team": "0",
+      "verifiedPositionCount": 6,
+      "firstExitDeltaSeconds": null,
+      "firstExitDisplacementUU": null
+    },
+    {
+      "participantId": "p14",
+      "lifeId": "p14_life_1",
+      "spawnRegion": "spawn.sf",
+      "firstRegion": "no-observed-exit-within-10s",
+      "attributionStatus": "verified",
+      "team": "1",
+      "verifiedPositionCount": 6,
+      "firstExitDeltaSeconds": null,
+      "firstExitDisplacementUU": null
+    },
+    {
+      "participantId": "p13",
+      "lifeId": "p13_life_1",
+      "spawnRegion": "spawn.terr",
+      "firstRegion": "no-observed-exit-within-10s",
+      "attributionStatus": "verified",
+      "team": "0",
+      "verifiedPositionCount": 6,
+      "firstExitDeltaSeconds": null,
+      "firstExitDisplacementUU": null
+    },
+    {
+      "participantId": "p12",
+      "lifeId": "p12_life_1",
+      "spawnRegion": "spawn.sf",
+      "firstRegion": "no-observed-exit-within-10s",
+      "attributionStatus": "verified",
+      "team": "1",
+      "verifiedPositionCount": 6,
+      "firstExitDeltaSeconds": null,
+      "firstExitDisplacementUU": null
+    },
+    {
+      "participantId": "p11",
+      "lifeId": "p11_life_1",
+      "spawnRegion": "spawn.terr",
+      "firstRegion": "no-observed-exit-within-10s",
+      "attributionStatus": "verified",
+      "team": "0",
+      "verifiedPositionCount": 6,
+      "firstExitDeltaSeconds": null,
+      "firstExitDisplacementUU": null
+    },
+    {
+      "participantId": "p10",
+      "lifeId": "p10_life_1",
+      "spawnRegion": "spawn.sf",
+      "firstRegion": "no-observed-exit-within-10s",
+      "attributionStatus": "verified",
+      "team": "1",
+      "verifiedPositionCount": 6,
+      "firstExitDeltaSeconds": null,
+      "firstExitDisplacementUU": null
+    },
+    {
+      "participantId": "p9",
+      "lifeId": "p9_life_1",
+      "spawnRegion": "spawn.terr",
+      "firstRegion": "no-observed-exit-within-10s",
+      "attributionStatus": "verified",
+      "team": "0",
+      "verifiedPositionCount": 6,
+      "firstExitDeltaSeconds": null,
+      "firstExitDisplacementUU": null
+    },
+    {
+      "participantId": "p8",
+      "lifeId": "p8_life_1",
+      "spawnRegion": "spawn.sf",
+      "firstRegion": "no-observed-exit-within-10s",
+      "attributionStatus": "verified",
+      "team": "1",
+      "verifiedPositionCount": 6,
+      "firstExitDeltaSeconds": null,
+      "firstExitDisplacementUU": null
+    },
+    {
+      "participantId": "p7",
+      "lifeId": "p7_life_1",
+      "spawnRegion": "spawn.terr",
+      "firstRegion": "no-observed-exit-within-10s",
+      "attributionStatus": "verified",
+      "team": "0",
+      "verifiedPositionCount": 6,
+      "firstExitDeltaSeconds": null,
+      "firstExitDisplacementUU": null
+    },
+    {
+      "participantId": "p6",
+      "lifeId": "p6_life_1",
+      "spawnRegion": "spawn.sf",
+      "firstRegion": "no-observed-exit-within-10s",
+      "attributionStatus": "verified",
+      "team": "1",
+      "verifiedPositionCount": 6,
+      "firstExitDeltaSeconds": null,
+      "firstExitDisplacementUU": null
+    },
+    {
+      "participantId": "p5",
+      "lifeId": "p5_life_1",
+      "spawnRegion": "spawn.terr",
+      "firstRegion": "no-observed-exit-within-10s",
+      "attributionStatus": "verified",
+      "team": "0",
+      "verifiedPositionCount": 6,
+      "firstExitDeltaSeconds": null,
+      "firstExitDisplacementUU": null
+    },
+    {
+      "participantId": "p4",
+      "lifeId": "p4_life_1",
+      "spawnRegion": "spawn.sf",
+      "firstRegion": "no-observed-exit-within-10s",
+      "attributionStatus": "verified",
+      "team": "1",
+      "verifiedPositionCount": 6,
+      "firstExitDeltaSeconds": null,
+      "firstExitDisplacementUU": null
+    },
+    {
+      "participantId": "p3",
+      "lifeId": "p3_life_1",
+      "spawnRegion": "spawn.terr",
+      "firstRegion": "no-observed-exit-within-10s",
+      "attributionStatus": "verified",
+      "team": "0",
+      "verifiedPositionCount": 6,
+      "firstExitDeltaSeconds": null,
+      "firstExitDisplacementUU": null
+    },
+    {
+      "participantId": "p2",
+      "lifeId": "p2_life_1",
+      "spawnRegion": "spawn.sf",
+      "firstRegion": "no-observed-exit-within-10s",
+      "attributionStatus": "verified",
+      "team": "1",
+      "verifiedPositionCount": 6,
+      "firstExitDeltaSeconds": null,
+      "firstExitDisplacementUU": null
+    },
+    {
+      "participantId": "p1",
+      "lifeId": "p1_life_1",
+      "spawnRegion": "spawn.terr",
+      "firstRegion": "no-observed-exit-within-10s",
+      "attributionStatus": "verified",
+      "team": "0",
+      "verifiedPositionCount": 6,
+      "firstExitDeltaSeconds": null,
+      "firstExitDisplacementUU": null
+    },
+    {
+      "participantId": "p16",
+      "lifeId": "p16_life_2",
+      "spawnRegion": "spawn.sf",
+      "firstRegion": "no-observed-exit-within-10s",
+      "attributionStatus": "verified",
+      "team": "1",
+      "verifiedPositionCount": 6,
+      "firstExitDeltaSeconds": null,
+      "firstExitDisplacementUU": null
+    },
+    {
+      "participantId": "p15",
+      "lifeId": "p15_life_2",
+      "spawnRegion": "spawn.terr",
+      "firstRegion": "no-observed-exit-within-10s",
+      "attributionStatus": "verified",
+      "team": "0",
+      "verifiedPositionCount": 6,
+      "firstExitDeltaSeconds": null,
+      "firstExitDisplacementUU": null
+    },
+    {
+      "participantId": "p14",
+      "lifeId": "p14_life_2",
+      "spawnRegion": "spawn.sf",
+      "firstRegion": "no-observed-exit-within-10s",
+      "attributionStatus": "verified",
+      "team": "1",
+      "verifiedPositionCount": 6,
+      "firstExitDeltaSeconds": null,
+      "firstExitDisplacementUU": null
+    },
+    {
+      "participantId": "p13",
+      "lifeId": "p13_life_2",
+      "spawnRegion": "spawn.terr",
+      "firstRegion": "no-observed-exit-within-10s",
+      "attributionStatus": "verified",
+      "team": "0",
+      "verifiedPositionCount": 6,
+      "firstExitDeltaSeconds": null,
+      "firstExitDisplacementUU": null
+    },
+    {
+      "participantId": "p12",
+      "lifeId": "p12_life_2",
+      "spawnRegion": "spawn.sf",
+      "firstRegion": "no-observed-exit-within-10s",
+      "attributionStatus": "verified",
+      "team": "1",
+      "verifiedPositionCount": 6,
+      "firstExitDeltaSeconds": null,
+      "firstExitDisplacementUU": null
+    },
+    {
+      "participantId": "p11",
+      "lifeId": "p11_life_2",
+      "spawnRegion": "spawn.terr",
+      "firstRegion": "no-observed-exit-within-10s",
+      "attributionStatus": "verified",
+      "team": "0",
+      "verifiedPositionCount": 6,
+      "firstExitDeltaSeconds": null,
+      "firstExitDisplacementUU": null
+    },
+    {
+      "participantId": "p10",
+      "lifeId": "p10_life_2",
+      "spawnRegion": "spawn.sf",
+      "firstRegion": "no-observed-exit-within-10s",
+      "attributionStatus": "verified",
+      "team": "1",
+      "verifiedPositionCount": 6,
+      "firstExitDeltaSeconds": null,
+      "firstExitDisplacementUU": null
+    },
+    {
+      "participantId": "p9",
+      "lifeId": "p9_life_2",
+      "spawnRegion": "spawn.terr",
+      "firstRegion": "no-observed-exit-within-10s",
+      "attributionStatus": "verified",
+      "team": "0",
+      "verifiedPositionCount": 6,
+      "firstExitDeltaSeconds": null,
+      "firstExitDisplacementUU": null
+    },
+    {
+      "participantId": "p8",
+      "lifeId": "p8_life_2",
+      "spawnRegion": "spawn.sf",
+      "firstRegion": "no-observed-exit-within-10s",
+      "attributionStatus": "verified",
+      "team": "1",
+      "verifiedPositionCount": 6,
+      "firstExitDeltaSeconds": null,
+      "firstExitDisplacementUU": null
+    },
+    {
+      "participantId": "p7",
+      "lifeId": "p7_life_2",
+      "spawnRegion": "spawn.terr",
+      "firstRegion": "no-observed-exit-within-10s",
+      "attributionStatus": "verified",
+      "team": "0",
+      "verifiedPositionCount": 6,
+      "firstExitDeltaSeconds": null,
+      "firstExitDisplacementUU": null
+    },
+    {
+      "participantId": "p6",
+      "lifeId": "p6_life_2",
+      "spawnRegion": "spawn.sf",
+      "firstRegion": "no-observed-exit-within-10s",
+      "attributionStatus": "verified",
+      "team": "1",
+      "verifiedPositionCount": 6,
+      "firstExitDeltaSeconds": null,
+      "firstExitDisplacementUU": null
+    },
+    {
+      "participantId": "p5",
+      "lifeId": "p5_life_2",
+      "spawnRegion": "spawn.terr",
+      "firstRegion": "no-observed-exit-within-10s",
+      "attributionStatus": "verified",
+      "team": "0",
+      "verifiedPositionCount": 6,
+      "firstExitDeltaSeconds": null,
+      "firstExitDisplacementUU": null
+    },
+    {
+      "participantId": "p4",
+      "lifeId": "p4_life_2",
+      "spawnRegion": "spawn.sf",
+      "firstRegion": "no-observed-exit-within-10s",
+      "attributionStatus": "verified",
+      "team": "1",
+      "verifiedPositionCount": 6,
+      "firstExitDeltaSeconds": null,
+      "firstExitDisplacementUU": null
+    },
+    {
+      "participantId": "p3",
+      "lifeId": "p3_life_2",
+      "spawnRegion": "spawn.terr",
+      "firstRegion": "no-observed-exit-within-10s",
+      "attributionStatus": "verified",
+      "team": "0",
+      "verifiedPositionCount": 6,
+      "firstExitDeltaSeconds": null,
+      "firstExitDisplacementUU": null
+    },
+    {
+      "participantId": "p2",
+      "lifeId": "p2_life_2",
+      "spawnRegion": "spawn.sf",
+      "firstRegion": "no-observed-exit-within-10s",
+      "attributionStatus": "verified",
+      "team": "1",
+      "verifiedPositionCount": 6,
+      "firstExitDeltaSeconds": null,
+      "firstExitDisplacementUU": null
+    },
+    {
+      "participantId": "p1",
+      "lifeId": "p1_life_2",
+      "spawnRegion": "spawn.terr",
+      "firstRegion": "no-observed-exit-within-10s",
+      "attributionStatus": "verified",
+      "team": "0",
+      "verifiedPositionCount": 6,
+      "firstExitDeltaSeconds": null,
+      "firstExitDisplacementUU": null
+    }
+  ],
+  "spawnToFirstObservedDifferentRegionWithin10Seconds": [
+    {
+      "spawnRegion": "spawn.sf",
+      "firstRegion": "no-observed-exit-within-10s",
+      "count": 16
+    },
+    {
+      "spawnRegion": "spawn.terr",
+      "firstRegion": "no-observed-exit-within-10s",
+      "count": 16
+    }
+  ]
+}

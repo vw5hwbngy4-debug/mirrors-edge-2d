@@ -1,0 +1,31 @@
+SpawnMap.ai v11.1 — Gamer + Runtime Proof
+
+Base:
+- Preserves the v11 layout, current Suzhou v3 artifact, viewer stack, asset cache, provenance and visual identity.
+
+Added from the useful v12 runtime work:
+- TO-GPT Telemetry v0.1 is now shown as EXPERIMENTAL / VALIDATED, not "in development".
+- New /analyze.html runtime proof page.
+- 31 spawn events.
+- 1,491 movement samples: 1,371 bot + 120 human.
+- 13 kills.
+- 2 round starts / 1 round end.
+- Both teams exited spawn autonomously.
+- 0 script warnings / Accessed None / critical errors.
+- Exact map SHA-256 linkage.
+- Movement-density, death-hotspot and dwell-cell analysis confirmed.
+- Explicit boundary: no automatic telemetry-driven map editing yet.
+- No fabricated heatmap or raw telemetry is included.
+
+Gamer clarity improvements:
+- "Describe it. Build it. Play it."
+- Direct Download / Overview / Spectator / Analyze choices.
+- Clear PLAYABLE / BOT TESTED / TELEMETRY EVALUATED status.
+- Technical pipeline also translated into Describe → Build → Play → Measure → Improve.
+- Runtime proof added to the map inspector.
+
+Technical improvements:
+- Architecture page updates runtime eval plane to experimentally live.
+- Evidence-driven automatic revision remains NEXT.
+- About page includes the first real runtime-evidence milestone.
+- Public aggregate summary: /data/runtime-eval-001.json

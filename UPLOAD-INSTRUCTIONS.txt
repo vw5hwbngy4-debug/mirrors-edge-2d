@@ -1,0 +1,32 @@
+SPAWNMAP.AI — HOSTINGER INSTALLATION
+
+1. Open Hostinger hPanel.
+2. Open File Manager for spawnmap.ai.
+3. Open the public_html folder.
+4. Upload the CONTENTS of this package into public_html.
+   index.html must be directly inside public_html, not inside another folder.
+5. Extract the ZIP when Hostinger asks.
+6. Visit https://spawnmap.ai and refresh once with Ctrl+F5.
+
+Required top-level items:
+index.html
+assets/
+viewer/
+maps/
+downloads/
+media/
+fonts/
+
+No database, Node.js or installation command is required.
+
+SPAWNMAP INSPECTOR v0.1
+- The embedded viewer now opens in player-height Inspector Mode.
+- Desktop: WASD, mouse look, Shift sprint, Space jump. Click the world to lock mouse look.
+- Touch: left joystick to move, drag the world to look, JUMP button to jump.
+- OVERVIEW returns to the original orbit/map-genome view.
+- TEAM 0 / TEAM 1 jumps to the first PlayerStart for that team.
+- COLLISION ON uses browser-side approximate collision against generated T3D geometry; NOCLIP disables it.
+- Type a local change in the bottom prompt bar and press COPY ITERATION PROMPT. The copied prompt includes the current Unreal coordinates, so the same spot can be changed conversationally.
+
+IMPORTANT
+Inspector Mode is a design-intent preview, not an Unreal Engine 1 emulator. BSP finalization, FakeBackdrop/skybox behavior, engine lighting, pathing/bots, objectives and full Tactical Ops gameplay still require the final runtime validation step.
