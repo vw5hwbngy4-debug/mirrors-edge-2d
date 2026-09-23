@@ -1,3 +1,4 @@
 User-agent: *
 Allow: /
-Sitemap: https://vw5hwbngy4-debug.github.io/image-to-unreal-map/sitemap.xml
+
+Sitemap: https://vw5hwbngy4-debug.github.io/mirrors-edge-2d/sitemap.xml
