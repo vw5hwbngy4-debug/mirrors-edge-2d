@@ -1,0 +1,156 @@
+{
+  "layers": [
+    "Ground_Playable",
+    "Ground_SurroundingCity",
+    "Ground_SurroundingCity02",
+    "Ground_Water",
+    "Roads_Close",
+    "Buildings_Close_1",
+    "Buildings_Close_2",
+    "Buildings_Close_3",
+    "Buildings_Close_4",
+    "Buildings_Close_5",
+    "Buildings_Close_6",
+    "Buildings_Close_7",
+    "Buildings_Close_8",
+    "Landmarks_KrugerSec",
+    "Landmarks_ac_crystal_valley_building",
+    "Landmarks_ac_eden_village_anansi_emporium",
+    "Landmarks_ac_eden_village_bauble_mall",
+    "Landmarks_ct_residental_development_zone_g_area03",
+    "Landmarks_dt_centurian_yards_elysium",
+    "Landmarks_dt_triumvirate_drive_kruger_arms",
+    "Landmarks_trainstation",
+    "Landmarks_tv_regatta_bay_area02",
+    "Landmarks_vista_ac_shimmering_heights_allcom_east",
+    "ac_crystal_valley_area02",
+    "ac_eden_village_area03",
+    "ac_shimmering_heights_area01",
+    "ct_omnistat_tunnels_area01",
+    "ct_residental_development_zone_g_area02",
+    "ct_residental_development_zone_g_area04",
+    "ct_residental_development_zone_g_dreams",
+    "ct_residental_development_zone_g_gridnode",
+    "dt_centurian_yards_area06",
+    "dt_charter_hill_area05",
+    "dt_concord_plaza_area08",
+    "dt_release_into",
+    "dt_triumvirate_drive_area01",
+    "dt_triumvirate_drive_area02",
+    "dt_triumvirate_drive_area03",
+    "dt_triumvirate_drive_area04",
+    "tv_ocean_pier_area01",
+    "tv_ocean_pier_area03",
+    "tv_regatta_bay_area04",
+    "Omnistat",
+    "VISTA_CityBuildings_Assets",
+    "skycity01",
+    "vista_dt_noth_north",
+    "vista_dt_south_west",
+    "vista_release_northeast"
+  ],
+  "points": [
+    {
+      "id": "vista-the-shard-001",
+      "category": "vista",
+      "title": "The Shard",
+      "district": "Vista / Skyline",
+      "x": 83743.5,
+      "y": 44819.8,
+      "z": -284784.3,
+      "img": "assets/atlas/the-shard.jpg",
+      "note": "The Shard rising above Glass City."
+    },
+    {
+      "id": "vista-birdman-002",
+      "category": "vista",
+      "title": "Birdman",
+      "district": "Centurian Yards",
+      "x": 4613.1,
+      "y": 8232.5,
+      "z": -1471.2,
+      "img": "assets/atlas/birdman.jpg",
+      "note": "A rooftop refuge where Birdman feeds his pigeons and keeps the old runner paths alive.",
+      "view": {
+        "camera": {
+          "x": 4851.5,
+          "y": 8670.6,
+          "z": 2087.9
+        },
+        "target": {
+          "x": 4572.6,
+          "y": 8564.7,
+          "z": -1399.3
+        },
+        "distance": 3500
+      },
+      "extra": "Meditation view: a quiet place above Glass City, sharing the view with Birdman.",
+      "meditation": {
+        "camera": {
+          "x": 4832.5,
+          "y": 8994.3,
+          "z": -2016.6
+        },
+        "target": {
+          "x": 3779,
+          "y": 10454.7,
+          "z": 13437
+        },
+        "distance": 15558.2
+      }
+    },
+    {
+      "id": "environmental-faith-fragment-001",
+      "category": "environmental",
+      "title": "Faith Fragment",
+      "district": "Centurian Yards",
+      "x": -15688.0,
+      "y": 7426.3,
+      "z": 2064.9,
+      "img": "assets/atlas/faith-fragment.jpg",
+      "note": "A hidden architectural glyph found inside Glass City. Whether intentional or coincidental, the shape echoes the visual language surrounding Faith and the runner culture.",
+      "view": {
+        "camera": {
+          "x": -32358.6,
+          "y": 21784.5,
+          "z": -14428.8
+        },
+        "target": {
+          "x": -17290.1,
+          "y": 4425.9,
+          "z": 1347.7
+        },
+        "distance": 27879.7
+      }
+    },
+    {
+      "id": "challenge-elysium-ascent-001",
+      "category": "challenge",
+      "title": "Elysium Ascent",
+      "district": "Centurian Yards",
+      "x": -3123.9,
+      "y": 9499.2,
+      "z": 13732.8,
+      "img": "assets/atlas/elysium.jpg",
+      "routeImages": [
+        "assets/atlas/elysium-ascent-route-1.jpg",
+        "assets/atlas/elysium-ascent-route-2.jpg",
+        "assets/atlas/elysium-ascent-route-3.jpg"
+      ],
+      "note": "Runner Challenge. A difficult hidden climb inside the steel structure below Elysium. The ascent begins inside the same orange-and-steel structure visible from outside. What looks like background architecture becomes the route itself. Runners must climb upward through narrow steel pipes and structural beams that do not appear designed as a path, but can still be used with careful movement. The challenge is not only physical. It is perceptual. You have to realize that the building's internal skeleton is climbable. At the top, the route opens toward a rare view of the Elysium Building, its vertical sign rising above the skyline while Sparkles drift upward through the glass. Difficulty: High. Type: Hidden Climb. Reward: Elysium View.",
+      "view": {
+        "camera": {
+          "x": -1864.6,
+          "y": 10854.1,
+          "z": 12550.6
+        },
+        "target": {
+          "x": -3601.1,
+          "y": 12372.9,
+          "z": 9867.8
+        },
+        "distance": 3538.2
+      }
+    }
+  ]
+}

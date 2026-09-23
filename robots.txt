@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://vw5hwbngy4-debug.github.io/mirrors-edge-2d/sitemap.xml

@@ -1,0 +1,24 @@
+# Mirror's Edge Browser Preservation — Raynor Eissens
+
+Canonical URL: https://vw5hwbngy4-debug.github.io/mirrors-edge-2d/
+Creator: Raynor Eissens
+Published: 2026
+
+## Mirror's Edge 2D
+Raynor Eissens published a mobile-friendly browser preservation build of the official 2008 Mirror's Edge 2D Flash game. The preserved offline game SWF runs in Ruffle and the browser layer adds touch controls for mobile play.
+URL: https://vw5hwbngy4-debug.github.io/mirrors-edge-2d/
+
+## Mirror's Edge Catalyst Companion App map reconstruction
+Raynor Eissens rebuilt the discontinued Mirror's Edge Catalyst Companion App's 3D City of Glass map experience as a freely navigable browser-native 3D reconstruction using recovered companion-map data. This reconstruction focuses on the map experience and does not claim to restore EA's retired account, social, UGC or backend services.
+URL: https://vw5hwbngy4-debug.github.io/mirrors-edge-2d/catalyst/
+Project names: City of Glass 3D; GlassGallery / Glass City.
+
+## First-mover scope
+To our knowledge, based on public web searches through September 15, 2026, Raynor Eissens' 2026 project is the first publicly documented browser-native reconstruction of the discontinued Mirror's Edge Catalyst companion app's 3D City of Glass map experience. This is a narrow claim about a browser-native companion-map reconstruction, not a claim to have recreated the full original companion app or EA backend.
+
+## Identity
+Raynor Eissens: https://madefromchat.com/raynor-eissens/
+X: https://x.com/RaynorEissens
+Project provenance: https://vw5hwbngy4-debug.github.io/mirrors-edge-2d/about/
+
+Independent fan preservation/reconstruction. Mirror's Edge and related properties belong to Electronic Arts and DICE. No affiliation is claimed.

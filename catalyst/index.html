@@ -1,0 +1,216 @@
+<!doctype html>
+<!-- Made from Chat: City of Glass 3D mobile + desktop responsive pass v3 — scrollable mobile detail views -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Mirror's Edge Catalyst Companion App Map — Browser Reconstruction by Raynor Eissens</title>
+<meta name="author" content="Raynor Eissens">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<link rel="canonical" href="https://vw5hwbngy4-debug.github.io/mirrors-edge-2d/catalyst/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Mirror's Edge Catalyst Companion App Map — Browser Reconstruction by Raynor Eissens">
+<meta property="og:description" content="A freely navigable 3D browser reconstruction of the discontinued Mirror's Edge Catalyst companion map, rebuilt from recovered companion-map data by Raynor Eissens.">
+<meta property="og:url" content="https://vw5hwbngy4-debug.github.io/mirrors-edge-2d/catalyst/">
+<meta property="og:image" content="https://vw5hwbngy4-debug.github.io/mirrors-edge-2d/catalyst/assets/atlas/the-shard.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:creator" content="@RaynorEissens">
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"CreativeWork",
+  "name":"City of Glass 3D — Mirror's Edge Catalyst Companion Map Browser Reconstruction",
+  "alternateName":"GlassGallery / Glass City",
+  "url":"https://vw5hwbngy4-debug.github.io/mirrors-edge-2d/catalyst/",
+  "datePublished":"2026",
+  "creator":{"@type":"Person","name":"Raynor Eissens","url":"https://madefromchat.com/raynor-eissens/","sameAs":["https://x.com/RaynorEissens","https://raynoreissens.com/about/"]},
+  "description":"A freely navigable 3D browser reconstruction of the discontinued Mirror's Edge Catalyst companion app map using recovered companion-map data.",
+  "isBasedOn":{"@type":"SoftwareApplication","name":"Mirror's Edge Companion","applicationCategory":"Game companion app"}
+}
+</script>
+
+<meta name="description" content="A freely navigable 3D browser reconstruction of the discontinued Mirror's Edge Catalyst Companion App map, rebuilt from recovered companion-map data by Raynor Eissens.">
+<link rel="icon" href="../favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="512x512" href="../favicon-512.png">
+<link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon-180.png">
+<meta name="theme-color" content="#ffffff">
+<style>
+:root{--red:#e7191f;--ink:#141414;--muted:#6d747a;--line:#e5e8ea;--paper:rgba(255,255,255,.965);--blue:#1277bc}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html,body{width:100%;height:100%;height:100dvh;margin:0;overflow:hidden;overscroll-behavior:none;background:#fff;color:var(--ink);font-family:Arial,Helvetica,sans-serif}
+body{position:fixed;inset:0}
+button{font:inherit}
+img,canvas{max-width:100%}
+.app{width:100%;height:100%;height:100dvh;display:grid;grid-template-rows:auto minmax(0,1fr);overflow:hidden}
+.top{display:flex;gap:12px;align-items:center;justify-content:space-between;min-width:0;padding:calc(9px + env(safe-area-inset-top)) calc(12px + env(safe-area-inset-right)) 9px calc(12px + env(safe-area-inset-left));border-bottom:1px solid var(--line);background:#fff;z-index:20}
+.brand{display:flex;align-items:center;gap:10px;min-width:0;overflow:hidden}.mark{width:12px;height:31px;background:var(--red);transform:skew(-18deg);flex:0 0 auto}.brandText{min-width:0;overflow:hidden}.brandText b{display:block;letter-spacing:.14em;text-transform:uppercase;font-size:14px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.brandText span{display:block;margin-top:2px;color:var(--muted);font-size:10px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:48vw}
+.topActions{display:flex;gap:6px;flex:0 0 auto}.topBtn{border:1px solid var(--line);background:#fff;color:#3d4b53;padding:8px 9px;font-size:10px;font-weight:800;letter-spacing:.055em;text-transform:uppercase;cursor:pointer;white-space:nowrap}.topBtn{text-decoration:none;display:inline-flex;align-items:center;justify-content:center}.topBtn.switch{border-color:var(--red);color:var(--red)}.topBtn.primary{background:var(--red);border-color:var(--red);color:#fff}
+.stage{position:relative;width:100%;min-width:0;min-height:0;overflow:hidden;background:linear-gradient(#fff,#edf4f7);isolation:isolate}
+#viewer{position:absolute;inset:0;min-width:0;min-height:0;touch-action:none;overflow:hidden}#viewer canvas{width:100%;height:100%;display:block;touch-action:none}
+.status{position:absolute;left:max(10px,env(safe-area-inset-left));top:10px;z-index:7;background:var(--paper);border:1px solid var(--line);padding:7px 9px;font-size:10px;letter-spacing:.07em;text-transform:uppercase;max-width:calc(100% - 20px);overflow:hidden;text-overflow:ellipsis;white-space:nowrap;pointer-events:none}
+.hint{position:absolute;left:max(10px,env(safe-area-inset-left));bottom:max(10px,env(safe-area-inset-bottom));z-index:7;background:var(--paper);border:1px solid var(--line);padding:7px 9px;color:#5b676d;font-size:10px;max-width:min(350px,calc(100% - 20px));pointer-events:none}
+.pinLayer{position:absolute;inset:0;z-index:8;pointer-events:none;overflow:hidden}.pin{position:absolute;transform:translate(-50%,-50%);width:14px;height:14px;padding:0;border-radius:50%;border:3px solid #fff;background:var(--red);box-shadow:0 0 0 4px rgba(231,25,31,.20),0 5px 12px rgba(0,0,0,.16);pointer-events:auto;cursor:pointer}.pin::after{content:"";position:absolute;inset:-12px;border-radius:50%}.pin.active{width:17px;height:17px;box-shadow:0 0 0 5px rgba(231,25,31,.23),0 7px 18px rgba(0,0,0,.2)}
+.sightOpen{position:absolute;right:max(12px,env(safe-area-inset-right));bottom:max(12px,env(safe-area-inset-bottom));z-index:15;border:1px solid var(--red);background:var(--red);color:#fff;padding:10px 12px;font-size:10px;font-weight:900;letter-spacing:.08em;text-transform:uppercase;box-shadow:0 8px 24px rgba(35,45,50,.18);cursor:pointer}.sightOpen .count{display:inline-grid;place-items:center;min-width:20px;height:20px;margin-left:6px;padding:0 5px;border-radius:999px;background:#fff;color:var(--red);font-size:10px}.stage.panel-open .sightOpen{display:none}
+.panel{position:absolute;right:max(12px,env(safe-area-inset-right));top:12px;bottom:max(12px,env(safe-area-inset-bottom));width:min(350px,calc(100% - 24px));max-width:calc(100% - env(safe-area-inset-left) - env(safe-area-inset-right) - 24px);z-index:12;background:var(--paper);border:1px solid var(--line);display:flex;flex-direction:column;min-width:0;overflow:hidden;box-shadow:0 18px 50px rgba(25,45,55,.13);transform:translateX(calc(100% + 32px));visibility:hidden;pointer-events:none;transition:transform .22s ease,visibility .22s step-end}
+.stage.panel-open .panel{transform:translateX(0);visibility:visible;pointer-events:auto;transition:transform .22s ease,visibility 0s}
+.panelHead{padding:12px 13px;border-bottom:1px solid var(--line);min-width:0}.panelTitleRow{display:flex;gap:10px;align-items:center;justify-content:space-between;min-width:0}.panelTitleRow>div{min-width:0}.panelClose{flex:0 0 auto;border:1px solid var(--line);background:#fff;color:#4b555a;width:34px;height:34px;display:grid;place-items:center;font-weight:900;cursor:pointer}.kicker{font-size:9px;color:var(--red);font-weight:900;letter-spacing:.17em;text-transform:uppercase}.panelHead h1{font-size:19px;margin:4px 0 5px;line-height:1.08}.panelHead p{margin:0;color:#5f6b70;font-size:11px;line-height:1.4}
+.sights{padding:9px;overflow-y:auto;overflow-x:hidden;overscroll-behavior:contain;-webkit-overflow-scrolling:touch;display:grid;gap:7px;min-width:0}.sight{width:100%;min-width:0;display:grid;grid-template-columns:72px minmax(0,1fr);gap:9px;text-align:left;border:1px solid var(--line);background:#fff;padding:7px;cursor:pointer;overflow:hidden}.sight.active{border-color:var(--red);box-shadow:inset 3px 0 0 var(--red)}.sight img{width:72px;height:55px;object-fit:cover;background:#eee}.sight>div{min-width:0}.sight b{display:block;font-size:12px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.sight small{display:block;color:var(--muted);margin-top:2px;font-size:9px;text-transform:uppercase;letter-spacing:.055em;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.sight p{margin:3px 0 0;color:#667176;font-size:10px;line-height:1.28;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}.panelFoot{margin-top:auto;padding:9px 13px;border-top:1px solid var(--line);font-size:9px;color:#7d8589;line-height:1.35}
+.detail,.about{position:absolute;inset:0;z-index:30;background:rgba(255,255,255,.94);backdrop-filter:blur(12px);display:none;padding:14px;overflow-y:scroll;overflow-x:hidden;overscroll-behavior:contain;overscroll-behavior-y:contain;-webkit-overflow-scrolling:touch;touch-action:pan-y;scroll-behavior:smooth}.detail.show,.about.show{display:block}.detailCard{width:min(760px,100%);min-width:0;margin:0 auto max(18px,env(safe-area-inset-bottom));background:#fff;border:1px solid var(--line);overflow:hidden}.detailHero{width:100%;max-height:48vh;object-fit:cover;display:block;background:#edf1f3}.detailBody{padding:15px;min-width:0;overflow-wrap:anywhere}.detailBody h2{margin:4px 0 6px;font-size:22px}.detailMeta{color:var(--red);font-size:9px;font-weight:900;letter-spacing:.13em;text-transform:uppercase}.detailBody p{color:#555f64;line-height:1.5;font-size:13px;white-space:pre-line}.route{display:grid;grid-template-columns:repeat(auto-fit,minmax(100px,1fr));gap:7px;margin:12px 0;min-width:0}.route img{display:block;width:100%;height:auto;aspect-ratio:1.4;object-fit:cover;border:1px solid var(--line)}.detailActions{display:flex;gap:8px;flex-wrap:wrap;margin-top:14px}.action{flex:1 1 160px;min-width:0;border:1px solid var(--line);background:#fff;color:var(--blue);padding:10px 12px;font-weight:900;cursor:pointer}.action.primary{background:var(--red);border-color:var(--red);color:#fff}
+.about{z-index:35;background:rgba(255,255,255,.96)}.aboutCard{width:min(680px,100%);min-width:0;margin:auto;overflow-wrap:anywhere}.aboutCard h2{font-size:27px;margin:0 0 10px}.aboutCard p{font-size:14px;line-height:1.55;color:#50595e}.aboutCard .lead{font-size:17px;color:#1d2327}.aboutCard hr{border:0;border-top:1px solid var(--line);margin:22px 0}.closeX{float:right;border:1px solid var(--line);background:#fff;padding:8px 10px;font-weight:800;cursor:pointer}
+.mobileOnly{display:none}
+@media(max-width:760px){
+  .top{gap:7px;padding:calc(7px + env(safe-area-inset-top)) calc(8px + env(safe-area-inset-right)) 7px calc(8px + env(safe-area-inset-left));min-height:48px}.brand{gap:7px;flex:1 1 auto}.mark{width:8px;height:25px}.brandText b{font-size:11px;letter-spacing:.09em}.brandText span{display:none}.topActions{gap:4px}.topBtn{padding:7px 7px;font-size:8px;letter-spacing:.035em}.aboutLabel{display:none}
+  .status{left:max(7px,env(safe-area-inset-left));top:7px;padding:6px 7px;font-size:8px;max-width:58vw}.hint{display:none}
+  .sightOpen{right:max(8px,env(safe-area-inset-right));bottom:max(8px,env(safe-area-inset-bottom));padding:10px 11px;font-size:9px}
+  .panel{left:max(7px,env(safe-area-inset-left));right:max(7px,env(safe-area-inset-right));top:auto;bottom:max(7px,env(safe-area-inset-bottom));width:auto;max-width:none;max-height:min(68dvh,620px);transform:translateY(calc(100% + 28px));transition:transform .22s ease,visibility .22s step-end}.stage.panel-open .panel{transform:translateY(0);transition:transform .22s ease,visibility 0s}.panelHead{padding:9px 10px}.panelHead h1{font-size:15px;margin:3px 0}.panelHead p{display:none}.panelClose{width:32px;height:32px}.sights{padding:7px;gap:6px}.sight{grid-template-columns:64px minmax(0,1fr);gap:7px;padding:6px}.sight img{width:64px;height:49px}.sight b{font-size:11px}.sight small{font-size:8px}.sight p{font-size:9px}.panelFoot{display:none}
+  .pin{width:16px;height:16px}.pin.active{width:19px;height:19px}
+  .detail,.about{padding:7px;padding-left:max(7px,env(safe-area-inset-left));padding-right:max(7px,env(safe-area-inset-right));padding-bottom:max(7px,env(safe-area-inset-bottom))}.detailCard{margin:0 auto}.detailHero{max-height:34dvh}.detailBody{padding:11px}.detailBody h2{font-size:19px}.detailBody p{font-size:12px}.route{grid-template-columns:repeat(3,minmax(0,1fr));gap:5px}.detailActions{gap:6px}.action{flex:1 1 120px;padding:9px 8px;font-size:11px}.aboutCard{margin:8px auto}.aboutCard h2{font-size:22px}.aboutCard p{font-size:12px}.aboutCard .lead{font-size:14px}.closeX{padding:7px 8px;font-size:10px}
+}
+@media(max-width:390px){.topBtn{padding:6px 5px;font-size:7.5px}.brandText b{font-size:10px}.sightOpen .count{display:none}.route{grid-template-columns:1fr 1fr}.detailActions{display:grid;grid-template-columns:1fr}.action{width:100%}}
+@media(orientation:landscape) and (max-height:520px){.top{padding-top:5px;padding-bottom:5px}.mark{height:22px}.panel{max-height:none;top:6px;bottom:6px;left:auto;width:min(330px,48vw)}.stage.panel-open .panel{transform:translateX(0)}.panel{transform:translateX(calc(100% + 28px))}.sights{padding:6px}.sight p{display:none}.detailHero{max-height:52dvh}}
+@media(prefers-reduced-motion:reduce){.panel{transition:none!important}}
+</style>
+</head>
+<body>
+<div class="app">
+  <header class="top">
+    <div class="brand"><span class="mark" aria-hidden="true"></span><div class="brandText"><b>City of Glass 3D</b><span>Mirror's Edge Catalyst companion map · browser reconstruction by Raynor Eissens</span></div></div>
+    <div class="topActions"><a class="topBtn switch" href="../">2D Game</a><button class="topBtn" id="aboutBtn">About <span class="aboutLabel">this build</span></button><button class="topBtn primary" id="overviewBtn">Overview</button></div>
+  </header>
+  <main class="stage">
+    <div id="viewer" aria-label="Interactive 3D City of Glass map"></div>
+    <div class="status" id="status">Loading city…</div>
+    <div class="hint">Drag to rotate · scroll/pinch to zoom · right-drag/two-finger to pan. Free 3D view of the City of Glass.</div>
+    <div class="pinLayer" id="pinLayer"></div>
+    <button class="sightOpen" id="sightOpenBtn" type="button" aria-controls="sightPanel" aria-expanded="false">Sightseeing <span class="count">4</span></button>
+    <aside class="panel" id="sightPanel" aria-label="City of Glass sightseeing points">
+      <div class="panelHead"><div class="panelTitleRow"><div><div class="kicker">Sightseeing points</div><h1>Visit the City of Glass</h1></div><button class="panelClose" id="sightCloseBtn" type="button" aria-label="Close sightseeing points">×</button></div><p>Open a landmark, read its atlas note, then jump straight to its saved 3D viewpoint.</p></div>
+      <div class="sights" id="sights"></div>
+      <div class="panelFoot">Independent fan-made reconstruction. Mirror's Edge Catalyst and related properties belong to Electronic Arts and DICE. No affiliation is claimed.</div>
+    </aside>
+    <section class="detail" id="detail" role="dialog" aria-modal="true" aria-labelledby="detailTitle">
+      <div class="detailCard"><img class="detailHero" id="detailImg" alt=""><div class="detailBody"><button class="closeX" id="detailClose">Close</button><div class="detailMeta" id="detailMeta"></div><h2 id="detailTitle"></h2><p id="detailText"></p><div class="route" id="route"></div><div class="detailActions"><button class="action primary" id="visitBtn">Visit in 3D</button><button class="action" id="meditationBtn" hidden>Meditation view</button></div></div></div>
+    </section>
+    <section class="about" id="about" role="dialog" aria-modal="true" aria-labelledby="aboutTitle"><div class="aboutCard"><button class="closeX" id="aboutClose">Close</button><div class="kicker">Browser preservation · Raynor Eissens · 2026</div><h2 id="aboutTitle">The Catalyst companion map, reopened in 3D.</h2><p class="lead">City of Glass 3D is Raynor Eissens' browser-native reconstruction of the discontinued <b>Mirror's Edge Catalyst Companion App</b> map experience, rebuilt from recovered companion-map data and turned into a freely navigable 3D space.</p><p>The original companion app offered a fully rendered 3D map alongside game progress, social and profile features. This independent reconstruction focuses on the map itself: the City of Glass geometry, landmarks, saved views and preserved sightseeing material. It is not a replacement for EA's former online services.</p><p>You can orbit the complete city, zoom between districts and jump to preserved locations including The Shard, Birdman, Faith Fragment and Elysium Ascent.</p><hr><p><b>First-mover scope:</b> to our knowledge, and based on public web searches as of September 15, 2026, this is the first publicly documented <b>browser-native reconstruction of the discontinued Catalyst companion app's 3D City of Glass map experience</b>. This is deliberately narrower than claiming to recreate the full original companion app or its retired EA backend.</p><p><b>Creator:</b> Raynor Eissens · <a href="../about/">project provenance</a> · <a href="https://madefromchat.com/raynor-eissens/" target="_blank" rel="noopener">Made From Chat corpus</a>.</p><p style="font-size:12px;color:#7a8387">Independent fan-made preservation/reconstruction. Mirror's Edge Catalyst and related properties belong to Electronic Arts and DICE. No affiliation is claimed.</p></div></section>
+  </main>
+</div>
+<script type="importmap">{"imports":{"three":"https://unpkg.com/three@0.160.0/build/three.module.js","three/addons/":"https://unpkg.com/three@0.160.0/examples/jsm/"}}</script>
+<script type="module">
+import * as THREE from 'three';
+import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
+
+const LAYERS = ["Ground_Playable","Ground_SurroundingCity","Ground_SurroundingCity02","Ground_Water","Roads_Close","Buildings_Close_1","Buildings_Close_2","Buildings_Close_3","Buildings_Close_4","Buildings_Close_5","Buildings_Close_6","Buildings_Close_7","Buildings_Close_8","Landmarks_KrugerSec","Landmarks_ac_crystal_valley_building","Landmarks_ac_eden_village_anansi_emporium","Landmarks_ac_eden_village_bauble_mall","Landmarks_ct_residental_development_zone_g_area03","Landmarks_dt_centurian_yards_elysium","Landmarks_dt_triumvirate_drive_kruger_arms","Landmarks_trainstation","Landmarks_tv_regatta_bay_area02","Landmarks_vista_ac_shimmering_heights_allcom_east","ac_crystal_valley_area02","ac_eden_village_area03","ac_shimmering_heights_area01","ct_omnistat_tunnels_area01","ct_residental_development_zone_g_area02","ct_residental_development_zone_g_area04","ct_residental_development_zone_g_dreams","ct_residental_development_zone_g_gridnode","dt_centurian_yards_area06","dt_charter_hill_area05","dt_concord_plaza_area08","dt_release_into","dt_triumvirate_drive_area01","dt_triumvirate_drive_area02","dt_triumvirate_drive_area03","dt_triumvirate_drive_area04","tv_ocean_pier_area01","tv_ocean_pier_area03","tv_regatta_bay_area04","Omnistat","VISTA_CityBuildings_Assets","skycity01","vista_dt_noth_north","vista_dt_south_west","vista_release_northeast"];
+const POINTS = [{"id":"vista-the-shard-001","category":"vista","title":"The Shard","district":"Vista / Skyline","x":83743.5,"y":44819.8,"z":-284784.3,"img":"assets/atlas/the-shard.jpg","note":"The Shard rising above Glass City."},{"id":"vista-birdman-002","category":"vista","title":"Birdman","district":"Centurian Yards","x":4613.1,"y":8232.5,"z":-1471.2,"img":"assets/atlas/birdman.jpg","note":"A rooftop refuge where Birdman feeds his pigeons and keeps the old runner paths alive.","view":{"camera":{"x":4851.5,"y":8670.6,"z":2087.9},"target":{"x":4572.6,"y":8564.7,"z":-1399.3},"distance":3500},"extra":"Meditation view: a quiet place above Glass City, sharing the view with Birdman.","meditation":{"camera":{"x":4832.5,"y":8994.3,"z":-2016.6},"target":{"x":3779,"y":10454.7,"z":13437},"distance":15558.2}},{"id":"environmental-faith-fragment-001","category":"environmental","title":"Faith Fragment","district":"Centurian Yards","x":-15688.0,"y":7426.3,"z":2064.9,"img":"assets/atlas/faith-fragment.jpg","note":"A hidden architectural glyph found inside Glass City. Whether intentional or coincidental, the shape echoes the visual language surrounding Faith and the runner culture.","view":{"camera":{"x":-32358.6,"y":21784.5,"z":-14428.8},"target":{"x":-17290.1,"y":4425.9,"z":1347.7},"distance":27879.7}},{"id":"challenge-elysium-ascent-001","category":"challenge","title":"Elysium Ascent","district":"Centurian Yards","x":-3123.9,"y":9499.2,"z":13732.8,"img":"assets/atlas/elysium.jpg","routeImages":["assets/atlas/elysium-ascent-route-1.jpg","assets/atlas/elysium-ascent-route-2.jpg","assets/atlas/elysium-ascent-route-3.jpg"],"note":"Runner Challenge. A difficult hidden climb inside the steel structure below Elysium. The ascent begins inside the same orange-and-steel structure visible from outside. What looks like background architecture becomes the route itself. Runners must climb upward through narrow steel pipes and structural beams that do not appear designed as a path, but can still be used with careful movement. The challenge is not only physical. It is perceptual. You have to realize that the building's internal skeleton is climbable. At the top, the route opens toward a rare view of the Elysium Building, its vertical sign rising above the skyline while Sparkles drift upward through the glass. Difficulty: High. Type: Hidden Climb. Reward: Elysium View.","view":{"camera":{"x":-1864.6,"y":10854.1,"z":12550.6},"target":{"x":-3601.1,"y":12372.9,"z":9867.8},"distance":3538.2}}];
+const viewer=document.getElementById('viewer'),stage=document.querySelector('.stage'),statusEl=document.getElementById('status'),pinLayer=document.getElementById('pinLayer'),sights=document.getElementById('sights'),sightPanel=document.getElementById('sightPanel'),sightOpenBtn=document.getElementById('sightOpenBtn'),sightCloseBtn=document.getElementById('sightCloseBtn');
+const detail=document.getElementById('detail'),detailImg=document.getElementById('detailImg'),detailMeta=document.getElementById('detailMeta'),detailTitle=document.getElementById('detailTitle'),detailText=document.getElementById('detailText'),route=document.getElementById('route'),visitBtn=document.getElementById('visitBtn'),meditationBtn=document.getElementById('meditationBtn');
+const about=document.getElementById('about');
+let activePoint=null, pinButtons=new Map(), sightButtons=new Map();
+const mobileLayout=matchMedia('(max-width:760px)');
+const coarsePointer=matchMedia('(pointer:coarse)').matches;
+const mobileRender=mobileLayout.matches||coarsePointer;
+let panelOpen=!mobileLayout.matches;
+let cityBoundsReady=false;
+const overviewCenter=new THREE.Vector3(6555,11957.2,60412.2);
+let overviewRadius=265000;
+function setPanelOpen(open){panelOpen=!!open;stage.classList.toggle('panel-open',panelOpen);sightOpenBtn.setAttribute('aria-expanded',String(panelOpen));sightPanel.setAttribute('aria-hidden',String(!panelOpen));}
+setPanelOpen(panelOpen);
+
+const scene=new THREE.Scene(); scene.background=new THREE.Color(0xffffff);
+const renderer=new THREE.WebGLRenderer({antialias:!mobileRender,alpha:false,powerPreference:'high-performance'}); renderer.setPixelRatio(Math.min(devicePixelRatio||1,mobileRender?1.25:2)); viewer.appendChild(renderer.domElement);
+const camera=new THREE.PerspectiveCamera(45,1,1,2200000); camera.position.set(225000,230000,285000);
+const controls=new OrbitControls(camera,renderer.domElement); controls.enableDamping=true; controls.dampingFactor=.08; controls.screenSpacePanning=true; controls.target.set(0,0,0); controls.maxDistance=900000; controls.minDistance=2500; controls.zoomSpeed=.82; controls.rotateSpeed=.62; controls.panSpeed=.75; controls.touches={ONE:THREE.TOUCH.ROTATE,TWO:THREE.TOUCH.DOLLY_PAN}; if('zoomToCursor' in controls)controls.zoomToCursor=true;
+scene.add(new THREE.HemisphereLight(0xffffff,0xeaf1f5,1.05)); scene.add(new THREE.AmbientLight(0xffffff,.5));
+const key=new THREE.DirectionalLight(0xffffff,1.18);key.position.set(-260000,460000,330000);scene.add(key);
+const fill=new THREE.DirectionalLight(0xf4fbff,.34);fill.position.set(220000,160000,-240000);scene.add(fill);
+const city=new THREE.Group();scene.add(city);const loader=new GLTFLoader();const cityMaterials=new Map(),edgeMaterials=new Map();
+
+function colorFor(n){n=n.toLowerCase();if(n.includes('water'))return 0xe4f3f8;if(n.includes('road'))return 0xf8f9f9;if(n.includes('ground'))return 0xe7edf1;if(n.includes('surrounding'))return 0xe9eef2;if(n.includes('vista')||n.includes('sky'))return 0xf9fbfc;return 0xffffff}
+function edgeColorFor(n){n=n.toLowerCase();if(n.includes('water'))return 0xcfe4ec;if(n.includes('ground')||n.includes('road'))return 0xd8e0e5;return 0xcfd7dc}
+function cityMaterialFor(name){const key=String(colorFor(name));if(!cityMaterials.has(key))cityMaterials.set(key,new THREE.MeshLambertMaterial({color:colorFor(name),side:THREE.DoubleSide}));return cityMaterials.get(key)}
+function edgeMaterialFor(name){const lname=name.toLowerCase(),opacity=lname.includes('building')?.20:.16,key=edgeColorFor(name)+'|'+opacity;if(!edgeMaterials.has(key))edgeMaterials.set(key,new THREE.LineBasicMaterial({color:edgeColorFor(name),transparent:true,opacity}));return edgeMaterials.get(key)}
+function resize(){const r=viewer.getBoundingClientRect();const w=Math.max(1,r.width),h=Math.max(1,r.height);renderer.setSize(w,h,false);camera.aspect=w/h;camera.updateProjectionMatrix()}
+addEventListener('resize',resize,{passive:true});
+if(window.visualViewport)window.visualViewport.addEventListener('resize',resize,{passive:true});
+if('ResizeObserver' in window)new ResizeObserver(resize).observe(viewer);
+resize();
+function refreshCityBounds(){
+  const box=new THREE.Box3();
+  let hasCore=false;
+  for(const obj of city.children){
+    const n=String(obj.name||'').toLowerCase();
+    const core=n==='ground_playable'||n==='roads_close'||n.startsWith('buildings_close')||n.startsWith('landmarks_');
+    if(!core)continue;
+    box.expandByObject(obj);hasCore=true;
+  }
+  for(const p of POINTS){box.expandByPoint(new THREE.Vector3(p.x,p.y,p.z));hasCore=true;}
+  if(!hasCore||box.isEmpty())return;
+  const sphere=new THREE.Sphere();box.getBoundingSphere(sphere);
+  if(!Number.isFinite(sphere.radius)||sphere.radius<=0)return;
+  overviewCenter.copy(sphere.center);overviewRadius=sphere.radius;cityBoundsReady=true;controls.maxDistance=Math.max(1400000,overviewRadius*10);
+}
+function overview(){
+  const vFov=THREE.MathUtils.degToRad(camera.fov);
+  const hFov=2*Math.atan(Math.tan(vFov/2)*Math.max(camera.aspect,.05));
+  const fitFov=Math.max(.20,Math.min(vFov,hFov));
+  const distance=cityBoundsReady?(overviewRadius/Math.sin(fitFov/2))*(mobileLayout.matches?1.02:.94):(mobileLayout.matches?980000:520000);
+  const dir=new THREE.Vector3(.62,1.38,1.0).normalize();
+  controls.target.copy(overviewCenter);
+  camera.position.copy(overviewCenter).addScaledVector(dir,distance);
+  camera.near=1;camera.far=Math.max(2200000,distance+overviewRadius*4);camera.updateProjectionMatrix();controls.update();selectPoint(null);
+}
+function applyView(view){camera.position.set(view.camera.x,view.camera.y,view.camera.z);controls.target.set(view.target.x,view.target.y,view.target.z);camera.near=1;camera.far=2200000;camera.updateProjectionMatrix();controls.update()}
+function focusPoint(p,meditation=false){if(!p)return;selectPoint(p);if(meditation&&p.meditation){applyView(p.meditation);return}if(p.view){applyView(p.view);return}const t=new THREE.Vector3(p.x,p.y,p.z);controls.target.copy(t);camera.position.set(p.x+72000,p.y+62000,p.z+72000);controls.update()}
+function selectPoint(p){activePoint=p;for(const [id,b] of pinButtons)b.classList.toggle('active',!!p&&id===p.id);for(const [id,b] of sightButtons)b.classList.toggle('active',!!p&&id===p.id)}
+function labelCategory(c){return c==='challenge'?'Runner Challenge':c==='environmental'?'Environmental detail':'Vista'}
+function openDetail(p){activePoint=p;selectPoint(p);if(mobileLayout.matches)setPanelOpen(false);detailImg.src=p.img;detailImg.alt=p.title;detailMeta.textContent=labelCategory(p.category)+' · '+p.district;detailTitle.textContent=p.title;detailText.textContent=p.note+(p.extra?'\n\n'+p.extra:'');route.innerHTML='';(p.routeImages||[]).forEach(src=>{const img=document.createElement('img');img.src=src;img.alt=p.title+' route';route.appendChild(img)});meditationBtn.hidden=!p.meditation;detail.classList.add('show');detail.scrollTop=0;requestAnimationFrame(()=>{detail.scrollTop=0})}
+function buildPoints(){for(const p of POINTS){const pin=document.createElement('button');pin.className='pin';pin.type='button';pin.title=p.title;pin.setAttribute('aria-label','Open '+p.title);pin.addEventListener('click',e=>{e.stopPropagation();openDetail(p)});pinLayer.appendChild(pin);pinButtons.set(p.id,pin);const b=document.createElement('button');b.className='sight';b.type='button';b.innerHTML=`<img src="${p.img}" alt=""><div><b>${p.title}</b><small>${labelCategory(p.category)} · ${p.district}</small><p>${p.note.length>112?p.note.slice(0,112)+'…':p.note}</p></div>`;b.addEventListener('click',()=>openDetail(p));sights.appendChild(b);sightButtons.set(p.id,b)}}
+function projectPins(){const rect=viewer.getBoundingClientRect();for(const p of POINTS){const b=pinButtons.get(p.id);const v=new THREE.Vector3(p.x,p.y+(p.pinLift||0),p.z).project(camera);const visible=v.z>-1&&v.z<1&&Math.abs(v.x)<1.08&&Math.abs(v.y)<1.08;b.style.display=visible?'block':'none';if(visible){b.style.left=((v.x*.5+.5)*rect.width)+'px';b.style.top=((-v.y*.5+.5)*rect.height)+'px'}}}
+function animate(){requestAnimationFrame(animate);if(document.hidden)return;controls.update();projectPins();renderer.render(scene,camera)}
+
+buildPoints();overview();animate();
+let loaded=0;
+Promise.all(
+  LAYERS.map(name => new Promise(resolve => {
+    loader.load(
+      `assets/glb/${name}.glb`,
+      g => {
+        const obj=g.scene;
+        obj.name=name;
+        obj.traverse(o=>{
+          if(!o.isMesh)return;
+          o.geometry.computeVertexNormals();
+          o.material=cityMaterialFor(name);
+          const lname=name.toLowerCase();
+          if(!mobileRender&&!lname.includes('water')&&!lname.includes('ground_surrounding')&&!lname.includes('vista')&&!lname.includes('sky')){
+            try{
+              o.add(new THREE.LineSegments(
+                new THREE.EdgesGeometry(o.geometry,38),
+                edgeMaterialFor(name)
+              ));
+            }catch(_){}
+          }
+        });
+        city.add(obj);
+        loaded++;
+        statusEl.textContent=`${loaded} / ${LAYERS.length} city layers`;
+        resolve();
+      },
+      undefined,
+      () => {
+        loaded++;
+        statusEl.textContent=`${loaded} / ${LAYERS.length} city layers`;
+        resolve();
+      }
+    );
+  }))
+).then(()=>{
+  refreshCityBounds();
+  statusEl.textContent=`City of Glass · ${LAYERS.length} layers`;
+  overview();
+});
+
+document.getElementById('overviewBtn').addEventListener('click',()=>{if(mobileLayout.matches)setPanelOpen(false);overview()});sightOpenBtn.addEventListener('click',()=>setPanelOpen(true));sightCloseBtn.addEventListener('click',()=>setPanelOpen(false));mobileLayout.addEventListener?.('change',e=>setPanelOpen(!e.matches));document.getElementById('aboutBtn').addEventListener('click',()=>{if(mobileLayout.matches)setPanelOpen(false);about.classList.add('show');about.scrollTop=0;requestAnimationFrame(()=>{about.scrollTop=0})});document.getElementById('aboutClose').addEventListener('click',()=>about.classList.remove('show'));document.getElementById('detailClose').addEventListener('click',()=>detail.classList.remove('show'));visitBtn.addEventListener('click',()=>{detail.classList.remove('show');focusPoint(activePoint)});meditationBtn.addEventListener('click',()=>{detail.classList.remove('show');focusPoint(activePoint,true)});detail.addEventListener('click',e=>{if(e.target===detail)detail.classList.remove('show')});about.addEventListener('click',e=>{if(e.target===about)about.classList.remove('show')});
+</script>
+</body>
+</html>

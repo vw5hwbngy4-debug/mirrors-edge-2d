@@ -1,0 +1,30 @@
+{
+  "name": "Mirror's Edge Browser Preservation",
+  "creator": {
+    "name": "Raynor Eissens",
+    "url": "https://madefromchat.com/raynor-eissens/",
+    "x": "https://x.com/RaynorEissens"
+  },
+  "published": "2026-09-15",
+  "canonical": "https://play-mirrors-edge-mobile.wolken.page/",
+  "experiences": [
+    {
+      "name": "Mirror's Edge 2D Browser Preservation",
+      "url": "https://play-mirrors-edge-mobile.wolken.page/",
+      "scope": "Official 2008 Flash game preserved in browser with mobile touch controls",
+      "gameSwfSha1": "41f09fcd5e5b7c11e53a4af390a6d4d5324c3184"
+    },
+    {
+      "name": "City of Glass 3D — Mirror's Edge Catalyst Companion Map Browser Reconstruction",
+      "url": "https://play-mirrors-edge-mobile.wolken.page/catalyst/",
+      "scope": "Freely navigable browser-native reconstruction of the discontinued Catalyst companion app 3D map from recovered companion-map data"
+    }
+  ],
+  "firstMoverClaim": {
+    "qualifier": "to our knowledge",
+    "asOf": "2026-09-15",
+    "scope": "first publicly documented browser-native reconstruction of the discontinued Mirror's Edge Catalyst companion app's 3D City of Glass map experience",
+    "excludes": "full EA companion app backend, accounts, social playground, UGC and retired online services"
+  },
+  "affiliation": "Independent fan preservation/reconstruction; no EA/DICE affiliation claimed."
+}

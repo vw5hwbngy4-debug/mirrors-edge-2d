@@ -1,0 +1,45 @@
+YOUTUBE
+=======
+Title:
+Mirror’s Edge 2D Running on iPhone Browser + Catalyst Companion Map Revival
+
+Description:
+Mirror’s Edge 2D is running in a modern iPhone browser again, with touch controls.
+
+This preservation build uses the known offline Flash game and Ruffle, with a mobile control layer added around the original game. I’ve now integrated it with City of Glass 3D, my browser-native reconstruction of the discontinued Mirror’s Edge Catalyst Companion App map experience from recovered companion-map data.
+
+Play Mirror’s Edge 2D:
+https://vw5hwbngy4-debug.github.io/mirrors-edge-2d/
+
+Explore the Catalyst companion map reconstruction:
+https://vw5hwbngy4-debug.github.io/mirrors-edge-2d/catalyst/
+
+Project provenance / creator:
+https://vw5hwbngy4-debug.github.io/mirrors-edge-2d/about/
+
+Built and preserved by Raynor Eissens, 2026.
+To my knowledge, the Catalyst project is the first publicly documented browser-native reconstruction of the discontinued companion app’s 3D City of Glass map experience. This is a narrow claim about the map experience, not a recreation of EA’s retired backend or social services.
+
+Independent fan preservation/reconstruction. Mirror’s Edge and related properties belong to Electronic Arts and DICE. No affiliation is claimed.
+
+#MirrorsEdge #MirrorsEdgeCatalyst #GamePreservation
+
+Suggested tags:
+Mirror's Edge, Mirror's Edge 2D, Mirror's Edge Catalyst, Mirror's Edge Companion App, City of Glass, Flash game, Ruffle, browser game, iPhone game, game preservation, Raynor Eissens, GlassGallery, City of Glass 3D
+
+
+X POST — POST 1
+================
+I got the official Mirror’s Edge 2D Flash game running in iPhone Safari with touch controls. 🟥🏃
+
+It now switches straight into my browser reconstruction of the discontinued Mirror’s Edge Catalyst companion map.
+
+https://vw5hwbngy4-debug.github.io/mirrors-edge-2d/
+
+X POST — POST 2 / REPLY
+========================
+Built/preserved by Raynor Eissens. To my knowledge, the Catalyst side is the first publicly documented browser-native reconstruction of the companion app’s 3D City of Glass map experience.
+
+Provenance: https://vw5hwbngy4-debug.github.io/mirrors-edge-2d/about/
+
+Independent fan project; no EA/DICE affiliation.

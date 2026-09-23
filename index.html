@@ -1,0 +1,867 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,viewport-fit=cover,user-scalable=no">
+<link rel="icon" href="./favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="512x512" href="./favicon-512.png">
+<link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon-180.png">
+<meta name="theme-color" content="#f4f4f1">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<title>Mirror's Edge 2D in Browser + Catalyst Companion Map | Raynor Eissens</title>
+<meta name="description" content="Play the official Mirror's Edge 2D Flash game in a modern browser with mobile touch controls, then switch to a browser reconstruction of the discontinued Mirror's Edge Catalyst Companion map. Preservation project by Raynor Eissens.">
+<meta name="author" content="Raynor Eissens">
+<meta name="robots" content="index,follow,max-image-preview:large,max-video-preview:-1">
+<link rel="canonical" href="https://vw5hwbngy4-debug.github.io/mirrors-edge-2d/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Mirror's Edge 2D in Browser + Catalyst Companion Map | Raynor Eissens">
+<meta property="og:description" content="Play Mirror's Edge 2D with mobile touch controls and switch into a browser-native reconstruction of the Mirror's Edge Catalyst companion map.">
+<meta property="og:url" content="https://vw5hwbngy4-debug.github.io/mirrors-edge-2d/">
+<meta property="og:image" content="https://vw5hwbngy4-debug.github.io/mirrors-edge-2d/video/poster.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:creator" content="@RaynorEissens">
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"CreativeWork",
+  "name":"Mirror's Edge 2D Browser Preservation",
+  "url":"https://vw5hwbngy4-debug.github.io/mirrors-edge-2d/",
+  "datePublished":"2026-09-15",
+  "creator":{"@type":"Person","name":"Raynor Eissens","url":"https://madefromchat.com/raynor-eissens/","sameAs":["https://x.com/RaynorEissens","https://raynoreissens.com/about/"]},
+  "description":"A mobile-friendly browser preservation wrapper for the official 2008 Mirror's Edge 2D Flash game, paired with a browser reconstruction of the Mirror's Edge Catalyst companion map.",
+  "isBasedOn":{"@type":"VideoGame","name":"Mirror's Edge 2D","datePublished":"2008"}
+}
+</script>
+
+<style>
+:root{--paper:#f4f4f1;--ink:#111;--red:#dc3543;--blue:#347ff0;--line:#d5d5d0;--muted:#73736e}
+*{box-sizing:border-box}
+html,body{margin:0;background:var(--paper);color:var(--ink);font-family:Arial,Helvetica,sans-serif;-webkit-text-size-adjust:100%;overscroll-behavior:none;touch-action:pan-y}
+body{min-height:100svh}
+header{height:72px;display:flex;align-items:center;gap:13px;padding:0 18px;border-bottom:1px solid var(--line)}
+.slash{width:10px;height:35px;background:var(--red);transform:skew(-9deg)}
+h1{margin:0;font-size:22px;letter-spacing:.07em;text-transform:uppercase}
+main{max-width:1100px;margin:auto;padding:14px}
+.shell{position:relative;touch-action:none;-ms-touch-action:none}
+.frame{position:relative;width:100%;aspect-ratio:3/2;background:#000;overflow:hidden;touch-action:none;-ms-touch-action:none}
+#playerhost,.frame ruffle-player{touch-action:none!important;-ms-touch-action:none!important}
+
+/* Native fullscreen where supported. Keep the Flash stage at its native 3:2 aspect. */
+.shell:fullscreen,.shell:-webkit-full-screen{
+ width:100%;height:100%;background:#000;overflow:hidden;
+ -webkit-user-select:none!important;user-select:none!important;
+ -webkit-touch-callout:none!important;-webkit-tap-highlight-color:transparent;
+}
+.shell:fullscreen *,.shell:-webkit-full-screen *{
+ -webkit-user-select:none!important;user-select:none!important;
+ -webkit-touch-callout:none!important;
+}
+.shell:fullscreen .frame,.shell:-webkit-full-screen .frame{
+ position:absolute;
+ left:50%;top:50%;
+ width:min(100vw,150vh);
+ height:min(100vh,66.6667vw);
+ aspect-ratio:3/2;
+ transform:translate(-50%,-50%);
+}
+.shell:fullscreen .deck,.shell:-webkit-full-screen .deck{
+ position:absolute;inset:0;z-index:3;align-items:flex-end;
+ padding:0 max(18px,env(safe-area-inset-right)) max(14px,env(safe-area-inset-bottom)) max(18px,env(safe-area-inset-left));
+ pointer-events:none;touch-action:none;
+}
+.shell:fullscreen .stickwrap,.shell:fullscreen .actions,
+.shell:-webkit-full-screen .stickwrap,.shell:-webkit-full-screen .actions{pointer-events:auto}
+.shell:fullscreen .round,.shell:-webkit-full-screen .round{
+ background:#1119;color:#d7d7d7;border-color:#9a9a9a;
+}
+.shell:fullscreen .jump,.shell:-webkit-full-screen .jump{
+ background:#1119;color:#fff;border-color:var(--red);
+}
+.shell:fullscreen .jump.pressed,.shell:-webkit-full-screen .jump.pressed{
+ background:var(--red)!important;color:#fff!important;border-color:var(--red)!important;
+}
+.shell:fullscreen .fsExit,.shell:-webkit-full-screen .fsExit,
+.shell:fullscreen .fsSound,.shell:-webkit-full-screen .fsSound{display:block}
+
+/* iPhone/iPad Safari fallback: app-level fullscreen.
+   Important: the Ruffle viewport itself remains 3:2, so the game does not
+   expose extra vertical world space where the original background is absent. */
+body.gameFullscreen{
+ overflow:hidden;background:#000;
+ -webkit-user-select:none!important;user-select:none!important;
+ -webkit-touch-callout:none!important;-webkit-tap-highlight-color:transparent;
+}
+body.gameFullscreen *,body.gameFullscreen *::before,body.gameFullscreen *::after{
+ -webkit-user-select:none!important;user-select:none!important;
+ -webkit-touch-callout:none!important;
+}
+body.gameFullscreen header,body.gameFullscreen .toolbar,body.gameFullscreen .seoFoot{display:none!important}
+body.gameFullscreen main{max-width:none!important;padding:0!important;margin:0!important}
+body.gameFullscreen .shell{
+ position:fixed;z-index:99999;left:0;top:0;width:100vw;height:100dvh;background:#000;
+ touch-action:none;overscroll-behavior:none;
+}
+
+/* Portrait: native game stage at the top, controls use the black area below. */
+body.gameFullscreen .frame{
+ position:absolute;
+ left:0;
+ top:calc(env(safe-area-inset-top) + 24px);
+ width:100vw;
+ height:66.6667vw;
+ aspect-ratio:3/2;
+ transform:none;
+}
+
+/* Landscape: maximize the 3:2 game rectangle without changing its viewport shape. */
+@media (orientation:landscape){
+ body.gameFullscreen .frame{
+  left:50%;top:50%;
+  width:min(100vw,150dvh);
+  height:min(100dvh,66.6667vw);
+  transform:translate(-50%,-50%);
+ }
+}
+
+body.gameFullscreen .deck{
+ position:absolute;inset:0;z-index:3;align-items:flex-end;
+ padding:0 max(18px,env(safe-area-inset-right)) max(14px,env(safe-area-inset-bottom)) max(18px,env(safe-area-inset-left));
+ pointer-events:none;touch-action:none;
+}
+body.gameFullscreen .stickwrap,body.gameFullscreen .actions{pointer-events:auto}
+body.gameFullscreen .stick{background:#ffffff20;border-color:#ffffff80}
+body.gameFullscreen .stick:before,body.gameFullscreen .stick:after{background:#ffffff45}
+body.gameFullscreen .knob{background:#ffffffc8;border-color:#fff}
+body.gameFullscreen .lab{color:#fff}
+body.gameFullscreen .round{
+ background:#1119;
+ color:#d7d7d7;
+ border-color:#9a9a9a;
+}
+body.gameFullscreen .jump{
+ background:#1119;
+ color:#fff;
+ border-color:var(--red);
+}
+body.gameFullscreen .jump.pressed{
+ background:var(--red)!important;
+ color:#fff!important;
+ border-color:var(--red)!important;
+}
+body.gameFullscreen .fsExit,body.gameFullscreen .fsSound{display:block;position:fixed}
+
+/* Fullscreen utility buttons. */
+.fsExit,.fsSound{
+ display:none;z-index:50;
+ border:2px solid #343434;
+ background:#0b0b0bf2;
+ color:#4b4b4b;
+ backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);
+ touch-action:manipulation;-webkit-user-select:none;user-select:none;-webkit-touch-callout:none;
+}
+.fsExit{
+ top:max(10px,env(safe-area-inset-top));right:max(10px,env(safe-area-inset-right));
+ width:46px;height:46px;border-radius:50%;font-size:30px;line-height:38px;font-weight:400;
+}
+.fsSound{
+ top:calc(max(10px,env(safe-area-inset-top)) + 56px);
+ right:max(10px,env(safe-area-inset-right));
+ min-width:72px;height:40px;padding:0 12px;border-radius:999px;
+ font-size:11px;font-weight:900;letter-spacing:.08em;
+}
+.fsSound.ok{background:#161616;color:#666;border-color:#444}
+
+/* v1.2.5: portrait utility controls are positioned below the measured game frame.
+   JS writes --me2d-utility-top from frame.getBoundingClientRect().bottom. */
+@media (orientation:portrait){
+ body.gameFullscreen .fsExit,
+ body.gameFullscreen .fsSound{
+  position:fixed!important;
+  top:var(--me2d-utility-top,calc(env(safe-area-inset-top) + 66.6667vw + 12px))!important;
+  z-index:100001!important;
+ }
+ body.gameFullscreen .fsExit{
+  right:max(14px,env(safe-area-inset-right))!important;
+  width:42px!important;height:42px!important;
+  font-size:26px!important;line-height:34px!important;
+ }
+ body.gameFullscreen .fsSound{
+  right:calc(max(14px,env(safe-area-inset-right)) + 50px)!important;
+  min-width:68px!important;height:42px!important;
+  padding:0 10px!important;
+  font-size:10px!important;
+ }
+}
+
+
+.frame>div,.frame ruffle-player{width:100%;height:100%;display:block}
+
+/* Clean full-frame loader. */
+.loader{position:absolute;inset:0;z-index:10;display:flex;align-items:center;justify-content:center;background:#101010;color:#fff;transition:opacity .22s ease}
+.loader.hidden{opacity:0;pointer-events:none}
+.loaderbox{width:min(76%,420px);text-align:center}
+.loader-mark{width:54px;height:6px;background:var(--red);margin:0 auto 28px}
+.loader-title{font-size:18px;font-weight:800;letter-spacing:.12em;text-transform:uppercase}
+.loader-percent{font-size:54px;font-weight:800;line-height:1;margin:18px 0 16px;font-variant-numeric:tabular-nums}
+.loader-track{height:5px;background:#3a3a3a;overflow:hidden}
+.loader-fill{height:100%;width:0;background:var(--red);transition:width .08s linear}
+.loader-phase{margin-top:13px;font-size:11px;letter-spacing:.13em;text-transform:uppercase;color:#aaa}
+
+.deck{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:16px 4px 4px;touch-action:none;user-select:none;-webkit-user-select:none}
+.stickwrap{position:relative;width:168px;height:168px;flex:0 0 168px;touch-action:none;-webkit-user-select:none;user-select:none;-webkit-touch-callout:none}
+.stick{position:relative;width:calc(100% - 16px);height:calc(100% - 16px);margin:8px;border:2px solid #bbb;border-radius:50%;background:#e8e8e5;touch-action:none;-ms-touch-action:none;-webkit-user-select:none;user-select:none;-webkit-touch-callout:none}
+.stick:before,.stick:after{content:"";position:absolute;background:#c8c8c4}
+.stick:before{width:2px;height:110px;left:50%;top:19px}
+.stick:after{height:2px;width:110px;top:50%;left:19px}
+.knob{position:absolute;width:72px;height:72px;border:3px solid #111;border-radius:50%;background:#fff;left:50%;top:50%;margin:-36px;pointer-events:none}
+.lab{position:absolute;font-size:12px;font-weight:800;color:#777;pointer-events:none}
+.up{top:-1px;left:50%;transform:translateX(-50%)}
+.down{bottom:-1px;left:50%;transform:translateX(-50%)}
+.left{left:-1px;top:50%;transform:translateY(-50%)}
+.right{right:-1px;top:50%;transform:translateY(-50%)}
+.actions{display:flex;align-items:center;gap:14px;margin-left:auto;touch-action:none;-webkit-user-select:none;user-select:none;-webkit-touch-callout:none}
+.mini{display:flex;flex-direction:column;gap:12px}
+button{font:inherit}
+.round{width:62px;height:62px;border:3px solid #111;border-radius:50%;background:#fff;font-weight:900;font-size:18px;touch-action:none}
+.jump{width:126px;height:126px;border:4px solid var(--red);border-radius:50%;background:#fff;color:var(--red);font-size:22px;font-weight:900;letter-spacing:.04em;touch-action:none}
+.pressed{transform:scale(.94);background:#111!important;color:#fff!important}
+.jump.pressed{background:var(--red)!important}
+.toolbar{display:grid;grid-template-columns:1fr 1fr;gap:7px;margin-top:14px;align-items:stretch}
+.tool{min-width:0;min-height:46px;padding:9px 10px;border:2px solid #111;background:transparent;color:var(--blue);font-size:11px;font-weight:800;letter-spacing:.035em;text-transform:uppercase;white-space:nowrap}
+
+@media(max-width:560px){.toolbar{gap:5px}.tool{min-height:44px;padding:8px 7px;font-size:10px;letter-spacing:.02em}
+ header{height:66px;padding:0 14px} h1{font-size:18px} main{padding:8px} .deck{gap:8px}
+ .stickwrap{width:148px;height:148px;flex-basis:148px}
+ .stick:before{height:92px;top:18px} .stick:after{width:92px;left:18px}
+ .knob{width:66px;height:66px;margin:-33px}
+ .jump{width:106px;height:106px;font-size:19px}
+ .round{width:54px;height:54px;font-size:16px}
+ .loader-percent{font-size:46px}
+}
+
+@media(orientation:landscape) and (pointer:coarse){
+ html,body{background:#000;overflow:hidden}
+ header,.toolbar{display:none}
+ main{max-width:none;padding:0}
+ .shell{height:100svh;position:relative}
+ .frame{position:absolute;inset:0;width:100%;height:100%;aspect-ratio:auto}
+ .deck{position:absolute;inset:0;align-items:flex-end;padding:0 max(18px,env(safe-area-inset-right)) max(12px,env(safe-area-inset-bottom)) max(18px,env(safe-area-inset-left));pointer-events:none;z-index:3}
+ .stickwrap,.actions{pointer-events:auto}
+ .stick{background:#ffffff20;border-color:#ffffff80}
+ .stick:before,.stick:after{background:#ffffff45}
+ .knob{background:#ffffffc8;border-color:#fff}
+ .lab{color:#fff}
+ .round,.jump{background:#1119;color:#fff;border-color:#fff}
+ .jump{color:#fff}
+}
+
+.siteHead{justify-content:space-between}.siteBrand{display:flex;align-items:center;gap:13px;min-width:0}.siteNav{display:flex;gap:7px;align-items:center}.siteNav a{display:inline-flex;align-items:center;min-height:38px;padding:0 11px;border:1px solid #cfcfca;color:#222;text-decoration:none;font-size:10px;font-weight:900;letter-spacing:.065em;text-transform:uppercase;background:#fff}.siteNav a.active{background:#111;color:#fff;border-color:#111}.siteNav a.catalyst{border-color:var(--red);color:var(--red)}.siteNav a:hover{background:#f0f0ed}.landscapeSwitch{display:none}.seoFoot{margin:18px 0 4px;padding:15px 16px;border-top:1px solid var(--line);color:var(--muted);font-size:12px;line-height:1.6}.seoFoot b{color:var(--ink)}.seoFoot a{color:var(--ink);font-weight:700}
+@media(max-width:650px){.siteHead{height:auto;min-height:66px;padding-top:8px;padding-bottom:8px;gap:8px}.siteBrand h1{font-size:16px}.siteNav{gap:4px}.siteNav a{min-height:34px;padding:0 7px;font-size:8px;letter-spacing:.035em}}
+@media(orientation:landscape) and (pointer:coarse){.siteHead,.seoFoot{display:none}.landscapeSwitch{display:flex;position:absolute;z-index:8;right:max(10px,env(safe-area-inset-right));top:max(8px,env(safe-area-inset-top));gap:6px}.landscapeSwitch a{background:#111b;color:#fff;border:1px solid #fff8;padding:8px 10px;text-decoration:none;font-size:9px;font-weight:900;letter-spacing:.06em;text-transform:uppercase}.landscapeSwitch .cat{background:#dc3543dd;border-color:#fff}}
+</style>
+</head>
+<body>
+<header class="siteHead"><div class="siteBrand"><div class="slash"></div><h1>Mirror's Edge 2D</h1></div><nav class="siteNav" aria-label="Mirror's Edge experiences"><a class="active" href="./">2D Game</a><a class="catalyst" href="./catalyst/">Catalyst Map</a><a href="./about/">About</a></nav></header>
+<main>
+<section class="shell" id="shell">
+ <button class="fsExit" id="fsExit" type="button" aria-label="Exit fullscreen">×</button>
+ <button class="fsSound" id="fsSound" type="button" aria-label="Restore sound">SOUND</button><nav class="landscapeSwitch" aria-label="Mirror's Edge experiences"><a href="./about/">About</a><a class="cat" href="./catalyst/">Catalyst Map</a></nav>
+ <div class="frame">
+  <div class="loader" id="loader">
+   <div class="loaderbox">
+    <div class="loader-mark"></div>
+    <div class="loader-title">Mirror's Edge 2D</div>
+    <div class="loader-percent" id="loaderPercent">0%</div>
+    <div class="loader-track"><div class="loader-fill" id="loaderFill"></div></div>
+    <div class="loader-phase" id="loaderPhase">Loading game</div>
+   </div>
+  </div>
+  <div id="playerhost"></div>
+ </div>
+
+ <div class="deck">
+  <div class="stickwrap">
+   <span class="lab up">CLIMB</span><span class="lab down">SLIDE</span><span class="lab left">←</span><span class="lab right">→</span>
+   <div class="stick" id="stick"><div class="knob" id="knob"></div></div>
+  </div>
+  <div class="actions">
+   <div class="mini">
+    <button class="round" id="pause" type="button" aria-label="Pause">Ⅱ</button>
+    <button class="round" id="music" type="button" aria-label="Toggle music">M</button>
+   </div>
+   <button class="jump" id="jump" type="button">JUMP</button>
+  </div>
+ </div>
+</section>
+
+<div class="toolbar">
+ <button class="tool" id="reload" type="button">Restart</button>
+ <button class="tool" id="fullscreen" type="button">Fullscreen</button>
+</div>
+<div class="seoFoot"><b>Mirror's Edge browser preservation by Raynor Eissens.</b> This page runs the preserved official 2008 Mirror's Edge 2D Flash game with a mobile touch layer. Switch to <a href="./catalyst/">City of Glass 3D</a> for the browser reconstruction of the discontinued Mirror's Edge Catalyst companion map, or read the <a href="./about/">project provenance</a>. Independent fan preservation; no EA/DICE affiliation is claimed.</div>
+</main>
+
+<!-- v1.3.4: fullscreen SOUND is a reliable hard Ruffle restart; main-page SOUND removed -->
+<script src="https://unpkg.com/@ruffle-rs/ruffle@0.6.0"></script>
+<script>
+(()=>{
+ const EXPECTED_SWF_BYTES=9688100;
+
+ // Track the Web Audio context(s) Ruffle creates, but do NOT suspend them
+ // ourselves on visibility changes. Ruffle already owns that lifecycle. v1.3.1
+ // double-managed it and could produce an audible "tilt/pop" as Safari left the app.
+ const trackedAudioContexts=new Set();
+
+ function hookAudioContext(ctx){
+  if(ctx)trackedAudioContexts.add(ctx);
+ }
+
+ (()=>{
+  const ctors=[window.AudioContext,window.webkitAudioContext].filter(Boolean);
+  const seen=new Set();
+  for(const Ctor of ctors){
+   if(!Ctor.prototype||seen.has(Ctor.prototype))continue;
+   seen.add(Ctor.prototype);
+   for(const method of ['createGain','createBufferSource','resume']){
+    const original=Ctor.prototype[method];
+    if(typeof original!=='function'||original.__me2dTracked)continue;
+    const wrapped=function(...args){
+     hookAudioContext(this);
+     return original.apply(this,args);
+    };
+    try{Object.defineProperty(wrapped,'__me2dTracked',{value:true})}catch(_){}
+    try{Ctor.prototype[method]=wrapped}catch(_){}
+   }
+  }
+ })();
+
+ const host=document.getElementById('playerhost');
+ const loader=document.getElementById('loader');
+ const loaderPercent=document.getElementById('loaderPercent');
+ const loaderFill=document.getElementById('loaderFill');
+ const loaderPhase=document.getElementById('loaderPhase');
+ const stick=document.getElementById('stick'),knob=document.getElementById('knob');
+ const jump=document.getElementById('jump'),pause=document.getElementById('pause'),music=document.getElementById('music');
+ const fsSound=document.getElementById('fsSound');
+
+ let player=null,stickPointer=null;
+ let gameDataCache=null;
+ const held=new Set();
+ const keys={
+  left:{key:'ArrowLeft',code:'ArrowLeft',keyCode:37},
+  up:{key:'ArrowUp',code:'ArrowUp',keyCode:38},
+  right:{key:'ArrowRight',code:'ArrowRight',keyCode:39},
+  down:{key:'ArrowDown',code:'ArrowDown',keyCode:40},
+  jump:{key:'s',code:'KeyS',keyCode:83},
+  music:{key:'m',code:'KeyM',keyCode:77},
+  pause:{key:' ',code:'Space',keyCode:32}
+ };
+
+ function setProgress(value,phase){
+  const p=Math.max(0,Math.min(100,Math.round(value)));
+  loaderPercent.textContent=p+'%';
+  loaderFill.style.width=p+'%';
+  if(phase) loaderPhase.textContent=phase;
+ }
+
+ function showLoader(){
+  loader.classList.remove('hidden');
+  loader.style.display='flex';
+  setProgress(0,'Loading game');
+ }
+
+ function hideLoader(){
+  loader.classList.add('hidden');
+  setTimeout(()=>{loader.style.display='none'},240);
+ }
+
+ function focusPlayer(){
+  if(!player)return;
+  try{player.focus({preventScroll:true})}catch(e){try{player.focus()}catch(_){}}
+ }
+
+ function send(name,down){
+  if(!player||!keys[name])return;
+  if(down&&held.has(name))return;
+  if(!down&&!held.has(name))return;
+  down?held.add(name):held.delete(name);
+  focusPlayer();
+
+  const k=keys[name];
+  let ev=new KeyboardEvent(down?'keydown':'keyup',{
+   key:k.key,code:k.code,keyCode:k.keyCode,which:k.keyCode,
+   bubbles:true,cancelable:true,composed:true
+  });
+  for(const [prop,val] of [['keyCode',k.keyCode],['which',k.keyCode],['charCode',0]]){
+   try{Object.defineProperty(ev,prop,{configurable:true,get:()=>val})}catch(_){}
+  }
+  player.dispatchEvent(ev);
+ }
+
+ function releaseAll(){[...held].forEach(k=>send(k,false))}
+ function setDirs(n){['left','right','up','down'].forEach(k=>send(k,n.has(k)))}
+
+ function moveStick(x,y){
+  const r=stick.getBoundingClientRect(),cx=r.left+r.width/2,cy=r.top+r.height/2;
+  let dx=x-cx,dy=y-cy;
+  const max=r.width*.31,m=Math.hypot(dx,dy);
+  if(m>max&&m){dx=dx/m*max;dy=dy/m*max}
+  knob.style.transform=`translate(${dx}px,${dy}px)`;
+  const dead=r.width*.10,n=new Set();
+  if(dx<-dead)n.add('left'); if(dx>dead)n.add('right');
+  if(dy<-dead)n.add('up'); if(dy>dead)n.add('down');
+  setDirs(n);
+ }
+
+ function resetStick(){
+  stickPointer=null;
+  knob.style.transform='translate(0,0)';
+  setDirs(new Set());
+ }
+
+ function setPlaybackAudioSession(){
+  try{
+   if('audioSession' in navigator && navigator.audioSession){
+    navigator.audioSession.type='playback';
+   }
+  }catch(_){}
+ }
+
+ function resumeTrackedContexts(){
+  setPlaybackAudioSession();
+  for(const ctx of trackedAudioContexts){
+   try{
+    if(ctx && ctx.state!=='closed' && typeof ctx.resume==='function'){
+     const p=ctx.resume();
+     if(p && typeof p.catch==='function')p.catch(()=>{});
+    }
+   }catch(_){}
+  }
+ }
+
+ function triggerRuffleNativeWake(){
+  // Ruffle installs its own one-shot click handler on the internal container for
+  // iOS audio activation. Invoke that path while the outer tap still has transient
+  // user activation, rather than trying to reproduce Ruffle's private internals.
+  try{
+   const root=player && player.shadowRoot;
+   const container=root && root.getElementById('container');
+   if(container && typeof container.click==='function') container.click();
+  }catch(_){}
+  try{
+   const api=player && typeof player.ruffle==='function' ? player.ruffle() : null;
+   if(api && typeof api.play==='function') api.play();
+   else if(player && typeof player.play==='function') player.play();
+  }catch(_){}
+ }
+
+ function resumeRuffleAudioFromGesture(){
+  resumeTrackedContexts();
+  triggerRuffleNativeWake();
+  return true;
+ }
+
+ function syncSoundButtons(){
+  if(!fsSound)return;
+  fsSound.textContent='SOUND';
+  fsSound.classList.remove('ok','needsSound');
+  fsSound.setAttribute('aria-label','Restart game to restore sound');
+ }
+
+ async function hardRestartForSound(){
+  // iOS can permanently detach Ruffle's WebAudio route after leaving Safari.
+  // A fresh Ruffle instance is the proven reliable recovery. loadGame() reuses
+  // the cached SWF bytes, so this behaves like the existing Restart button.
+  releaseAll();
+  await loadGame();
+  focusPlayer();
+ }
+
+ fsSound.addEventListener('click',hardRestartForSound);
+
+ // Let Ruffle own browser visibility/audio lifecycle. A normal Safari tab switch
+ // remains untouched. If iOS kills WebAudio after leaving the Safari app, the
+ // fullscreen SOUND button performs the same fresh-player restart as Restart.
+ document.addEventListener('visibilitychange',()=>{
+  if(document.hidden){
+   releaseAll();
+  }else{
+   setPlaybackAudioSession();
+   requestAnimationFrame(()=>focusPlayer());
+  }
+ });
+ window.addEventListener('pagehide',releaseAll);
+ window.addEventListener('pageshow',()=>{
+  setPlaybackAudioSession();
+  requestAnimationFrame(()=>focusPlayer());
+ });
+ syncSoundButtons();
+
+ // iOS Safari gets a dedicated TouchEvent path. This matters because WebKit can
+ // still treat an absolutely-positioned touch-action:none surface as double-tap zoom.
+ // Every game-control touch is therefore cancelled at touchstart/move/end, before
+ // Safari can promote it into a browser gesture. Mouse/pen keep the PointerEvent path.
+ let stickTouch=null;
+ function touchById(list,id){
+  for(let i=0;i<list.length;i++) if(list[i].identifier===id) return list[i];
+  return null;
+ }
+
+ stick.addEventListener('touchstart',e=>{
+  const audioReady=resumeRuffleAudioFromGesture();
+  e.preventDefault();e.stopPropagation();
+  if(!audioReady)return;
+  if(stickTouch!==null)return;
+  const t=e.changedTouches[0];
+  if(!t)return;
+  stickTouch=t.identifier;
+  moveStick(t.clientX,t.clientY);
+ },{passive:false});
+ stick.addEventListener('touchmove',e=>{
+  e.preventDefault();e.stopPropagation();
+  if(stickTouch===null)return;
+  const t=touchById(e.touches,stickTouch)||touchById(e.changedTouches,stickTouch);
+  if(t)moveStick(t.clientX,t.clientY);
+ },{passive:false});
+ for(const type of ['touchend','touchcancel']){
+  stick.addEventListener(type,e=>{
+   e.preventDefault();e.stopPropagation();
+   if(stickTouch===null)return;
+   const ended=touchById(e.changedTouches,stickTouch);
+   if(!ended && type==='touchend')return;
+   stickTouch=null;
+   resetStick();
+  },{passive:false});
+ }
+
+ stick.addEventListener('pointerdown',e=>{
+  if(e.pointerType==='touch')return;
+  const audioReady=resumeRuffleAudioFromGesture();
+  e.preventDefault();e.stopPropagation();
+  if(!audioReady)return;
+  if(stickPointer!==null)return;
+  stickPointer=e.pointerId;
+  try{stick.setPointerCapture(e.pointerId)}catch(_){}
+  moveStick(e.clientX,e.clientY);
+ },{passive:false});
+
+ stick.addEventListener('pointermove',e=>{
+  if(e.pointerType==='touch'||e.pointerId!==stickPointer)return;
+  e.preventDefault();e.stopPropagation();
+  moveStick(e.clientX,e.clientY);
+ },{passive:false});
+
+ ['pointerup','pointercancel','lostpointercapture'].forEach(type=>stick.addEventListener(type,e=>{
+  if(e.pointerType==='touch')return;
+  if(type!=='lostpointercapture'&&stickPointer!==null&&e.pointerId!==stickPointer)return;
+  e.preventDefault();resetStick();
+ },{passive:false}));
+
+ function bind(btn,name){
+  let pid=null,touchId=null;
+
+  btn.addEventListener('touchstart',e=>{
+   const audioReady=resumeRuffleAudioFromGesture();
+   e.preventDefault();e.stopPropagation();
+   if(!audioReady)return;
+   if(touchId!==null)return;
+   const t=e.changedTouches[0];
+   if(!t)return;
+   touchId=t.identifier;
+   btn.classList.add('pressed');
+   send(name,true);
+  },{passive:false});
+  btn.addEventListener('touchmove',e=>{
+   if(touchId===null)return;
+   e.preventDefault();e.stopPropagation();
+  },{passive:false});
+  for(const type of ['touchend','touchcancel']){
+   btn.addEventListener(type,e=>{
+    e.preventDefault();e.stopPropagation();
+    if(touchId===null)return;
+    const ended=touchById(e.changedTouches,touchId);
+    if(!ended && type==='touchend')return;
+    touchId=null;
+    btn.classList.remove('pressed');
+    send(name,false);
+   },{passive:false});
+  }
+
+  btn.addEventListener('pointerdown',e=>{
+   if(e.pointerType==='touch')return;
+   const audioReady=resumeRuffleAudioFromGesture();
+   e.preventDefault();e.stopPropagation();
+   if(!audioReady)return;
+   if(pid!==null)return;
+   pid=e.pointerId;
+   btn.classList.add('pressed');
+   try{btn.setPointerCapture(pid)}catch(_){}
+   send(name,true);
+  },{passive:false});
+
+  const up=e=>{
+   if(e.pointerType==='touch')return;
+   if(pid!==null&&e.type!=='lostpointercapture'&&e.pointerId!==pid)return;
+   e.preventDefault();e.stopPropagation();
+   pid=null;
+   btn.classList.remove('pressed');
+   send(name,false);
+  };
+  ['pointerup','pointercancel','lostpointercapture'].forEach(type=>btn.addEventListener(type,up,{passive:false}));
+ }
+
+ bind(jump,'jump');
+ bind(pause,'pause');
+ bind(music,'music');
+
+ window.addEventListener('blur',releaseAll);
+
+ async function fetchGameWithProgress(){
+  if(gameDataCache){
+   setProgress(85,'Preparing game');
+   return gameDataCache.slice();
+  }
+  const response=await fetch('ea.comm.swf',{cache:'no-store'});
+  if(!response.ok)throw new Error('ea.comm.swf HTTP '+response.status);
+
+  const headerTotal=Number(response.headers.get('content-length'))||0;
+  const total=headerTotal>0?headerTotal:EXPECTED_SWF_BYTES;
+
+  if(!response.body||!response.body.getReader){
+   const buf=await response.arrayBuffer();
+   const data=new Uint8Array(buf);
+   gameDataCache=data.slice();
+   setProgress(85,'Preparing game');
+   return data;
+  }
+
+  const reader=response.body.getReader();
+  const chunks=[];
+  let loaded=0;
+
+  while(true){
+   const {done,value}=await reader.read();
+   if(done)break;
+   chunks.push(value);
+   loaded+=value.byteLength;
+   const downloadPct=total>0?Math.min(85,(loaded/total)*85):0;
+   setProgress(downloadPct,'Loading game');
+  }
+
+  const data=new Uint8Array(loaded);
+  let offset=0;
+  for(const chunk of chunks){
+   data.set(chunk,offset);
+   offset+=chunk.byteLength;
+  }
+
+  setProgress(85,'Preparing game');
+  gameDataCache=data.slice();
+  return data;
+ }
+
+ async function loadGame(){
+  releaseAll();
+  showLoader();
+
+  if(player){
+   try{player.remove()}catch(_){}
+   player=null;
+  }
+  host.replaceChildren();
+
+  let prepTimer=null;
+  try{
+   const data=await fetchGameWithProgress();
+
+   const ruffle=window.RufflePlayer.newest();
+   player=ruffle.createPlayer();
+   player.tabIndex=0;
+   player.style.width='100%';
+   player.style.height='100%';
+   host.replaceChildren(player);
+
+   let prep=86;
+   setProgress(prep,'Starting Flash');
+   prepTimer=setInterval(()=>{
+    if(prep<98){prep+=1;setProgress(prep,'Starting Flash')}
+   },110);
+
+   await player.ruffle().load({
+    data,
+    swfFileName:'ea.comm.swf',
+    autoplay:'auto',
+    scale:'showAll',
+    quality:'high',
+    allowFullscreen:true,
+    backgroundColor:'#000000',
+    compatibilityRules:true,
+    backgroundExecutionMode:'none',
+    openUrlMode:'deny',
+    gamepadButtonMapping:{'dpad-up':38,'dpad-down':40,'dpad-left':37,'dpad-right':39,'south':83,'start':32}
+   });
+
+   clearInterval(prepTimer);
+   prepTimer=null;
+   setProgress(100,'Ready');
+   focusPlayer();
+   syncSoundButtons();
+   await new Promise(resolve=>setTimeout(resolve,260));
+   hideLoader();
+  }catch(e){
+   if(prepTimer)clearInterval(prepTimer);
+   console.error(e);
+   loaderPhase.textContent='Could not start game';
+   loaderPercent.textContent='!';
+   loaderFill.style.width='100%';
+  }
+ }
+
+ document.getElementById('reload').addEventListener('click',loadGame);
+
+ const shell=document.getElementById('shell');
+ const fullscreenBtn=document.getElementById('fullscreen');
+ const fsExit=document.getElementById('fsExit');
+
+ function inNativeFullscreen(){
+  return document.fullscreenElement===shell || document.webkitFullscreenElement===shell;
+ }
+
+ function positionFullscreenUtilities(){
+  if(!document.body.classList.contains('gameFullscreen')) return;
+  // In portrait, place X + SOUND just below the actual rendered 3:2 Flash frame.
+  // This avoids relying on Safari's changing safe-area / browser chrome math.
+  if(window.matchMedia('(orientation: portrait)').matches){
+   requestAnimationFrame(()=>{
+    const frame=document.querySelector('.frame');
+    if(!frame) return;
+    const r=frame.getBoundingClientRect();
+    const top=Math.min(window.innerHeight-54, Math.max(8, r.bottom+12));
+    document.documentElement.style.setProperty('--me2d-utility-top', top+'px');
+   });
+  }else{
+   document.documentElement.style.removeProperty('--me2d-utility-top');
+  }
+ }
+
+ function enterAppFullscreen(){
+  document.body.classList.add('gameFullscreen');
+  fullscreenBtn.textContent='Exit fullscreen';
+  // Re-focus Flash after the layout jump so touch controls keep working.
+  requestAnimationFrame(()=>{
+   window.scrollTo(0,0);
+   positionFullscreenUtilities();
+   focusPlayer();
+  });
+ }
+
+ function exitAppFullscreen(){
+  document.body.classList.remove('gameFullscreen');
+  document.documentElement.style.removeProperty('--me2d-utility-top');
+  fullscreenBtn.textContent='Fullscreen';
+  requestAnimationFrame(()=>focusPlayer());
+ }
+
+ async function enterFullscreen(){
+  // Use the real Fullscreen API on browsers that genuinely expose it.
+  if(document.fullscreenEnabled && shell.requestFullscreen){
+   try{
+    await shell.requestFullscreen();
+    fullscreenBtn.textContent='Exit fullscreen';
+    try{
+     if(screen.orientation && screen.orientation.lock && matchMedia('(orientation: portrait)').matches){
+      await screen.orientation.lock('landscape');
+     }
+    }catch(_){}
+    return;
+   }catch(_){}
+  }
+
+  // iPhone/iPad Safari fallback. This fills the dynamic viewport even though
+  // Safari's own URL/navigation chrome cannot be programmatically hidden.
+  enterAppFullscreen();
+ }
+
+ async function exitFullscreen(){
+  if(inNativeFullscreen()){
+   try{
+    if(document.exitFullscreen) await document.exitFullscreen();
+    else if(document.webkitExitFullscreen) document.webkitExitFullscreen();
+   }catch(_){}
+  }
+  exitAppFullscreen();
+ }
+
+ async function toggleFullscreen(){
+  if(inNativeFullscreen() || document.body.classList.contains('gameFullscreen')){
+   await exitFullscreen();
+  }else{
+   await enterFullscreen();
+  }
+ }
+
+ fullscreenBtn.addEventListener('click',toggleFullscreen);
+ fsExit.addEventListener('click',exitFullscreen);
+
+ window.addEventListener('resize',positionFullscreenUtilities,{passive:true});
+ window.addEventListener('orientationchange',()=>setTimeout(positionFullscreenUtilities,120),{passive:true});
+ if(window.visualViewport){
+  visualViewport.addEventListener('resize',positionFullscreenUtilities,{passive:true});
+  visualViewport.addEventListener('scroll',positionFullscreenUtilities,{passive:true});
+ }
+
+ // iOS Safari zoom guard. Controls and the Flash viewport are fixed game surfaces,
+ // not webpage gesture surfaces. Normal page scrolling remains available elsewhere.
+ const stopGameBrowserGesture=e=>{
+  const target=e.target;
+  const insideGame=target instanceof Node && shell.contains(target);
+  if(insideGame || document.body.classList.contains('gameFullscreen') || inNativeFullscreen()){
+   e.preventDefault();
+  }
+ };
+ for(const type of ['contextmenu','selectstart','dragstart','dblclick','gesturestart','gesturechange','gestureend']){
+  document.addEventListener(type,stopGameBrowserGesture,{passive:false,capture:true});
+ }
+
+ // Do NOT cancel touchstart/touchend on the whole Flash frame. Ruffle's own
+ // iOS audio/unmute overlay depends on receiving a real click generated from that
+ // tap. v1.2.9 cancelled those events in capture phase, which could make the
+ // orange play/unmute button look dead. The joystick/buttons already have their
+ // own hard zoom guards; here we only suppress an actual multi-touch move/pinch.
+ const deck=document.querySelector('.deck');
+ const frame=document.querySelector('.frame');
+ const cancelPinchMove=e=>{
+  if(e.touches && e.touches.length>1) e.preventDefault();
+ };
+ for(const surface of [deck,frame]){
+  if(!surface)continue;
+  surface.addEventListener('touchmove',cancelPinchMove,{passive:false,capture:true});
+ }
+
+ document.addEventListener('fullscreenchange',()=>{
+  if(!document.fullscreenElement){
+   fullscreenBtn.textContent=document.body.classList.contains('gameFullscreen')?'Exit fullscreen':'Fullscreen';
+  }else{
+   fullscreenBtn.textContent='Exit fullscreen';
+  }
+ });
+ document.addEventListener('webkitfullscreenchange',()=>{
+  fullscreenBtn.textContent=(document.webkitFullscreenElement||document.body.classList.contains('gameFullscreen'))?'Exit fullscreen':'Fullscreen';
+ });
+
+ // Escape/back-like keyboard behavior on desktop.
+ document.addEventListener('keydown',e=>{
+  if(e.key==='Escape' && document.body.classList.contains('gameFullscreen')){
+   exitAppFullscreen();
+  }
+ });
+
+ if(window.RufflePlayer)loadGame();
+ else{
+  loaderPhase.textContent='Ruffle did not load';
+  loaderPercent.textContent='!';
+ }
+})();
+</script>
+</body>
+</html>
